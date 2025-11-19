@@ -1,10 +1,9 @@
 from minicons import scorer
 
-model_name = "EleutherAI/gpt-neo-2.7B"
+model_name = "bbunzeck/gpt-wee-small"
 text = "this monster is a ducks feeder"
 
 BOS = True
-
 # load incremental (causal) LM
 lm = scorer.IncrementalLMScorer(model_name, device="cuda")
 
