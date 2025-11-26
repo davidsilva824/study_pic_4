@@ -1,11 +1,11 @@
 from minicons import scorer
 
-model_name = "bbunzeck/gpt-wee-small"
+model_name = "phonemetransformers/ipa-childes-models-tiny"
 text = "this monster is a ducks feeder"
 
 BOS = True
 # load incremental (causal) LM
-lm = scorer.IncrementalLMScorer(model_name, device="cuda")
+lm = scorer.IncrementalLMScorer(model_name, device="cuda", subfolder="Farsi")
 
 # Get token-level surprisal using all specified parameters
 surprisals = lm.token_score(

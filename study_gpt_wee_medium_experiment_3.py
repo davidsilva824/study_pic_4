@@ -1,10 +1,10 @@
 import pandas as pd
 from minicons import scorer
 
-model_name = "BabyLM-community/babylm-baseline-10m-gpt2"
+model_name = "bbunzeck/gpt-wee-large"
 lm = scorer.IncrementalLMScorer(model_name, device="cpu")
 
-BOS = False
+BOS = True
 
 # New compact format: ( [irr_sg, irr_pl, reg_sg, reg_pl], [head1, head2, head3, head4] )
 compound_groups = [
@@ -110,7 +110,7 @@ def process_pairs(pairs):
 
 process_pairs(pairs)
 
-output_file = "study_gpt_2_10M_experiment_3.csv"
+output_file = "study_gpt_wee_medium_experiment_3.csv"
 df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
 df.to_csv(output_file, index=False)
 

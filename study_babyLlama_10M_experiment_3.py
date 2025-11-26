@@ -9,33 +9,46 @@ BOS = True
 # New compact format: ( [irr_sg, irr_pl, reg_sg, reg_pl], [head1, head2, head3, head4] )
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
-     ['protector', 'trader', 'tracker', 'expert']),
+    ['protector', 'trader', 'tracker', 'expert']),
+
     (['ox', 'oxen', 'cow', 'cows'],
-     ['register', 'trader', 'tracker', 'finder']),
+    ['register', 'trader', 'tracker', 'finder']),
+
     (['louse', 'lice', 'flea', 'fleas'],
-     ['issue', 'trader', 'tracker', 'expert']),
+    ['issue', 'trader', 'tracker', 'expert']),
+
     (['mouse', 'mice', 'rat', 'rats'],
-     ['issue', 'trader', 'tracker', 'inspector']),
+    ['issue', 'trader', 'tracker', 'inspector']),
+
     (['foot', 'feet', 'leg', 'legs'],
-     ['issue', 'examination', 'expert', 'inspector']),
+    ['issue', 'examination', 'expert', 'inspector']),
+
     (['tooth', 'teeth', 'bone', 'bones'],
-     ['issue', 'examination', 'expert', 'protector']),
+    ['issue', 'examination', 'expert', 'protector']),
+
     (['child', 'children', 'adult', 'adults'],
-     ['patrol', 'register', 'committee', 'brigade']),
+    ['patrol', 'register', 'institute', 'crew']),
+
     (['woman', 'women', 'girl', 'girls'],
-     ['protector', 'register', 'hangout', 'brigade']),
+    ['protector', 'register', 'hangout', 'crew']),
+
     (['man', 'men', 'boy', 'boys'],
-     ['committee', 'register', 'finder', 'hangout']),
+    ['institute', 'register', 'finder', 'hangout']),
+
     (['salesman', 'salesmen', 'retailer', 'retailers'],
-     ['committee', 'inspector', 'protector', 'employer']),
+    ['institute', 'inspector', 'protector', 'employer']),
+
     (['nobleman', 'noblemen', 'aristocrat', 'aristocrats'],
-     ['patrol', 'hangout', 'committee', 'brigade']),
+    ['patrol', 'hangout', 'institute', 'crew']),
+
     (['boatman', 'boatmen', 'shipmate', 'shipmates'],
-     ['brigade', 'finder', 'inspector', 'employer']),
+    ['patrol', 'finder', 'inspector', 'employer']),
+
     (['craftsman', 'craftsmen', 'labourer', 'labourers'],
-     ['employer', 'examination', 'hangout', 'finder']),
+    ['employer', 'examination', 'hangout', 'finder']),
+    
     (['fireman', 'firemen', 'lifeguard', 'lifeguards'],
-     ['examination', 'employer', 'brigade', 'patrol']),
+    ['examination', 'employer', 'crew', 'patrol'])
 ]
 
 # Map noun position → category label
