@@ -1,20 +1,20 @@
 from minicons import scorer
 
-model_name = "babylm/ltgbert-10m-2024"
+model = "babylm/ltgbert-10m-2024"
 text = "this monster is a rat eater"
 
-BOS = True
+from minicons import scorer
 
-# load incremental (causal) LM
-lm = scorer.MaskedLMScorer(model_name, device="cpu", trust_remote_code=True)
+# 1. Load the Masked Model
+lm_masked = scorer.MaskedLMScorer(model, device="cpu", trust_remote_code=True)
 
-# Get token-level surprisal using all specified parameters
-surprisals = lm.token_score(
-    text,
-    prob=False,
-    surprisal=True
-)[0]
+# 2. Extract Token Surprisals
+# Note: For basic token extraction, we don't need special metrics yet.
+# This uses the default strategy: Mask one token, predict it, move to next.
+scores = lm_masked.token_score(text, surprisal=True, base_two=True)[0]
 
-# Print each token and its surprisal
-for tok, s in surprisals:
-    print(f"{tok}\t{s:.3f}")
+# 3. Print
+print(f"{'TOKEN':<15} {'SURPRISAL (bits)':<10}")
+print("-" * 30)
+for token, score in scores:
+    print(f"{token:<15} {score:.3f}")

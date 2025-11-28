@@ -1,11 +1,13 @@
+### This one is fully working. 
+
 from minicons import scorer
 
 model_name = "BabyLM-community/babylm-baseline-100m-gpt2"
-text = "rat catcher"
+text = "this moster is a rat eater"
 
 BOS = False
 # load incremental (causal) LM
-lm = scorer.IncrementalLMScorer(model_name, device="cuda")
+lm = scorer.IncrementalLMScorer(model_name, device="cpu")
 
 # Get token-level surprisal using all specified parameters
 surprisals = lm.token_score(
