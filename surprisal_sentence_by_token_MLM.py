@@ -1,7 +1,7 @@
 from minicons import scorer
 
 model = "babylm/ltgbert-10m-2024"
-text = "this monster is a rat eater"
+text = "this moster is a rat eater"
 
 from minicons import scorer
 
@@ -13,8 +13,6 @@ lm_masked = scorer.MaskedLMScorer(model, device="cpu", trust_remote_code=True)
 # This uses the default strategy: Mask one token, predict it, move to next.
 scores = lm_masked.token_score(text, surprisal=True, base_two=True)[0]
 
-# 3. Print
-print(f"{'TOKEN':<15} {'SURPRISAL (bits)':<10}")
-print("-" * 30)
-for token, score in scores:
-    print(f"{token:<15} {score:.3f}")
+
+for tok, s in scores:
+    print(f"{tok}\t{s:.3f}")

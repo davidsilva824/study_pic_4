@@ -1,9 +1,10 @@
 ### This one is fully working. 
 
 from minicons import scorer
+print('True')
 
 model_name = "BabyLM-community/babylm-baseline-100m-gpt2"
-text = "this moster is a rat eater"
+text = "this monster is a rat eater"
 
 BOS = False
 # load incremental (causal) LM
