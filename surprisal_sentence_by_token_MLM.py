@@ -1,7 +1,7 @@
 from minicons import scorer
 
 model = "babylm/ltgbert-10m-2024"
-text = "this moster is a rat eater"
+text = "this controler is a rat catcher"
 
 from minicons import scorer
 

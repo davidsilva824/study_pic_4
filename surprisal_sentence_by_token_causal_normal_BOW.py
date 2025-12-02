@@ -1,7 +1,8 @@
 ### This one is fully working. 
 
+###this works only for models that have a specific saving space indiating their word boundry token. 
+
 from minicons import scorer
-print('True')
 
 model_name = "BabyLM-community/babylm-baseline-100m-gpt2"
 text = "this monster is a rat eater"

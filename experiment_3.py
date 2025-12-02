@@ -5,7 +5,7 @@ from minicons import scorer
 # ------------------------------------------------
 # 1. Create scorer as usual
 # ------------------------------------------------
-model_name = "phonemetransformers/GPT2-85M-BPE-TXT-SPACELESS"
+model_name = "bbunzeck/gpt-wee-small"
 text = "this moster is a rat eater"
 BOS = True
 
@@ -60,7 +60,7 @@ corr = lm.token_score(
     bos_token=BOS,
     prob=False,
     surprisal=True,
-    bow_correction=True,   # now uses forced BOW settings
+    bow_correction=False,   # now uses forced BOW settings
     decode=False,
 )[0]
 

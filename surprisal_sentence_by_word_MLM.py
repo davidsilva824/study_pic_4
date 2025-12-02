@@ -1,55 +1,56 @@
+### Exclusive for MLM models
+# Uses 'within_word_l2r' metric, that corrects the surprisal of multi-token words. 
+
 from minicons import scorer
+from nltk.tokenize import TweetTokenizer
 
-model_name = "bert-base-uncased"
-text = "this moster is a rat eater"
+model_name = "babylm/ltgbert-10m-2024"
+text = "this controler is a rat catcher"
 
-def get_word_surprisal_from_wordpieces(model, text):
-    """
-    Word-level surprisal for masked LMs using Kauf & Ivanova (2023):
-    - PLL_metric='within_word_l2r'
-    - words reconstructed from WordPiece tokens (##-continuations)
-    """
-    # 1. Get per-subtoken surprisals with the correct PLL metric
+def get_masked_word_surprisal(model, text):
+
     token_scores = model.token_score(
-        text,
-        surprisal=True,
-        base_two=True,
-        PLL_metric="within_word_l2r",
+        text, 
+        surprisal=True, 
+        base_two=True, 
+        PLL_metric='within_word_l2r' 
     )[0]
-
-    word_results = []
-    current_word = ""
-    current_surprisal = 0.0
-
-    # 2. Group wordpieces into words using '##' convention
-    for tok, s in token_scores:
-        # skip special tokens if they appear
-        if tok in ("[CLS]", "[SEP]", "[PAD]"):
-            continue
-
-        if tok.startswith("##"):
-            piece = tok[2:]
-            current_word += piece
-            current_surprisal += s
-        else:
-            # close previous word if any
-            if current_word != "":
-                word_results.append((current_word, current_surprisal))
-            current_word = tok
-            current_surprisal = s
-
-    # 3. Add the last word
-    if current_word != "":
-        word_results.append((current_word, current_surprisal))
-
-    return word_results
+    
+    tokenizer = TweetTokenizer()
+    target_words = tokenizer.tokenize(text)
+    
+    final_results = []
+    token_idx = 0
+    
+    # Aggregation Loop
+    for word in target_words:
+        current_surprisal = 0.0
+        reconstructed = ""
+        
+        # Add up model tokens until they form the word
+        while token_idx < len(token_scores):
+            tok_text, tok_score = token_scores[token_idx]
+            
+            # Clean BERT-style artifacts (## = suffix)
+            clean_tok = tok_text.replace('##', '').strip()
+            
+            reconstructed += clean_tok
+            current_surprisal += tok_score
+            token_idx += 1
+            
+            if reconstructed == word:
+                break
+        
+        final_results.append((word, current_surprisal))
+        
+    return final_results
 
 
 print(f"Loading model: {model_name}...")
-lm_bert = scorer.MaskedLMScorer(model_name, device="cpu")
+lm_bert = scorer.MaskedLMScorer(model_name, device="cpu",  trust_remote_code=True)
 
 print(f"Analyzing sentence: '{text}'")
-results = get_word_surprisal_from_wordpieces(lm_bert, text)
+results = get_masked_word_surprisal(lm_bert, text)
 
 print("\n" + "=" * 30)
 print(f"{'WORD':<15} {'SURPRISAL(bits)':<15}")
