@@ -1,57 +1,56 @@
 import pandas as pd
+from g2p_plus import transcribe_utterances
 from minicons import scorer
 
-model_name = "phonemetransformers/GPT2-85M-BPE-TXT"
-lm = scorer.IncrementalLMScorer(model_name, device="cpu")
+# 1. Phoneme model
+model_name = "phonemetransformers/GPT2-85M-CHAR-PHON"
 
-BOS = False
-
-# New compact format: ( [irr_sg, irr_pl, reg_sg, reg_pl], [head1, head2, head3, head4] )
+# 2. PiC compound groups (same as before)
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
-    ['protector', 'trader', 'tracker', 'expert']),
+     ['protector', 'trader', 'tracker', 'expert']),
 
     (['ox', 'oxen', 'cow', 'cows'],
-    ['register', 'trader', 'tracker', 'finder']),
+     ['register', 'trader', 'tracker', 'finder']),
 
     (['louse', 'lice', 'flea', 'fleas'],
-    ['issue', 'trader', 'tracker', 'expert']),
+     ['issue', 'trader', 'tracker', 'expert']),
 
     (['mouse', 'mice', 'rat', 'rats'],
-    ['issue', 'trader', 'tracker', 'inspector']),
+     ['issue', 'trader', 'tracker', 'inspector']),
 
     (['foot', 'feet', 'leg', 'legs'],
-    ['issue', 'examination', 'expert', 'inspector']),
+     ['issue', 'examination', 'expert', 'inspector']),
 
     (['tooth', 'teeth', 'bone', 'bones'],
-    ['issue', 'examination', 'expert', 'protector']),
+     ['issue', 'examination', 'expert', 'protector']),
 
     (['child', 'children', 'adult', 'adults'],
-    ['patrol', 'register', 'institute', 'crew']),
+     ['patrol', 'register', 'institute', 'crew']),
 
     (['woman', 'women', 'girl', 'girls'],
-    ['protector', 'register', 'hangout', 'crew']),
+     ['protector', 'register', 'hangout', 'crew']),
 
     (['man', 'men', 'boy', 'boys'],
-    ['institute', 'register', 'finder', 'hangout']),
+     ['institute', 'register', 'finder', 'hangout']),
 
     (['salesman', 'salesmen', 'retailer', 'retailers'],
-    ['institute', 'inspector', 'protector', 'employer']),
+     ['institute', 'inspector', 'protector', 'employer']),
 
     (['nobleman', 'noblemen', 'aristocrat', 'aristocrats'],
-    ['patrol', 'hangout', 'institute', 'crew']),
+     ['patrol', 'hangout', 'institute', 'crew']),
 
     (['boatman', 'boatmen', 'shipmate', 'shipmates'],
-    ['patrol', 'finder', 'inspector', 'employer']),
+     ['patrol', 'finder', 'inspector', 'employer']),
 
     (['craftsman', 'craftsmen', 'labourer', 'labourers'],
-    ['employer', 'examination', 'hangout', 'finder']),
+     ['employer', 'examination', 'hangout', 'finder']),
     
     (['fireman', 'firemen', 'lifeguard', 'lifeguards'],
-    ['examination', 'employer', 'crew', 'patrol'])
+     ['examination', 'employer', 'crew', 'patrol'])
 ]
 
-# Map noun position → category label
+# 3. Category labels (same as other experiments)
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -59,59 +58,106 @@ cat_labels = {
     3: "Regular Plural",
 }
 
-# Build the full list of (Category, Non-head, Head) pairs as before
-pairs = []
-for non_heads, heads in compound_groups:
-    for i, non_head in enumerate(non_heads):
-        category_name = cat_labels[i]
-        for head in heads:
-            pairs.append((category_name, non_head, head))
+# --- Helper: get word-level surprisal from IPA string ---
+def ipa_word_surprisals(lm, ipa_text):
+    """
+    ipa_text: string like 'ð ɪ s WORD_BOUNDARY m ɒ n ...'
+    Returns a list of word surprisals by summing phoneme surprisals
+    between WORD_BOUNDARY tokens (ignoring UTT_BOUNDARY).
+    """
+    tok_scores = lm.token_score(
+        ipa_text,
+        bos_token=False,
+        prob=False,
+        surprisal=True,
+        bow_correction=False
+    )[0]
+
+    word_surps = []
+    current = 0.0
+
+    for tok, s in tok_scores:
+        if tok == "UTT_BOUNDARY":
+            continue
+        if tok == "WORD_BOUNDARY":
+            word_surps.append(current)
+            current = 0.0
+        else:
+            current += s
+
+    # In case final word is not followed by WORD_BOUNDARY
+    if current != 0.0 or not word_surps:
+        word_surps.append(current)
+
+    return word_surps
+
+
+# --- Main processing for the phoneme model ---
+print(f"\nLoading phoneme model: {model_name}...")
+lm = scorer.IncrementalLMScorer(model_name, device="cpu")
 
 data = []
 
-def process_pairs(pairs):
-    for category_name, non_head, head in pairs:
-        sentence = f"{non_head} {head}"
-        
-        tok_scores = lm.token_score(
-            sentence,
-            bos_token=BOS,
-            prob=False,
-            surprisal=True,
-            bow_correction=True
-        )[0]
-        
-        tokens = [tok for tok, s, *_ in tok_scores]
-        surprisal_values = [s for tok, s, *_ in tok_scores]
-        
-        print(' '.join(f'{tok:>10}' for tok in tokens))
-        print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
-        print(surprisal_values)
-        
-        non_n = 0
-        reconstructed_word = ""
+for non_heads, heads in compound_groups:
+    # same head-first order as in your GPT/MLM code
+    for head in heads:
+        for i, non_head in enumerate(non_heads):
+            category_name = cat_labels[i]
 
-        cleaned_tokens = [tok.lstrip('Ġ ') for tok in tokens]
+            sentence = f"{non_head} {head}"
+            lines = [sentence]
 
-        for i in range(1, len(cleaned_tokens)):
-            reconstructed_word += cleaned_tokens[i]
-            non_n += 1
-            if reconstructed_word == non_head:
-                break
-        
-        total_real_tokens = len(tokens) - 1
-        head_n = total_real_tokens - non_n
+            # 1) Convert to IPA with the SAME config
+            ipa_list = transcribe_utterances(
+                lines,
+                backend="phonemizer",
+                language="en-us",
+                keep_word_boundaries=True,
+                allow_possibly_faulty_word_boundaries=True
+                # uncorrected=False by default → folding ON
+            )
 
-        surprisal_non_head = sum(surprisal_values[1 : 1 + non_n])
-        surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
+            ipa_text = ipa_list[0]
+            print("\nORTHO:", sentence)
+            print("IPA (folded):", ipa_text)
 
-        data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-        print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
+            # 2) Get word-level surprisal by summing phoneme surprisals
+            word_surps = ipa_word_surprisals(lm, ipa_text)
 
-process_pairs(pairs)
+            # We expect exactly 2 words: non-head and head
+            if len(word_surps) != 2:
+                print("WARNING: expected 2 words, got", len(word_surps), "for", sentence)
 
-output_file = "study_babble_experiment_3.csv"
-df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
+            s_non_head = word_surps[0]
+            s_head = word_surps[1] if len(word_surps) > 1 else float('nan')
+
+            # Debug print similar in spirit to other experiments
+            print(f"  Non-Head ({non_head}): {s_non_head}")
+            print(f"  Head     ({head}): {s_head}")
+
+            data.append([
+                category_name,
+                non_head,
+                head,
+                s_non_head,
+                s_head
+            ])
+
+# 4. Save CSV in same format
+base_name = model_name.split("/")[-1]
+clean_name = base_name.replace("-", "_")
+output_file = f"study_babble_experiment_3.csv"
+
+df = pd.DataFrame(
+    data,
+    columns=[
+        "Category",
+        "Non-Head",
+        "Head",
+        "Surprisal Non-head",
+        "Surprisal head"
+    ]
+)
 df.to_csv(output_file, index=False)
 
-print(f'\n results in {output_file} \n')
+print(f"\nResults saved in {output_file}\n")

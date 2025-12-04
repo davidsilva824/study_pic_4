@@ -110,7 +110,7 @@ def process_pairs(pairs):
 
 process_pairs(pairs)
 
-output_file = "study_gpt_neo_2_7B_experiment_3.csv"
+output_file = "study_gpt_neo_2_7B_experiment_3_old.csv"
 df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
 df.to_csv(output_file, index=False)
 

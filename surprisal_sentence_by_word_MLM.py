@@ -4,8 +4,8 @@
 from minicons import scorer
 from nltk.tokenize import TweetTokenizer
 
-model_name = "babylm/ltgbert-10m-2024"
-text = "this controler is a rat catcher"
+model_name = "babylm/ltgbert-100m-2024"
+text = "cow register"
 
 def get_masked_word_surprisal(model, text):
 

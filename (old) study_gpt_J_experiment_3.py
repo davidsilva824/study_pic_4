@@ -1,7 +1,9 @@
+###This code needs to be verified/changed. 
+
 import pandas as pd
 from minicons import scorer
 
-model_name = "EleutherAI/gpt-neo-1.3B"
+model_name = "EleutherAI/gpt-j-6b"
 lm = scorer.IncrementalLMScorer(model_name, device="cuda")
 
 BOS = True
@@ -9,46 +11,46 @@ BOS = True
 # New compact format: ( [irr_sg, irr_pl, reg_sg, reg_pl], [head1, head2, head3, head4] )
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
-    ['protector', 'trader', 'tracker', 'expert']),
+     ['protector', 'trader', 'tracker', 'expert']),
 
     (['ox', 'oxen', 'cow', 'cows'],
-    ['register', 'trader', 'tracker', 'finder']),
+     ['register', 'trader', 'tracker', 'finder']),
 
     (['louse', 'lice', 'flea', 'fleas'],
-    ['issue', 'trader', 'tracker', 'expert']),
+     ['issue', 'trader', 'tracker', 'expert']),
 
     (['mouse', 'mice', 'rat', 'rats'],
-    ['issue', 'trader', 'tracker', 'inspector']),
+     ['issue', 'trader', 'tracker', 'inspector']),
 
     (['foot', 'feet', 'leg', 'legs'],
-    ['issue', 'examination', 'expert', 'inspector']),
+     ['issue', 'examination', 'expert', 'inspector']),
 
     (['tooth', 'teeth', 'bone', 'bones'],
-    ['issue', 'examination', 'expert', 'protector']),
+     ['issue', 'examination', 'expert', 'protector']),
 
     (['child', 'children', 'adult', 'adults'],
-    ['patrol', 'register', 'institute', 'crew']),
+     ['patrol', 'register', 'institute', 'crew']),
 
     (['woman', 'women', 'girl', 'girls'],
-    ['protector', 'register', 'hangout', 'crew']),
+     ['protector', 'register', 'hangout', 'crew']),
 
     (['man', 'men', 'boy', 'boys'],
-    ['institute', 'register', 'finder', 'hangout']),
+     ['institute', 'register', 'finder', 'hangout']),
 
     (['salesman', 'salesmen', 'retailer', 'retailers'],
-    ['institute', 'inspector', 'protector', 'employer']),
+     ['institute', 'inspector', 'protector', 'employer']),
 
     (['nobleman', 'noblemen', 'aristocrat', 'aristocrats'],
-    ['patrol', 'hangout', 'institute', 'crew']),
+     ['patrol', 'hangout', 'institute', 'crew']),
 
     (['boatman', 'boatmen', 'shipmate', 'shipmates'],
-    ['patrol', 'finder', 'inspector', 'employer']),
+     ['patrol', 'finder', 'inspector', 'employer']),
 
     (['craftsman', 'craftsmen', 'labourer', 'labourers'],
-    ['employer', 'examination', 'hangout', 'finder']),
+     ['employer', 'examination', 'hangout', 'finder']),
     
     (['fireman', 'firemen', 'lifeguard', 'lifeguards'],
-    ['examination', 'employer', 'crew', 'patrol'])
+     ['examination', 'employer', 'crew', 'patrol'])
 ]
 
 # Map noun position → category label
@@ -110,7 +112,7 @@ def process_pairs(pairs):
 
 process_pairs(pairs)
 
-output_file = "study_gpt_neo_1_3B_experiment_3.csv"
+output_file = "study_gpt_J_experiment_3.csv"
 df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
 df.to_csv(output_file, index=False)
 

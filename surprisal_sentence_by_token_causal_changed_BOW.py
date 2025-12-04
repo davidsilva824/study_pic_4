@@ -4,8 +4,8 @@ import torch
 from collections import defaultdict
 from minicons import scorer
 
-model_name = "bbunzeck/gpt-wee-medium"
-text = "this monster is a rat eater"
+model_name = "bbunzeck/gpt-wee-large"
+text = "lifeguards patrol"
 BOS = True
 
 lm = scorer.IncrementalLMScorer(model_name, device="cpu")
@@ -52,4 +52,4 @@ surprisals = lm.token_score(
 print(f"{'TOKEN':<15} {'SURPRISAL':<10}")
 print("-" * 30)
 for tok, s in surprisals:
-    print(f"{tok:<15} {s:.3f}")
+    print(f"{tok:<15} {s:.7f}")

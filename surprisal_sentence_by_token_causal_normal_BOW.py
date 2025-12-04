@@ -4,10 +4,10 @@
 
 from minicons import scorer
 
-model_name = "BabyLM-community/babylm-baseline-100m-gpt2"
-text = "this monster is a rat eater"
+model_name = "bbunzeck/gpt-wee-large"
+text = "lifeguards patrol"
 
-BOS = False
+BOS = True
 # load incremental (causal) LM
 lm = scorer.IncrementalLMScorer(model_name, device="cpu")
 
@@ -17,9 +17,9 @@ surprisals = lm.token_score(
     bos_token=BOS,
     prob=False,
     surprisal=True,
-    bow_correction=True
+    bow_correction=False
 )[0]
 
 # Print each token and its surprisal
 for tok, s in surprisals:
-    print(f"{tok}\t{s:.3f}")
+    print(f"{tok}\t{s:.7f}")

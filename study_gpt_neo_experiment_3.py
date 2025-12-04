@@ -5,8 +5,9 @@ from minicons import scorer
 
 # 1. Define the models to run
 models = [
-    "babylm/babyllama-10m-2024",
-    "babylm/babyllama-100m-2024"
+    "EleutherAI/gpt-neo-125m",
+    "EleutherAI/gpt-neo-1.3B",
+    "EleutherAI/gpt-neo-2.7B"
 ]
 
 BOS = True
@@ -116,23 +117,26 @@ def process_pairs(lm, pairs, data):
                 # --- Original Sentence Print ---
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
-
+    
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cpu")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
     
     data = []
     
-    # We call the processing function (Note: 'pairs' arg is technically unused 
-    # inside the function now because we iterate compound_groups directly to fix the order)
+    # Process the pairs
     process_pairs(lm, None, data)
     
-    # Determine filename based on model to match your style
-    if "10m" in model_name and "100m" not in model_name:
-        output_file = "study_babyLlama_10M_experiment_3.csv"
-    else:
-        output_file = "study_babyLlama_100M_experiment_3.csv"
+    # DYNAMIC FILENAME GENERATION
+    # 1. Get the model name after the slash (e.g. 'gpt-neo-125m')
+    base_name = model_name.split("/")[-1]
+    
+    # 2. Replace hyphens with underscores (e.g. 'gpt_neo_125m')
+    clean_name = base_name.replace("-", "_")
+    
+    # 3. Construct the final filename
+    output_file = f"study_{clean_name}_experiment_3.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)

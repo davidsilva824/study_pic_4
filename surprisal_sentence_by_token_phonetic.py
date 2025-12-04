@@ -4,7 +4,7 @@ from g2p_plus import transcribe_utterances
 from minicons import scorer
 
 # 1. Convert to phonemes with the SAME config used for IPA-BabyLM
-text = "this man is a rat catcher"
+text = "lifeguards patrol"
 lines = [text]
 
 ipa_list = transcribe_utterances(

@@ -1,12 +1,14 @@
 ### This code is complete. 
 
 import pandas as pd
+from collections import defaultdict
 from minicons import scorer
 
 # 1. Define the models to run
 models = [
-    "babylm/babyllama-10m-2024",
-    "babylm/babyllama-100m-2024"
+    "bbunzeck/gpt-wee-small",
+    "bbunzeck/gpt-wee-medium",
+    "bbunzeck/gpt-wee-large"
 ]
 
 BOS = True
@@ -116,23 +118,43 @@ def process_pairs(lm, pairs, data):
                 # --- Original Sentence Print ---
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
-
+    
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cpu")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
     
+    # ---------- FORCE BOW SETTINGS (from code 2) ----------
+    bow_symbol = "Ġ"
+    lm.is_bow_tokenizer = True
+    lm.bow_symbol = bow_symbol
+
+    bow_subwords = defaultdict(bool)
+
+    # Mark standard vocabulary
+    for word, idx in lm.tokenizer.get_vocab().items():
+        if len(word) > 0 and word[0] == bow_symbol:
+            bow_subwords[idx] = True
+        else:
+            bow_subwords[idx] = False
+
+    # Mark added vocab safely as non-BOW
+    for idx in lm.tokenizer.get_added_vocab().values():
+        bow_subwords[idx] = False
+
+    lm.bow_subwords = bow_subwords
+    lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
+    # ------------------------------------------------------
+
     data = []
     
-    # We call the processing function (Note: 'pairs' arg is technically unused 
-    # inside the function now because we iterate compound_groups directly to fix the order)
+    # Process the pairs
     process_pairs(lm, None, data)
     
-    # Determine filename based on model to match your style
-    if "10m" in model_name and "100m" not in model_name:
-        output_file = "study_babyLlama_10M_experiment_3.csv"
-    else:
-        output_file = "study_babyLlama_100M_experiment_3.csv"
+    # DYNAMIC FILENAME GENERATION
+    base_name = model_name.split("/")[-1]
+    clean_name = base_name.replace("-", "_")
+    output_file = f"study_{clean_name}_experiment_3.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)

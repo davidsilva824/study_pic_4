@@ -1,8 +1,10 @@
+###This code needs to be verified/changed. 
+
 import pandas as pd
 from minicons import scorer
 
-model_name = "babylm/ltgbert-10m-2024"
-lm = scorer.MaskedLMScorer(model_name, device="cpu", trust_remote_code=True)
+model_name = "bbunzeck/gpt-wee-small"
+lm = scorer.IncrementalLMScorer(model_name, device="cpu")
 
 BOS = True
 
@@ -75,8 +77,10 @@ def process_pairs(pairs):
         
         tok_scores = lm.token_score(
             sentence,
+            bos_token=BOS,
             prob=False,
-            surprisal=True
+            surprisal=True,
+            bow_correction=True
         )[0]
         
         tokens = [tok for tok, s, *_ in tok_scores]
@@ -86,42 +90,29 @@ def process_pairs(pairs):
         print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
         print(surprisal_values)
         
-        # --- FIXED TOKENIZATION PART ---
-        # Clean typical subword markers for BERT-style tokenizers
-        cleaned_tokens = [
-            tok.lstrip('Ġ ').lstrip('▁').replace('##', '')
-            for tok in tokens
-        ]
-
-        reconstructed_word = ""
         non_n = 0
+        reconstructed_word = ""
 
-        # Start from token 0 (no BOS in these prints)
-        for i in range(len(cleaned_tokens)):
+        cleaned_tokens = [tok.lstrip('Ġ ') for tok in tokens]
+
+        for i in range(1, len(cleaned_tokens)):
             reconstructed_word += cleaned_tokens[i]
             non_n += 1
             if reconstructed_word == non_head:
                 break
+        
+        total_real_tokens = len(tokens) - 1
+        head_n = total_real_tokens - non_n
 
-        # If we somehow didn't match, fall back to using all but last token as non-head
-        if reconstructed_word != non_head:
-            # optional debug
-            print(f"[WARN] Could not align tokens for non-head '{non_head}' in '{sentence}'.")
-            non_n = len(tokens) - 1
-
-        total_tokens = len(tokens)
-        head_n = total_tokens - non_n
-
-        surprisal_non_head = sum(surprisal_values[:non_n])
-        surprisal_head = sum(surprisal_values[non_n : non_n + head_n])
-        # --- END FIXED PART ---
+        surprisal_non_head = sum(surprisal_values[1 : 1 + non_n])
+        surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
 
         data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
         print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
 process_pairs(pairs)
 
-output_file = "study_LGT_BERT_10M_experiment_3.csv"
+output_file = "study_gpt_wee_small_experiment_3_old.csv"
 df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
 df.to_csv(output_file, index=False)
 
