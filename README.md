@@ -6,4 +6,6 @@ Install all requested packages using pip install.
 
 Run 'study_model_experiment_3.py' files to obtain the results for each model for the combination of compounds for experiment 3.
 
-Run 'stats_model_experiment_3.py' files to obtain the statistics for these results. 
+Run 'res_stats_model_experiment_3.py' files to obtain the initial statistics for these results. 
+
+The surprisal results by word, for all the compounds, can be consulted here. 
