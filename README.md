@@ -1,6 +1,7 @@
 This testing pipeline is part of the masters dissertation: "Exploring Grammatical Constraints with Large Language Models" by David Silva, supervised by João Veríssimo and Vânia Mendonça.
 
-It tests for the Plurals in Compounds effect and uses the surprisal package: https://pypi.org/project/minicons/
+It tests for the Plurals in Compounds effect in models trained with plausibel data from the BabyLM Chanllenge: https://babylm.github.io/    
+It makes uses of the surprisal package: https://pypi.org/project/minicons/
 
 Install all requested packages using pip install.
 
@@ -8,4 +9,4 @@ Run 'study_model_experiment_3.py' files to obtain the results for each model for
 
 Run 'res_stats_model_experiment_3.py' files to obtain the initial statistics for these results. 
 
-The surprisal results by word, for all the compounds, can be consulted here. 
+The surprisal results by word, for all the compounds, can be consulted in the results _model_experiment_3.py. 
