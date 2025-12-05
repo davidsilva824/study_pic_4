@@ -1,9 +1,6 @@
-### This code is complete. 
-
 import pandas as pd
 from minicons import scorer
 
-# 1. Define the models to run
 models = [
     "BabyLM-community/babylm-baseline-10m-gpt2",
     "BabyLM-community/babylm-baseline-100m-gpt2"
@@ -11,7 +8,6 @@ models = [
 
 BOS = False
 
-# New compact format: ( [irr_sg, irr_pl, reg_sg, reg_pl], [head1, head2, head3, head4] )
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
      ['protector', 'trader', 'tracker', 'expert']),
@@ -56,7 +52,7 @@ compound_groups = [
      ['examination', 'employer', 'crew', 'patrol'])
 ]
 
-# Map noun position → category label
+# Mapping
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -65,15 +61,11 @@ cat_labels = {
 }
 
 def process_pairs(lm, pairs, data):
-    # This loop is now INVERTED based on your request:
-    # We iterate through the raw 'compound_groups' list again to control the order.
-    # Note: I am not using the 'pairs' argument here directly because it is already flattened.
-    # Instead, I iterate compound_groups to get the "Head-First" order you requested.
     
     for non_heads, heads in compound_groups:
-        # Loop over HEADS first (Requested Change)
+        # Loop over HEADS first
         for head in heads:
-            # Then loop over NON-HEADS (goose -> geese -> swan -> swans)
+            # Then loop over NON-HEADS
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -90,7 +82,6 @@ def process_pairs(lm, pairs, data):
                 tokens = [tok for tok, s, *_ in tok_scores]
                 surprisal_values = [s for tok, s, *_ in tok_scores]
                 
-                # --- Original Print Block ---
                 print(' '.join(f'{tok:>10}' for tok in tokens))
                 print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
                 print(surprisal_values)
@@ -113,26 +104,24 @@ def process_pairs(lm, pairs, data):
                 surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
 
                 data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-                # --- Original Sentence Print ---
+
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
 
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cpu")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
     
     data = []
     
-    # We call the processing function (Note: 'pairs' arg is technically unused 
-    # inside the function now because we iterate compound_groups directly to fix the order)
     process_pairs(lm, None, data)
     
     # Determine filename based on model to match your style
     if "10m" in model_name and "100m" not in model_name:
-        output_file = "study_gpt_2_10M_experiment_3.csv"
+        output_file = "results_gpt_2_10M_experiment_3.csv"
     else:
-        output_file = "study_gpt_2_100M_experiment_3.csv"
+        output_file = "results_gpt_2_100M_experiment_3.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)

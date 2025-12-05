@@ -1,4 +1,5 @@
-### Exclusive for MLM models
+### For MLM models. 
+# Returns the surpisal of full words.
 # Uses 'within_word_l2r' metric, that corrects the surprisal of multi-token words. 
 
 from minicons import scorer
@@ -31,7 +32,7 @@ def get_masked_word_surprisal(model, text):
         while token_idx < len(token_scores):
             tok_text, tok_score = token_scores[token_idx]
             
-            # Clean BERT-style artifacts (## = suffix)
+            # Cleans BERT artifacts
             clean_tok = tok_text.replace('##', '').strip()
             
             reconstructed += clean_tok
@@ -56,5 +57,5 @@ print("\n" + "=" * 30)
 print(f"{'WORD':<15} {'SURPRISAL(bits)':<15}")
 print("-" * 30)
 for w, s in results:
-    print(f"{w:<15} {s:.3f}")
+    print(f"{w:<15} {s:.3f}") #to adjust decimal units
 print("=" * 30)

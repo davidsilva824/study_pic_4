@@ -1,4 +1,5 @@
-### this is especially for models where the correction is not being performed even when activated in the scorer. 
+### For causal models. 
+# For models in which the bow correction does not work.
 
 import torch
 from collections import defaultdict
@@ -10,14 +11,11 @@ BOS = True
 
 lm = scorer.IncrementalLMScorer(model_name, device="cpu")
 
-#  FORCE BOW SETTINGS
-# ------------------------------------------------
-# We manually tell minicons: "Treat 'Ġ' as the space marker."
 bow_symbol = "Ġ"
 lm.is_bow_tokenizer = True
 lm.bow_symbol = bow_symbol
 
-# Use a defaultdict that defaults to False for any unknown token (fixes KeyError: 633)
+# Use a defaultdict that defaults to False for any unknown token
 bow_subwords = defaultdict(bool)
 
 # Mark standard vocabulary
@@ -32,8 +30,6 @@ for word, idx in lm.tokenizer.get_vocab().items():
 for idx in lm.tokenizer.get_added_vocab().values():
     bow_subwords[idx] = False
 
-# Assign it back to the model object
-# CRITICAL: We keep it as a defaultdict so it never crashes on unseen IDs
 lm.bow_subwords = bow_subwords
 lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
 

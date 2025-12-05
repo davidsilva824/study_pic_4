@@ -1,6 +1,6 @@
-### This one is fully working. 
-
-###this works only for models that have a specific saving space indiating their word boundry token. 
+### For causal models. 
+# Works only in more conventional models that provide a specific set of parameters about word separation.
+# If the bow correction does not work, use 'surprisal_by_token_causal_changed_BOW.py'
 
 from minicons import scorer
 
@@ -17,7 +17,7 @@ surprisals = lm.token_score(
     bos_token=BOS,
     prob=False,
     surprisal=True,
-    bow_correction=False
+    bow_correction=True
 )[0]
 
 # Print each token and its surprisal

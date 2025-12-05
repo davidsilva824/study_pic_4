@@ -1,9 +1,6 @@
-### This code is complete. 
-
 import pandas as pd
 from minicons import scorer
 
-# 1. Define the models to run
 models = [
     "EleutherAI/gpt-neo-125m",
     "EleutherAI/gpt-neo-1.3B",
@@ -12,7 +9,6 @@ models = [
 
 BOS = True
 
-# New compact format: ( [irr_sg, irr_pl, reg_sg, reg_pl], [head1, head2, head3, head4] )
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
      ['protector', 'trader', 'tracker', 'expert']),
@@ -57,7 +53,6 @@ compound_groups = [
      ['examination', 'employer', 'crew', 'patrol'])
 ]
 
-# Map noun position → category label
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -66,15 +61,11 @@ cat_labels = {
 }
 
 def process_pairs(lm, pairs, data):
-    # This loop is now INVERTED based on your request:
-    # We iterate through the raw 'compound_groups' list again to control the order.
-    # Note: I am not using the 'pairs' argument here directly because it is already flattened.
-    # Instead, I iterate compound_groups to get the "Head-First" order you requested.
-    
+      
     for non_heads, heads in compound_groups:
-        # Loop over HEADS first (Requested Change)
+        # Loop over HEADS first 
         for head in heads:
-            # Then loop over NON-HEADS (goose -> geese -> swan -> swans)
+            # Then loop over NON-HEADS 
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -91,7 +82,6 @@ def process_pairs(lm, pairs, data):
                 tokens = [tok for tok, s, *_ in tok_scores]
                 surprisal_values = [s for tok, s, *_ in tok_scores]
                 
-                # --- Original Print Block ---
                 print(' '.join(f'{tok:>10}' for tok in tokens))
                 print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
                 print(surprisal_values)
@@ -125,18 +115,19 @@ for model_name in models:
     
     data = []
     
-    # Process the pairs
     process_pairs(lm, None, data)
     
-    # DYNAMIC FILENAME GENERATION
-    # 1. Get the model name after the slash (e.g. 'gpt-neo-125m')
     base_name = model_name.split("/")[-1]
     
-    # 2. Replace hyphens with underscores (e.g. 'gpt_neo_125m')
-    clean_name = base_name.replace("-", "_")
+    clean_name_a = base_name.replace("-", "_")
+
+    clean_name_b = clean_name_a.replace(".", "_")
+
+    clean_name_c = clean_name_b.replace("m", "M")
+
     
     # 3. Construct the final filename
-    output_file = f"study_{clean_name}_experiment_3.csv"
+    output_file = f"results_{clean_name_c}_experiment_3.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)

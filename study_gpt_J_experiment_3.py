@@ -3,14 +3,12 @@
 import pandas as pd
 from minicons import scorer
 
-# 1. Define the models to run
 models = [
     "EleutherAI/gpt-j-6b"
 ]
 
 BOS = True
 
-# New compact format: ( [irr_sg, irr_pl, reg_sg, reg_pl], [head1, head2, head3, head4] )
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
      ['protector', 'trader', 'tracker', 'expert']),
@@ -55,7 +53,7 @@ compound_groups = [
      ['examination', 'employer', 'crew', 'patrol'])
 ]
 
-# Map noun position → category label
+# Mapping
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -66,9 +64,9 @@ cat_labels = {
 def process_pairs(lm, pairs, data):
    
     for non_heads, heads in compound_groups:
-        # Loop over HEADS first (Requested Change)
+        # Loop over HEADS first
         for head in heads:
-            # Then loop over NON-HEADS (goose -> geese -> swan -> swans)
+            # Then loop over NON-HEADS
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -120,10 +118,9 @@ lm = scorer.IncrementalLMScorer(model_name, device="cuda")
 
 data = []
 
-# We call the processing function
 process_pairs(lm, None, data)
 
-output_file = "study_gpt_J_experiment_3.csv"
+output_file = "results_gpt_J_experiment_3.csv"
 
 df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
 df.to_csv(output_file, index=False)

@@ -4,4 +4,6 @@ lines = ['This monster is a rat eater']
 
 phonemized = transcribe_utterances(lines, "phonemizer", "en-gb", keep_word_boundaries=True)
 
+print()
+
 print(phonemized)

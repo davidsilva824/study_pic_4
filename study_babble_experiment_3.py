@@ -2,10 +2,8 @@ import pandas as pd
 from g2p_plus import transcribe_utterances
 from minicons import scorer
 
-# 1. Phoneme model
 model_name = "phonemetransformers/GPT2-85M-CHAR-PHON"
 
-# 2. PiC compound groups (same as before)
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
      ['protector', 'trader', 'tracker', 'expert']),
@@ -50,7 +48,6 @@ compound_groups = [
      ['examination', 'employer', 'crew', 'patrol'])
 ]
 
-# 3. Category labels (same as other experiments)
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -58,7 +55,6 @@ cat_labels = {
     3: "Regular Plural",
 }
 
-# --- Helper: get word-level surprisal from IPA string ---
 def ipa_word_surprisals(lm, ipa_text):
     """
     ipa_text: string like 'ð ɪ s WORD_BOUNDARY m ɒ n ...'
@@ -94,7 +90,7 @@ def ipa_word_surprisals(lm, ipa_text):
 
 # --- Main processing for the phoneme model ---
 print(f"\nLoading phoneme model: {model_name}...")
-lm = scorer.IncrementalLMScorer(model_name, device="cpu")
+lm = scorer.IncrementalLMScorer(model_name, device="cuda")
 
 data = []
 
@@ -143,10 +139,10 @@ for non_heads, heads in compound_groups:
                 s_head
             ])
 
-# 4. Save CSV in same format
+# Save CSV in same format
 base_name = model_name.split("/")[-1]
 clean_name = base_name.replace("-", "_")
-output_file = f"study_babble_experiment_3.csv"
+output_file = f"results_babble_experiment_3.csv"
 
 df = pd.DataFrame(
     data,

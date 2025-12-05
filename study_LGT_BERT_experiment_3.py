@@ -2,13 +2,11 @@ import pandas as pd
 from minicons import scorer
 from nltk.tokenize import TweetTokenizer
 
-# 1. MLM models to run
 models = [
     "babylm/ltgbert-10m-2024",
     "babylm/ltgbert-100m-2024",
 ]
 
-# PiC compound groups (same as before)
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
      ['protector', 'trader', 'tracker', 'expert']),
@@ -53,7 +51,7 @@ compound_groups = [
      ['examination', 'employer', 'crew', 'patrol'])
 ]
 
-# Category labels (same mapping as before)
+# Mapping
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -113,7 +111,7 @@ def process_pairs_mlm(lm, data):
                 word_scores = get_masked_word_surprisal(lm, sentence)
                 (w1, s_non_head), (w2, s_head) = word_scores  # sentence is always 2 words
 
-                # Debug print (same spirit as before)
+                # Debug print
                 print(f"{sentence}")
                 print(f"  Non-Head ({w1}): {s_non_head}")
                 print(f"  Head     ({w2}): {s_head}")
@@ -127,18 +125,21 @@ def process_pairs_mlm(lm, data):
                 ])
 
 
-# --- MAIN EXECUTION ---
+# MAIN EXECUTION
 for model_name in models:
     print(f"\nLoading MLM model: {model_name}...")
-    lm = scorer.MaskedLMScorer(model_name, device="cpu", trust_remote_code=True)
+    lm = scorer.MaskedLMScorer(model_name, device="cuda", trust_remote_code=True)
 
     data = []
 
     process_pairs_mlm(lm, data)
 
-    base_name = model_name.split("/")[-1]
-    clean_name = base_name.replace("-", "_")
-    output_file = f"study_{clean_name}_experiment_3.csv"
+    # Fixed filenames
+    if model_name == "babylm/ltgbert-10m-2024":
+        output_file = "results_LGT_BERT_10M_experiment_3.csv"
+    elif model_name == "babylm/ltgbert-100m-2024":
+        output_file = "results_LGT_BERT_100M_experiment_3.csv"
+
 
     df = pd.DataFrame(
         data,
