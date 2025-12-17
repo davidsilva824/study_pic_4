@@ -5,7 +5,7 @@ from minicons import scorer
 
 print()
 
-text = "lifeguards patrol"
+text = "rows"
 lines = [text]
 
 # Converts text to phonemes
@@ -13,14 +13,13 @@ ipa_list = transcribe_utterances(
     lines,
     backend="phonemizer",
     language="en-us",                      
-    keep_word_boundaries=True,
-    allow_possibly_faulty_word_boundaries=True
+    keep_word_boundaries=False
 )
 
 ipa_text = ipa_list[0]
 print("IPA (folded):", ipa_text)
 
-model_name = "phonemetransformers/GPT2-85M-CHAR-PHON"
+model_name = "phonemetransformers/GPT2-85M-CHAR-PHON-SPACELESS"
 lm = scorer.IncrementalLMScorer(model_name, device="cpu") #change cpu to cuda for GPU usage. 
 
 surprisals = lm.token_score(

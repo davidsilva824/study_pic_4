@@ -5,9 +5,9 @@ import torch
 from collections import defaultdict
 from minicons import scorer
 
-model_name = "bbunzeck/gpt-wee-large"
-text = "lifeguards patrol"
-BOS = True
+model_name = "phonemetransformers/GPT2-85M-BPE-TXT"
+text = "mazes decoder"
+BOS = False
 
 lm = scorer.IncrementalLMScorer(model_name, device="cpu")
 

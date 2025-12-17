@@ -142,7 +142,7 @@ for non_heads, heads in compound_groups:
 # Save CSV in same format
 base_name = model_name.split("/")[-1]
 clean_name = base_name.replace("-", "_")
-output_file = f"results_babble_experiment_3.csv"
+output_file = f"results_experiment_3_babble.csv"
 
 df = pd.DataFrame(
     data,

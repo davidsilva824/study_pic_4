@@ -1,15 +1,12 @@
 import pandas as pd
-from collections import defaultdict
 from minicons import scorer
 
-# 1. Define the models to run
 models = [
-    "bbunzeck/gpt-wee-small",
-    "bbunzeck/gpt-wee-medium",
-    "bbunzeck/gpt-wee-large"
+    "BabyLM-community/babylm-baseline-10m-gpt2",
+    "BabyLM-community/babylm-baseline-100m-gpt2"
 ]
 
-BOS = True
+BOS = False
 
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
@@ -85,7 +82,6 @@ def process_pairs(lm, pairs, data):
                 tokens = [tok for tok, s, *_ in tok_scores]
                 surprisal_values = [s for tok, s, *_ in tok_scores]
                 
-                # --- Original Print Block ---
                 print(' '.join(f'{tok:>10}' for tok in tokens))
                 print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
                 print(surprisal_values)
@@ -108,46 +104,24 @@ def process_pairs(lm, pairs, data):
                 surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
 
                 data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-                # --- Original Sentence Print ---
+
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
-    
+
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
     lm = scorer.IncrementalLMScorer(model_name, device="cuda")
     
-    # ---------- FORCE BOW SETTINGS ----------
-    bow_symbol = "Ġ"
-    lm.is_bow_tokenizer = True
-    lm.bow_symbol = bow_symbol
-
-    bow_subwords = defaultdict(bool)
-
-    # Mark standard vocabulary
-    for word, idx in lm.tokenizer.get_vocab().items():
-        if len(word) > 0 and word[0] == bow_symbol:
-            bow_subwords[idx] = True
-        else:
-            bow_subwords[idx] = False
-
-    # Mark added vocab safely as non-BOW
-    for idx in lm.tokenizer.get_added_vocab().values():
-        bow_subwords[idx] = False
-
-    lm.bow_subwords = bow_subwords
-    lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
-    # ------------------------------------------------------
-
     data = []
     
-    # Process the pairs
     process_pairs(lm, None, data)
     
-    # DYNAMIC FILENAME GENERATION
-    base_name = model_name.split("/")[-1]
-    clean_name = base_name.replace("-", "_")
-    output_file = f"results_{clean_name}_experiment_3.csv"
+    # Determine filename based on model to match your style
+    if "10m" in model_name and "100m" not in model_name:
+        output_file = "results_experiment_3_gpt_2_10M.csv"
+    else:
+        output_file = "results_experiment_3_gpt_2_100M.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)

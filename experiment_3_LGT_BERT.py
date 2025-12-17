@@ -136,9 +136,9 @@ for model_name in models:
 
     # Fixed filenames
     if model_name == "babylm/ltgbert-10m-2024":
-        output_file = "results_LGT_BERT_10M_experiment_3.csv"
+        output_file = "results_experiment_3_LGT_BERT_10M.csv"
     elif model_name == "babylm/ltgbert-100m-2024":
-        output_file = "results_LGT_BERT_100M_experiment_3.csv"
+        output_file = "results_experiment_3_LGT_BERT_100M.csv"
 
 
     df = pd.DataFrame(

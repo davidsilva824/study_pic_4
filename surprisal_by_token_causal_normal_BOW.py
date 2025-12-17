@@ -4,10 +4,10 @@
 
 from minicons import scorer
 
-model_name = "bbunzeck/gpt-wee-large"
-text = "lifeguards patrol"
+model_name = "phonemetransformers/GPT2-85M-CHAR-PHON-SPACELESS"
+text = "thismonsterisarat"
 
-BOS = True
+BOS = False
 # load incremental (causal) LM
 lm = scorer.IncrementalLMScorer(model_name, device="cpu")
 
@@ -17,7 +17,7 @@ surprisals = lm.token_score(
     bos_token=BOS,
     prob=False,
     surprisal=True,
-    bow_correction=True
+    bow_correction=False
 )[0]
 
 # Print each token and its surprisal

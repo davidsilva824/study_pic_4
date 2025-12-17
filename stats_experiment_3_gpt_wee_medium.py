@@ -3,7 +3,7 @@ import scipy.stats as stats
 import numpy as np
 
 
-df = pd.read_csv("results_gpt_J_experiment_3.csv")
+df = pd.read_csv("results_experiment_3_gpt_wee_medium.csv")
 
 # Correctly filter the DataFrame into four distinct, properly indexed groups
 regular_singular_df = df[df['Category'] == 'Regular Singular'].reset_index(drop=True)
@@ -31,7 +31,6 @@ ci_reg = compute_95ci(diff_reg)
 ci_irreg = compute_95ci(diff_irreg)
 
 
-# Create a list of dictionaries, with each dictionary representing a row
 combined_stats = [
     {
         "Category": "Regular",
@@ -63,7 +62,7 @@ print("\n--- Combined Statistical Analysis ---")
 print(final_result_df)
 
 
-output_filename = "res_stats_gpt_J_experiment_3.csv"
+output_filename = "res_stats_experiment_3_gpt_wee_medium.csv"
 final_result_df.to_csv(output_filename, index=False)
 
 print(f"\nAll results have been saved to a single file: '{output_filename}'.")
