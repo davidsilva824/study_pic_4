@@ -7,20 +7,20 @@ from pathlib import Path
 
 file_list = [
 
-    "results_experiment_3_babble.csv",
-    "results_experiment_3_babyLlama_10M.csv",
-    "results_experiment_3_babyLlama_100M.csv",
-    "results_experiment_3_gpt_neo_1_3B.csv",
-    "results_experiment_3_gpt_neo_2_7B.csv",
-    "results_experiment_3_gpt_neo_125M.csv",
-    "results_experiment_3_gpt_wee_large.csv",
-    "results_experiment_3_gpt_wee_medium.csv",
-    "results_experiment_3_gpt_wee_small.csv",
-    "results_experiment_3_LGT_BERT_10M.csv",
-    "results_experiment_3_LGT_BERT_100M.csv",
-    "results_experiment_3_gpt_2_10M.csv",
-    "results_experiment_3_gpt_2_100M.csv",
-    "results_gpt_J_experiment_3.csv",
+    "results_experiment_1_babble.csv",
+    "results_experiment_1_babyLlama_10M.csv",
+    "results_experiment_1_babyLlama_100M.csv",
+    "results_experiment_1_gpt_neo_1_3B.csv",
+    "results_experiment_1_gpt_neo_2_7B.csv",
+    "results_experiment_1_gpt_neo_125M.csv",
+    "results_experiment_1_gpt_wee_large.csv",
+    "results_experiment_1_gpt_wee_medium.csv",
+    "results_experiment_1_gpt_wee_small.csv",
+    "results_experiment_1_LGT_BERT_10M.csv",
+    "results_experiment_1_LGT_BERT_100M.csv",
+    "results_experiment_1_gpt_2_10M.csv",
+    "results_experiment_1_gpt_2_100M.csv",
+    "results_gpt_J_experiment_1.csv",
 ]
 
 

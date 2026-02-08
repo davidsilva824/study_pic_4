@@ -4,7 +4,8 @@ import pandas as pd
 from minicons import scorer
 
 models = [
-    "EleutherAI/gpt-j-6b"
+    "babylm/babyllama-10m-2024",
+    "babylm/babyllama-100m-2024"
 ]
 
 BOS = True
@@ -53,7 +54,6 @@ compound_groups = [
      ['examination', 'employer', 'crew', 'patrol'])
 ]
 
-# Mapping
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -62,11 +62,11 @@ cat_labels = {
 }
 
 def process_pairs(lm, pairs, data):
-   
+    
     for non_heads, heads in compound_groups:
         # Loop over HEADS first
         for head in heads:
-            # Then loop over NON-HEADS
+  
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -111,18 +111,20 @@ def process_pairs(lm, pairs, data):
 
 
 # --- MAIN EXECUTION ---
-model_name = models[0] # Take the single model directly
-
-print(f"\nLoading model: {model_name}...")
-lm = scorer.IncrementalLMScorer(model_name, device="cuda")
-
-data = []
-
-process_pairs(lm, None, data)
-
-output_file = "results_gpt_J_experiment_3.csv"
-
-df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
-df.to_csv(output_file, index=False)
-
-print(f'\n results in {output_file} \n')
+for model_name in models:
+    print(f"\nLoading model: {model_name}...")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
+    
+    data = []
+    
+    process_pairs(lm, None, data)
+    
+    if "10m" in model_name and "100m" not in model_name:
+        output_file = "results_experiment_1_babyLlama_10M.csv"
+    else:
+        output_file = "results_experiment_1_babyLlama_100M.csv"
+    
+    df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
+    df.to_csv(output_file, index=False)
+    
+    print(f'\n results in {output_file} \n')
