@@ -2,19 +2,21 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-models = ['GPT-wee (S)', 'GPT-wee (M)', 'GPT-wee (L)', 
-          'GPT 2 (10M)', 'GPT 2 (100M)']
+models = ['Babble TEXT-BPE (spaces)', 
+          'Babble TEXT-single-char (spaces)', 
+          'Babble TEXT-single-char (no spaces)',
+          'Grapheme-LLaMA-single-char (spaces)']
 
 # Mean Difference in Surprisal
-regular_means   = np.array([0.6160, 0.5711, 0.6698, 1.4068, 1.6823])
-irregular_means = np.array([0.1007, 0.0647, 0.0274, 0.3649, 0.9181])
+regular_means   = np.array([1.0579, 1.5147, -0.8099, 0.9539])
+irregular_means = np.array([0.1448, 1.0429, -0.6212, 0.1562])
 
 # 95% CI (lower, upper)
-regular_ci_lower   = np.array([0.4062, 0.1569, 0.1776, 0.9672, 1.2092])
-regular_ci_upper   = np.array([0.8259, 0.9853, 1.1621, 1.8465, 2.1554])
+regular_ci_lower   = np.array([0.3518, 1.0130, -1.3724, 0.5325])
+regular_ci_upper   = np.array([1.7640, 2.0163, -0.2473, 1.3752])
 
-irregular_ci_lower = np.array([-0.0601, -0.2096, -0.4065, -0.0512, 0.4319])
-irregular_ci_upper = np.array([ 0.2615,  0.3389,  0.4613,  0.7811, 1.4042])
+irregular_ci_lower = np.array([-0.5185, 0.5474, -1.2277, -0.2387])
+irregular_ci_upper = np.array([ 0.8081, 1.5384, -0.0147, 0.5512])
 
 
 # Convert to asymmetric error bars (distance from mean)
@@ -65,6 +67,6 @@ ax.set_axisbelow(True)
 
 # Saving file
 plt.tight_layout()
-plt.savefig('chart_2_updated.png')
+plt.savefig('chart_babble_models.png')
 
-print("Updated chart saved as 'chart_2_updated.png'")
+print("Updated chart saved as 'chart_babble_models.png'")
