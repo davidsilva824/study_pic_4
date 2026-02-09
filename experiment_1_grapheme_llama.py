@@ -1,10 +1,10 @@
-### This code is complete. 
+### This code is complete. (MINIMAL change: don’t assume a BOS token is present in `tokens`)
 
 import pandas as pd
 from minicons import scorer
 
 models = [
-    "colinglab/CLASS_IT-140M"
+    "bbunzeck/grapheme-llama"
 ]
 
 BOS = True
@@ -12,43 +12,30 @@ BOS = True
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
      ['protector', 'trader', 'tracker', 'expert']),
-
     (['ox', 'oxen', 'cow', 'cows'],
      ['register', 'trader', 'tracker', 'finder']),
-
     (['louse', 'lice', 'flea', 'fleas'],
      ['issue', 'trader', 'tracker', 'expert']),
-
     (['mouse', 'mice', 'rat', 'rats'],
      ['issue', 'trader', 'tracker', 'inspector']),
-
     (['foot', 'feet', 'leg', 'legs'],
      ['issue', 'examination', 'expert', 'inspector']),
-
     (['tooth', 'teeth', 'bone', 'bones'],
      ['issue', 'examination', 'expert', 'protector']),
-
     (['child', 'children', 'adult', 'adults'],
      ['patrol', 'register', 'institute', 'crew']),
-
     (['woman', 'women', 'girl', 'girls'],
      ['protector', 'register', 'hangout', 'crew']),
-
     (['man', 'men', 'boy', 'boys'],
      ['institute', 'register', 'finder', 'hangout']),
-
     (['salesman', 'salesmen', 'retailer', 'retailers'],
      ['institute', 'inspector', 'protector', 'employer']),
-
     (['nobleman', 'noblemen', 'aristocrat', 'aristocrats'],
      ['patrol', 'hangout', 'institute', 'crew']),
-
     (['boatman', 'boatmen', 'shipmate', 'shipmates'],
      ['patrol', 'finder', 'inspector', 'employer']),
-
     (['craftsman', 'craftsmen', 'labourer', 'labourers'],
      ['employer', 'examination', 'hangout', 'finder']),
-    
     (['fireman', 'firemen', 'lifeguard', 'lifeguards'],
      ['examination', 'employer', 'crew', 'patrol'])
 ]
@@ -61,16 +48,12 @@ cat_labels = {
 }
 
 def process_pairs(lm, pairs, data):
-    
     for non_heads, heads in compound_groups:
-        # Loop over HEADS first
         for head in heads:
-  
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
-                
                 sentence = f"{non_head} {head}"
-                
+
                 tok_scores = lm.token_score(
                     sentence,
                     bos_token=BOS,
@@ -78,46 +61,47 @@ def process_pairs(lm, pairs, data):
                     surprisal=True,
                     bow_correction=True
                 )[0]
-                
+
                 tokens = [tok for tok, s, *_ in tok_scores]
                 surprisal_values = [s for tok, s, *_ in tok_scores]
-                
+
                 # --- Original Print Block ---
                 print(' '.join(f'{tok:>10}' for tok in tokens))
                 print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
                 print(surprisal_values)
-                
+
                 non_n = 0
                 reconstructed_word = ""
 
                 cleaned_tokens = [tok.lstrip('Ġ ') for tok in tokens]
 
-                for k in range(1, len(cleaned_tokens)):
+                # --- MINIMAL FIX: set where "real tokens" start ---
+                # If first token is a special BOS-like token, skip it; otherwise start at 0.
+                start_idx = 1 if (len(cleaned_tokens) > 0 and cleaned_tokens[0].startswith("<")) else 0
+
+                for k in range(start_idx, len(cleaned_tokens)):
                     reconstructed_word += cleaned_tokens[k]
                     non_n += 1
                     if reconstructed_word == non_head:
                         break
-                
-                total_real_tokens = len(tokens) - 1
+
+                total_real_tokens = len(tokens) - start_idx
                 head_n = total_real_tokens - non_n
 
-                surprisal_non_head = sum(surprisal_values[1 : 1 + non_n])
-                surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
+                surprisal_non_head = sum(surprisal_values[start_idx : start_idx + non_n])
+                surprisal_head = sum(surprisal_values[start_idx + non_n : start_idx + non_n + head_n])
 
                 data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-                # --- Original Sentence Print ---
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
-
 
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
     lm = scorer.IncrementalLMScorer(model_name, device="cuda")
-    
+
     data = []
-    
     process_pairs(lm, None, data)
-    
+
     name = model_name.replace("/", "__")
     output_file = f"results_experiment_1_{name}.csv"
 

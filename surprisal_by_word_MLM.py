@@ -5,7 +5,7 @@
 from minicons import scorer
 from nltk.tokenize import TweetTokenizer
 
-model_name = "babylm/ltgbert-100m-2024"
+model_name = "BabyLM-community/babylm-baseline-100m-gpt-bert-causal-focus"
 text = "cow register"
 
 def get_masked_word_surprisal(model, text):

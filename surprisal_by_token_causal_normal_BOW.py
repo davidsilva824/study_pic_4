@@ -4,12 +4,15 @@
 
 from minicons import scorer
 
-model_name = "colinglab/CLASS_IT-140M"
+model_name = "phonemetransformers/GPT2-85M-CHAR-TXT-SPACELESS"
 text = "this monster is a rat eater"
 
-BOS = True
+BOS = False
 # load incremental (causal) LM
 lm = scorer.IncrementalLMScorer(model_name, device="cpu", trust_remote_code=True)
+
+lm.model.config.return_dict = True
+lm.model.config.torchscript = False
 
 # Get token-level surprisal using all specified parameters
 surprisals = lm.token_score(
@@ -17,8 +20,11 @@ surprisals = lm.token_score(
     bos_token=BOS,
     prob=False,
     surprisal=True,
-    bow_correction=False
+    bow_correction=True
 )[0]
+
+
+
 
 # Print each token and its surprisal
 for tok, s in surprisals:

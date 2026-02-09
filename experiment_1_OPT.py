@@ -112,7 +112,7 @@ def process_pairs(lm, pairs, data):
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cpu")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
     
     data = []
     

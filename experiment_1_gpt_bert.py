@@ -1,13 +1,16 @@
-### This code is complete. 
+### This code is complete (minimal adaptation: tuple-output wrapper + trust_remote_code).
 
 import pandas as pd
+from types import SimpleNamespace
 from minicons import scorer
 
 models = [
-    "colinglab/CLASS_IT-140M"
+    "BabyLM-community/babylm-baseline-100m-gpt-bert-causal-focus",
+    "BabyLM-community/babylm-baseline-100m-gpt-bert-mixed",
+    "BabyLM-community/babylm-baseline-100m-gpt-bert-masked-focus"
 ]
 
-BOS = True
+BOS = False
 
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
@@ -59,6 +62,23 @@ cat_labels = {
     2: "Regular Singular",
     3: "Regular Plural",
 }
+
+# --- MINIMAL FIX: wrap tuple outputs so minicons can read .logits ---
+class _WrapOutputsWithLogits:
+    def __init__(self, model):
+        self._m = model
+
+    def __call__(self, *args, **kwargs):
+        out = self._m(*args, **kwargs)
+        if hasattr(out, "logits"):
+            return out
+        if isinstance(out, tuple):
+            return SimpleNamespace(logits=out[0])
+        return out
+
+    def __getattr__(self, name):
+        return getattr(self._m, name)
+# --- end fix ---
 
 def process_pairs(lm, pairs, data):
     
@@ -112,7 +132,10 @@ def process_pairs(lm, pairs, data):
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda", trust_remote_code=True)
+
+    # apply tuple-output wrapper
+    lm.model = _WrapOutputsWithLogits(lm.model)
     
     data = []
     

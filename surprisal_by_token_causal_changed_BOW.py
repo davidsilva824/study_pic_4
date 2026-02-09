@@ -5,11 +5,11 @@ import torch
 from collections import defaultdict
 from minicons import scorer
 
-model_name = "bbunzeck/grapheme-llama"
-text = "mazes decoder"
+model_name = "phonemetransformers/GPT2-85M-BPE-TXT-SPACELESS"
+text = "this monster is a rat eater"
 BOS = False
 
-lm = scorer.IncrementalLMScorer(model_name, device="cpu")
+lm = scorer.IncrementalLMScorer(model_name, device="cpu", trust_remote_code=True)
 
 bow_symbol = "Ġ"
 lm.is_bow_tokenizer = True
@@ -33,6 +33,8 @@ for idx in lm.tokenizer.get_added_vocab().values():
 lm.bow_subwords = bow_subwords
 lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
 
+print("len(bow_subword_idx) =", len(lm.bow_subword_idx)) 
+
 print("Forced BOW settings applied successfully.")
 print("-" * 30)
 
@@ -41,7 +43,7 @@ surprisals = lm.token_score(
     bos_token=BOS,
     prob=False,
     surprisal=True,
-    bow_correction=True
+    bow_correction=False
 )[0]
 
 

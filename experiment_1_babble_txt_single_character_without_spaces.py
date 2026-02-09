@@ -4,10 +4,10 @@ import pandas as pd
 from minicons import scorer
 
 models = [
-    "colinglab/CLASS_IT-140M"
+    "phonemetransformers/GPT2-85M-CHAR-TXT-SPACELESS"
 ]
 
-BOS = True
+BOS = False
 
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
@@ -60,6 +60,27 @@ cat_labels = {
     3: "Regular Plural",
 }
 
+def split_surprisal_by_offsets(lm, sentence, tok_scores):
+    boundary = sentence.index(" ")
+
+    enc = lm.tokenizer(sentence, add_special_tokens=False, return_offsets_mapping=True)
+    offsets = enc["offset_mapping"]
+
+    toks_only = tok_scores[1:]  # drop UTT_BOUNDARY
+    if len(offsets) != len(toks_only):
+        raise ValueError(f"Offsets/token mismatch: offsets={len(offsets)} vs toks={len(toks_only)}")
+
+    non_head_sum = 0.0
+    head_sum = 0.0
+
+    for (tok, s, *_), (start, end) in zip(toks_only, offsets):
+        if end <= boundary:
+            non_head_sum += s
+        else:
+            head_sum += s
+
+    return non_head_sum, head_sum
+
 def process_pairs(lm, pairs, data):
     
     for non_heads, heads in compound_groups:
@@ -76,7 +97,7 @@ def process_pairs(lm, pairs, data):
                     bos_token=BOS,
                     prob=False,
                     surprisal=True,
-                    bow_correction=True
+                    bow_correction=False
                 )[0]
                 
                 tokens = [tok for tok, s, *_ in tok_scores]
@@ -87,22 +108,7 @@ def process_pairs(lm, pairs, data):
                 print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
                 print(surprisal_values)
                 
-                non_n = 0
-                reconstructed_word = ""
-
-                cleaned_tokens = [tok.lstrip('Ġ ') for tok in tokens]
-
-                for k in range(1, len(cleaned_tokens)):
-                    reconstructed_word += cleaned_tokens[k]
-                    non_n += 1
-                    if reconstructed_word == non_head:
-                        break
-                
-                total_real_tokens = len(tokens) - 1
-                head_n = total_real_tokens - non_n
-
-                surprisal_non_head = sum(surprisal_values[1 : 1 + non_n])
-                surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
+                surprisal_non_head, surprisal_head = split_surprisal_by_offsets(lm, sentence, tok_scores)
 
                 data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
                 # --- Original Sentence Print ---
