@@ -5,7 +5,7 @@ import torch
 from collections import defaultdict
 from minicons import scorer
 
-model_name = "phonemetransformers/GPT2-85M-BPE-TXT"
+model_name = "bbunzeck/grapheme-llama"
 text = "mazes decoder"
 BOS = False
 
