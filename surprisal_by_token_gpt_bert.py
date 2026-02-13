@@ -1,4 +1,6 @@
 ### Deals with the format of the output logits. Seems to make sense and to be working fine. 
+# Necessary to work with gpt-bert.
+# In all the rest, these models work as normal causal models. 
 
 import torch
 from types import SimpleNamespace
