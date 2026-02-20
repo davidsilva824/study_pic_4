@@ -2,7 +2,6 @@ import pandas as pd
 from minicons import scorer
 
 models = [
-    "BabyLM-community/babylm-baseline-10m-gpt2",
     "BabyLM-community/babylm-baseline-100m-gpt2"
 ]
 
