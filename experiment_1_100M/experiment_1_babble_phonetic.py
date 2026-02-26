@@ -1,3 +1,5 @@
+# Reverify the conversion to IPA and make some notes about it. 
+
 import pandas as pd
 from g2p_plus import transcribe_utterances
 from minicons import scorer

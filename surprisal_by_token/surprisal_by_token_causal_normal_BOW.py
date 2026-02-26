@@ -4,15 +4,13 @@
 
 from minicons import scorer
 
-model_name = "phonemetransformers/GPT2-85M-CHAR-TXT-SPACELESS"
-text = "this monster is a rat eater"
+model_name = "bbunzeck/grapheme-llama"
+text = "Taylor's dissertation compared brain functioning in men and women. Her study was among the first to demonstrate sex disparities in brain activity."
 
-BOS = False
+BOS = True
 # load incremental (causal) LM
 lm = scorer.IncrementalLMScorer(model_name, device="cpu", trust_remote_code=True)
 
-lm.model.config.return_dict = True
-lm.model.config.torchscript = False
 
 # Get token-level surprisal using all specified parameters
 surprisals = lm.token_score(
@@ -24,8 +22,7 @@ surprisals = lm.token_score(
 )[0]
 
 
-
-
-# Print each token and its surprisal
+print(f"{'TOKEN':<15} {'SURPRISAL':<10}")
+print("-" * 30)
 for tok, s in surprisals:
-    print(f"{tok}\t{s:.7f}")
+    print(f"{tok:<15} {s:.7f}")

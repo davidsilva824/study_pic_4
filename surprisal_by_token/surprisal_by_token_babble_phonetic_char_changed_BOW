@@ -1,22 +1,35 @@
-### For causal models. 
-# For models in which the bow correction does not work.
+### Surprisal for fonetic models. 
+### Important note. It does not need a changed version, because it already sparates the 
 
-import torch
-from collections import defaultdict
+from g2p_plus import transcribe_utterances
 from minicons import scorer
-
-model_name = "phonemetransformers/GPT2-85M-BPE-TXT"
-text = "Because of the deep religious significance of pottery, the Navajo Indians spend many years learning how to make pots. It is a great honor to be chosen to become a pots maker."
+from collections import defaultdict
 
 
-BOS = False
+print()
 
-lm = scorer.IncrementalLMScorer(model_name, device="cpu", trust_remote_code=True)
+text = "this monster is a rat eater"
+lines = [text]
+
+# Converts text to phonemes
+ipa_list = transcribe_utterances(
+    lines,
+    backend="phonemizer",
+    language="en-us",                      
+    keep_word_boundaries=True
+)
+
+ipa_text = ipa_list[0]
+print("IPA (folded):", ipa_text)
+
+model_name = "phonemetransformers/GPT2-85M-CHAR-PHON"
+lm = scorer.IncrementalLMScorer(model_name, device="cuda") 
+
 
 
 #### the correction
 
-bow_symbol = "Ġ"
+bow_symbol = "WORD_BOUNDARY"
 lm.is_bow_tokenizer = True
 lm.bow_symbol = bow_symbol
 
@@ -45,18 +58,13 @@ print("-" * 30)
 
 ################################################################
 
-
-
-
-# Get token-level surprisal using all specified parameters
 surprisals = lm.token_score(
-    text,
-    bos_token=BOS,
+    ipa_text,
+    bos_token=False,
     prob=False,
     surprisal=True,
     bow_correction=True
 )[0]
-
 
 print(f"{'TOKEN':<15} {'SURPRISAL':<10}")
 print("-" * 30)

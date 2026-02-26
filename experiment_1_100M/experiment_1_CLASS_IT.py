@@ -118,10 +118,9 @@ for model_name in models:
     
     process_pairs(lm, None, data)
     
-    name = model_name.replace("/", "__")
-    output_file = f"results_experiment_1_{name}.csv"
+    output_file = "results_experiment_1_100M/results_experiment_1_CLASS_IT.csv"
 
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
 
-    print(f"\nresults in {output_file}\n")
+    print(f"\nresults in results_experiment_1_100M folder.\n")

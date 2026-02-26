@@ -116,13 +116,9 @@ for model_name in models:
     
     process_pairs(lm, None, data)
     
-    # Determine filename based on model to match your style
-    if "10m" in model_name and "100m" not in model_name:
-        output_file = "results_experiment_1_gpt_2_10M.csv"
-    else:
-        output_file = "results_experiment_1_gpt_2_100M.csv"
+    output_file = "results_experiment_1_100M/results_experiment_1_gpt_2_100M.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
     
-    print(f'\n results in {output_file} \n')
+    print(f"\nresults in results_experiment_1_100M folder.\n")

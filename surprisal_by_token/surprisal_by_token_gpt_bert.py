@@ -7,7 +7,7 @@ from types import SimpleNamespace
 from minicons import scorer
 
 model_name = "BabyLM-community/babylm-baseline-100m-gpt-bert-masked-focus"
-text = "this monster is a rat eater"
+text = "protector"
 BOS = False
 
 lm = scorer.IncrementalLMScorer(model_name, device="cpu", trust_remote_code=True)
