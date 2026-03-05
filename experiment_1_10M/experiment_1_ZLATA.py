@@ -1,17 +1,15 @@
-### This code is complete.
+### This code is complete. 
 
 import pandas as pd
 from minicons import scorer
 
-# --- ADDED (only what’s needed for forced BOW) ---
-from collections import defaultdict
-# -----------------------------------------------
-
 models = [
-    "phonemetransformers/GPT2-85M-BPE-TXT"
+    "iproskurina/zlata"
 ]
 
-BOS = False
+BOS = True
+
+output_file = "results_experiment_1_10M/results_experiment_1_ZLATA.csv"
 
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
@@ -63,24 +61,6 @@ cat_labels = {
     2: "Regular Singular",
     3: "Regular Plural",
 }
-
-# --- ADDED: helper to force BOW settings for this model ---
-def force_bow_settings(lm, bow_symbol="Ġ"):
-    lm.is_bow_tokenizer = True
-    lm.bow_symbol = bow_symbol
-
-    bow_subwords = defaultdict(bool)
-
-    for word, idx in lm.tokenizer.get_vocab().items():
-        bow_subwords[idx] = (len(word) > 0 and word[0] == bow_symbol)
-
-    for idx in lm.tokenizer.get_added_vocab().values():
-        bow_subwords[idx] = False
-
-    lm.bow_subwords = bow_subwords
-    lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
-# ----------------------------------------------------------
-
 
 def process_pairs(lm, pairs, data):
     
@@ -134,19 +114,14 @@ def process_pairs(lm, pairs, data):
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
-    
-    # --- ADDED: apply forced BOW method for this model ---
-    force_bow_settings(lm, bow_symbol="Ġ")
-    # ----------------------------------------------------
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda", trust_remote_code=True)
     
     data = []
     
     process_pairs(lm, None, data)
-    
-    output_file = "results_experiment_1_100M/results_experiment_1_babble_txt_bpn_with_spaces.csv"
 
+    
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-
-    print(f"\nresults in results_experiment_1_100M folder.\n")
+    
+    print(f'\n results in {output_file} \n')

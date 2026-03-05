@@ -147,7 +147,7 @@ for model_name in models:
     # DYNAMIC FILENAME GENERATION
     base_name = model_name.split("/")[-1]
     clean_name = base_name.replace("-", "_")
-    output_file = f"results_experiment_1_{clean_name}.csv"
+    output_file = f"results_experiment_1_10M/results_experiment_1_{clean_name}.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)

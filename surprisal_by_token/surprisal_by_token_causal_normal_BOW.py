@@ -4,8 +4,8 @@
 
 from minicons import scorer
 
-model_name = "bbunzeck/grapheme-llama"
-text = "Taylor's dissertation compared brain functioning in men and women. Her study was among the first to demonstrate sex disparities in brain activity."
+model_name = "leukas/DeBaby-halfcontr"
+text = "this monster is a rat eater"
 
 BOS = True
 # load incremental (causal) LM

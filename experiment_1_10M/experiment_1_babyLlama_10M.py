@@ -119,7 +119,7 @@ for model_name in models:
     process_pairs(lm, None, data)
     
     if "10m" in model_name and "100m" not in model_name:
-        output_file = "results_experiment_1_babyLlama_10M.csv"
+        output_file = "results_experiment_1_10M/results_experiment_1_babyLlama_10M.csv"
     else:
         output_file = "results_experiment_1_babyLlama_100M.csv"
     

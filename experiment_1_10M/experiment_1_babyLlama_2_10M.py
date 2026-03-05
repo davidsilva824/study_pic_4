@@ -1,11 +1,15 @@
+### This code is complete. 
+
 import pandas as pd
 from minicons import scorer
 
 models = [
-    "BabyLM-community/babylm-baseline-10m-gpt2"
+    "babylm/babyllama-10m-2024"
 ]
 
-BOS = False
+BOS = True
+
+output_file = "results_experiment_1_10M/results_experiment_1_babyLlama_2_10M.csv"
 
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
@@ -51,7 +55,6 @@ compound_groups = [
      ['examination', 'employer', 'crew', 'patrol'])
 ]
 
-# Mapping
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -64,7 +67,7 @@ def process_pairs(lm, pairs, data):
     for non_heads, heads in compound_groups:
         # Loop over HEADS first
         for head in heads:
-            # Then loop over NON-HEADS
+  
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -81,6 +84,7 @@ def process_pairs(lm, pairs, data):
                 tokens = [tok for tok, s, *_ in tok_scores]
                 surprisal_values = [s for tok, s, *_ in tok_scores]
                 
+                # --- Original Print Block ---
                 print(' '.join(f'{tok:>10}' for tok in tokens))
                 print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
                 print(surprisal_values)
@@ -103,7 +107,7 @@ def process_pairs(lm, pairs, data):
                 surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
 
                 data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-
+                # --- Original Sentence Print ---
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
 
@@ -115,12 +119,7 @@ for model_name in models:
     data = []
     
     process_pairs(lm, None, data)
-    
-    # Determine filename based on model to match your style
-    if "10m" in model_name and "100m" not in model_name:
-        output_file = "results_experiment_1_10M/results_experiment_1_gpt_2_10M.csv"
-    else:
-        output_file = "results_experiment_1_gpt_2_100M.csv"
+
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)

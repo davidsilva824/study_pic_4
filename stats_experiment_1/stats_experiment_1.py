@@ -6,7 +6,18 @@ from pathlib import Path
 
 ### add the files for which you want to obtain the initial stats. 
 file_list = [
-    "results_experiment_1_bbunzeck__grapheme-llama.csv",
+    "results_experiment_1_10M/results_experiment_1_babyLlama_2_10M.csv",
+    "results_experiment_1_10M/results_experiment_1_babyLlama_10M.csv",
+    "results_experiment_1_10M/results_experiment_1_gpt_2_10M.csv",
+    "results_experiment_1_10M/results_experiment_1_gpt_bert_10M_causal.csv",
+    "results_experiment_1_10M/results_experiment_1_gpt_bert_10M_masked.csv",
+    "results_experiment_1_10M/results_experiment_1_gpt_bert_10M_mixed.csv",
+    "results_experiment_1_10M/results_experiment_1_gpt_wee_large.csv",
+    "results_experiment_1_10M/results_experiment_1_gpt_wee_medium.csv",
+    "results_experiment_1_10M/results_experiment_1_gpt_wee_small.csv",
+    "results_experiment_1_10M/results_experiment_1_MOEP.csv",
+    "results_experiment_1_10M/results_experiment_1_OPT_10M.csv",
+    "results_experiment_1_10M/results_experiment_1_ZLATA.csv",
 ]
 
 

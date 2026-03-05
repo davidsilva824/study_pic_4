@@ -1,8 +1,13 @@
+### This code is complete (minimal adaptation: tuple-output wrapper + trust_remote_code).
+
 import pandas as pd
+from types import SimpleNamespace
 from minicons import scorer
 
 models = [
-    "BabyLM-community/babylm-baseline-10m-gpt2"
+    "BabyLM-community/babylm-baseline-10m-gpt-bert-causal-focus",
+    "BabyLM-community/babylm-baseline-10m-gpt-bert-mixed",
+    "BabyLM-community/babylm-baseline-10m-gpt-bert-masked-focus"
 ]
 
 BOS = False
@@ -51,7 +56,6 @@ compound_groups = [
      ['examination', 'employer', 'crew', 'patrol'])
 ]
 
-# Mapping
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -59,12 +63,29 @@ cat_labels = {
     3: "Regular Plural",
 }
 
+# --- MINIMAL FIX: wrap tuple outputs so minicons can read .logits ---
+class _WrapOutputsWithLogits:
+    def __init__(self, model):
+        self._m = model
+
+    def __call__(self, *args, **kwargs):
+        out = self._m(*args, **kwargs)
+        if hasattr(out, "logits"):
+            return out
+        if isinstance(out, tuple):
+            return SimpleNamespace(logits=out[0])
+        return out
+
+    def __getattr__(self, name):
+        return getattr(self._m, name)
+# --- end fix ---
+
 def process_pairs(lm, pairs, data):
     
     for non_heads, heads in compound_groups:
         # Loop over HEADS first
         for head in heads:
-            # Then loop over NON-HEADS
+  
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -81,6 +102,7 @@ def process_pairs(lm, pairs, data):
                 tokens = [tok for tok, s, *_ in tok_scores]
                 surprisal_values = [s for tok, s, *_ in tok_scores]
                 
+                # --- Original Print Block ---
                 print(' '.join(f'{tok:>10}' for tok in tokens))
                 print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
                 print(surprisal_values)
@@ -103,26 +125,33 @@ def process_pairs(lm, pairs, data):
                 surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
 
                 data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-
+                # --- Original Sentence Print ---
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
 
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda", trust_remote_code=True)
+
+    # apply tuple-output wrapper
+    lm.model = _WrapOutputsWithLogits(lm.model)
     
     data = []
     
     process_pairs(lm, None, data)
     
     # Determine filename based on model to match your style
-    if "10m" in model_name and "100m" not in model_name:
-        output_file = "results_experiment_1_10M/results_experiment_1_gpt_2_10M.csv"
+    if "causal" in model_name:
+        output_file = "results_experiment_1_10M/results_experiment_1_gpt_bert_10M_causal.csv"
+    
+    elif "mixed" in model_name:
+        output_file = "results_experiment_1_10M/results_experiment_1_gpt_bert_10M_mixed.csv"
+
     else:
-        output_file = "results_experiment_1_gpt_2_100M.csv"
+        output_file = "results_experiment_1_10M/results_experiment_1_gpt_bert_10M_masked.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
     
-    print(f'\n results in {output_file} \n')
+    print(f"\nresults in results_experiment_1_100M folder.\n")

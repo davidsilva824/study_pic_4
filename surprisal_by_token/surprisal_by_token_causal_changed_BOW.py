@@ -5,11 +5,11 @@ import torch
 from collections import defaultdict
 from minicons import scorer
 
-model_name = "phonemetransformers/GPT2-85M-BPE-TXT"
-text = "Because of the deep religious significance of pottery, the Navajo Indians spend many years learning how to make pots. It is a great honor to be chosen to become a pots maker."
+model_name = "JLTastet/baby-llama-2-345m-run2"
+text = "this monster is a rat eater"
 
 
-BOS = False
+BOS = True
 
 lm = scorer.IncrementalLMScorer(model_name, device="cpu", trust_remote_code=True)
 

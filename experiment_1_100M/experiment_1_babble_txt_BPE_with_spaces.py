@@ -1,8 +1,14 @@
+### This code is complete.
+
 import pandas as pd
 from minicons import scorer
 
+# --- ADDED (only what’s needed for forced BOW) ---
+from collections import defaultdict
+# -----------------------------------------------
+
 models = [
-    "BabyLM-community/babylm-baseline-10m-gpt2"
+    "phonemetransformers/GPT2-85M-BPE-TXT"
 ]
 
 BOS = False
@@ -51,7 +57,6 @@ compound_groups = [
      ['examination', 'employer', 'crew', 'patrol'])
 ]
 
-# Mapping
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -59,12 +64,30 @@ cat_labels = {
     3: "Regular Plural",
 }
 
+# --- ADDED: helper to force BOW settings for this model ---
+def force_bow_settings(lm, bow_symbol="Ġ"):
+    lm.is_bow_tokenizer = True
+    lm.bow_symbol = bow_symbol
+
+    bow_subwords = defaultdict(bool)
+
+    for word, idx in lm.tokenizer.get_vocab().items():
+        bow_subwords[idx] = (len(word) > 0 and word[0] == bow_symbol)
+
+    for idx in lm.tokenizer.get_added_vocab().values():
+        bow_subwords[idx] = False
+
+    lm.bow_subwords = bow_subwords
+    lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
+# ----------------------------------------------------------
+
+
 def process_pairs(lm, pairs, data):
     
     for non_heads, heads in compound_groups:
         # Loop over HEADS first
         for head in heads:
-            # Then loop over NON-HEADS
+  
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -81,6 +104,7 @@ def process_pairs(lm, pairs, data):
                 tokens = [tok for tok, s, *_ in tok_scores]
                 surprisal_values = [s for tok, s, *_ in tok_scores]
                 
+                # --- Original Print Block ---
                 print(' '.join(f'{tok:>10}' for tok in tokens))
                 print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
                 print(surprisal_values)
@@ -103,7 +127,7 @@ def process_pairs(lm, pairs, data):
                 surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
 
                 data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-
+                # --- Original Sentence Print ---
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
 
@@ -112,17 +136,17 @@ for model_name in models:
     print(f"\nLoading model: {model_name}...")
     lm = scorer.IncrementalLMScorer(model_name, device="cuda")
     
+    # --- ADDED: apply forced BOW method for this model ---
+    force_bow_settings(lm, bow_symbol="Ġ")
+    # ----------------------------------------------------
+    
     data = []
     
     process_pairs(lm, None, data)
     
-    # Determine filename based on model to match your style
-    if "10m" in model_name and "100m" not in model_name:
-        output_file = "results_experiment_1_10M/results_experiment_1_gpt_2_10M.csv"
-    else:
-        output_file = "results_experiment_1_gpt_2_100M.csv"
-    
+    output_file = "results_experiment_1_100M/results_experiment_1_babble_txt_BPE_with_spaces.csv"
+
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-    
-    print(f'\n results in {output_file} \n')
+
+    print(f"\nresults in results_experiment_1_100M folder.\n")

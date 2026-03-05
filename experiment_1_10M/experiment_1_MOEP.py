@@ -4,10 +4,12 @@ import pandas as pd
 from minicons import scorer
 
 models = [
-    "babylm/opt-125m-strict-2023"
+    "Jtapsa/moep_swiglu"
 ]
 
 BOS = False
+
+output_file = "results_experiment_1_10M/results_experiment_1_MOEP.csv"
 
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
@@ -112,15 +114,14 @@ def process_pairs(lm, pairs, data):
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda", trust_remote_code=True)
     
     data = []
     
     process_pairs(lm, None, data)
-    
-    output_file = f"results_experiment_1_100M/results_experiment_1_OPT.csv"
 
+    
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-
-    print(f"\nresults in results_experiment_1_100M folder.\n")
+    
+    print(f'\n results in {output_file} \n')
