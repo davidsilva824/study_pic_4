@@ -4,7 +4,7 @@
 
 from minicons import scorer
 
-model_name = "leukas/DeBaby-halfcontr"
+model_name = "NeTS-lab/babylm-mop-10m-gpt2"
 text = "this monster is a rat eater"
 
 BOS = True

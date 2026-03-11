@@ -1,0 +1,33 @@
+from transformers import AutoTokenizer
+
+model_name = "NeTS-lab/babylm-mop-10m-gpt2"
+
+tokenizer = AutoTokenizer.from_pretrained(
+    model_name,
+    trust_remote_code=True,
+    use_fast=False
+)
+
+tests = [
+    "rat",
+    "eater",
+    " rat",
+    " eater",
+    "rat eater",
+    "this monster is a rat eater"
+]
+
+for text in tests:
+    print("=" * 60)
+    print("TEXT:", repr(text))
+
+    ids = tokenizer.encode(text, add_special_tokens=False)
+    toks = tokenizer.convert_ids_to_tokens(ids)
+
+    print("IDS:   ", ids)
+    print("TOKENS:", toks)
+
+    print("PER-TOKEN DECODE:")
+    for i, t in zip(ids, toks):
+        dec = tokenizer.decode([i], clean_up_tokenization_spaces=False)
+        print(f"{i:<8} {repr(t):<20} -> {repr(dec)}")
