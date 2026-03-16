@@ -1,4 +1,7 @@
 ### This code is complete. 
+# BOS = False
+# Normal BOW
+# Não existe OPT de 2024. Penso que foi porque não teve resultados suficientemente bons. 
 
 import pandas as pd
 from minicons import scorer

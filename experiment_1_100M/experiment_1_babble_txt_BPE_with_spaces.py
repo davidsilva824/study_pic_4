@@ -1,4 +1,7 @@
 ### This code is complete.
+# BOS = False
+# Forced BOW 
+
 
 import pandas as pd
 from minicons import scorer

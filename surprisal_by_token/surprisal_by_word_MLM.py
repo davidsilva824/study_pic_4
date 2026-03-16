@@ -1,12 +1,12 @@
 ### For MLM models. 
 # Returns the surpisal of full words.
-# Uses 'within_word_l2r' metric, that corrects the surprisal of multi-token words. 
+# Uses 'within_word_l2r' metric, that corrects the surprisal of multi-token words. More information in: 
 
 from minicons import scorer
 from nltk.tokenize import TweetTokenizer
 
 model_name = "BabyLM-community/babylm-baseline-100m-gpt-bert-causal-focus"
-text = "cow register"
+text = "this monster is a rat eater"
 
 def get_masked_word_surprisal(model, text):
 

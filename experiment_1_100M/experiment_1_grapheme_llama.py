@@ -1,4 +1,8 @@
-### This code is complete. (MINIMAL change: don’t assume a BOS token is present in `tokens`)
+### ### This code seems to be correct, but a reverification wouldn't hurt. 
+# BOS = True
+# IMPORTANT note: The BOW correction is working. This can be observe in the file 'suprisal_by_token_babble_txt_char_with_spaces.py'.
+# With the correction the suprisal of the token 'W' becomes zero.
+
 
 import pandas as pd
 from minicons import scorer

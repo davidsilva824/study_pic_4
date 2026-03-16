@@ -1,4 +1,8 @@
-### This code is complete. 
+### This code seems to be correct, but a reverification wouldn't hurt.  
+# BOS = False
+# IMPORTANT note: the tokenizer of the model removes the spaces automatically. No need to remove them before inputing the model.
+# It uses a special 'method split_surprisal_by_offsets' to calculate the suprisal of each word. 
+# Since this model does not use word separation at all, the BOW correction should be kept False. 
 
 import pandas as pd
 from minicons import scorer

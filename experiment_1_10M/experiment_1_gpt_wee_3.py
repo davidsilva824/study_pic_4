@@ -1,3 +1,8 @@
+### This code is complete.
+# BOS = True
+# Forced BOW
+
+
 import pandas as pd
 from collections import defaultdict
 from minicons import scorer

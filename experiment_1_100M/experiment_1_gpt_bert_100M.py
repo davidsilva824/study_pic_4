@@ -1,4 +1,8 @@
 ### This code is complete (minimal adaptation: tuple-output wrapper + trust_remote_code).
+# BOS = False
+# Has a special wrap around the 'scorer.IncrementalLMScorer' method because the model does not save the logits in the place minicons expects.
+# must have trust_remote_code = True. 
+# Check the methods better in  'surprisal_by_token_gpt_bert.py'
 
 import pandas as pd
 from types import SimpleNamespace
@@ -63,7 +67,7 @@ cat_labels = {
     3: "Regular Plural",
 }
 
-# --- MINIMAL FIX: wrap tuple outputs so minicons can read .logits ---
+# --- FIX: wrap tuple outputs so minicons can read .logits ---
 class _WrapOutputsWithLogits:
     def __init__(self, model):
         self._m = model

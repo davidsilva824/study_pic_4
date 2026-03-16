@@ -1,3 +1,10 @@
+### This code seems to be working, but it wouldnt hurt a final reverification. 
+# Uses Morphologically-aware tokenization via MorPiece: https://huggingface.co/NeTS-lab/babylm-mop-10m-gpt2 
+# The tokenization here is particular. 
+# Subword continuation is marked '++' instead of marking the word separation.
+# This means that the information about the new word is already in the right place. Making the BOW correction unecessary.  
+
+
 from minicons import scorer
 from transformers import AutoTokenizer, AutoModelForCausalLM
 

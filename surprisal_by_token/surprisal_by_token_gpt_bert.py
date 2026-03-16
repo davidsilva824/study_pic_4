@@ -2,17 +2,16 @@
 # Necessary to work with gpt-bert.
 # In all the rest, these models work as normal causal models. 
 
-import torch
 from types import SimpleNamespace
 from minicons import scorer
 
 model_name = "BabyLM-community/babylm-baseline-100m-gpt-bert-masked-focus"
-text = "protector"
+text = "this monster is a rat eater"
 BOS = False
 
 lm = scorer.IncrementalLMScorer(model_name, device="cpu", trust_remote_code=True)
 
-# --- MINIMAL FIX: wrap tuple outputs so minicons can read .logits ---
+# --- FIX: wrap tuple outputs so minicons can read .logits ---
 class _WrapOutputsWithLogits:
     def __init__(self, model):
         self._m = model

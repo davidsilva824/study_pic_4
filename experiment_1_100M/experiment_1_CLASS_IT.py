@@ -1,4 +1,6 @@
-### This code is complete. 
+### This code is complete. Maybe one last reverification wouldn't hurt. 
+# BOS = True
+# Normal BOW
 
 import pandas as pd
 from minicons import scorer

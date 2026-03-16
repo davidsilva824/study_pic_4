@@ -1,5 +1,10 @@
+### This code is complete. 
+# BOS = False
+# Normal BOW
+
 import pandas as pd
 from minicons import scorer
+
 
 models = [
     "BabyLM-community/babylm-baseline-100m-gpt2"

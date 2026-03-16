@@ -1,6 +1,11 @@
-# Reverify the conversion to IPA and make some notes about it. 
+### This code seems to be working, but it wouldnt hurt a final reverification. 
+# It uses athe conversion from text to phonemes g2plus. 
+# IMPORTANT note: The Forced BOW correction is working. This can be observe in the file 'surprisal_by_token_babble_phonetic_char_with_spaces_forced_BOW.py'.
+# With the correction the suprisal of the token 'WORD_BOUNDARY' becomes zero.
+
 
 import pandas as pd
+from collections import defaultdict
 from g2p_plus import transcribe_utterances
 from minicons import scorer
 
@@ -68,8 +73,12 @@ def ipa_word_surprisals(lm, ipa_text):
         bos_token=False,
         prob=False,
         surprisal=True,
-        bow_correction=False
+        bow_correction=True
     )[0]
+
+    print("TOK_SCORES:")
+    for tok, s in tok_scores:
+        print(f"{tok:<20} {s:.7f}")
 
     word_surps = []
     current = 0.0
@@ -83,7 +92,6 @@ def ipa_word_surprisals(lm, ipa_text):
         else:
             current += s
 
-    # In case final word is not followed by WORD_BOUNDARY
     if current != 0.0 or not word_surps:
         word_surps.append(current)
 
@@ -94,10 +102,36 @@ def ipa_word_surprisals(lm, ipa_text):
 print(f"\nLoading phoneme model: {model_name}...")
 lm = scorer.IncrementalLMScorer(model_name, device="cuda")
 
+# --- Forced BOW setup for WORD_BOUNDARY ---
+bow_symbol = "WORD_BOUNDARY"
+lm.is_bow_tokenizer = True
+lm.bow_symbol = bow_symbol
+
+bow_subwords = defaultdict(bool)
+
+vocab = lm.tokenizer.get_vocab()
+bow_id = vocab.get(bow_symbol, None)
+
+for _, idx in vocab.items():
+    bow_subwords[idx] = False
+
+for idx in lm.tokenizer.get_added_vocab().values():
+    bow_subwords[idx] = False
+
+if bow_id is not None:
+    bow_subwords[bow_id] = True
+
+lm.bow_subwords = bow_subwords
+lm.bow_subword_idx = [int(bow_id)] if bow_id is not None else []
+
+print("bow_symbol =", bow_symbol)
+print("bow_id =", bow_id)
+print("len(bow_subword_idx) =", len(lm.bow_subword_idx))
+print("-" * 30)
+
 data = []
 
 for non_heads, heads in compound_groups:
-    # same head-first order as in your GPT/MLM code
     for head in heads:
         for i, non_head in enumerate(non_heads):
             category_name = cat_labels[i]
@@ -105,31 +139,26 @@ for non_heads, heads in compound_groups:
             sentence = f"{non_head} {head}"
             lines = [sentence]
 
-            # 1) Convert to IPA with the SAME config
             ipa_list = transcribe_utterances(
                 lines,
                 backend="phonemizer",
                 language="en-us",
                 keep_word_boundaries=True,
                 allow_possibly_faulty_word_boundaries=True
-                # uncorrected=False by default → folding ON
             )
 
             ipa_text = ipa_list[0]
             print("\nORTHO:", sentence)
             print("IPA (folded):", ipa_text)
 
-            # 2) Get word-level surprisal by summing phoneme surprisals
             word_surps = ipa_word_surprisals(lm, ipa_text)
 
-            # We expect exactly 2 words: non-head and head
             if len(word_surps) != 2:
                 print("WARNING: expected 2 words, got", len(word_surps), "for", sentence)
 
             s_non_head = word_surps[0]
             s_head = word_surps[1] if len(word_surps) > 1 else float('nan')
 
-            # Debug print similar in spirit to other experiments
             print(f"  Non-Head ({non_head}): {s_non_head}")
             print(f"  Head     ({head}): {s_head}")
 
@@ -141,10 +170,7 @@ for non_heads, heads in compound_groups:
                 s_head
             ])
 
-# Save CSV in same format
-base_name = model_name.split("/")[-1]
-clean_name = base_name.replace("-", "_")
-output_file = f"results_experiment_1_babble.csv"
+output_file = "results_experiment_1_babble.csv"
 
 df = pd.DataFrame(
     data,

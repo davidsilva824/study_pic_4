@@ -1,11 +1,16 @@
 ### For causal models. 
-# For models in which the bow correction does not work.
+### For models in which the bow correction does not work.
+
+# Used for the following models: 
+# Zlata
+# Babble_txt_BPE_with_spaces
+
 
 import torch
 from collections import defaultdict
 from minicons import scorer
 
-model_name = "JLTastet/baby-llama-2-345m-run2"
+model_name = "phonemetransformers/GPT2-85M-CHAR-TXT"
 text = "this monster is a rat eater"
 
 

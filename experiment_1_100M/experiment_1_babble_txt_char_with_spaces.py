@@ -1,11 +1,13 @@
-### This code is complete. (MINIMAL change: don’t assume a BOS token is present in `tokens`)
-### + Added: forced BOW settings block, for separator token "W"
-### + FIX: split Non-Head vs Head using the boundary token "W" (ignore W in reconstruction)
+### This code seems to be working, but it wouldnt hurt a final reverification. 
+
+# BOS = False
+# Forced BOW settings block, for separator token "W"
+# Splitting head and non-head based on the token W.
+# IMPORTANT note: The BOW correction is working. This can be observe in the file 'suprisal_by_token_babble_txt_char_with_spaces.py'.
+# With the correction the suprisal of the token 'W' becomes zero. 
 
 import pandas as pd
 from minicons import scorer
-
-import torch
 from collections import defaultdict
 
 models = [

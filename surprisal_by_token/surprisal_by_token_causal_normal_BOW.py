@@ -2,9 +2,16 @@
 # Works only in more conventional models that provide a specific set of parameters about word separation.
 # If the bow correction does not work, use 'surprisal_by_token_causal_changed_BOW.py'
 
+# Works for the following models: 
+# OPT-baseline
+# GPT-2-baseline
+# CLASS-IT
+# Babyllama
+# Babyllama 2
+
 from minicons import scorer
 
-model_name = "NeTS-lab/babylm-mop-10m-gpt2"
+model_name = "iproskurina/zlata"
 text = "this monster is a rat eater"
 
 BOS = True
