@@ -1,9 +1,13 @@
+### This code is working.
+# Uses g2p to convert the text to phonemes
+# Normal BOW is working. 
+
 from g2p import make_g2p
 from minicons import scorer
 
 print()
 
-text = "this monster is a rat eater killer"
+text = "or"
 lines = [text]
 
 g2p = make_g2p("eng", "eng-ipa")

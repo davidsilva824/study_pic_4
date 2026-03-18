@@ -2,7 +2,7 @@
 
 from g2p_plus import transcribe_utterances
 
-lines = ['The post office, has purchased a state.']
+lines = ['labourer']
 
 phonemized = transcribe_utterances(lines, "phonemizer", "en-us", keep_word_boundaries=True)
 
