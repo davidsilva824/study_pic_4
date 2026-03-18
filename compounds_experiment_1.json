@@ -1,0 +1,198 @@
+[
+  {
+    "non_heads": [
+      "goose",
+      "geese",
+      "swan",
+      "swans"
+    ],
+    "heads": [
+      "protector",
+      "trader",
+      "tracker",
+      "expert"
+    ]
+  },
+  {
+    "non_heads": [
+      "ox",
+      "oxen",
+      "cow",
+      "cows"
+    ],
+    "heads": [
+      "register",
+      "trader",
+      "tracker",
+      "finder"
+    ]
+  },
+  {
+    "non_heads": [
+      "louse",
+      "lice",
+      "flea",
+      "fleas"
+    ],
+    "heads": [
+      "issue",
+      "trader",
+      "tracker",
+      "expert"
+    ]
+  },
+  {
+    "non_heads": [
+      "mouse",
+      "mice",
+      "rat",
+      "rats"
+    ],
+    "heads": [
+      "issue",
+      "trader",
+      "tracker",
+      "inspector"
+    ]
+  },
+  {
+    "non_heads": [
+      "foot",
+      "feet",
+      "leg",
+      "legs"
+    ],
+    "heads": [
+      "issue",
+      "examination",
+      "expert",
+      "inspector"
+    ]
+  },
+  {
+    "non_heads": [
+      "tooth",
+      "teeth",
+      "bone",
+      "bones"
+    ],
+    "heads": [
+      "issue",
+      "examination",
+      "expert",
+      "protector"
+    ]
+  },
+  {
+    "non_heads": [
+      "child",
+      "children",
+      "adult",
+      "adults"
+    ],
+    "heads": [
+      "patrol",
+      "register",
+      "institute",
+      "crew"
+    ]
+  },
+  {
+    "non_heads": [
+      "woman",
+      "women",
+      "girl",
+      "girls"
+    ],
+    "heads": [
+      "protector",
+      "register",
+      "hangout",
+      "crew"
+    ]
+  },
+  {
+    "non_heads": [
+      "man",
+      "men",
+      "boy",
+      "boys"
+    ],
+    "heads": [
+      "institute",
+      "register",
+      "finder",
+      "hangout"
+    ]
+  },
+  {
+    "non_heads": [
+      "salesman",
+      "salesmen",
+      "retailer",
+      "retailers"
+    ],
+    "heads": [
+      "institute",
+      "inspector",
+      "protector",
+      "employer"
+    ]
+  },
+  {
+    "non_heads": [
+      "nobleman",
+      "noblemen",
+      "aristocrat",
+      "aristocrats"
+    ],
+    "heads": [
+      "patrol",
+      "hangout",
+      "institute",
+      "crew"
+    ]
+  },
+  {
+    "non_heads": [
+      "boatman",
+      "boatmen",
+      "shipmate",
+      "shipmates"
+    ],
+    "heads": [
+      "patrol",
+      "finder",
+      "inspector",
+      "employer"
+    ]
+  },
+  {
+    "non_heads": [
+      "craftsman",
+      "craftsmen",
+      "labourer",
+      "labourers"
+    ],
+    "heads": [
+      "employer",
+      "examination",
+      "hangout",
+      "finder"
+    ]
+  },
+  {
+    "non_heads": [
+      "fireman",
+      "firemen",
+      "lifeguard",
+      "lifeguards"
+    ],
+    "heads": [
+      "examination",
+      "employer",
+      "crew",
+      "patrol"
+    ]
+  }
+]

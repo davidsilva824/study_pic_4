@@ -1,3 +1,9 @@
+
+
+# Forced BOW correction is working.
+
+
+
 from g2p_plus import transcribe_utterances
 from minicons import scorer
 from transformers import AutoTokenizer
@@ -5,7 +11,7 @@ from collections import defaultdict
 
 
 # 1) Input text
-text = "My Aunt Mary has wonderful roses in her garden. She is among the most famous flowers"
+text = "this moster is a rat eater"
 
 # 2) Text -> IPA (g2p-plus)
 ipa_text = transcribe_utterances(

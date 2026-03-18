@@ -8,6 +8,9 @@ import pandas as pd
 from collections import defaultdict
 from g2p_plus import transcribe_utterances
 from minicons import scorer
+import json
+
+output_file = "results_experiment_1_100M/results_experiment_1_babble_phonetic_char_with_spaces.csv"
 
 model_name = "phonemetransformers/GPT2-85M-CHAR-PHON"
 
@@ -170,7 +173,7 @@ for non_heads, heads in compound_groups:
                 s_head
             ])
 
-output_file = "results_experiment_1_babble.csv"
+
 
 df = pd.DataFrame(
     data,
@@ -184,4 +187,4 @@ df = pd.DataFrame(
 )
 df.to_csv(output_file, index=False)
 
-print(f"\nResults saved in {output_file}\n")
+print(f"\nResults saved in results_experiment_1_100M\n")

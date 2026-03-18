@@ -6,12 +6,15 @@
 
 import pandas as pd
 from minicons import scorer
+import json
+
 
 models = [
     "phonemetransformers/GPT2-85M-CHAR-TXT-SPACELESS"
 ]
 
 BOS = False
+output_file = "results_experiment_1_100M/results_experiment_1_babble_txt_char_no_spaces.csv"
 
 compound_groups = [
     (['goose', 'geese', 'swan', 'swans'],
@@ -128,7 +131,6 @@ for model_name in models:
     
     process_pairs(lm, None, data)
     
-    output_file = "results_experiment_1_100M/results_experiment_1_babble_txt_char_no_spaces.csv"
 
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
