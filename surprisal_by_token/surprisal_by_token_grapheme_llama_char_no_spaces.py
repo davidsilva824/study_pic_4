@@ -1,13 +1,14 @@
 ### This code is complete.
-# BOS = False
-# IMPORTANT note: the tokenizer of the model removes the spaces automatically. No need to remove them before inputing the model.
+# BOS = True
+# IMPORTANT note: the tokenizer of the model does not remove the spaces automatically.
 # Since this model does not use word separation at all, the BOW correction should be kept False. 
+# With BOW correction true it also massively increases the surprisal of the last character. so avoid it. 
 
 from minicons import scorer
 
-model_name = "phonemetransformers/GPT2-85M-CHAR-TXT-SPACELESS"
-text = "this monster is a rat eater"
-BOS = False
+model_name = "bbunzeck/grapheme-llama-no-whitespace"
+text = "thismonsterisarateater"
+BOS = True
 
 lm = scorer.IncrementalLMScorer(model_name, device="cuda")
 

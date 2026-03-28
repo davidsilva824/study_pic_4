@@ -21,7 +21,7 @@ BOS = False
 
 # --- CHANGED: read compounds from CSV instead of hardcoded list ---
 stimuli_file = "berent&pinker/stimuli_compounds_experiment_2.csv"  # adjust path if needed
-output_file = "results_berent&pinker/results_experiment_2_babble_txt_cha_compounds.csv"
+output_file = "results_berent&pinker/results_experiment_2_babble_txt_char_compounds.csv"
 
 
 stimuli_df = pd.read_csv(stimuli_file)

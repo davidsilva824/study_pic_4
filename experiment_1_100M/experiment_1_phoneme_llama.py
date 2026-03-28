@@ -1,3 +1,4 @@
+### This code is complete. 
 # Some words had to be manually converted, namely firemen, boatmen, labourer and labourers. The IPA system did not work for them.
 # Each word was checked individually for the best conversion. 
 

@@ -16,7 +16,7 @@ BOS = False
 
 # ---- INPUT / OUTPUT ----
 input_file = "berent&pinker/stimuli_compounds_experiment_2.csv"
-output_file = "results_berent&pinker/results_experiment_2_babble_phonetic_cha_compounds.csv"
+output_file = "results_berent&pinker/results_experiment_2_babble_phonetic_char_compounds.csv"
 
 # ---- CHANGE ONLY IF YOUR COLUMN NAME IS DIFFERENT ----
 # Your error showed 'compounds' was wrong. Use the real column name here.

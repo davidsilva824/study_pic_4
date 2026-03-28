@@ -1,4 +1,4 @@
-### ### This code seems to be correct, but a reverification wouldn't hurt. 
+### ### This code is complete.
 # BOS = True
 # IMPORTANT note: The BOW correction is working. This can be observe in the file 'suprisal_by_token_babble_txt_char_with_spaces.py'.
 # With the correction the suprisal of the token 'W' becomes zero.
@@ -51,9 +51,9 @@ def process_pairs(lm, pairs, data):
                 surprisal_values = [s for tok, s, *_ in tok_scores]
 
                 # --- Original Print Block ---
-                print(' '.join(f'{tok:>10}' for tok in tokens))
-                print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
-                print(surprisal_values)
+                print("TOK_SCORES:")
+                for tok, s in tok_scores:
+                    print(f"{repr(tok):<20} {s:.7f}")
 
                 non_n = 0
                 reconstructed_word = ""
@@ -77,7 +77,8 @@ def process_pairs(lm, pairs, data):
                 surprisal_head = sum(surprisal_values[start_idx + non_n : start_idx + non_n + head_n])
 
                 data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-                print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
+                print(f"  Non-Head ({non_head}): {surprisal_non_head}")
+                print(f"  Head     ({head}): {surprisal_head}")
 
 # --- MAIN EXECUTION ---
 for model_name in models:

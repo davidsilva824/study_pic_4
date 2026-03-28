@@ -1,4 +1,4 @@
-### This code is complete (minimal adaptation: tuple-output wrapper + trust_remote_code).
+### This code is complete. 
 # BOS = False
 # Has a special wrap around the 'scorer.IncrementalLMScorer' method because the model does not save the logits in the place minicons expects.
 # must have trust_remote_code = True. 

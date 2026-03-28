@@ -1,6 +1,6 @@
 ### For causal models. 
 # Works only in more conventional models that provide a specific set of parameters about word separation.
-# If the bow correction does not work, use 'surprisal_by_token_causal_changed_BOW.py'
+# If the bow correction does not work, try 'surprisal_by_token_causal_forced_BOW.py'
 
 # Works for the following models: 
 # OPT-baseline
@@ -8,6 +8,8 @@
 # CLASS-IT
 # Babyllama
 # Babyllama 2
+# distill-tree-ensemble
+# whatif
 
 from minicons import scorer
 

@@ -4,6 +4,7 @@
 # Used for the following models: 
 # Zlata
 # Babble_txt_BPE_with_spaces
+# gpt-wee
 
 
 import torch
@@ -20,7 +21,6 @@ lm = scorer.IncrementalLMScorer(model_name, device="cpu", trust_remote_code=True
 
 
 #### the correction
-
 bow_symbol = "Ġ"
 lm.is_bow_tokenizer = True
 lm.bow_symbol = bow_symbol

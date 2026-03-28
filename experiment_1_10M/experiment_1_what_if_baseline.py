@@ -2,18 +2,18 @@
 # BOS = False
 # Normal BOW
 
-
 import pandas as pd
 from minicons import scorer
 import json
 
 
 models = [
-    "iproskurina/zlata"
+    "Qilex/BabyLM_2024_Strict_Small_Baseline"
 ]
 
 BOS = True
-output_file = "results_experiment_1_10M/results_experiment_1_ZLATA.csv"
+output_file = f"results_experiment_1_10M/results_experiment_1_what_if_baseline.csv"
+
 
 # Obtaining the compounds from the json file. 
 with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
@@ -23,7 +23,6 @@ compound_groups = [
     (group["non_heads"], group["heads"])
     for group in compound_groups_data
 ]
-
 
 cat_labels = {
     0: "Irregular Singular",
@@ -84,14 +83,14 @@ def process_pairs(lm, pairs, data):
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cuda", trust_remote_code=True)
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
     
     data = []
     
     process_pairs(lm, None, data)
-
     
+
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-    
-    print(f"\nresults in results_experiment_1_10M folder.\n")
+
+    print(f"\nrresults in results_experiment_1_10M folder.\n")
