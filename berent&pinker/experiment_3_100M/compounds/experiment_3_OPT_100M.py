@@ -7,17 +7,16 @@ import pandas as pd
 from minicons import scorer
 import json
 
-
 models = [
-    "babylm/opt-125m-strict-small-2023"
+    "babylm/opt-125m-strict-2023"
 ]
 
 BOS = False
-output_file = f"results_berent&pinker/10M/results_experiment_2_OPT_10M.csv"
 
+output_file = f"results_berent&pinker/100M/results_experiment_3_OPT_100M.csv"
 
 # Obtaining the compounds from the json file. 
-with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
+with open("berent&pinker/compounds_experiment_3.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [

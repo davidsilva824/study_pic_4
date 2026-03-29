@@ -1,23 +1,27 @@
-### This code is complete. 
+### This code is complete.
 # BOS = False
-# Normal BOW
-# Não existe OPT de 2024. Penso que foi porque não teve resultados suficientemente bons. 
+# Forced BOW 
+
 
 import pandas as pd
 from minicons import scorer
 import json
 
 
+# --- ADDED (only what’s needed for forced BOW) ---
+from collections import defaultdict
+# -----------------------------------------------
+
 models = [
-    "babylm/opt-125m-strict-small-2023"
+    "phonemetransformers/GPT2-85M-BPE-TXT"
 ]
 
 BOS = False
-output_file = f"results_berent&pinker/10M/results_experiment_2_OPT_10M.csv"
+output_file = "results_berent&pinker/100M/results_experiment_3_babble_txt_BPE_with_spaces.csv"
 
 
-# Obtaining the compounds from the json file. 
-with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
+
+with open("berent&pinker/compounds_experiment_3.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -25,12 +29,33 @@ compound_groups = [
     for group in compound_groups_data
 ]
 
+
+
+
 cat_labels = {
     0: "Sibilant Singular",
     1: "Sibilant Plural",
     2: "Regular Singular",
     3: "Regular Plural",
 }
+
+# --- ADDED: helper to force BOW settings for this model ---
+def force_bow_settings(lm, bow_symbol="Ġ"):
+    lm.is_bow_tokenizer = True
+    lm.bow_symbol = bow_symbol
+
+    bow_subwords = defaultdict(bool)
+
+    for word, idx in lm.tokenizer.get_vocab().items():
+        bow_subwords[idx] = (len(word) > 0 and word[0] == bow_symbol)
+
+    for idx in lm.tokenizer.get_added_vocab().values():
+        bow_subwords[idx] = False
+
+    lm.bow_subwords = bow_subwords
+    lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
+# ----------------------------------------------------------
+
 
 def process_pairs(lm, pairs, data):
     
@@ -86,10 +111,13 @@ for model_name in models:
     print(f"\nLoading model: {model_name}...")
     lm = scorer.IncrementalLMScorer(model_name, device="cuda")
     
+    # --- ADDED: apply forced BOW method for this model ---
+    force_bow_settings(lm, bow_symbol="Ġ")
+    # ----------------------------------------------------
+    
     data = []
     
     process_pairs(lm, None, data)
-    
 
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)

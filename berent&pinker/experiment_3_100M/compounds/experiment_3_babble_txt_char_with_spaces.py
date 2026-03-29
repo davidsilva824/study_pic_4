@@ -18,9 +18,9 @@ models = [
 ]
 
 BOS = False
-output_file = "results_berent&pinker/100M/results_experiment_2_babble_txt_char_with_spaces.csv"
+output_file = "results_berent&pinker/100M/results_experiment_3_babble_txt_char_with_spaces.csv"
 
-with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
+with open("berent&pinker/compounds_experiment_3.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [

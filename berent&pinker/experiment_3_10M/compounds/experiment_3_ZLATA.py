@@ -1,7 +1,7 @@
 ### This code is complete. 
 # BOS = False
 # Normal BOW
-# Não existe OPT de 2024. Penso que foi porque não teve resultados suficientemente bons. 
+
 
 import pandas as pd
 from minicons import scorer
@@ -9,21 +9,21 @@ import json
 
 
 models = [
-    "babylm/opt-125m-strict-small-2023"
+    "iproskurina/zlata"
 ]
 
-BOS = False
-output_file = f"results_berent&pinker/10M/results_experiment_2_OPT_10M.csv"
-
+BOS = True
+output_file = "results_berent&pinker/10M/results_experiment_3_ZLATA.csv"
 
 # Obtaining the compounds from the json file. 
-with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
+with open("berent&pinker/compounds_experiment_3.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
     (group["non_heads"], group["heads"])
     for group in compound_groups_data
 ]
+
 
 cat_labels = {
     0: "Sibilant Singular",
@@ -84,14 +84,14 @@ def process_pairs(lm, pairs, data):
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda", trust_remote_code=True)
     
     data = []
     
     process_pairs(lm, None, data)
-    
 
+    
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-
+    
     print(f'\nresults in results_berent&pinker folder.\n')

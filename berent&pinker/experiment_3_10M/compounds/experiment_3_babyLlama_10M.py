@@ -1,7 +1,6 @@
 ### This code is complete. 
-# BOS = False
+# BOS = True
 # Normal BOW
-# Não existe OPT de 2024. Penso que foi porque não teve resultados suficientemente bons. 
 
 import pandas as pd
 from minicons import scorer
@@ -9,15 +8,13 @@ import json
 
 
 models = [
-    "babylm/opt-125m-strict-small-2023"
+    "babylm/babyllama-10m-2024"
 ]
 
-BOS = False
-output_file = f"results_berent&pinker/10M/results_experiment_2_OPT_10M.csv"
-
+BOS = True
 
 # Obtaining the compounds from the json file. 
-with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
+with open("berent&pinker/compounds_experiment_3.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -90,8 +87,12 @@ for model_name in models:
     
     process_pairs(lm, None, data)
     
-
+    if "10m" in model_name and "100m" not in model_name:
+        output_file = "results_berent&pinker/10M/results_experiment_3_babyLlama_10M.csv"
+    else:
+        output_file = "results_berent&pinker/10M/results_experiment_3_babyLlama_100M.csv"
+    
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-
+    
     print(f'\nresults in results_berent&pinker folder.\n')

@@ -1,7 +1,6 @@
 ### This code is complete. 
 # BOS = False
 # Normal BOW
-# Não existe OPT de 2024. Penso que foi porque não teve resultados suficientemente bons. 
 
 import pandas as pd
 from minicons import scorer
@@ -9,11 +8,11 @@ import json
 
 
 models = [
-    "babylm/opt-125m-strict-small-2023"
+    "Qilex/BabyLM_2024_Strict_Small_Baseline"
 ]
 
-BOS = False
-output_file = f"results_berent&pinker/10M/results_experiment_2_OPT_10M.csv"
+BOS = True
+output_file = "results_berent&pinker/10M/results_experiment_2_what_if_baseline.csv"
 
 
 # Obtaining the compounds from the json file. 

@@ -1,23 +1,25 @@
-### This code is complete. 
+### This code is complete (minimal adaptation: tuple-output wrapper + trust_remote_code).
 # BOS = False
-# Normal BOW
-# Não existe OPT de 2024. Penso que foi porque não teve resultados suficientemente bons. 
+# Has a special wrap around the 'scorer.IncrementalLMScorer' method because the model does not save the logits in the place minicons expects.
+# must have trust_remote_code = True. 
+# Check the methods better in  'surprisal_by_token_gpt_bert.py'
 
 import pandas as pd
+from types import SimpleNamespace
 from minicons import scorer
 import json
 
 
 models = [
-    "babylm/opt-125m-strict-small-2023"
+    "BabyLM-community/babylm-baseline-10m-gpt-bert-causal-focus",
+    "BabyLM-community/babylm-baseline-10m-gpt-bert-mixed",
+    "BabyLM-community/babylm-baseline-10m-gpt-bert-masked-focus"
 ]
 
 BOS = False
-output_file = f"results_berent&pinker/10M/results_experiment_2_OPT_10M.csv"
-
 
 # Obtaining the compounds from the json file. 
-with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
+with open("berent&pinker/compounds_experiment_3.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -31,6 +33,23 @@ cat_labels = {
     2: "Regular Singular",
     3: "Regular Plural",
 }
+
+# --- MINIMAL FIX: wrap tuple outputs so minicons can read .logits ---
+class _WrapOutputsWithLogits:
+    def __init__(self, model):
+        self._m = model
+
+    def __call__(self, *args, **kwargs):
+        out = self._m(*args, **kwargs)
+        if hasattr(out, "logits"):
+            return out
+        if isinstance(out, tuple):
+            return SimpleNamespace(logits=out[0])
+        return out
+
+    def __getattr__(self, name):
+        return getattr(self._m, name)
+# --- end fix ---
 
 def process_pairs(lm, pairs, data):
     
@@ -84,14 +103,26 @@ def process_pairs(lm, pairs, data):
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda", trust_remote_code=True)
+
+    # apply tuple-output wrapper
+    lm.model = _WrapOutputsWithLogits(lm.model)
     
     data = []
     
     process_pairs(lm, None, data)
     
+    # Determine filename based on model to match your style
+    if "causal" in model_name:
+        output_file = "results_berent&pinker/10M/results_experiment_3_gpt_bert_10M_causal.csv"
+    
+    elif "mixed" in model_name:
+        output_file = "results_berent&pinker/10M/results_experiment_3_gpt_bert_10M_mixed.csv"
 
+    else:
+        output_file = "results_berent&pinker/10M/results_experiment_3_gpt_bert_10M_masked.csv"
+    
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-
+    
     print(f'\nresults in results_berent&pinker folder.\n')

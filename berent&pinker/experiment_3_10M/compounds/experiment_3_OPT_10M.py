@@ -13,11 +13,11 @@ models = [
 ]
 
 BOS = False
-output_file = f"results_berent&pinker/10M/results_experiment_2_OPT_10M.csv"
+output_file = f"results_berent&pinker/10M/results_experiment_3_OPT_10M.csv"
 
 
 # Obtaining the compounds from the json file. 
-with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
+with open("berent&pinker/compounds_experiment_3.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [

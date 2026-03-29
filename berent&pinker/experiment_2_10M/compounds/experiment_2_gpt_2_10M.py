@@ -1,9 +1,11 @@
-### This code is complete.
+### This code is complete. 
+# BOS = False
+# Normal BOW
 
 import pandas as pd
 from minicons import scorer
-from collections import defaultdict
-# -----------------------------------------------
+import json
+
 
 models = [
     "BabyLM-community/babylm-baseline-10m-gpt2"
@@ -11,84 +13,69 @@ models = [
 
 BOS = False
 
-stimuli_file = "berent&pinker/stimuli_compounds_experiment_2.csv"
-output_file = "results_berent&pinker/results_experiment_2_gpt_2_10M_compounds.csv"
+# Obtaining the compounds from the json file. 
+with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
+    compound_groups_data = json.load(f)
 
-stimuli_df = pd.read_csv(stimuli_file)
-# ---------------------------------------------------------------
+compound_groups = [
+    (group["non_heads"], group["heads"])
+    for group in compound_groups_data
+]
 
+# Mapping
 cat_labels = {
-    "a": "singular_1",
-    "b": "plural_1",
-    "c": "singular_2",
-    "d": "plural_2",
+    0: "Sibilant Singular",
+    1: "Sibilant Plural",
+    2: "Regular Singular",
+    3: "Regular Plural",
 }
-
-# --- Function to force BOW settings for this model ---
-def force_bow_settings(lm, bow_symbol="Ġ"):
-    lm.is_bow_tokenizer = True
-    lm.bow_symbol = bow_symbol
-
-    bow_subwords = defaultdict(bool)
-
-    for word, idx in lm.tokenizer.get_vocab().items():
-        bow_subwords[idx] = (len(word) > 0 and word[0] == bow_symbol)
-
-    for idx in lm.tokenizer.get_added_vocab().values():
-        bow_subwords[idx] = False
-
-    lm.bow_subwords = bow_subwords
-    lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
-# ----------------------------------------------------------
-
 
 def process_pairs(lm, pairs, data):
     
-    # --- CHANGED: loop over compounds from CSV ---
-    for _, row in stimuli_df.iterrows():
-        suffix = str(row["story_id"]).strip().split("_")[-1]
-        category_name = cat_labels[suffix]
-
-        sentence = str(row["compound"]).strip()
-        non_head, head = sentence.split(" ", 1)
-        # ------------------------------------------
+    for non_heads, heads in compound_groups:
+        # Loop over HEADS first
+        for head in heads:
+            # Then loop over NON-HEADS
+            for i, non_head in enumerate(non_heads):
+                category_name = cat_labels[i]
                 
-        tok_scores = lm.token_score(
-            sentence,
-            bos_token=BOS,
-            prob=False,
-            surprisal=True,
-            bow_correction=True
-        )[0]
+                sentence = f"{non_head} {head}"
                 
-        tokens = [tok for tok, s, *_ in tok_scores]
-        surprisal_values = [s for tok, s, *_ in tok_scores]
+                tok_scores = lm.token_score(
+                    sentence,
+                    bos_token=BOS,
+                    prob=False,
+                    surprisal=True,
+                    bow_correction=True
+                )[0]
                 
-        # --- Original Print Block ---
-        print(' '.join(f'{tok:>10}' for tok in tokens))
-        print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
-        print(surprisal_values)
+                tokens = [tok for tok, s, *_ in tok_scores]
+                surprisal_values = [s for tok, s, *_ in tok_scores]
                 
-        non_n = 0
-        reconstructed_word = ""
-
-        cleaned_tokens = [tok.lstrip('Ġ ') for tok in tokens]
-
-        for k in range(1, len(cleaned_tokens)):
-            reconstructed_word += cleaned_tokens[k]
-            non_n += 1
-            if reconstructed_word == non_head:
-                break
+                print(' '.join(f'{tok:>10}' for tok in tokens))
+                print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
+                print(surprisal_values)
                 
-        total_real_tokens = len(tokens) - 1
-        head_n = total_real_tokens - non_n
+                non_n = 0
+                reconstructed_word = ""
 
-        surprisal_non_head = sum(surprisal_values[1 : 1 + non_n])
-        surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
+                cleaned_tokens = [tok.lstrip('Ġ ') for tok in tokens]
 
-        data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-        # --- Original Sentence Print ---
-        print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
+                for k in range(1, len(cleaned_tokens)):
+                    reconstructed_word += cleaned_tokens[k]
+                    non_n += 1
+                    if reconstructed_word == non_head:
+                        break
+                
+                total_real_tokens = len(tokens) - 1
+                head_n = total_real_tokens - non_n
+
+                surprisal_non_head = sum(surprisal_values[1 : 1 + non_n])
+                surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
+
+                data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
+
+                print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
 
 # --- MAIN EXECUTION ---
@@ -100,8 +87,13 @@ for model_name in models:
     
     process_pairs(lm, None, data)
     
-
+    # Determine filename based on model to match your style
+    if "10m" in model_name and "100m" not in model_name:
+        output_file = "results_berent&pinker/10M/results_experiment_2_gpt_2_10M.csv"
+    else:
+        output_file = "results_berent&pinker/10M/results_experiment_2_gpt_2_100M.csv"
+    
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-
-    print(f"\nresults in results_berent&pinker folder.\n")
+    
+    print(f'\nresults in results_berent&pinker folder.\n')

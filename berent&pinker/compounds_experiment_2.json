@@ -1,0 +1,266 @@
+[
+  {
+    "non_heads": [
+      "blaze",
+      "blazes",
+      "spark",
+      "sparks"
+    ],
+    "heads": [
+      "protector"
+    ]
+  },
+  {
+    "non_heads": [
+      "breeze",
+      "breezes",
+      "storm",
+      "storms"
+    ],
+    "heads": [
+      "protector"
+    ]
+  },
+  {
+    "non_heads": [
+      "tax",
+      "taxes",
+      "toll",
+      "tolls"
+    ],
+    "heads": [
+      "receivers"
+    ]
+  },
+  {
+    "non_heads": [
+      "sex",
+      "sexes",
+      "gender",
+      "genders"
+    ],
+    "heads": [
+      "disparities"
+    ]
+  },
+  {
+    "non_heads": [
+      "vase",
+      "vases",
+      "pot",
+      "pots"
+    ],
+    "heads": [
+      "maker"
+    ]
+  },
+  {
+    "non_heads": [
+      "hoax",
+      "hoaxes",
+      "joke",
+      "jokes"
+    ],
+    "heads": [
+      "victims"
+    ]
+  },
+  {
+    "non_heads": [
+      "phase",
+      "phases",
+      "step",
+      "steps"
+    ],
+    "heads": [
+      "classifier"
+    ]
+  },
+  {
+    "non_heads": [
+      "hose",
+      "hoses",
+      "pipe",
+      "pipes"
+    ],
+    "heads": [
+      "installer"
+    ]
+  },
+  {
+    "non_heads": [
+      "fox",
+      "foxes",
+      "wolf",
+      "wolves"
+    ],
+    "heads": [
+      "chaser"
+    ]
+  },
+  {
+    "non_heads": [
+      "mix",
+      "mixes",
+      "blend",
+      "blends"
+    ],
+    "heads": [
+      "winner"
+    ]
+  },
+  {
+    "non_heads": [
+      "nose",
+      "noses",
+      "thigh",
+      "thighs"
+    ],
+    "heads": [
+      "rashes"
+    ]
+  },
+  {
+    "non_heads": [
+      "cause",
+      "causes",
+      "loss",
+      "losses"
+    ],
+    "heads": [
+      "evaluators"
+    ]
+  },
+  {
+    "non_heads": [
+      "gaze",
+      "gazes",
+      "stare",
+      "stares"
+    ],
+    "heads": [
+      "detector"
+    ]
+  },
+  {
+    "non_heads": [
+      "clause",
+      "clauses",
+      "article",
+      "articles"
+    ],
+    "heads": [
+      "finder"
+    ]
+  },
+  {
+    "non_heads": [
+      "maze",
+      "mazes",
+      "web",
+      "webs"
+    ],
+    "heads": [
+      "decoder"
+    ]
+  },
+  {
+    "non_heads": [
+      "quiz",
+      "quizzes",
+      "puzzle",
+      "puzzles"
+    ],
+    "heads": [
+      "expert"
+    ]
+  },
+  {
+    "non_heads": [
+      "fax",
+      "faxes",
+      "copy",
+      "copies"
+    ],
+    "heads": [
+      "man"
+    ]
+  },
+  {
+    "non_heads": [
+      "size",
+      "sizes",
+      "shape",
+      "shapes"
+    ],
+    "heads": [
+      "device"
+    ]
+  },
+  {
+    "non_heads": [
+      "praise",
+      "praises",
+      "compliment",
+      "compliments"
+    ],
+    "heads": [
+      "getter"
+    ]
+  },
+  {
+    "non_heads": [
+      "prize",
+      "prizes",
+      "award",
+      "awards"
+    ],
+    "heads": [
+      "recipient"
+    ]
+  },
+  {
+    "non_heads": [
+      "box",
+      "boxes",
+      "pack",
+      "packs"
+    ],
+    "heads": [
+      "lifters"
+    ]
+  },
+  {
+    "non_heads": [
+      "rose",
+      "roses",
+      "flower",
+      "flowers"
+    ],
+    "heads": [
+      "gardeners"
+    ]
+  },
+  {
+    "non_heads": [
+      "bruise",
+      "bruises",
+      "sore",
+      "sores"
+    ],
+    "heads": [
+      "healer"
+    ]
+  },
+  {
+    "non_heads": [
+      "rise",
+      "rises",
+      "drop",
+      "drops"
+    ],
+    "heads": [
+      "addict"
+    ]
+  }
+]

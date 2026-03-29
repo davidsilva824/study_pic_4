@@ -1,7 +1,6 @@
 ### This code is complete. 
 # BOS = False
 # Normal BOW
-# Não existe OPT de 2024. Penso que foi porque não teve resultados suficientemente bons. 
 
 import pandas as pd
 from minicons import scorer
@@ -9,15 +8,13 @@ import json
 
 
 models = [
-    "babylm/opt-125m-strict-small-2023"
+    "BabyLM-community/babylm-baseline-10m-gpt2"
 ]
 
 BOS = False
-output_file = f"results_berent&pinker/10M/results_experiment_2_OPT_10M.csv"
-
 
 # Obtaining the compounds from the json file. 
-with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
+with open("berent&pinker/compounds_experiment_3.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -25,6 +22,7 @@ compound_groups = [
     for group in compound_groups_data
 ]
 
+# Mapping
 cat_labels = {
     0: "Sibilant Singular",
     1: "Sibilant Plural",
@@ -37,7 +35,7 @@ def process_pairs(lm, pairs, data):
     for non_heads, heads in compound_groups:
         # Loop over HEADS first
         for head in heads:
-  
+            # Then loop over NON-HEADS
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -54,7 +52,6 @@ def process_pairs(lm, pairs, data):
                 tokens = [tok for tok, s, *_ in tok_scores]
                 surprisal_values = [s for tok, s, *_ in tok_scores]
                 
-                # --- Original Print Block ---
                 print(' '.join(f'{tok:>10}' for tok in tokens))
                 print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
                 print(surprisal_values)
@@ -77,7 +74,7 @@ def process_pairs(lm, pairs, data):
                 surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
 
                 data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-                # --- Original Sentence Print ---
+
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
 
@@ -90,8 +87,13 @@ for model_name in models:
     
     process_pairs(lm, None, data)
     
-
+    # Determine filename based on model to match your style
+    if "10m" in model_name and "100m" not in model_name:
+        output_file = "results_berent&pinker/10M/results_experiment_3_gpt_2_10M.csv"
+    else:
+        output_file = "results_berent&pinker/10M/results_experiment_3_gpt_2_100M.csv"
+    
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-
+    
     print(f'\nresults in results_berent&pinker folder.\n')

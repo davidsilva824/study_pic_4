@@ -1,7 +1,7 @@
-### This code is complete. 
-# BOS = False
-# Normal BOW
-# Não existe OPT de 2024. Penso que foi porque não teve resultados suficientemente bons. 
+# This code is complete. 
+# BOS = True
+# Normal Bow correction is working, as can be seen by the 0 surprisal atributed to spaces, with bow_correction=True.
+
 
 import pandas as pd
 from minicons import scorer
@@ -9,15 +9,15 @@ import json
 
 
 models = [
-    "babylm/opt-125m-strict-small-2023"
+    "bbunzeck/grapheme-llama"
 ]
 
-BOS = False
-output_file = f"results_berent&pinker/10M/results_experiment_2_OPT_10M.csv"
+BOS = True
+output_file = f"results_berent&pinker/100M/results_experiment_3_grapheme_llama_with_spaces.csv"
 
 
-# Obtaining the compounds from the json file. 
-with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
+# Obtaining the compounds from the json file.
+with open("berent&pinker/compounds_experiment_3.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -33,16 +33,12 @@ cat_labels = {
 }
 
 def process_pairs(lm, pairs, data):
-    
     for non_heads, heads in compound_groups:
-        # Loop over HEADS first
         for head in heads:
-  
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
-                
                 sentence = f"{non_head} {head}"
-                
+
                 tok_scores = lm.token_score(
                     sentence,
                     bos_token=BOS,
@@ -50,46 +46,47 @@ def process_pairs(lm, pairs, data):
                     surprisal=True,
                     bow_correction=True
                 )[0]
-                
+
                 tokens = [tok for tok, s, *_ in tok_scores]
                 surprisal_values = [s for tok, s, *_ in tok_scores]
-                
+
                 # --- Original Print Block ---
-                print(' '.join(f'{tok:>10}' for tok in tokens))
-                print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
-                print(surprisal_values)
-                
+                print("TOK_SCORES:")
+                for tok, s in tok_scores:
+                    print(f"{repr(tok):<20} {s:.7f}")
+
                 non_n = 0
                 reconstructed_word = ""
 
                 cleaned_tokens = [tok.lstrip('Ġ ') for tok in tokens]
 
-                for k in range(1, len(cleaned_tokens)):
+                # --- MINIMAL FIX: set where "real tokens" start ---
+                # If first token is a special BOS-like token, skip it; otherwise start at 0.
+                start_idx = 1 if (len(cleaned_tokens) > 0 and cleaned_tokens[0].startswith("<")) else 0
+
+                for k in range(start_idx, len(cleaned_tokens)):
                     reconstructed_word += cleaned_tokens[k]
                     non_n += 1
                     if reconstructed_word == non_head:
                         break
-                
-                total_real_tokens = len(tokens) - 1
+
+                total_real_tokens = len(tokens) - start_idx
                 head_n = total_real_tokens - non_n
 
-                surprisal_non_head = sum(surprisal_values[1 : 1 + non_n])
-                surprisal_head = sum(surprisal_values[1 + non_n : 1 + non_n + head_n])
+                surprisal_non_head = sum(surprisal_values[start_idx : start_idx + non_n])
+                surprisal_head = sum(surprisal_values[start_idx + non_n : start_idx + non_n + head_n])
 
                 data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-                # --- Original Sentence Print ---
-                print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
-
+                print(f"  Non-Head ({non_head}): {surprisal_non_head}")
+                print(f"  Head     ({head}): {surprisal_head}")
 
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
     lm = scorer.IncrementalLMScorer(model_name, device="cuda")
-    
+
     data = []
-    
     process_pairs(lm, None, data)
-    
 
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
