@@ -1,7 +1,7 @@
-### ### This code is complete.
+# This code is complete. 
 # BOS = True
-# IMPORTANT note: The BOW correction is working. This can be observe in the file 'suprisal_by_token_babble_txt_char_with_spaces.py'.
-# With the correction the suprisal of the token 'W' becomes zero.
+# Normal Bow correction is working, as can be seen by the 0 surprisal atributed to spaces, with bow_correction=True.
+
 
 import pandas as pd
 from minicons import scorer
@@ -13,7 +13,7 @@ models = [
 ]
 
 BOS = True
-output_file = f"results_experiment_1_100M/results_experiment_1_grapheme_llama.csv"
+output_file = f"results_experiment_1_100M/results_experiment_1_grapheme_llama_with_spaces.csv"
 
 
 # Obtaining the compounds from the json file.

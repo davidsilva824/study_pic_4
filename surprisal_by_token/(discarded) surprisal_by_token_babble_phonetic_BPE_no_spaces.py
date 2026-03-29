@@ -1,18 +1,23 @@
-### This code is complete. 
+### This code is not to be used.
+# Like in the text, the BPE without spaces does not separate the head and non-head clanly, invalidating the test for the PiC effect. 
+
 # Because of a difference between the way the phonetic symbols from the G2P+ poackage,
-# it has a  
+# it has a special function to convert a  GPT-2 byte-level token string back to readable IPA text, after the surprisal is obtained for each token. 
+# IMPORTANT note: the tokenizer of the model removes the spaces automatically. So it is indiferent if you put keep_word_boundaries=False or true.
 # Forced BOW correction is working.
-
-
 
 from g2p_plus import transcribe_utterances
 from minicons import scorer
 from transformers import AutoTokenizer
 from collections import defaultdict
 
+BOS = False
+
 
 # 1) Input text
 text = "this monster is a rat eater"
+model_name = "phonemetransformers/GPT2-85M-BPE-PHON-SPACELESS"
+
 
 # 2) Text -> IPA (g2p-plus)
 ipa_text = transcribe_utterances(
@@ -26,52 +31,16 @@ print("TEXT:", text)
 print("IPA :", ipa_text)
 print()
 
-# 3) Load model (for surprisal)
-model_name = "phonemetransformers/GPT2-85M-BPE-PHON"
 lm = scorer.IncrementalLMScorer(model_name, device="cuda")
-
-
-
-#### the correction
-
-bow_symbol = "Ġ"
-lm.is_bow_tokenizer = True
-lm.bow_symbol = bow_symbol
-
-# Use a defaultdict that defaults to False for any unknown token
-bow_subwords = defaultdict(bool)
-
-# Mark standard vocabulary
-for word, idx in lm.tokenizer.get_vocab().items():
-    if len(word) > 0 and word[0] == bow_symbol:
-        bow_subwords[idx] = True
-    else:
-        bow_subwords[idx] = False
-
-# Mark special/added tokens (like BOS/EOS) as False to be safe
-# (This ensures ID 633 doesn't crash the script)
-for idx in lm.tokenizer.get_added_vocab().values():
-    bow_subwords[idx] = False
-
-lm.bow_subwords = bow_subwords
-lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
-
-print("len(bow_subword_idx) =", len(lm.bow_subword_idx)) 
-
-print("Forced BOW settings applied successfully.")
-print("-" * 30)
-
-################################################################
-
 
 
 # 4) Get surprisal per ACTUAL tokenizer token
 surprisals = lm.token_score(
     ipa_text,
-    bos_token=False,
+    bos_token=BOS,
     prob=False,
     surprisal=True,
-    bow_correction=True
+    bow_correction=False
 )[0]
 
 # 5) Load MATCHING tokenizer (slow version) so we can access byte_decoder

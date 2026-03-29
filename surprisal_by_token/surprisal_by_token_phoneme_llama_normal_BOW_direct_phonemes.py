@@ -1,9 +1,14 @@
+### This code is complete. 
+# This code should be used to directly input phonetic symbols in the phoneme llama model. 
+# Used in order to understand which symbols it accepts and it doesn't accept.
+# Bow correction is working normally, as can be seen by the zero value atributed to spaces. 
+
 from minicons import scorer
 
 print()
 
-# Write the phonemes directly here
-ipa_text = "leɪbɜ˞ɜ˞z"
+# Write the phonemes directly here.
+ipa_text = "leɪbɜ˞ɜ˞z leɪbɜ˞ɜ˞z"
 
 print("IPA (manual):", ipa_text)
 

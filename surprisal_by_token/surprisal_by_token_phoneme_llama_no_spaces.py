@@ -7,7 +7,11 @@ from minicons import scorer
 
 print()
 
-text = "this monster is a rat eater"
+text = "this monster is a rat eater" # no spaces
+
+model_name = "bbunzeck/phoneme-llama-no-whitespace"
+
+
 lines = [text]
 
 g2p = make_g2p("eng", "eng-ipa")
@@ -25,7 +29,7 @@ for line in lines:
 ipa_text = ipa_list[0]
 print("IPA (folded):", ipa_text)
 
-model_name = "bbunzeck/phoneme-llama"
+
 lm = scorer.IncrementalLMScorer(model_name, device="cuda")
 
 surprisals = lm.token_score(
@@ -33,7 +37,7 @@ surprisals = lm.token_score(
     bos_token=True,
     prob=False,
     surprisal=True,
-    bow_correction=True
+    bow_correction=False
 )[0]
 
 print(f"{'TOKEN':<15} {'SURPRISAL':<10}")

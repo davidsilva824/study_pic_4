@@ -2,7 +2,7 @@
 # BOS = True
 # IMPORTANT note: the tokenizer of the model does not remove the spaces automatically.
 # Since this model does not use word separation at all, the BOW correction should be kept False. 
-# With BOW correction true it also massively increases the surprisal of the last character. so avoid it. 
+# With BOW correction true it also massively increases the surprisal of the last character. So avoid it. 
 
 from minicons import scorer
 
