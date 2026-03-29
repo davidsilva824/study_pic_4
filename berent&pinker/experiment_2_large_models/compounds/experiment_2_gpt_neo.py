@@ -12,7 +12,7 @@ models = [
 BOS = True
 
 # Obtaining the compounds from the json file. 
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("berent&pinker/compounds_experiment_2.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -21,8 +21,8 @@ compound_groups = [
 ]
 
 cat_labels = {
-    0: "Irregular Singular",
-    1: "Irregular Plural",
+    0: "Sibilant Singular",
+    1: "Sibilant Plural",
     2: "Regular Singular",
     3: "Regular Plural",
 }
@@ -94,9 +94,9 @@ for model_name in models:
 
     
     # 3. Construct the final filename
-    output_file = f"results_experiment_1_large_models/results_experiment_1_{clean_name_c}.csv"
+    output_file = f"results_berent&pinker/large/results_experiment_2_{clean_name_c}.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
     
-print(f'\n results_experiment_1_large_models \n')
+print(f'\n results in results_berent&pinker folder\n')

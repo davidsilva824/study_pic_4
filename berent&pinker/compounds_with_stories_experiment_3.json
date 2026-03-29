@@ -1,0 +1,342 @@
+[
+  {
+    "non_heads": [
+      "hose",
+      "hoses",
+      "hoe",
+      "hoes"
+    ],
+    "heads": [
+      "collector"
+    ],
+    "stories": [
+      "Chris has five garden hoses. I call him the hose collector.",
+      "Chris has five garden hoses. I call him the hoses collector.",
+      "Chris has five garden hoes. I call him the hoe collector.",
+      "Chris has five garden hoes. I call him the hoes collector."
+    ]
+  },
+  {
+    "non_heads": [
+      "rose",
+      "roses",
+      "row",
+      "rows"
+    ],
+    "heads": [
+      "organizer"
+    ],
+    "stories": [
+      "My grandmother is obsessed with putting things in order. She especially loves to sort by color all of her prized roses. I call her the rose organizer.",
+      "My grandmother is obsessed with putting things in order. She especially loves to sort by color all of her prized roses. I call her the roses organizer.",
+      "My grandmother is obsessed with putting things in order. She especially loves to sort all of her buttons, pins and clips in rows. I call her the row organizer.",
+      "My grandmother is obsessed with putting things in order. She especially loves to sort all of her buttons, pins and clips in rows. I call her the rows organizer."
+    ]
+  },
+  {
+    "non_heads": [
+      "rise",
+      "rises",
+      "lie",
+      "lies"
+    ],
+    "heads": [
+      "addict"
+    ],
+    "stories": [
+      "My friend Eileen will only live in high rises. I call her a rise addict.",
+      "My friend Eileen will only live in high rises. I call her a rises addict.",
+      "My friend Eileen constantly lies. I call her a lie addict.",
+      "My friend Eileen constantly lies. I call her a lies addict."
+    ]
+  },
+  {
+    "non_heads": [
+      "clause",
+      "clauses",
+      "claw",
+      "claws"
+    ],
+    "heads": [
+      "hider"
+    ],
+    "stories": [
+      "My landlord has hidden in my lease contract many nasty clauses. I call him the clause hider.",
+      "My landlord has hidden in my lease contract many nasty clauses. I call him the clauses hider.",
+      "A National Geographic team has discovered a rare wild cat that can hide its claws. They call it the claw hider.",
+      "A National Geographic team has discovered a rare wild cat that can hide its claws. They call it the claws hider."
+    ]
+  },
+  {
+    "non_heads": [
+      "gaze",
+      "gazes",
+      "guy",
+      "guys"
+    ],
+    "heads": [
+      "attractor"
+    ],
+    "stories": [
+      "Detectives can now determine if a person is lying by tracking their gazes during questioning. This new technique is called the gaze attractor.",
+      "Detectives can now determine if a person is lying by tracking their gazes during questioning. This new technique is called the gazes attractor.",
+      "Calvin Kline has come up with a new perfume that is said to attract guys to women. The new perfume is called the guy attractor.",
+      "Calvin Kline has come up with a new perfume that is said to attract guys to women. The new perfume is called the guys attractor."
+    ]
+  },
+  {
+    "non_heads": [
+      "box",
+      "boxes",
+      "book",
+      "books"
+    ],
+    "heads": [
+      "horde"
+    ],
+    "stories": [
+      "The shelf in my office is full of empty boxes. I am known as the box horde.",
+      "The shelf in my office is full of empty boxes. I am known as the boxes horde.",
+      "The shelf in my office is full of cognition books. I am known as the book horde.",
+      "The shelf in my office is full of cognition books. I am known as the books horde."
+    ]
+  },
+  {
+    "non_heads": [
+      "sex",
+      "sexes",
+      "sack",
+      "sacks"
+    ],
+    "heads": [
+      "distinctions"
+    ],
+    "stories": [
+      "It is well recognized that the male and female sexes are distinct on many cognitive abilities, but the source of this effect is poorly understood. Much research has attempted to explain the source of sex distinctions.",
+      "It is well recognized that the male and female sexes are distinct on many cognitive abilities, but the source of this effect is poorly understood. Much research has attempted to explain the source of sexes distinctions.",
+      "Farmers have long recognized that potatoes are distinct in quality depending on the sacks in which they are stored, but the source of this effect is poorly understood. Much research has attempted to explain the source of sack distinctions.",
+      "Farmers have long recognized that potatoes are distinct in quality depending on the sacks in which they are stored, but the source of this effect is poorly understood. Much research has attempted to explain the source of sacks distinctions."
+    ]
+  },
+  {
+    "non_heads": [
+      "tax",
+      "taxes",
+      "tack",
+      "tacks"
+    ],
+    "heads": [
+      "repayment"
+    ],
+    "stories": [
+      "Last year, H&R Block took care of my taxes. Luckily they gave me a tax repayment.",
+      "Last year, H&R Block took care of my taxes. Luckily they gave me a taxes repayment.",
+      "When I got my order from Office Depot, I was shocked to discover they had accidentally sent me 10,000 boxes of tacks. Luckily they gave me a tack repayment.",
+      "When I got my order from Office Depot, I was shocked to discover they had accidentally sent me 10,000 boxes of tacks. Luckily they gave me a tacks repayment."
+    ]
+  },
+  {
+    "non_heads": [
+      "size",
+      "sizes",
+      "sigh",
+      "sighs"
+    ],
+    "heads": [
+      "device"
+    ],
+    "stories": [
+      "The post office has purchased a state of the art device that can sort every piece of mail by various sizes and weights. Conveniently enough, the machine is called the size device.",
+      "The post office has purchased a state of the art device that can sort every piece of mail by various sizes and weights. Conveniently enough, the machine is called the sizes device.",
+      "Scientists have invented a device that can detect depression by recording the number of sighs a person emits in a hour. Conveniently enough, the machine is called the sigh device.",
+      "Scientists have invented a device that can detect depression by recording the number of sighs a person emits in a hour. Conveniently enough, the machine is called the sighs device."
+    ]
+  },
+  {
+    "non_heads": [
+      "praise",
+      "praises",
+      "tray",
+      "trays"
+    ],
+    "heads": [
+      "getter"
+    ],
+    "stories": [
+      "Four year old Danny will do anything to get praises from his mother. She calls him the praise getter.",
+      "Four year old Danny will do anything to get praises from his mother. She calls him the praises getter.",
+      "Four year old Danny loves to help his pre school teacher in getting food trays off the tables after lunch. She calls him the tray getter.",
+      "Four year old Danny loves to help his pre school teacher in getting food trays off the tables after lunch. She calls him the trays getter."
+    ]
+  },
+  {
+    "non_heads": [
+      "bruise",
+      "bruises",
+      "brew",
+      "brews"
+    ],
+    "heads": [
+      "expert"
+    ],
+    "stories": [
+      "Dr. Aaron is a dermatologist that prepares a special cream for clearing out skin bruises. I call him the bruise expert.",
+      "Dr. Aaron is a dermatologist that prepares a special cream for clearing out skin bruises. I call him the bruises expert.",
+      "Aaron owns a beer refinery that makes two hundred brews. I call him the brew expert.",
+      "Aaron owns a beer refinery that makes two hundred brews. I call him the brews expert."
+    ]
+  },
+  {
+    "non_heads": [
+      "raise",
+      "raises",
+      "ray",
+      "rays"
+    ],
+    "heads": [
+      "seeker"
+    ],
+    "stories": [
+      "Amanda has already had three raises this year. I call her the raise seeker.",
+      "Amanda has already had three raises this year. I call her the raises seeker.",
+      "My dog. loves to sit outside and soak up the sun rays all morning. I call him a ray seeker.",
+      "My dog. loves to sit outside and soak up the sun rays all morning. I call him a rays seeker."
+    ]
+  },
+  {
+    "non_heads": [
+      "blaze",
+      "blazes",
+      "play",
+      "plays"
+    ],
+    "heads": [
+      "admirer"
+    ],
+    "stories": [
+      "My friend Greg loves to sit near the fireplace--he can admire the blazes for hours. I call him the blaze admirer.",
+      "My friend Greg loves to sit near the fireplace--he can admire the blazes for hours. I call him the blazes admirer.",
+      "My friend Greg has always admired theater plays — he has seen hundreds of plays throughout his life. I call him the play admirer.",
+      "My friend Greg has always admired theater plays — he has seen hundreds of plays throughout his life. I call him the plays admirer."
+    ]
+  },
+  {
+    "non_heads": [
+      "vase",
+      "vases",
+      "bee",
+      "bees"
+    ],
+    "heads": [
+      "steward"
+    ],
+    "stories": [
+      "My friend Emily is an antique vase dealer. She is very successful, but has no room in her small office, so she often has me keep some of her vases. She calls me her vase steward.",
+      "My friend Emily is an antique vase dealer. She is very successful, but has no room in her small office, so she often has me keep some of her vases. She calls me her vases steward.",
+      "My friend Emily has a bee hive in her yard. She likes honey, but she is terrified of getting stung, so she asked me to help her keep the bees. She calls me the bee steward.",
+      "My friend Emily has a bee hive in her yard. She likes honey, but she is terrified of getting stung, so she asked me to help her keep the bees. She calls me the bees steward."
+    ]
+  },
+  {
+    "non_heads": [
+      "fox",
+      "foxes",
+      "shock",
+      "shocks"
+    ],
+    "heads": [
+      "avoiders"
+    ],
+    "stories": [
+      "My sheep are afraid of foxes and will avoid them at all costs. I call them the fox avoiders.",
+      "My sheep are afraid of foxes and will avoid them at all costs. I call them the foxes avoiders.",
+      "My lab rats are afraid of electrical shocks and will avoid them at all costs. I call them the shock avoiders.",
+      "My lab rats are afraid of electrical shocks and will avoid them at all costs. I call them the shocks avoiders."
+    ]
+  },
+  {
+    "non_heads": [
+      "maze",
+      "mazes",
+      "bay",
+      "bays"
+    ],
+    "heads": [
+      "expert"
+    ],
+    "stories": [
+      "When my Dad used to work for the phone company, he had to find the right phone line in the mazes of cables and circuits. I called him the maze expert.",
+      "When my Dad used to work for the phone company, he had to find the right phone line in the mazes of cables and circuits. I called him the mazes expert.",
+      "When my Dad and I used to go sailing, he could name each of the little bays on the shore line.I called him the bay expert.",
+      "When my Dad and I used to go sailing, he could name each of the little bays on the shore line.I called him the bays expert."
+    ]
+  },
+  {
+    "non_heads": [
+      "breeze",
+      "breezes",
+      "tree",
+      "trees"
+    ],
+    "heads": [
+      "protector"
+    ],
+    "stories": [
+      "My flowers have been devastated by the cold north breezes. Last week, I found a solution to my problem. I went to Home Depot and bought a breeze protector.",
+      "My flowers have been devastated by the cold north breezes. Last week, I found a solution to my problem. I went to Home Depot and bought a breezes protector.",
+      "The cold winter winds have devastated my oak trees. Last week, I found a solution to my problem. I went to Home Depot and bought a tree protector.",
+      "The cold winter winds have devastated my oak trees. Last week, I found a solution to my problem. I went to Home Depot and bought a trees protector."
+    ]
+  },
+  {
+    "non_heads": [
+      "cause",
+      "causes",
+      "paw",
+      "paws"
+    ],
+    "heads": [
+      "evaluator"
+    ],
+    "stories": [
+      "An extravagant costly building in mid town toppled over as soon as construction ended. A disaster expert was sent to the site to investigate the causes. He is called the cause evaluator.",
+      "An extravagant costly building in mid town toppled over as soon as construction ended. A disaster expert was sent to the site to investigate the causes. He is called the causes evaluator.",
+      "My cat has been limping for about a year, but none of the veterinarians I visited could find out the reason. Yesterday, my husband discovered she had two sprained paws. He is now called the paw evaluator.",
+      "My cat has been limping for about a year, but none of the veterinarians I visited could find out the reason. Yesterday, my husband discovered she had two sprained paws. He is now called the paws evaluator."
+    ]
+  },
+  {
+    "non_heads": [
+      "phase",
+      "phases",
+      "fee",
+      "fees"
+    ],
+    "heads": [
+      "fanatic"
+    ],
+    "stories": [
+      "When Mary was writing her dissertation in Psychology, she wouldn't stop talking to her poor husband about the various phases of child development. He called her the phase fanatic.",
+      "When Mary was writing her dissertation in Psychology, she wouldn't stop talking to her poor husband about the various phases of child development. He called her the phases fanatic.",
+      "When Mary was working for Barnet Bank, she wouldn't stop telling her poor husband about the various types of banking fees and investments. He called her the fee fanatic.",
+      "When Mary was working for Barnet Bank, she wouldn't stop telling her poor husband about the various types of banking fees and investments. He called her the fees fanatic."
+    ]
+  },
+  {
+    "non_heads": [
+      "fax",
+      "faxes",
+      "shack",
+      "shacks"
+    ],
+    "heads": [
+      "man"
+    ],
+    "stories": [
+      "At work, John sits near the fax machine and distributes the incoming faxes to his co workers. John is known as the fax man.",
+      "At work, John sits near the fax machine and distributes the incoming faxes to his co workers. John is known as the faxes man.",
+      "John has been homeless for over ten years and moves in and out of shacks frequently. John is known as the shack man.",
+      "John has been homeless for over ten years and moves in and out of shacks frequently. John is known as the shacks man."
+    ]
+  }
+]
