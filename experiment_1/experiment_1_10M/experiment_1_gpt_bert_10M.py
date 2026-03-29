@@ -1,35 +1,31 @@
-### This code is complete.
+### This code is complete (minimal adaptation: tuple-output wrapper + trust_remote_code).
 # BOS = False
-# Forced BOW 
-
+# Has a special wrap around the 'scorer.IncrementalLMScorer' method because the model does not save the logits in the place minicons expects.
+# must have trust_remote_code = True. 
+# Check the methods better in  'surprisal_by_token_gpt_bert.py'
 
 import pandas as pd
+from types import SimpleNamespace
 from minicons import scorer
 import json
 
 
-# --- ADDED (only what’s needed for forced BOW) ---
-from collections import defaultdict
-# -----------------------------------------------
-
 models = [
-    "phonemetransformers/GPT2-85M-BPE-TXT"
+    "BabyLM-community/babylm-baseline-10m-gpt-bert-causal-focus",
+    "BabyLM-community/babylm-baseline-10m-gpt-bert-mixed",
+    "BabyLM-community/babylm-baseline-10m-gpt-bert-masked-focus"
 ]
 
 BOS = False
-output_file = "results_experiment_1_100M/results_experiment_1_babble_txt_BPE_with_spaces.csv"
 
-
-
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+# Obtaining the compounds from the json file. 
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
     (group["non_heads"], group["heads"])
     for group in compound_groups_data
 ]
-
-
 
 cat_labels = {
     0: "Irregular Singular",
@@ -38,23 +34,22 @@ cat_labels = {
     3: "Regular Plural",
 }
 
-# --- ADDED: helper to force BOW settings for this model ---
-def force_bow_settings(lm, bow_symbol="Ġ"):
-    lm.is_bow_tokenizer = True
-    lm.bow_symbol = bow_symbol
+# --- MINIMAL FIX: wrap tuple outputs so minicons can read .logits ---
+class _WrapOutputsWithLogits:
+    def __init__(self, model):
+        self._m = model
 
-    bow_subwords = defaultdict(bool)
+    def __call__(self, *args, **kwargs):
+        out = self._m(*args, **kwargs)
+        if hasattr(out, "logits"):
+            return out
+        if isinstance(out, tuple):
+            return SimpleNamespace(logits=out[0])
+        return out
 
-    for word, idx in lm.tokenizer.get_vocab().items():
-        bow_subwords[idx] = (len(word) > 0 and word[0] == bow_symbol)
-
-    for idx in lm.tokenizer.get_added_vocab().values():
-        bow_subwords[idx] = False
-
-    lm.bow_subwords = bow_subwords
-    lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
-# ----------------------------------------------------------
-
+    def __getattr__(self, name):
+        return getattr(self._m, name)
+# --- end fix ---
 
 def process_pairs(lm, pairs, data):
     
@@ -108,17 +103,26 @@ def process_pairs(lm, pairs, data):
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
-    
-    # --- ADDED: apply forced BOW method for this model ---
-    force_bow_settings(lm, bow_symbol="Ġ")
-    # ----------------------------------------------------
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda", trust_remote_code=True)
+
+    # apply tuple-output wrapper
+    lm.model = _WrapOutputsWithLogits(lm.model)
     
     data = []
     
     process_pairs(lm, None, data)
+    
+    # Determine filename based on model to match your style
+    if "causal" in model_name:
+        output_file = "results_experiment_1/10M/results_experiment_1_gpt_bert_10M_causal.csv"
+    
+    elif "mixed" in model_name:
+        output_file = "results_experiment_1/10M/results_experiment_1_gpt_bert_10M_mixed.csv"
 
+    else:
+        output_file = "results_experiment_1/10M/results_experiment_1_gpt_bert_10M_masked.csv"
+    
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-
-    print(f"\nresults in results_experiment_1_100M folder.\n")
+    
+    print(f'\nresults in results_experiment_1 folder.\n')

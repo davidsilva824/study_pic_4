@@ -1,4 +1,6 @@
 ### This code is complete. 
+# BOS = True
+# Normal BOW
 
 import pandas as pd
 from minicons import scorer
@@ -6,13 +8,13 @@ import json
 
 
 models = [
-    "EleutherAI/gpt-j-6b"
+    "babylm/babyllama-10m-2024"
 ]
 
 BOS = True
 
 # Obtaining the compounds from the json file. 
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -20,8 +22,6 @@ compound_groups = [
     for group in compound_groups_data
 ]
 
-
-# Mapping
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -30,11 +30,11 @@ cat_labels = {
 }
 
 def process_pairs(lm, pairs, data):
-   
+    
     for non_heads, heads in compound_groups:
         # Loop over HEADS first
         for head in heads:
-            # Then loop over NON-HEADS
+  
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -79,18 +79,20 @@ def process_pairs(lm, pairs, data):
 
 
 # --- MAIN EXECUTION ---
-model_name = models[0] # Take the single model directly
-
-print(f"\nLoading model: {model_name}...")
-lm = scorer.IncrementalLMScorer(model_name, device="cuda")
-
-data = []
-
-process_pairs(lm, None, data)
-
-output_file = "results_experiment_1_large_models/results_gpt_J_experiment_1.csv"
-
-df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
-df.to_csv(output_file, index=False)
-
-print(f'\n results_experiment_1_large_models \n')
+for model_name in models:
+    print(f"\nLoading model: {model_name}...")
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
+    
+    data = []
+    
+    process_pairs(lm, None, data)
+    
+    if "10m" in model_name and "100m" not in model_name:
+        output_file = "results_experiment_1/10M/results_experiment_1_babyLlama_10M.csv"
+    else:
+        output_file = "results_experiment_1/10M/results_experiment_1_babyLlama_100M.csv"
+    
+    df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
+    df.to_csv(output_file, index=False)
+    
+    print(f'\nresults in results_experiment_1 folder.\n')

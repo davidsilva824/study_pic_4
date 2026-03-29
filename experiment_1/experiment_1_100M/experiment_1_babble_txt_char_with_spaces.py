@@ -17,9 +17,9 @@ models = [
 ]
 
 BOS = False
-output_file = "results_experiment_1_100M/results_experiment_1_babble_txt_char_with_spaces.csv"
+output_file = "results_experiment_1/100M/results_experiment_1_babble_txt_char_with_spaces.csv"
 
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -138,4 +138,4 @@ for model_name in models:
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
 
-    print(f"\nresults in results_experiment_1_100M folder.\n")
+    print(f'\nresults in results_experiment_1 folder.\n')

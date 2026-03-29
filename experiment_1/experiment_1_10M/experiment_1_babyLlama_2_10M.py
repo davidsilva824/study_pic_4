@@ -1,18 +1,22 @@
+### This code is complete. 
+# BOS = True
+# Normal BOW
+
 import pandas as pd
 from minicons import scorer
 import json
 
 
 models = [
-    "EleutherAI/gpt-neo-125m",
-    "EleutherAI/gpt-neo-1.3B",
-    "EleutherAI/gpt-neo-2.7B"
+    "babylm/babyllama-10m-2024"
 ]
 
 BOS = True
 
+output_file = "results_experiment_1/10M/results_experiment_1_babyLlama_2_10M.csv"
+
 # Obtaining the compounds from the json file. 
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -28,11 +32,11 @@ cat_labels = {
 }
 
 def process_pairs(lm, pairs, data):
-      
+    
     for non_heads, heads in compound_groups:
-        # Loop over HEADS first 
+        # Loop over HEADS first
         for head in heads:
-            # Then loop over NON-HEADS 
+  
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -49,6 +53,7 @@ def process_pairs(lm, pairs, data):
                 tokens = [tok for tok, s, *_ in tok_scores]
                 surprisal_values = [s for tok, s, *_ in tok_scores]
                 
+                # --- Original Print Block ---
                 print(' '.join(f'{tok:>10}' for tok in tokens))
                 print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
                 print(surprisal_values)
@@ -74,7 +79,7 @@ def process_pairs(lm, pairs, data):
                 # --- Original Sentence Print ---
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
-    
+
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
@@ -83,20 +88,9 @@ for model_name in models:
     data = []
     
     process_pairs(lm, None, data)
-    
-    base_name = model_name.split("/")[-1]
-    
-    clean_name_a = base_name.replace("-", "_")
 
-    clean_name_b = clean_name_a.replace(".", "_")
-
-    clean_name_c = clean_name_b.replace("m", "M")
-
-    
-    # 3. Construct the final filename
-    output_file = f"results_experiment_1_large_models/results_experiment_1_{clean_name_c}.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
     
-print(f'\n results_experiment_1_large_models \n')
+    print(f'\nresults in results_experiment_1 folder.\n')

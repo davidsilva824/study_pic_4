@@ -1,4 +1,4 @@
-### This code is complete. Maybe one last reverification wouldn't hurt. 
+### This code is complete. 
 # BOS = True
 # Normal BOW
 
@@ -8,13 +8,13 @@ import json
 
 
 models = [
-    "colinglab/CLASS_IT-140M"
+    "babylm/babyllama-100m-2024"
 ]
 
 BOS = True
-output_file = "results_experiment_1_100M/results_experiment_1_CLASS_IT.csv"
+output_file = "results_experiment_1/100M/results_experiment_1_babyLlama_100M.csv"
 
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -86,9 +86,9 @@ for model_name in models:
     data = []
     
     process_pairs(lm, None, data)
-    
 
+    
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-
-    print(f"\nresults in results_experiment_1_100M folder.\n")
+    
+    print(f'\nresults in results_experiment_1 folder.\n')

@@ -3,10 +3,10 @@ import pandas as pd
 from g2p import make_g2p
 from minicons import scorer
 
-output_file = "results_experiment_1_100M/results_experiment_1_phoneme_llama_no_spaces.csv"
+output_file = "results_experiment_1/100M/results_experiment_1_phoneme_llama_no_spaces.csv"
 model_name = "bbunzeck/phoneme-llama"
 
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -112,4 +112,4 @@ df = pd.DataFrame(
 )
 df.to_csv(output_file, index=False)
 
-print(f"\nResults saved in results_experiment_1_100M\n")
+print(f'\nresults in results_experiment_1 folder.\n')

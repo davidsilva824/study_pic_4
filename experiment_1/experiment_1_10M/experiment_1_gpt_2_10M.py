@@ -8,21 +8,19 @@ import json
 
 
 models = [
-    "BabyLM-community/babylm-baseline-100m-gpt2"
+    "BabyLM-community/babylm-baseline-10m-gpt2"
 ]
 
 BOS = False
-output_file = "results_experiment_1_100M/results_experiment_1_gpt_2_100M.csv"
 
 # Obtaining the compounds from the json file. 
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
     (group["non_heads"], group["heads"])
     for group in compound_groups_data
 ]
-
 
 # Mapping
 cat_labels = {
@@ -89,8 +87,13 @@ for model_name in models:
     
     process_pairs(lm, None, data)
     
+    # Determine filename based on model to match your style
+    if "10m" in model_name and "100m" not in model_name:
+        output_file = "results_experiment_1/10M/results_experiment_1_gpt_2_10M.csv"
+    else:
+        output_file = "results_experiment_1/10M/results_experiment_1_gpt_2_100M.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
     
-    print(f"\nresults in results_experiment_1_100M folder.\n")
+    print(f'\nresults in results_experiment_1 folder.\n')

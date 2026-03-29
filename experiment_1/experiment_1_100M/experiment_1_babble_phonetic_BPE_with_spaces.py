@@ -11,10 +11,10 @@ models = [
 ]
 
 BOS = False
-output_file = "results_experiment_1_100M/experiment_1_babble_phonetic_BPE_with_spaces.csv"
+output_file = "results_experiment_1/100M/experiment_1_babble_phonetic_BPE_with_spaces.csv"
 
 # Obtaining the compounds from the json file.
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -196,4 +196,4 @@ for model_name in models:
     )
     df.to_csv(output_file, index=False)
 
-    print(f"\nresults in results_experiment_1_100M folder.\n")
+    print(f'\nresults in results_experiment_1 folder.\n')

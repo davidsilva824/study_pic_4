@@ -1,25 +1,23 @@
-### This code is complete.
-# BOS = True
-# Forced BOW
-
+### This code is complete. 
+# BOS = False
+# Normal BOW
+# Não existe OPT de 2024. Penso que foi porque não teve resultados suficientemente bons. 
 
 import pandas as pd
-from collections import defaultdict
 from minicons import scorer
 import json
 
 
-# 1. Define the models to run
 models = [
-    "bbunzeck/gpt-wee-small",
-    "bbunzeck/gpt-wee-medium",
-    "bbunzeck/gpt-wee-large"
+    "babylm/opt-125m-strict-small-2023"
 ]
 
-BOS = True
+BOS = False
+output_file = f"results_experiment_1/10M/results_experiment_1_OPT_10M.csv"
+
 
 # Obtaining the compounds from the json file. 
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -27,7 +25,6 @@ compound_groups = [
     for group in compound_groups_data
 ]
 
-# Mapping
 cat_labels = {
     0: "Irregular Singular",
     1: "Irregular Plural",
@@ -40,7 +37,7 @@ def process_pairs(lm, pairs, data):
     for non_heads, heads in compound_groups:
         # Loop over HEADS first
         for head in heads:
-            # Then loop over NON-HEADS
+  
             for i, non_head in enumerate(non_heads):
                 category_name = cat_labels[i]
                 
@@ -83,45 +80,18 @@ def process_pairs(lm, pairs, data):
                 # --- Original Sentence Print ---
                 print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
 
-    
+
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
     lm = scorer.IncrementalLMScorer(model_name, device="cuda")
     
-    # ---------- FORCE BOW SETTINGS ----------
-    bow_symbol = "Ġ"
-    lm.is_bow_tokenizer = True
-    lm.bow_symbol = bow_symbol
-
-    bow_subwords = defaultdict(bool)
-
-    # Mark standard vocabulary
-    for word, idx in lm.tokenizer.get_vocab().items():
-        if len(word) > 0 and word[0] == bow_symbol:
-            bow_subwords[idx] = True
-        else:
-            bow_subwords[idx] = False
-
-    # Mark added vocab safely as non-BOW
-    for idx in lm.tokenizer.get_added_vocab().values():
-        bow_subwords[idx] = False
-
-    lm.bow_subwords = bow_subwords
-    lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
-    # ------------------------------------------------------
-
     data = []
     
-    # Process the pairs
     process_pairs(lm, None, data)
     
-    # DYNAMIC FILENAME GENERATION
-    base_name = model_name.split("/")[-1]
-    clean_name = base_name.replace("-", "_")
-    output_file = f"results_experiment_1_10M/results_experiment_1_{clean_name}.csv"
-    
+
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-    
-    print(f'\nresults in results_experiment_1_10M folder.\n')
+
+    print(f'\nresults in results_experiment_1 folder.\n')

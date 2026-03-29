@@ -10,12 +10,12 @@ from g2p_plus import transcribe_utterances
 from minicons import scorer
 import json
 
-output_file = "results_experiment_1_100M/results_experiment_1_babble_phonetic_char_with_spaces.csv"
+output_file = "results_experiment_1/100M/results_experiment_1_babble_phonetic_char_with_spaces.csv"
 
 model_name = "phonemetransformers/GPT2-85M-CHAR-PHON"
 
 # Obtaining the compounds from the json file.
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
@@ -151,4 +151,4 @@ df = pd.DataFrame(
 )
 df.to_csv(output_file, index=False)
 
-print(f"\nResults saved in results_experiment_1_100M\n")
+print(f'\nresults in results_experiment_1 folder.\n')

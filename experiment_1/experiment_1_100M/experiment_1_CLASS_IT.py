@@ -1,7 +1,6 @@
-### This code is complete. 
-# BOS = False
+### This code is complete. Maybe one last reverification wouldn't hurt. 
+# BOS = True
 # Normal BOW
-
 
 import pandas as pd
 from minicons import scorer
@@ -9,21 +8,19 @@ import json
 
 
 models = [
-    "iproskurina/zlata"
+    "colinglab/CLASS_IT-140M"
 ]
 
 BOS = True
-output_file = "results_experiment_1_10M/results_experiment_1_ZLATA.csv"
+output_file = "results_experiment_1/100M/results_experiment_1_CLASS_IT.csv"
 
-# Obtaining the compounds from the json file. 
-with open("compounds_experiment_1.json", "r", encoding="utf-8") as f:
+with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)
 
 compound_groups = [
     (group["non_heads"], group["heads"])
     for group in compound_groups_data
 ]
-
 
 cat_labels = {
     0: "Irregular Singular",
@@ -84,14 +81,14 @@ def process_pairs(lm, pairs, data):
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cuda", trust_remote_code=True)
+    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
     
     data = []
     
     process_pairs(lm, None, data)
-
     
+
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)
-    
-    print(f"\nresults in results_experiment_1_10M folder.\n")
+
+    print(f'\nresults in results_experiment_1 folder.\n')
