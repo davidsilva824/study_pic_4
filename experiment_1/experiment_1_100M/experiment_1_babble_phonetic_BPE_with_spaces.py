@@ -11,7 +11,7 @@ models = [
 ]
 
 BOS = False
-output_file = "results_experiment_1/100M/experiment_1_babble_phonetic_BPE_with_spaces.csv"
+output_file = "results_experiment_1/100M/results_experiment_1_babble_phonetic_BPE_with_spaces.csv"
 
 # Obtaining the compounds from the json file.
 with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:

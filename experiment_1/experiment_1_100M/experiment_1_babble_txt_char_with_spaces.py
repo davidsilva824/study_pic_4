@@ -1,4 +1,5 @@
 ### This code seems to be working, but it wouldnt hurt a final reverification. 
+### Make the exports vertical for better viewing. 
 
 # BOS = False
 # Forced BOW settings block, for separator token "W"

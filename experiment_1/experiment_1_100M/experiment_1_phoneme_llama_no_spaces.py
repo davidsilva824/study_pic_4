@@ -4,7 +4,7 @@ from g2p import make_g2p
 from minicons import scorer
 
 output_file = "results_experiment_1/100M/results_experiment_1_phoneme_llama_no_spaces.csv"
-model_name = "bbunzeck/phoneme-llama"
+model_name = "bbunzeck/phoneme-llama-no-whitespace"
 
 with open("experiment_1/compounds_experiment_1.json", "r", encoding="utf-8") as f:
     compound_groups_data = json.load(f)

@@ -88,7 +88,7 @@ for model_name in models:
     data = []
     process_pairs(lm, None, data)
 
-    output_file = f"results_experiment_1_100M/results_experiment_1_grapheme_llama.csv"
+    output_file = f"results_experiment_1/100M/results_experiment_1_grapheme_llama_with_spaces.csv"
 
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)

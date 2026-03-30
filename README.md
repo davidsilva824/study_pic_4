@@ -12,3 +12,9 @@ Run 'stats_experiment_1.py' files to obtain the initial statistics for each mode
 The surprisal results for all the compounds, can be consulted in the csv files 'results_experiment_1_model.py'. 
 
 The initial statistics are saved 
+
+TO DO:
+
+Maybe change the name of the files with the stimuli.
+
+

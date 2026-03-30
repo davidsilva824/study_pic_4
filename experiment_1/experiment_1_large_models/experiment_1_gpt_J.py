@@ -88,7 +88,7 @@ data = []
 
 process_pairs(lm, None, data)
 
-output_file = "results_experiment_1/10M/results_gpt_J_experiment_1.csv"
+output_file = "results_experiment_1/large/results_gpt_J_experiment_1.csv"
 
 df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
 df.to_csv(output_file, index=False)

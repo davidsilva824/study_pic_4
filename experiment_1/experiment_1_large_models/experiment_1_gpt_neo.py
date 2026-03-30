@@ -94,7 +94,7 @@ for model_name in models:
 
     
     # 3. Construct the final filename
-    output_file = f"results_experiment_1/10M/results_experiment_1_{clean_name_c}.csv"
+    output_file = f"results_experiment_1/large/results_experiment_1_{clean_name_c}.csv"
     
     df = pd.DataFrame(data, columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"])
     df.to_csv(output_file, index=False)

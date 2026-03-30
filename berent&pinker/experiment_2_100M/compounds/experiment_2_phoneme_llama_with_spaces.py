@@ -8,7 +8,7 @@ import pandas as pd
 from g2p import make_g2p
 from minicons import scorer
 
-output_file = "results_berent&pinker/100M/results_experiment_2_phoneme_llama.csv"
+output_file = "results_berent&pinker/100M/results_experiment_2_phoneme_llama_with_spaces.csv"
 model_name = "bbunzeck/phoneme-llama"
 
 # Obtaining the compounds from the json file.
