@@ -1,0 +1,543 @@
+GROUP 1
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: hose collector
+COMPOUND IPA:   h oʊ z WORD_BOUNDARY k ə l ɛ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Chris has five garden hoses. I call him the hose collector.
+STORY IPA:      k ɹ ɪ s WORD_BOUNDARY h ʌ z WORD_BOUNDARY f aɪ v WORD_BOUNDARY ɡ ɑ ɹ d ə n WORD_BOUNDARY h oʊ z ɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY h oʊ z WORD_BOUNDARY k ə l ɛ k t ə ɹ WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: hoses collector
+COMPOUND IPA:   h oʊ z ɪ z WORD_BOUNDARY k ə l ɛ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Chris has five garden hoses. I call him the hoses collector.
+STORY IPA:      k ɹ ɪ s WORD_BOUNDARY h ʌ z WORD_BOUNDARY f aɪ v WORD_BOUNDARY ɡ ɑ ɹ d ə n WORD_BOUNDARY h oʊ z ɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY h oʊ z ɪ z WORD_BOUNDARY k ə l ɛ k t ə ɹ WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: hoe collector
+COMPOUND IPA:   h oʊ WORD_BOUNDARY k ə l ɛ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Chris has five garden hoes. I call him the hoe collector.
+STORY IPA:      k ɹ ɪ s WORD_BOUNDARY h ʌ z WORD_BOUNDARY f aɪ v WORD_BOUNDARY ɡ ɑ ɹ d ə n WORD_BOUNDARY h oʊ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY h oʊ WORD_BOUNDARY k ə l ɛ k t ə ɹ WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: hoes collector
+COMPOUND IPA:   h oʊ z WORD_BOUNDARY k ə l ɛ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Chris has five garden hoes. I call him the hoes collector.
+STORY IPA:      k ɹ ɪ s WORD_BOUNDARY h ʌ z WORD_BOUNDARY f aɪ v WORD_BOUNDARY ɡ ɑ ɹ d ə n WORD_BOUNDARY h oʊ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY h oʊ z WORD_BOUNDARY k ə l ɛ k t ə ɹ WORD_BOUNDARY
+
+
+GROUP 2
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: rose organizer
+COMPOUND IPA:   ɹ oʊ z WORD_BOUNDARY ɔ ɹ ɡ ə n aɪ z ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My grandmother is obsessed with putting things in order. She especially loves to sort by color all of her prized roses. I call her the rose organizer.
+STORY IPA:      m aɪ WORD_BOUNDARY ɡ ɹ æ n d m ʌ ð ə ɹ ɹ WORD_BOUNDARY ɪ z WORD_BOUNDARY ə b s ɛ s t WORD_BOUNDARY w ɪ ð WORD_BOUNDARY p ʊ t ɪ ŋ WORD_BOUNDARY θ ɪ ŋ z WORD_BOUNDARY ɪ n WORD_BOUNDARY ɔ ɹ d ə ɹ WORD_BOUNDARY ʃ iː WORD_BOUNDARY ɪ s p ɛ ʃ ə l i WORD_BOUNDARY l ʌ v z WORD_BOUNDARY t ə WORD_BOUNDARY s ɔ ɹ t WORD_BOUNDARY b aɪ WORD_BOUNDARY k ʌ l ə ɹ ɹ WORD_BOUNDARY ɔ l WORD_BOUNDARY ʌ v WORD_BOUNDARY h ɜː WORD_BOUNDARY p ɹ aɪ z d WORD_BOUNDARY ɹ oʊ z ɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɜː WORD_BOUNDARY ð ə WORD_BOUNDARY ɹ oʊ z WORD_BOUNDARY ɔ ɹ ɡ ə n aɪ z ə ɹ WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: roses organizer
+COMPOUND IPA:   ɹ oʊ z ɪ z WORD_BOUNDARY ɔ ɹ ɡ ə n aɪ z ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My grandmother is obsessed with putting things in order. She especially loves to sort by color all of her prized roses. I call her the roses organizer.
+STORY IPA:      m aɪ WORD_BOUNDARY ɡ ɹ æ n d m ʌ ð ə ɹ ɹ WORD_BOUNDARY ɪ z WORD_BOUNDARY ə b s ɛ s t WORD_BOUNDARY w ɪ ð WORD_BOUNDARY p ʊ t ɪ ŋ WORD_BOUNDARY θ ɪ ŋ z WORD_BOUNDARY ɪ n WORD_BOUNDARY ɔ ɹ d ə ɹ WORD_BOUNDARY ʃ iː WORD_BOUNDARY ɪ s p ɛ ʃ ə l i WORD_BOUNDARY l ʌ v z WORD_BOUNDARY t ə WORD_BOUNDARY s ɔ ɹ t WORD_BOUNDARY b aɪ WORD_BOUNDARY k ʌ l ə ɹ ɹ WORD_BOUNDARY ɔ l WORD_BOUNDARY ʌ v WORD_BOUNDARY h ɜː WORD_BOUNDARY p ɹ aɪ z d WORD_BOUNDARY ɹ oʊ z ɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɜː WORD_BOUNDARY ð ə WORD_BOUNDARY ɹ oʊ z ɪ z WORD_BOUNDARY ɔ ɹ ɡ ə n aɪ z ə ɹ WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: row organizer
+COMPOUND IPA:   ɹ oʊ WORD_BOUNDARY ɔ ɹ ɡ ə n aɪ z ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My grandmother is obsessed with putting things in order. She especially loves to sort all of her buttons, pins and clips in rows. I call her the row organizer.
+STORY IPA:      m aɪ WORD_BOUNDARY ɡ ɹ æ n d m ʌ ð ə ɹ ɹ WORD_BOUNDARY ɪ z WORD_BOUNDARY ə b s ɛ s t WORD_BOUNDARY w ɪ ð WORD_BOUNDARY p ʊ t ɪ ŋ WORD_BOUNDARY θ ɪ ŋ z WORD_BOUNDARY ɪ n WORD_BOUNDARY ɔ ɹ d ə ɹ WORD_BOUNDARY ʃ iː WORD_BOUNDARY ɪ s p ɛ ʃ ə l i WORD_BOUNDARY l ʌ v z WORD_BOUNDARY t ə WORD_BOUNDARY s ɔ ɹ t WORD_BOUNDARY ɔ l WORD_BOUNDARY ʌ v WORD_BOUNDARY h ɜː WORD_BOUNDARY b ʌ t ə n z WORD_BOUNDARY p ɪ n z WORD_BOUNDARY æ n d WORD_BOUNDARY k l ɪ p s WORD_BOUNDARY ɪ n WORD_BOUNDARY ɹ oʊ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɜː WORD_BOUNDARY ð ə WORD_BOUNDARY ɹ oʊ WORD_BOUNDARY ɔ ɹ ɡ ə n aɪ z ə ɹ WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: rows organizer
+COMPOUND IPA:   ɹ oʊ z WORD_BOUNDARY ɔ ɹ ɡ ə n aɪ z ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My grandmother is obsessed with putting things in order. She especially loves to sort all of her buttons, pins and clips in rows. I call her the rows organizer.
+STORY IPA:      m aɪ WORD_BOUNDARY ɡ ɹ æ n d m ʌ ð ə ɹ ɹ WORD_BOUNDARY ɪ z WORD_BOUNDARY ə b s ɛ s t WORD_BOUNDARY w ɪ ð WORD_BOUNDARY p ʊ t ɪ ŋ WORD_BOUNDARY θ ɪ ŋ z WORD_BOUNDARY ɪ n WORD_BOUNDARY ɔ ɹ d ə ɹ WORD_BOUNDARY ʃ iː WORD_BOUNDARY ɪ s p ɛ ʃ ə l i WORD_BOUNDARY l ʌ v z WORD_BOUNDARY t ə WORD_BOUNDARY s ɔ ɹ t WORD_BOUNDARY ɔ l WORD_BOUNDARY ʌ v WORD_BOUNDARY h ɜː WORD_BOUNDARY b ʌ t ə n z WORD_BOUNDARY p ɪ n z WORD_BOUNDARY æ n d WORD_BOUNDARY k l ɪ p s WORD_BOUNDARY ɪ n WORD_BOUNDARY ɹ oʊ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɜː WORD_BOUNDARY ð ə WORD_BOUNDARY ɹ oʊ z WORD_BOUNDARY ɔ ɹ ɡ ə n aɪ z ə ɹ WORD_BOUNDARY
+
+
+GROUP 3
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: rise addict
+COMPOUND IPA:   ɹ aɪ z WORD_BOUNDARY æ d ɪ k t WORD_BOUNDARY
+STORY ORTHO:    My friend Eileen will only live in high rises. I call her a rise addict.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY aɪ l iː n WORD_BOUNDARY w ɪ l WORD_BOUNDARY oʊ n l i WORD_BOUNDARY l ɪ v WORD_BOUNDARY ɪ n WORD_BOUNDARY h aɪ WORD_BOUNDARY ɹ aɪ z ɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɜː ɹ WORD_BOUNDARY ʌ WORD_BOUNDARY ɹ aɪ z WORD_BOUNDARY æ d ɪ k t WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: rises addict
+COMPOUND IPA:   ɹ aɪ z ɪ z WORD_BOUNDARY æ d ɪ k t WORD_BOUNDARY
+STORY ORTHO:    My friend Eileen will only live in high rises. I call her a rises addict.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY aɪ l iː n WORD_BOUNDARY w ɪ l WORD_BOUNDARY oʊ n l i WORD_BOUNDARY l ɪ v WORD_BOUNDARY ɪ n WORD_BOUNDARY h aɪ WORD_BOUNDARY ɹ aɪ z ɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɜː ɹ WORD_BOUNDARY ʌ WORD_BOUNDARY ɹ aɪ z ɪ z WORD_BOUNDARY æ d ɪ k t WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: lie addict
+COMPOUND IPA:   l aɪ WORD_BOUNDARY æ d ɪ k t WORD_BOUNDARY
+STORY ORTHO:    My friend Eileen constantly lies. I call her a lie addict.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY aɪ l iː n WORD_BOUNDARY k ɑ n s t ə n t l i WORD_BOUNDARY l aɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɜː ɹ WORD_BOUNDARY ʌ WORD_BOUNDARY l aɪ WORD_BOUNDARY æ d ɪ k t WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: lies addict
+COMPOUND IPA:   l aɪ z WORD_BOUNDARY æ d ɪ k t WORD_BOUNDARY
+STORY ORTHO:    My friend Eileen constantly lies. I call her a lies addict.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY aɪ l iː n WORD_BOUNDARY k ɑ n s t ə n t l i WORD_BOUNDARY l aɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɜː ɹ WORD_BOUNDARY ʌ WORD_BOUNDARY l aɪ z WORD_BOUNDARY æ d ɪ k t WORD_BOUNDARY
+
+
+GROUP 4
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: clause hider
+COMPOUND IPA:   k l ɔ z WORD_BOUNDARY h aɪ d ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My landlord has hidden in my lease contract many nasty clauses. I call him the clause hider.
+STORY IPA:      m aɪ WORD_BOUNDARY l æ n d l ɔ ɹ d WORD_BOUNDARY h ʌ z WORD_BOUNDARY h ɪ d ə n WORD_BOUNDARY ɪ n WORD_BOUNDARY m aɪ WORD_BOUNDARY l iː s WORD_BOUNDARY k ɑ n t ɹ æ k t WORD_BOUNDARY m ɛ n i WORD_BOUNDARY n æ s t i WORD_BOUNDARY k l ɔ z ɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY k l ɔ z WORD_BOUNDARY h aɪ d ə ɹ WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: clauses hider
+COMPOUND IPA:   k l ɔ z ɪ z WORD_BOUNDARY h aɪ d ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My landlord has hidden in my lease contract many nasty clauses. I call him the clauses hider.
+STORY IPA:      m aɪ WORD_BOUNDARY l æ n d l ɔ ɹ d WORD_BOUNDARY h ʌ z WORD_BOUNDARY h ɪ d ə n WORD_BOUNDARY ɪ n WORD_BOUNDARY m aɪ WORD_BOUNDARY l iː s WORD_BOUNDARY k ɑ n t ɹ æ k t WORD_BOUNDARY m ɛ n i WORD_BOUNDARY n æ s t i WORD_BOUNDARY k l ɔ z ɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY k l ɔ z ɪ z WORD_BOUNDARY h aɪ d ə ɹ WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: claw hider
+COMPOUND IPA:   k l ɔ WORD_BOUNDARY h aɪ d ə ɹ WORD_BOUNDARY
+STORY ORTHO:    A National Geographic team has discovered a rare wild cat that can hide its claws. They call it the claw hider.
+STORY IPA:      ʌ WORD_BOUNDARY n æ ʃ ə n ə l WORD_BOUNDARY d̠ʒ ɪ ə ɡ ɹ æ f ɪ k WORD_BOUNDARY t iː m WORD_BOUNDARY h ʌ z WORD_BOUNDARY d ɪ s k ʌ v ə ɹ d WORD_BOUNDARY ʌ WORD_BOUNDARY ɹ ɛ ɹ WORD_BOUNDARY w aɪ l d WORD_BOUNDARY k æ t WORD_BOUNDARY ð æ t WORD_BOUNDARY k æ n WORD_BOUNDARY h aɪ d WORD_BOUNDARY ɪ t s WORD_BOUNDARY k l ɔ z WORD_BOUNDARY ð eɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY ɪ t WORD_BOUNDARY ð ə WORD_BOUNDARY k l ɔ WORD_BOUNDARY h aɪ d ə ɹ WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: claws hider
+COMPOUND IPA:   k l ɔ z WORD_BOUNDARY h aɪ d ə ɹ WORD_BOUNDARY
+STORY ORTHO:    A National Geographic team has discovered a rare wild cat that can hide its claws. They call it the claws hider.
+STORY IPA:      ʌ WORD_BOUNDARY n æ ʃ ə n ə l WORD_BOUNDARY d̠ʒ ɪ ə ɡ ɹ æ f ɪ k WORD_BOUNDARY t iː m WORD_BOUNDARY h ʌ z WORD_BOUNDARY d ɪ s k ʌ v ə ɹ d WORD_BOUNDARY ʌ WORD_BOUNDARY ɹ ɛ ɹ WORD_BOUNDARY w aɪ l d WORD_BOUNDARY k æ t WORD_BOUNDARY ð æ t WORD_BOUNDARY k æ n WORD_BOUNDARY h aɪ d WORD_BOUNDARY ɪ t s WORD_BOUNDARY k l ɔ z WORD_BOUNDARY ð eɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY ɪ t WORD_BOUNDARY ð ə WORD_BOUNDARY k l ɔ z WORD_BOUNDARY h aɪ d ə ɹ WORD_BOUNDARY
+
+
+GROUP 5
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: gaze attractor
+COMPOUND IPA:   ɡ eɪ z WORD_BOUNDARY ʌ t ɹ æ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Detectives can now determine if a person is lying by tracking their gazes during questioning. This new technique is called the gaze attractor.
+STORY IPA:      d ɪ t ɛ k t ɪ v z WORD_BOUNDARY k æ n WORD_BOUNDARY n aʊ WORD_BOUNDARY d ɪ t ɜː m ɪ n WORD_BOUNDARY ɪ f WORD_BOUNDARY ʌ WORD_BOUNDARY p ɜː s ə n WORD_BOUNDARY ɪ z WORD_BOUNDARY l aɪ ɪ ŋ WORD_BOUNDARY b aɪ WORD_BOUNDARY t ɹ æ k ɪ ŋ WORD_BOUNDARY ð ɛ ɹ WORD_BOUNDARY ɡ eɪ z ɪ z WORD_BOUNDARY d ʊ ɹ ɹ ɪ ŋ WORD_BOUNDARY k w ɛ s t̠ʃ ə n ɪ ŋ WORD_BOUNDARY ð ɪ s WORD_BOUNDARY n uː WORD_BOUNDARY t ɛ k n iː k WORD_BOUNDARY ɪ z WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY ɡ eɪ z WORD_BOUNDARY ʌ t ɹ æ k t ə ɹ WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: gazes attractor
+COMPOUND IPA:   ɡ eɪ z ɪ z WORD_BOUNDARY ʌ t ɹ æ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Detectives can now determine if a person is lying by tracking their gazes during questioning. This new technique is called the gazes attractor.
+STORY IPA:      d ɪ t ɛ k t ɪ v z WORD_BOUNDARY k æ n WORD_BOUNDARY n aʊ WORD_BOUNDARY d ɪ t ɜː m ɪ n WORD_BOUNDARY ɪ f WORD_BOUNDARY ʌ WORD_BOUNDARY p ɜː s ə n WORD_BOUNDARY ɪ z WORD_BOUNDARY l aɪ ɪ ŋ WORD_BOUNDARY b aɪ WORD_BOUNDARY t ɹ æ k ɪ ŋ WORD_BOUNDARY ð ɛ ɹ WORD_BOUNDARY ɡ eɪ z ɪ z WORD_BOUNDARY d ʊ ɹ ɹ ɪ ŋ WORD_BOUNDARY k w ɛ s t̠ʃ ə n ɪ ŋ WORD_BOUNDARY ð ɪ s WORD_BOUNDARY n uː WORD_BOUNDARY t ɛ k n iː k WORD_BOUNDARY ɪ z WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY ɡ eɪ z ɪ z WORD_BOUNDARY ʌ t ɹ æ k t ə ɹ WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: guy attractor
+COMPOUND IPA:   ɡ aɪ WORD_BOUNDARY ʌ t ɹ æ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Calvin Kline has come up with a new perfume that is said to attract guys to women. The new perfume is called the guy attractor.
+STORY IPA:      k æ l v ɪ n WORD_BOUNDARY k l aɪ n WORD_BOUNDARY h ʌ z WORD_BOUNDARY k ʌ m WORD_BOUNDARY ʌ p WORD_BOUNDARY w ɪ ð WORD_BOUNDARY ʌ WORD_BOUNDARY n uː WORD_BOUNDARY p ɜː f j uː m WORD_BOUNDARY ð æ t WORD_BOUNDARY ɪ z WORD_BOUNDARY s ɛ d WORD_BOUNDARY t ʊ WORD_BOUNDARY ʌ t ɹ æ k t WORD_BOUNDARY ɡ aɪ z WORD_BOUNDARY t ə WORD_BOUNDARY w ɪ m ɪ n WORD_BOUNDARY ð ə WORD_BOUNDARY n uː WORD_BOUNDARY p ɜː f j uː m WORD_BOUNDARY ɪ z WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY ɡ aɪ WORD_BOUNDARY ʌ t ɹ æ k t ə ɹ WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: guys attractor
+COMPOUND IPA:   ɡ aɪ z WORD_BOUNDARY ʌ t ɹ æ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Calvin Kline has come up with a new perfume that is said to attract guys to women. The new perfume is called the guys attractor.
+STORY IPA:      k æ l v ɪ n WORD_BOUNDARY k l aɪ n WORD_BOUNDARY h ʌ z WORD_BOUNDARY k ʌ m WORD_BOUNDARY ʌ p WORD_BOUNDARY w ɪ ð WORD_BOUNDARY ʌ WORD_BOUNDARY n uː WORD_BOUNDARY p ɜː f j uː m WORD_BOUNDARY ð æ t WORD_BOUNDARY ɪ z WORD_BOUNDARY s ɛ d WORD_BOUNDARY t ʊ WORD_BOUNDARY ʌ t ɹ æ k t WORD_BOUNDARY ɡ aɪ z WORD_BOUNDARY t ə WORD_BOUNDARY w ɪ m ɪ n WORD_BOUNDARY ð ə WORD_BOUNDARY n uː WORD_BOUNDARY p ɜː f j uː m WORD_BOUNDARY ɪ z WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY ɡ aɪ z WORD_BOUNDARY ʌ t ɹ æ k t ə ɹ WORD_BOUNDARY
+
+
+GROUP 6
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: box horde
+COMPOUND IPA:   b ɑ k s WORD_BOUNDARY h ɔ ɹ d WORD_BOUNDARY
+STORY ORTHO:    The shelf in my office is full of empty boxes. I am known as the box horde.
+STORY IPA:      ð ə WORD_BOUNDARY ʃ ɛ l f WORD_BOUNDARY ɪ n WORD_BOUNDARY m aɪ WORD_BOUNDARY ɑ f ɪ s WORD_BOUNDARY ɪ z WORD_BOUNDARY f ʊ l WORD_BOUNDARY ʌ v WORD_BOUNDARY ɛ m p t i WORD_BOUNDARY b ɑ k s ɪ z WORD_BOUNDARY aɪ ʌ m WORD_BOUNDARY n oʊ n WORD_BOUNDARY æ z WORD_BOUNDARY ð ə WORD_BOUNDARY b ɑ k s WORD_BOUNDARY h ɔ ɹ d WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: boxes horde
+COMPOUND IPA:   b ɑ k s ɪ z WORD_BOUNDARY h ɔ ɹ d WORD_BOUNDARY
+STORY ORTHO:    The shelf in my office is full of empty boxes. I am known as the boxes horde.
+STORY IPA:      ð ə WORD_BOUNDARY ʃ ɛ l f WORD_BOUNDARY ɪ n WORD_BOUNDARY m aɪ WORD_BOUNDARY ɑ f ɪ s WORD_BOUNDARY ɪ z WORD_BOUNDARY f ʊ l WORD_BOUNDARY ʌ v WORD_BOUNDARY ɛ m p t i WORD_BOUNDARY b ɑ k s ɪ z WORD_BOUNDARY aɪ ʌ m WORD_BOUNDARY n oʊ n WORD_BOUNDARY æ z WORD_BOUNDARY ð ə WORD_BOUNDARY b ɑ k s ɪ z WORD_BOUNDARY h ɔ ɹ d WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: book horde
+COMPOUND IPA:   b ʊ k WORD_BOUNDARY h ɔ ɹ d WORD_BOUNDARY
+STORY ORTHO:    The shelf in my office is full of cognition books. I am known as the book horde.
+STORY IPA:      ð ə WORD_BOUNDARY ʃ ɛ l f WORD_BOUNDARY ɪ n WORD_BOUNDARY m aɪ WORD_BOUNDARY ɑ f ɪ s WORD_BOUNDARY ɪ z WORD_BOUNDARY f ʊ l WORD_BOUNDARY ʌ v WORD_BOUNDARY k ɑ ɡ n ɪ ʃ ə n WORD_BOUNDARY b ʊ k s WORD_BOUNDARY aɪ ʌ m WORD_BOUNDARY n oʊ n WORD_BOUNDARY æ z WORD_BOUNDARY ð ə WORD_BOUNDARY b ʊ k WORD_BOUNDARY h ɔ ɹ d WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: books horde
+COMPOUND IPA:   b ʊ k s WORD_BOUNDARY h ɔ ɹ d WORD_BOUNDARY
+STORY ORTHO:    The shelf in my office is full of cognition books. I am known as the books horde.
+STORY IPA:      ð ə WORD_BOUNDARY ʃ ɛ l f WORD_BOUNDARY ɪ n WORD_BOUNDARY m aɪ WORD_BOUNDARY ɑ f ɪ s WORD_BOUNDARY ɪ z WORD_BOUNDARY f ʊ l WORD_BOUNDARY ʌ v WORD_BOUNDARY k ɑ ɡ n ɪ ʃ ə n WORD_BOUNDARY b ʊ k s WORD_BOUNDARY aɪ ʌ m WORD_BOUNDARY n oʊ n WORD_BOUNDARY æ z WORD_BOUNDARY ð ə WORD_BOUNDARY b ʊ k s WORD_BOUNDARY h ɔ ɹ d WORD_BOUNDARY
+
+
+GROUP 7
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: sex distinctions
+COMPOUND IPA:   s ɛ k s WORD_BOUNDARY d ɪ s t ɪ ŋ k ʃ ə n z WORD_BOUNDARY
+STORY ORTHO:    It is well recognized that the male and female sexes are distinct on many cognitive abilities, but the source of this effect is poorly understood. Much research has attempted to explain the source of sex distinctions.
+STORY IPA:      ɪ t WORD_BOUNDARY ɪ z WORD_BOUNDARY w ɛ l WORD_BOUNDARY ɹ ɛ k ə ɡ n aɪ z d WORD_BOUNDARY ð æ t ð ə WORD_BOUNDARY m eɪ l WORD_BOUNDARY æ n d WORD_BOUNDARY f iː m eɪ l WORD_BOUNDARY s ɛ k s ɪ z WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY d ɪ s t ɪ ŋ k t WORD_BOUNDARY ɔ n WORD_BOUNDARY m ɛ n i WORD_BOUNDARY k ɑ ɡ n ɪ t ɪ v WORD_BOUNDARY ʌ b ɪ l ə t i z WORD_BOUNDARY b ʌ t WORD_BOUNDARY ð ə WORD_BOUNDARY s ɔ ɹ s WORD_BOUNDARY ʌ v WORD_BOUNDARY ð ɪ s WORD_BOUNDARY ɪ f ɛ k t WORD_BOUNDARY ɪ z WORD_BOUNDARY p ʊ ɹ l i WORD_BOUNDARY ʌ n d ə ɹ s t ʊ d WORD_BOUNDARY m ʌ t̠ʃ WORD_BOUNDARY ɹ ɪ s ɜː t̠ʃ WORD_BOUNDARY h ʌ z WORD_BOUNDARY ʌ t ɛ m p t ɪ d WORD_BOUNDARY t ʊ WORD_BOUNDARY ɛ k s p l eɪ n WORD_BOUNDARY ð ə WORD_BOUNDARY s ɔ ɹ s WORD_BOUNDARY ʌ v WORD_BOUNDARY s ɛ k s WORD_BOUNDARY d ɪ s t ɪ ŋ k ʃ ə n z WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: sexes distinctions
+COMPOUND IPA:   s ɛ k s ɪ z WORD_BOUNDARY d ɪ s t ɪ ŋ k ʃ ə n z WORD_BOUNDARY
+STORY ORTHO:    It is well recognized that the male and female sexes are distinct on many cognitive abilities, but the source of this effect is poorly understood. Much research has attempted to explain the source of sexes distinctions.
+STORY IPA:      ɪ t WORD_BOUNDARY ɪ z WORD_BOUNDARY w ɛ l WORD_BOUNDARY ɹ ɛ k ə ɡ n aɪ z d WORD_BOUNDARY ð æ t ð ə WORD_BOUNDARY m eɪ l WORD_BOUNDARY æ n d WORD_BOUNDARY f iː m eɪ l WORD_BOUNDARY s ɛ k s ɪ z WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY d ɪ s t ɪ ŋ k t WORD_BOUNDARY ɔ n WORD_BOUNDARY m ɛ n i WORD_BOUNDARY k ɑ ɡ n ɪ t ɪ v WORD_BOUNDARY ʌ b ɪ l ə t i z WORD_BOUNDARY b ʌ t WORD_BOUNDARY ð ə WORD_BOUNDARY s ɔ ɹ s WORD_BOUNDARY ʌ v WORD_BOUNDARY ð ɪ s WORD_BOUNDARY ɪ f ɛ k t WORD_BOUNDARY ɪ z WORD_BOUNDARY p ʊ ɹ l i WORD_BOUNDARY ʌ n d ə ɹ s t ʊ d WORD_BOUNDARY m ʌ t̠ʃ WORD_BOUNDARY ɹ ɪ s ɜː t̠ʃ WORD_BOUNDARY h ʌ z WORD_BOUNDARY ʌ t ɛ m p t ɪ d WORD_BOUNDARY t ʊ WORD_BOUNDARY ɛ k s p l eɪ n WORD_BOUNDARY ð ə WORD_BOUNDARY s ɔ ɹ s WORD_BOUNDARY ʌ v WORD_BOUNDARY s ɛ k s ɪ z WORD_BOUNDARY d ɪ s t ɪ ŋ k ʃ ə n z WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: sack distinctions
+COMPOUND IPA:   s æ k WORD_BOUNDARY d ɪ s t ɪ ŋ k ʃ ə n z WORD_BOUNDARY
+STORY ORTHO:    Farmers have long recognized that potatoes are distinct in quality depending on the sacks in which they are stored, but the source of this effect is poorly understood. Much research has attempted to explain the source of sack distinctions.
+STORY IPA:      f ɑ ɹ m ə ɹ z WORD_BOUNDARY h æ v WORD_BOUNDARY l ɔ ŋ WORD_BOUNDARY ɹ ɛ k ə ɡ n aɪ z d WORD_BOUNDARY ð æ t WORD_BOUNDARY p ə t eɪ t oʊ z WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY d ɪ s t ɪ ŋ k t WORD_BOUNDARY ɪ n WORD_BOUNDARY k w ɔ l ɪ t i WORD_BOUNDARY d ɪ p ɛ n d ɪ ŋ WORD_BOUNDARY ɔ n ð ə WORD_BOUNDARY s æ k s WORD_BOUNDARY ɪ n w ɪ t̠ʃ WORD_BOUNDARY ð eɪ WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY s t ɔ ɹ d WORD_BOUNDARY b ʌ t WORD_BOUNDARY ð ə WORD_BOUNDARY s ɔ ɹ s WORD_BOUNDARY ʌ v WORD_BOUNDARY ð ɪ s WORD_BOUNDARY ɪ f ɛ k t WORD_BOUNDARY ɪ z WORD_BOUNDARY p ʊ ɹ l i WORD_BOUNDARY ʌ n d ə ɹ s t ʊ d WORD_BOUNDARY m ʌ t̠ʃ WORD_BOUNDARY ɹ ɪ s ɜː t̠ʃ WORD_BOUNDARY h ʌ z WORD_BOUNDARY ʌ t ɛ m p t ɪ d WORD_BOUNDARY t ʊ WORD_BOUNDARY ɛ k s p l eɪ n WORD_BOUNDARY ð ə WORD_BOUNDARY s ɔ ɹ s WORD_BOUNDARY ʌ v WORD_BOUNDARY s æ k WORD_BOUNDARY d ɪ s t ɪ ŋ k ʃ ə n z WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: sacks distinctions
+COMPOUND IPA:   s æ k s WORD_BOUNDARY d ɪ s t ɪ ŋ k ʃ ə n z WORD_BOUNDARY
+STORY ORTHO:    Farmers have long recognized that potatoes are distinct in quality depending on the sacks in which they are stored, but the source of this effect is poorly understood. Much research has attempted to explain the source of sacks distinctions.
+STORY IPA:      f ɑ ɹ m ə ɹ z WORD_BOUNDARY h æ v WORD_BOUNDARY l ɔ ŋ WORD_BOUNDARY ɹ ɛ k ə ɡ n aɪ z d WORD_BOUNDARY ð æ t WORD_BOUNDARY p ə t eɪ t oʊ z WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY d ɪ s t ɪ ŋ k t WORD_BOUNDARY ɪ n WORD_BOUNDARY k w ɔ l ɪ t i WORD_BOUNDARY d ɪ p ɛ n d ɪ ŋ WORD_BOUNDARY ɔ n ð ə WORD_BOUNDARY s æ k s WORD_BOUNDARY ɪ n w ɪ t̠ʃ WORD_BOUNDARY ð eɪ WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY s t ɔ ɹ d WORD_BOUNDARY b ʌ t WORD_BOUNDARY ð ə WORD_BOUNDARY s ɔ ɹ s WORD_BOUNDARY ʌ v WORD_BOUNDARY ð ɪ s WORD_BOUNDARY ɪ f ɛ k t WORD_BOUNDARY ɪ z WORD_BOUNDARY p ʊ ɹ l i WORD_BOUNDARY ʌ n d ə ɹ s t ʊ d WORD_BOUNDARY m ʌ t̠ʃ WORD_BOUNDARY ɹ ɪ s ɜː t̠ʃ WORD_BOUNDARY h ʌ z WORD_BOUNDARY ʌ t ɛ m p t ɪ d WORD_BOUNDARY t ʊ WORD_BOUNDARY ɛ k s p l eɪ n WORD_BOUNDARY ð ə WORD_BOUNDARY s ɔ ɹ s WORD_BOUNDARY ʌ v WORD_BOUNDARY s æ k s WORD_BOUNDARY d ɪ s t ɪ ŋ k ʃ ə n z WORD_BOUNDARY
+
+
+GROUP 8
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: tax repayment
+COMPOUND IPA:   t æ k s WORD_BOUNDARY ɹ ɪ p eɪ m ə n t WORD_BOUNDARY
+STORY ORTHO:    Last year, H&R Block took care of my taxes. Luckily they gave me a tax repayment.
+STORY IPA:      l æ s t WORD_BOUNDARY j ɪ ɹ WORD_BOUNDARY eɪ t̠ʃ WORD_BOUNDARY æ n d WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY b l ɑ k WORD_BOUNDARY t ʊ k WORD_BOUNDARY k ɛ ɹ WORD_BOUNDARY ʌ v WORD_BOUNDARY m aɪ WORD_BOUNDARY t æ k s ɪ z WORD_BOUNDARY l ʌ k i l i WORD_BOUNDARY ð eɪ WORD_BOUNDARY ɡ eɪ v WORD_BOUNDARY m iː WORD_BOUNDARY ʌ WORD_BOUNDARY t æ k s WORD_BOUNDARY ɹ ɪ p eɪ m ə n t WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: taxes repayment
+COMPOUND IPA:   t æ k s ɪ z WORD_BOUNDARY ɹ ɪ p eɪ m ə n t WORD_BOUNDARY
+STORY ORTHO:    Last year, H&R Block took care of my taxes. Luckily they gave me a taxes repayment.
+STORY IPA:      l æ s t WORD_BOUNDARY j ɪ ɹ WORD_BOUNDARY eɪ t̠ʃ WORD_BOUNDARY æ n d WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY b l ɑ k WORD_BOUNDARY t ʊ k WORD_BOUNDARY k ɛ ɹ WORD_BOUNDARY ʌ v WORD_BOUNDARY m aɪ WORD_BOUNDARY t æ k s ɪ z WORD_BOUNDARY l ʌ k i l i WORD_BOUNDARY ð eɪ WORD_BOUNDARY ɡ eɪ v WORD_BOUNDARY m iː WORD_BOUNDARY ʌ WORD_BOUNDARY t æ k s ɪ z WORD_BOUNDARY ɹ ɪ p eɪ m ə n t WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: tack repayment
+COMPOUND IPA:   t æ k WORD_BOUNDARY ɹ ɪ p eɪ m ə n t WORD_BOUNDARY
+STORY ORTHO:    When I got my order from Office Depot, I was shocked to discover they had accidentally sent me 10,000 boxes of tacks. Luckily they gave me a tack repayment.
+STORY IPA:      w ɛ n WORD_BOUNDARY aɪ WORD_BOUNDARY ɡ ɑ t WORD_BOUNDARY m aɪ WORD_BOUNDARY ɔ ɹ d ə ɹ WORD_BOUNDARY f ɹ ʌ m WORD_BOUNDARY ɑ f ɪ s WORD_BOUNDARY d iː p oʊ WORD_BOUNDARY aɪ WORD_BOUNDARY w ʌ z WORD_BOUNDARY ʃ ɑ k t WORD_BOUNDARY t ə WORD_BOUNDARY d ɪ s k ʌ v ə ɹ WORD_BOUNDARY ð eɪ WORD_BOUNDARY h æ d WORD_BOUNDARY æ k s ɪ d ɛ n t ə l i WORD_BOUNDARY s ɛ n t WORD_BOUNDARY m iː WORD_BOUNDARY t ɛ n WORD_BOUNDARY θ aʊ z ə n d WORD_BOUNDARY b ɑ k s ɪ z WORD_BOUNDARY ʌ v WORD_BOUNDARY t æ k s WORD_BOUNDARY l ʌ k i l i WORD_BOUNDARY ð eɪ WORD_BOUNDARY ɡ eɪ v WORD_BOUNDARY m iː WORD_BOUNDARY ʌ WORD_BOUNDARY t æ k WORD_BOUNDARY ɹ ɪ p eɪ m ə n t WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: tacks repayment
+COMPOUND IPA:   t æ k s WORD_BOUNDARY ɹ ɪ p eɪ m ə n t WORD_BOUNDARY
+STORY ORTHO:    When I got my order from Office Depot, I was shocked to discover they had accidentally sent me 10,000 boxes of tacks. Luckily they gave me a tacks repayment.
+STORY IPA:      w ɛ n WORD_BOUNDARY aɪ WORD_BOUNDARY ɡ ɑ t WORD_BOUNDARY m aɪ WORD_BOUNDARY ɔ ɹ d ə ɹ WORD_BOUNDARY f ɹ ʌ m WORD_BOUNDARY ɑ f ɪ s WORD_BOUNDARY d iː p oʊ WORD_BOUNDARY aɪ WORD_BOUNDARY w ʌ z WORD_BOUNDARY ʃ ɑ k t WORD_BOUNDARY t ə WORD_BOUNDARY d ɪ s k ʌ v ə ɹ WORD_BOUNDARY ð eɪ WORD_BOUNDARY h æ d WORD_BOUNDARY æ k s ɪ d ɛ n t ə l i WORD_BOUNDARY s ɛ n t WORD_BOUNDARY m iː WORD_BOUNDARY t ɛ n WORD_BOUNDARY θ aʊ z ə n d WORD_BOUNDARY b ɑ k s ɪ z WORD_BOUNDARY ʌ v WORD_BOUNDARY t æ k s WORD_BOUNDARY l ʌ k i l i WORD_BOUNDARY ð eɪ WORD_BOUNDARY ɡ eɪ v WORD_BOUNDARY m iː WORD_BOUNDARY ʌ WORD_BOUNDARY t æ k s WORD_BOUNDARY ɹ ɪ p eɪ m ə n t WORD_BOUNDARY
+
+
+GROUP 9
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: size device
+COMPOUND IPA:   s aɪ z WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY
+STORY ORTHO:    The post office has purchased a state of the art device that can sort every piece of mail by various sizes and weights. Conveniently enough, the machine is called the size device.
+STORY IPA:      ð ə WORD_BOUNDARY p oʊ s t WORD_BOUNDARY ɑ f ɪ s WORD_BOUNDARY h ʌ z WORD_BOUNDARY p ɜː t̠ʃ ɪ s t WORD_BOUNDARY ʌ WORD_BOUNDARY s t eɪ t WORD_BOUNDARY ʌ v ð ɪ WORD_BOUNDARY ɑ ɹ t WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY ð æ t WORD_BOUNDARY k æ n WORD_BOUNDARY s ɔ ɹ t WORD_BOUNDARY ɛ v ɹ i WORD_BOUNDARY p iː s WORD_BOUNDARY ʌ v WORD_BOUNDARY m eɪ l WORD_BOUNDARY b aɪ WORD_BOUNDARY v ɛ ɹ iə s WORD_BOUNDARY s aɪ z ɪ z WORD_BOUNDARY æ n d WORD_BOUNDARY w eɪ t s WORD_BOUNDARY k ə n v iː n ɪ ə n t l i WORD_BOUNDARY ɪ n ʌ f WORD_BOUNDARY ð ə WORD_BOUNDARY m ə ʃ iː n WORD_BOUNDARY ɪ z WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY s aɪ z WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: sizes device
+COMPOUND IPA:   s aɪ z ɪ z WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY
+STORY ORTHO:    The post office has purchased a state of the art device that can sort every piece of mail by various sizes and weights. Conveniently enough, the machine is called the sizes device.
+STORY IPA:      ð ə WORD_BOUNDARY p oʊ s t WORD_BOUNDARY ɑ f ɪ s WORD_BOUNDARY h ʌ z WORD_BOUNDARY p ɜː t̠ʃ ɪ s t WORD_BOUNDARY ʌ WORD_BOUNDARY s t eɪ t WORD_BOUNDARY ʌ v ð ɪ WORD_BOUNDARY ɑ ɹ t WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY ð æ t WORD_BOUNDARY k æ n WORD_BOUNDARY s ɔ ɹ t WORD_BOUNDARY ɛ v ɹ i WORD_BOUNDARY p iː s WORD_BOUNDARY ʌ v WORD_BOUNDARY m eɪ l WORD_BOUNDARY b aɪ WORD_BOUNDARY v ɛ ɹ iə s WORD_BOUNDARY s aɪ z ɪ z WORD_BOUNDARY æ n d WORD_BOUNDARY w eɪ t s WORD_BOUNDARY k ə n v iː n ɪ ə n t l i WORD_BOUNDARY ɪ n ʌ f WORD_BOUNDARY ð ə WORD_BOUNDARY m ə ʃ iː n WORD_BOUNDARY ɪ z WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY s aɪ z ɪ z WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: sigh device
+COMPOUND IPA:   s aɪ WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY
+STORY ORTHO:    Scientists have invented a device that can detect depression by recording the number of sighs a person emits in a hour. Conveniently enough, the machine is called the sigh device.
+STORY IPA:      s aɪ ə n t ɪ s t s WORD_BOUNDARY h æ v WORD_BOUNDARY ɪ n v ɛ n t ɪ d WORD_BOUNDARY ʌ WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY ð æ t WORD_BOUNDARY k æ n WORD_BOUNDARY d ɪ t ɛ k t WORD_BOUNDARY d ɪ p ɹ ɛ ʃ ə n WORD_BOUNDARY b aɪ WORD_BOUNDARY ɹ ɪ k ɔ ɹ d ɪ ŋ WORD_BOUNDARY ð ə WORD_BOUNDARY n ʌ m b ə ɹ ɹ WORD_BOUNDARY ʌ v WORD_BOUNDARY s aɪ z WORD_BOUNDARY ʌ WORD_BOUNDARY p ɜː s ə n WORD_BOUNDARY ɪ m ɪ t s WORD_BOUNDARY ɪ n WORD_BOUNDARY ʌ WORD_BOUNDARY aʊ ə ɹ WORD_BOUNDARY k ə n v iː n ɪ ə n t l i WORD_BOUNDARY ɪ n ʌ f WORD_BOUNDARY ð ə WORD_BOUNDARY m ə ʃ iː n WORD_BOUNDARY ɪ z WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY s aɪ WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: sighs device
+COMPOUND IPA:   s aɪ z WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY
+STORY ORTHO:    Scientists have invented a device that can detect depression by recording the number of sighs a person emits in a hour. Conveniently enough, the machine is called the sighs device.
+STORY IPA:      s aɪ ə n t ɪ s t s WORD_BOUNDARY h æ v WORD_BOUNDARY ɪ n v ɛ n t ɪ d WORD_BOUNDARY ʌ WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY ð æ t WORD_BOUNDARY k æ n WORD_BOUNDARY d ɪ t ɛ k t WORD_BOUNDARY d ɪ p ɹ ɛ ʃ ə n WORD_BOUNDARY b aɪ WORD_BOUNDARY ɹ ɪ k ɔ ɹ d ɪ ŋ WORD_BOUNDARY ð ə WORD_BOUNDARY n ʌ m b ə ɹ ɹ WORD_BOUNDARY ʌ v WORD_BOUNDARY s aɪ z WORD_BOUNDARY ʌ WORD_BOUNDARY p ɜː s ə n WORD_BOUNDARY ɪ m ɪ t s WORD_BOUNDARY ɪ n WORD_BOUNDARY ʌ WORD_BOUNDARY aʊ ə ɹ WORD_BOUNDARY k ə n v iː n ɪ ə n t l i WORD_BOUNDARY ɪ n ʌ f WORD_BOUNDARY ð ə WORD_BOUNDARY m ə ʃ iː n WORD_BOUNDARY ɪ z WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY s aɪ z WORD_BOUNDARY d ɪ v aɪ s WORD_BOUNDARY
+
+
+GROUP 10
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: praise getter
+COMPOUND IPA:   p ɹ eɪ z WORD_BOUNDARY ɡ ɛ t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Four year old Danny will do anything to get praises from his mother. She calls him the praise getter.
+STORY IPA:      f ɔ ɹ WORD_BOUNDARY j ɪ ɹ WORD_BOUNDARY oʊ l d WORD_BOUNDARY d æ n i WORD_BOUNDARY w ɪ l WORD_BOUNDARY d uː WORD_BOUNDARY ɛ n ɪ θ ɪ ŋ WORD_BOUNDARY t ə WORD_BOUNDARY ɡ ɛ t WORD_BOUNDARY p ɹ eɪ z ɪ z WORD_BOUNDARY f ɹ ʌ m WORD_BOUNDARY h ɪ z WORD_BOUNDARY m ʌ ð ə ɹ WORD_BOUNDARY ʃ iː WORD_BOUNDARY k ɔ l z WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY p ɹ eɪ z WORD_BOUNDARY ɡ ɛ t ə ɹ WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: praises getter
+COMPOUND IPA:   p ɹ eɪ z ɪ z WORD_BOUNDARY ɡ ɛ t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Four year old Danny will do anything to get praises from his mother. She calls him the praises getter.
+STORY IPA:      f ɔ ɹ WORD_BOUNDARY j ɪ ɹ WORD_BOUNDARY oʊ l d WORD_BOUNDARY d æ n i WORD_BOUNDARY w ɪ l WORD_BOUNDARY d uː WORD_BOUNDARY ɛ n ɪ θ ɪ ŋ WORD_BOUNDARY t ə WORD_BOUNDARY ɡ ɛ t WORD_BOUNDARY p ɹ eɪ z ɪ z WORD_BOUNDARY f ɹ ʌ m WORD_BOUNDARY h ɪ z WORD_BOUNDARY m ʌ ð ə ɹ WORD_BOUNDARY ʃ iː WORD_BOUNDARY k ɔ l z WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY p ɹ eɪ z ɪ z WORD_BOUNDARY ɡ ɛ t ə ɹ WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: tray getter
+COMPOUND IPA:   t ɹ eɪ WORD_BOUNDARY ɡ ɛ t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Four year old Danny loves to help his pre school teacher in getting food trays off the tables after lunch. She calls him the tray getter.
+STORY IPA:      f ɔ ɹ WORD_BOUNDARY j ɪ ɹ WORD_BOUNDARY oʊ l d WORD_BOUNDARY d æ n i WORD_BOUNDARY l ʌ v z WORD_BOUNDARY t ə WORD_BOUNDARY h ɛ l p WORD_BOUNDARY h ɪ z WORD_BOUNDARY p ɹ iː WORD_BOUNDARY s k uː l WORD_BOUNDARY t iː t̠ʃ ə ɹ ɹ WORD_BOUNDARY ɪ n WORD_BOUNDARY ɡ ɛ t ɪ ŋ WORD_BOUNDARY f uː d WORD_BOUNDARY t ɹ eɪ z WORD_BOUNDARY ɔ f WORD_BOUNDARY ð ə WORD_BOUNDARY t eɪ b ə l z WORD_BOUNDARY æ f t ə ɹ WORD_BOUNDARY l ʌ n t̠ʃ WORD_BOUNDARY ʃ iː WORD_BOUNDARY k ɔ l z WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY t ɹ eɪ WORD_BOUNDARY ɡ ɛ t ə ɹ WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: trays getter
+COMPOUND IPA:   t ɹ eɪ z WORD_BOUNDARY ɡ ɛ t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Four year old Danny loves to help his pre school teacher in getting food trays off the tables after lunch. She calls him the trays getter.
+STORY IPA:      f ɔ ɹ WORD_BOUNDARY j ɪ ɹ WORD_BOUNDARY oʊ l d WORD_BOUNDARY d æ n i WORD_BOUNDARY l ʌ v z WORD_BOUNDARY t ə WORD_BOUNDARY h ɛ l p WORD_BOUNDARY h ɪ z WORD_BOUNDARY p ɹ iː WORD_BOUNDARY s k uː l WORD_BOUNDARY t iː t̠ʃ ə ɹ ɹ WORD_BOUNDARY ɪ n WORD_BOUNDARY ɡ ɛ t ɪ ŋ WORD_BOUNDARY f uː d WORD_BOUNDARY t ɹ eɪ z WORD_BOUNDARY ɔ f WORD_BOUNDARY ð ə WORD_BOUNDARY t eɪ b ə l z WORD_BOUNDARY æ f t ə ɹ WORD_BOUNDARY l ʌ n t̠ʃ WORD_BOUNDARY ʃ iː WORD_BOUNDARY k ɔ l z WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY t ɹ eɪ z WORD_BOUNDARY ɡ ɛ t ə ɹ WORD_BOUNDARY
+
+
+GROUP 11
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: bruise expert
+COMPOUND IPA:   b ɹ uː z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+STORY ORTHO:    Dr. Aaron is a dermatologist that prepares a special cream for clearing out skin bruises. I call him the bruise expert.
+STORY IPA:      d ɑ k t ə ɹ ɹ WORD_BOUNDARY ɛ ɹ ə n WORD_BOUNDARY ɪ z WORD_BOUNDARY ʌ WORD_BOUNDARY d ɜː m ʌ t ɑ l ə d̠ʒ ɪ s t WORD_BOUNDARY ð æ t WORD_BOUNDARY p ɹ ɪ p ɛ ɹ z WORD_BOUNDARY ʌ WORD_BOUNDARY s p ɛ ʃ ə l WORD_BOUNDARY k ɹ iː m WORD_BOUNDARY f ɔ ɹ WORD_BOUNDARY k l ɪ ɹ ɪ ŋ WORD_BOUNDARY aʊ t WORD_BOUNDARY s k ɪ n WORD_BOUNDARY b ɹ uː z ɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY b ɹ uː z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: bruises expert
+COMPOUND IPA:   b ɹ uː z ɪ z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+STORY ORTHO:    Dr. Aaron is a dermatologist that prepares a special cream for clearing out skin bruises. I call him the bruises expert.
+STORY IPA:      d ɑ k t ə ɹ ɹ WORD_BOUNDARY ɛ ɹ ə n WORD_BOUNDARY ɪ z WORD_BOUNDARY ʌ WORD_BOUNDARY d ɜː m ʌ t ɑ l ə d̠ʒ ɪ s t WORD_BOUNDARY ð æ t WORD_BOUNDARY p ɹ ɪ p ɛ ɹ z WORD_BOUNDARY ʌ WORD_BOUNDARY s p ɛ ʃ ə l WORD_BOUNDARY k ɹ iː m WORD_BOUNDARY f ɔ ɹ WORD_BOUNDARY k l ɪ ɹ ɪ ŋ WORD_BOUNDARY aʊ t WORD_BOUNDARY s k ɪ n WORD_BOUNDARY b ɹ uː z ɪ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY b ɹ uː z ɪ z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: brew expert
+COMPOUND IPA:   b ɹ uː WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+STORY ORTHO:    Aaron owns a beer refinery that makes two hundred brews. I call him the brew expert.
+STORY IPA:      ɛ ɹ ə n WORD_BOUNDARY oʊ n z WORD_BOUNDARY ʌ WORD_BOUNDARY b ɪ ɹ WORD_BOUNDARY ɹ ɪ f aɪ n ə ɹ ɹ i WORD_BOUNDARY ð æ t WORD_BOUNDARY m eɪ k s WORD_BOUNDARY t uː WORD_BOUNDARY h ʌ n d ɹ ɪ d WORD_BOUNDARY b ɹ uː z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY b ɹ uː WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: brews expert
+COMPOUND IPA:   b ɹ uː z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+STORY ORTHO:    Aaron owns a beer refinery that makes two hundred brews. I call him the brews expert.
+STORY IPA:      ɛ ɹ ə n WORD_BOUNDARY oʊ n z WORD_BOUNDARY ʌ WORD_BOUNDARY b ɪ ɹ WORD_BOUNDARY ɹ ɪ f aɪ n ə ɹ ɹ i WORD_BOUNDARY ð æ t WORD_BOUNDARY m eɪ k s WORD_BOUNDARY t uː WORD_BOUNDARY h ʌ n d ɹ ɪ d WORD_BOUNDARY b ɹ uː z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY b ɹ uː z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+
+
+GROUP 12
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: raise seeker
+COMPOUND IPA:   ɹ eɪ z WORD_BOUNDARY s iː k ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Amanda has already had three raises this year. I call her the raise seeker.
+STORY IPA:      ʌ m æ n d ə WORD_BOUNDARY h ʌ z WORD_BOUNDARY ɔ l ɹ ɛ d i WORD_BOUNDARY h æ d WORD_BOUNDARY θ ɹ iː WORD_BOUNDARY ɹ eɪ z ɪ z WORD_BOUNDARY ð ɪ s WORD_BOUNDARY j ɪ ɹ WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɜː WORD_BOUNDARY ð ə WORD_BOUNDARY ɹ eɪ z WORD_BOUNDARY s iː k ə ɹ WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: raises seeker
+COMPOUND IPA:   ɹ eɪ z ɪ z WORD_BOUNDARY s iː k ə ɹ WORD_BOUNDARY
+STORY ORTHO:    Amanda has already had three raises this year. I call her the raises seeker.
+STORY IPA:      ʌ m æ n d ə WORD_BOUNDARY h ʌ z WORD_BOUNDARY ɔ l ɹ ɛ d i WORD_BOUNDARY h æ d WORD_BOUNDARY θ ɹ iː WORD_BOUNDARY ɹ eɪ z ɪ z WORD_BOUNDARY ð ɪ s WORD_BOUNDARY j ɪ ɹ WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɜː WORD_BOUNDARY ð ə WORD_BOUNDARY ɹ eɪ z ɪ z WORD_BOUNDARY s iː k ə ɹ WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: ray seeker
+COMPOUND IPA:   ɹ eɪ WORD_BOUNDARY s iː k ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My dog loves to sit outside and soak up the sun rays all morning. I call him a ray seeker.
+STORY IPA:      m aɪ WORD_BOUNDARY d ɑ ɡ WORD_BOUNDARY l ʌ v z WORD_BOUNDARY t ə WORD_BOUNDARY s ɪ t WORD_BOUNDARY aʊ t s aɪ d WORD_BOUNDARY æ n d WORD_BOUNDARY s oʊ k WORD_BOUNDARY ʌ p WORD_BOUNDARY ð ə WORD_BOUNDARY s ʌ n WORD_BOUNDARY ɹ eɪ z WORD_BOUNDARY ɔ l WORD_BOUNDARY m ɔ ɹ n ɪ ŋ WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ʌ WORD_BOUNDARY ɹ eɪ WORD_BOUNDARY s iː k ə ɹ WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: rays seeker
+COMPOUND IPA:   ɹ eɪ z WORD_BOUNDARY s iː k ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My dog loves to sit outside and soak up the sun rays all morning. I call him a rays seeker.
+STORY IPA:      m aɪ WORD_BOUNDARY d ɑ ɡ WORD_BOUNDARY l ʌ v z WORD_BOUNDARY t ə WORD_BOUNDARY s ɪ t WORD_BOUNDARY aʊ t s aɪ d WORD_BOUNDARY æ n d WORD_BOUNDARY s oʊ k WORD_BOUNDARY ʌ p WORD_BOUNDARY ð ə WORD_BOUNDARY s ʌ n WORD_BOUNDARY ɹ eɪ z WORD_BOUNDARY ɔ l WORD_BOUNDARY m ɔ ɹ n ɪ ŋ WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ʌ WORD_BOUNDARY ɹ eɪ z WORD_BOUNDARY s iː k ə ɹ WORD_BOUNDARY
+
+
+GROUP 13
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: blaze admirer
+COMPOUND IPA:   b l eɪ z WORD_BOUNDARY ʌ d m aɪ ə ɹ ɹ ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My friend Greg loves to sit near the fireplace, he can admire the blazes for hours. I call him the blaze admirer.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY ɡ ɹ ɛ ɡ WORD_BOUNDARY l ʌ v z WORD_BOUNDARY t ə WORD_BOUNDARY s ɪ t WORD_BOUNDARY n ɪ ɹ WORD_BOUNDARY ð ə WORD_BOUNDARY f aɪ ə ɹ p l eɪ s WORD_BOUNDARY h iː WORD_BOUNDARY k æ n WORD_BOUNDARY ʌ d m aɪ ə ɹ WORD_BOUNDARY ð ə WORD_BOUNDARY b l eɪ z ɪ z WORD_BOUNDARY f ɔ ɹ WORD_BOUNDARY aʊ ə ɹ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY b l eɪ z WORD_BOUNDARY ʌ d m aɪ ə ɹ ɹ ə ɹ WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: blazes admirer
+COMPOUND IPA:   b l eɪ z ɪ z WORD_BOUNDARY ʌ d m aɪ ə ɹ ɹ ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My friend Greg loves to sit near the fireplace, he can admire the blazes for hours. I call him the blazes admirer.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY ɡ ɹ ɛ ɡ WORD_BOUNDARY l ʌ v z WORD_BOUNDARY t ə WORD_BOUNDARY s ɪ t WORD_BOUNDARY n ɪ ɹ WORD_BOUNDARY ð ə WORD_BOUNDARY f aɪ ə ɹ p l eɪ s WORD_BOUNDARY h iː WORD_BOUNDARY k æ n WORD_BOUNDARY ʌ d m aɪ ə ɹ WORD_BOUNDARY ð ə WORD_BOUNDARY b l eɪ z ɪ z WORD_BOUNDARY f ɔ ɹ WORD_BOUNDARY aʊ ə ɹ z WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY b l eɪ z ɪ z WORD_BOUNDARY ʌ d m aɪ ə ɹ ɹ ə ɹ WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: play admirer
+COMPOUND IPA:   p l eɪ WORD_BOUNDARY ʌ d m aɪ ə ɹ ɹ ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My friend Greg has always admired theater plays, he has seen hundreds of plays throughout his life. I call him the play admirer.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY ɡ ɹ ɛ ɡ WORD_BOUNDARY h ʌ z WORD_BOUNDARY ɔ l w eɪ z WORD_BOUNDARY ʌ d m aɪ ə ɹ d WORD_BOUNDARY θ iə t ə ɹ WORD_BOUNDARY p l eɪ z WORD_BOUNDARY h iː WORD_BOUNDARY h ʌ z WORD_BOUNDARY s iː n WORD_BOUNDARY h ʌ n d ɹ ɪ d z WORD_BOUNDARY ʌ v WORD_BOUNDARY p l eɪ z WORD_BOUNDARY θ ɹ uː aʊ t WORD_BOUNDARY h ɪ z WORD_BOUNDARY l aɪ f WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY p l eɪ WORD_BOUNDARY ʌ d m aɪ ə ɹ ɹ ə ɹ WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: plays admirer
+COMPOUND IPA:   p l eɪ z WORD_BOUNDARY ʌ d m aɪ ə ɹ ɹ ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My friend Greg has always admired theater plays, he has seen hundreds of plays throughout his life. I call him the plays admirer.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY ɡ ɹ ɛ ɡ WORD_BOUNDARY h ʌ z WORD_BOUNDARY ɔ l w eɪ z WORD_BOUNDARY ʌ d m aɪ ə ɹ d WORD_BOUNDARY θ iə t ə ɹ WORD_BOUNDARY p l eɪ z WORD_BOUNDARY h iː WORD_BOUNDARY h ʌ z WORD_BOUNDARY s iː n WORD_BOUNDARY h ʌ n d ɹ ɪ d z WORD_BOUNDARY ʌ v WORD_BOUNDARY p l eɪ z WORD_BOUNDARY θ ɹ uː aʊ t WORD_BOUNDARY h ɪ z WORD_BOUNDARY l aɪ f WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY p l eɪ z WORD_BOUNDARY ʌ d m aɪ ə ɹ ɹ ə ɹ WORD_BOUNDARY
+
+
+GROUP 14
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: vase steward
+COMPOUND IPA:   v eɪ s WORD_BOUNDARY s t uː ə ɹ d WORD_BOUNDARY
+STORY ORTHO:    My friend Emily is an antique vase dealer. She is very successful, but has no room in her small office, so she often has me keep some of her vases. She calls me her vase steward.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY ɛ m ɪ l i WORD_BOUNDARY ɪ z WORD_BOUNDARY ʌ n WORD_BOUNDARY æ n t iː k WORD_BOUNDARY v eɪ s WORD_BOUNDARY d iː l ə ɹ WORD_BOUNDARY ʃ iː WORD_BOUNDARY ɪ z WORD_BOUNDARY v ɛ ɹ i WORD_BOUNDARY s ə k s ɛ s f ə l WORD_BOUNDARY b ʌ t WORD_BOUNDARY h ʌ z WORD_BOUNDARY n oʊ WORD_BOUNDARY ɹ uː m WORD_BOUNDARY ɪ n WORD_BOUNDARY h ɜː WORD_BOUNDARY s m ɔ l WORD_BOUNDARY ɑ f ɪ s WORD_BOUNDARY s oʊ WORD_BOUNDARY ʃ iː WORD_BOUNDARY ɔ f ə n WORD_BOUNDARY h ʌ z WORD_BOUNDARY m iː WORD_BOUNDARY k iː p WORD_BOUNDARY s ʌ m WORD_BOUNDARY ʌ v WORD_BOUNDARY h ɜː WORD_BOUNDARY v eɪ s ɪ z WORD_BOUNDARY ʃ iː WORD_BOUNDARY k ɔ l z WORD_BOUNDARY m iː WORD_BOUNDARY h ɜː WORD_BOUNDARY v eɪ s WORD_BOUNDARY s t uː ə ɹ d WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: vases steward
+COMPOUND IPA:   v eɪ s ɪ z WORD_BOUNDARY s t uː ə ɹ d WORD_BOUNDARY
+STORY ORTHO:    My friend Emily is an antique vase dealer. She is very successful, but has no room in her small office, so she often has me keep some of her vases. She calls me her vases steward.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY ɛ m ɪ l i WORD_BOUNDARY ɪ z WORD_BOUNDARY ʌ n WORD_BOUNDARY æ n t iː k WORD_BOUNDARY v eɪ s WORD_BOUNDARY d iː l ə ɹ WORD_BOUNDARY ʃ iː WORD_BOUNDARY ɪ z WORD_BOUNDARY v ɛ ɹ i WORD_BOUNDARY s ə k s ɛ s f ə l WORD_BOUNDARY b ʌ t WORD_BOUNDARY h ʌ z WORD_BOUNDARY n oʊ WORD_BOUNDARY ɹ uː m WORD_BOUNDARY ɪ n WORD_BOUNDARY h ɜː WORD_BOUNDARY s m ɔ l WORD_BOUNDARY ɑ f ɪ s WORD_BOUNDARY s oʊ WORD_BOUNDARY ʃ iː WORD_BOUNDARY ɔ f ə n WORD_BOUNDARY h ʌ z WORD_BOUNDARY m iː WORD_BOUNDARY k iː p WORD_BOUNDARY s ʌ m WORD_BOUNDARY ʌ v WORD_BOUNDARY h ɜː WORD_BOUNDARY v eɪ s ɪ z WORD_BOUNDARY ʃ iː WORD_BOUNDARY k ɔ l z WORD_BOUNDARY m iː WORD_BOUNDARY h ɜː WORD_BOUNDARY v eɪ s ɪ z WORD_BOUNDARY s t uː ə ɹ d WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: bee steward
+COMPOUND IPA:   b iː WORD_BOUNDARY s t uː ə ɹ d WORD_BOUNDARY
+STORY ORTHO:    My friend Emily has a bee hive in her yard. She likes honey, but she is terrified of getting stung, so she asked me to help her keep the bees. She calls me the bee steward.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY ɛ m ɪ l i WORD_BOUNDARY h ʌ z WORD_BOUNDARY ʌ WORD_BOUNDARY b iː WORD_BOUNDARY h aɪ v WORD_BOUNDARY ɪ n WORD_BOUNDARY h ɜː WORD_BOUNDARY j ɑ ɹ d WORD_BOUNDARY ʃ iː WORD_BOUNDARY l aɪ k s WORD_BOUNDARY h ʌ n i WORD_BOUNDARY b ʌ t WORD_BOUNDARY ʃ iː WORD_BOUNDARY ɪ z WORD_BOUNDARY t ɛ ɹ ɪ f aɪ d WORD_BOUNDARY ʌ v WORD_BOUNDARY ɡ ɛ t ɪ ŋ WORD_BOUNDARY s t ʌ ŋ WORD_BOUNDARY s oʊ WORD_BOUNDARY ʃ iː WORD_BOUNDARY æ s k t WORD_BOUNDARY m iː WORD_BOUNDARY t ə WORD_BOUNDARY h ɛ l p WORD_BOUNDARY h ɜː WORD_BOUNDARY k iː p WORD_BOUNDARY ð ə WORD_BOUNDARY b iː z WORD_BOUNDARY ʃ iː WORD_BOUNDARY k ɔ l z WORD_BOUNDARY m iː WORD_BOUNDARY ð ə WORD_BOUNDARY b iː WORD_BOUNDARY s t uː ə ɹ d WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: bees steward
+COMPOUND IPA:   b iː z WORD_BOUNDARY s t uː ə ɹ d WORD_BOUNDARY
+STORY ORTHO:    My friend Emily has a bee hive in her yard. She likes honey, but she is terrified of getting stung, so she asked me to help her keep the bees. She calls me the bees steward.
+STORY IPA:      m aɪ WORD_BOUNDARY f ɹ ɛ n d WORD_BOUNDARY ɛ m ɪ l i WORD_BOUNDARY h ʌ z WORD_BOUNDARY ʌ WORD_BOUNDARY b iː WORD_BOUNDARY h aɪ v WORD_BOUNDARY ɪ n WORD_BOUNDARY h ɜː WORD_BOUNDARY j ɑ ɹ d WORD_BOUNDARY ʃ iː WORD_BOUNDARY l aɪ k s WORD_BOUNDARY h ʌ n i WORD_BOUNDARY b ʌ t WORD_BOUNDARY ʃ iː WORD_BOUNDARY ɪ z WORD_BOUNDARY t ɛ ɹ ɪ f aɪ d WORD_BOUNDARY ʌ v WORD_BOUNDARY ɡ ɛ t ɪ ŋ WORD_BOUNDARY s t ʌ ŋ WORD_BOUNDARY s oʊ WORD_BOUNDARY ʃ iː WORD_BOUNDARY æ s k t WORD_BOUNDARY m iː WORD_BOUNDARY t ə WORD_BOUNDARY h ɛ l p WORD_BOUNDARY h ɜː WORD_BOUNDARY k iː p WORD_BOUNDARY ð ə WORD_BOUNDARY b iː z WORD_BOUNDARY ʃ iː WORD_BOUNDARY k ɔ l z WORD_BOUNDARY m iː WORD_BOUNDARY ð ə WORD_BOUNDARY b iː z WORD_BOUNDARY s t uː ə ɹ d WORD_BOUNDARY
+
+
+GROUP 15
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: fox avoiders
+COMPOUND IPA:   f ɑ k s WORD_BOUNDARY ʌ v ɔɪ d ə ɹ z WORD_BOUNDARY
+STORY ORTHO:    My sheep are afraid of foxes and will avoid them at all costs. I call them the fox avoiders.
+STORY IPA:      m aɪ WORD_BOUNDARY ʃ iː p WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY ʌ f ɹ eɪ d WORD_BOUNDARY ʌ v WORD_BOUNDARY f ɑ k s ɪ z WORD_BOUNDARY æ n d WORD_BOUNDARY w ɪ l WORD_BOUNDARY ʌ v ɔɪ d WORD_BOUNDARY ð ɛ m WORD_BOUNDARY æ t WORD_BOUNDARY ɔ l WORD_BOUNDARY k ɔ s t s WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY ð ɛ m WORD_BOUNDARY ð ə WORD_BOUNDARY f ɑ k s WORD_BOUNDARY ʌ v ɔɪ d ə ɹ z WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: foxes avoiders
+COMPOUND IPA:   f ɑ k s ɪ z WORD_BOUNDARY ʌ v ɔɪ d ə ɹ z WORD_BOUNDARY
+STORY ORTHO:    My sheep are afraid of foxes and will avoid them at all costs. I call them the foxes avoiders.
+STORY IPA:      m aɪ WORD_BOUNDARY ʃ iː p WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY ʌ f ɹ eɪ d WORD_BOUNDARY ʌ v WORD_BOUNDARY f ɑ k s ɪ z WORD_BOUNDARY æ n d WORD_BOUNDARY w ɪ l WORD_BOUNDARY ʌ v ɔɪ d WORD_BOUNDARY ð ɛ m WORD_BOUNDARY æ t WORD_BOUNDARY ɔ l WORD_BOUNDARY k ɔ s t s WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY ð ɛ m WORD_BOUNDARY ð ə WORD_BOUNDARY f ɑ k s ɪ z WORD_BOUNDARY ʌ v ɔɪ d ə ɹ z WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: shock avoiders
+COMPOUND IPA:   ʃ ɑ k WORD_BOUNDARY ʌ v ɔɪ d ə ɹ z WORD_BOUNDARY
+STORY ORTHO:    My lab rats are afraid of electrical shocks and will avoid them at all costs. I call them the shock avoiders.
+STORY IPA:      m aɪ WORD_BOUNDARY l æ b WORD_BOUNDARY ɹ æ t s WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY ʌ f ɹ eɪ d WORD_BOUNDARY ʌ v WORD_BOUNDARY ɪ l ɛ k t ɹ ɪ k ə l WORD_BOUNDARY ʃ ɑ k s WORD_BOUNDARY æ n d WORD_BOUNDARY w ɪ l WORD_BOUNDARY ʌ v ɔɪ d WORD_BOUNDARY ð ɛ m WORD_BOUNDARY æ t WORD_BOUNDARY ɔ l WORD_BOUNDARY k ɔ s t s WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY ð ɛ m WORD_BOUNDARY ð ə WORD_BOUNDARY ʃ ɑ k WORD_BOUNDARY ʌ v ɔɪ d ə ɹ z WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: shocks avoiders
+COMPOUND IPA:   ʃ ɑ k s WORD_BOUNDARY ʌ v ɔɪ d ə ɹ z WORD_BOUNDARY
+STORY ORTHO:    My lab rats are afraid of electrical shocks and will avoid them at all costs. I call them the shocks avoiders.
+STORY IPA:      m aɪ WORD_BOUNDARY l æ b WORD_BOUNDARY ɹ æ t s WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY ʌ f ɹ eɪ d WORD_BOUNDARY ʌ v WORD_BOUNDARY ɪ l ɛ k t ɹ ɪ k ə l WORD_BOUNDARY ʃ ɑ k s WORD_BOUNDARY æ n d WORD_BOUNDARY w ɪ l WORD_BOUNDARY ʌ v ɔɪ d WORD_BOUNDARY ð ɛ m WORD_BOUNDARY æ t WORD_BOUNDARY ɔ l WORD_BOUNDARY k ɔ s t s WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l WORD_BOUNDARY ð ɛ m WORD_BOUNDARY ð ə WORD_BOUNDARY ʃ ɑ k s WORD_BOUNDARY ʌ v ɔɪ d ə ɹ z WORD_BOUNDARY
+
+
+GROUP 16
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: maze expert
+COMPOUND IPA:   m eɪ z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+STORY ORTHO:    When my Dad used to work for the phone company, he had to find the right phone line in the mazes of cables and circuits. I called him the maze expert.
+STORY IPA:      w ɛ n WORD_BOUNDARY m aɪ WORD_BOUNDARY d æ d WORD_BOUNDARY j uː z d WORD_BOUNDARY t ə WORD_BOUNDARY w ɜː k WORD_BOUNDARY f ə ɹ ð ə WORD_BOUNDARY f oʊ n WORD_BOUNDARY k ʌ m p ə n i WORD_BOUNDARY h iː WORD_BOUNDARY h æ d t ə WORD_BOUNDARY f aɪ n d WORD_BOUNDARY ð ə WORD_BOUNDARY ɹ aɪ t WORD_BOUNDARY f oʊ n WORD_BOUNDARY l aɪ n WORD_BOUNDARY ɪ n ð ə WORD_BOUNDARY m eɪ z ɪ z WORD_BOUNDARY ʌ v WORD_BOUNDARY k eɪ b ə l z WORD_BOUNDARY æ n d WORD_BOUNDARY s ɜː k ɪ t s WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l d WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY m eɪ z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: mazes expert
+COMPOUND IPA:   m eɪ z ɪ z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+STORY ORTHO:    When my Dad used to work for the phone company, he had to find the right phone line in the mazes of cables and circuits. I called him the mazes expert.
+STORY IPA:      w ɛ n WORD_BOUNDARY m aɪ WORD_BOUNDARY d æ d WORD_BOUNDARY j uː z d WORD_BOUNDARY t ə WORD_BOUNDARY w ɜː k WORD_BOUNDARY f ə ɹ ð ə WORD_BOUNDARY f oʊ n WORD_BOUNDARY k ʌ m p ə n i WORD_BOUNDARY h iː WORD_BOUNDARY h æ d t ə WORD_BOUNDARY f aɪ n d WORD_BOUNDARY ð ə WORD_BOUNDARY ɹ aɪ t WORD_BOUNDARY f oʊ n WORD_BOUNDARY l aɪ n WORD_BOUNDARY ɪ n ð ə WORD_BOUNDARY m eɪ z ɪ z WORD_BOUNDARY ʌ v WORD_BOUNDARY k eɪ b ə l z WORD_BOUNDARY æ n d WORD_BOUNDARY s ɜː k ɪ t s WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l d WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY m eɪ z ɪ z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: bay expert
+COMPOUND IPA:   b eɪ WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+STORY ORTHO:    When my Dad and I used to go sailing, he could name each of the little bays on the shore line.I called him the bay expert.
+STORY IPA:      w ɛ n WORD_BOUNDARY m aɪ WORD_BOUNDARY d æ d WORD_BOUNDARY æ n d WORD_BOUNDARY aɪ WORD_BOUNDARY j uː z d WORD_BOUNDARY t ə WORD_BOUNDARY ɡ oʊ WORD_BOUNDARY s eɪ l ɪ ŋ WORD_BOUNDARY h iː WORD_BOUNDARY k ʊ d WORD_BOUNDARY n eɪ m WORD_BOUNDARY iː t̠ʃ WORD_BOUNDARY ə v WORD_BOUNDARY ð ə WORD_BOUNDARY l ɪ t ə l WORD_BOUNDARY b eɪ z WORD_BOUNDARY ɔ n ð ə WORD_BOUNDARY ʃ ɔ ɹ WORD_BOUNDARY l aɪ n WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l d WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY b eɪ WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: bays expert
+COMPOUND IPA:   b eɪ z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+STORY ORTHO:    When my Dad and I used to go sailing, he could name each of the little bays on the shore line.I called him the bays expert.
+STORY IPA:      w ɛ n WORD_BOUNDARY m aɪ WORD_BOUNDARY d æ d WORD_BOUNDARY æ n d WORD_BOUNDARY aɪ WORD_BOUNDARY j uː z d WORD_BOUNDARY t ə WORD_BOUNDARY ɡ oʊ WORD_BOUNDARY s eɪ l ɪ ŋ WORD_BOUNDARY h iː WORD_BOUNDARY k ʊ d WORD_BOUNDARY n eɪ m WORD_BOUNDARY iː t̠ʃ WORD_BOUNDARY ə v WORD_BOUNDARY ð ə WORD_BOUNDARY l ɪ t ə l WORD_BOUNDARY b eɪ z WORD_BOUNDARY ɔ n ð ə WORD_BOUNDARY ʃ ɔ ɹ WORD_BOUNDARY l aɪ n WORD_BOUNDARY aɪ WORD_BOUNDARY k ɔ l d WORD_BOUNDARY h ɪ m WORD_BOUNDARY ð ə WORD_BOUNDARY b eɪ z WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY
+
+
+GROUP 17
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: breeze protector
+COMPOUND IPA:   b ɹ iː z WORD_BOUNDARY p ɹ ə t ɛ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My flowers have been devastated by the cold north breezes. Last week, I found a solution to my problem. I went to Home Depot and bought a breeze protector.
+STORY IPA:      m aɪ WORD_BOUNDARY f l aʊ ə ɹ z WORD_BOUNDARY h ʌ v b ɪ n WORD_BOUNDARY d ɛ v ɪ s t eɪ t ɪ d WORD_BOUNDARY b aɪ WORD_BOUNDARY ð ə WORD_BOUNDARY k oʊ l d WORD_BOUNDARY n ɔ ɹ θ WORD_BOUNDARY b ɹ iː z ɪ z WORD_BOUNDARY l æ s t WORD_BOUNDARY w iː k WORD_BOUNDARY aɪ WORD_BOUNDARY f aʊ n d WORD_BOUNDARY ʌ WORD_BOUNDARY s ə l uː ʃ ə n WORD_BOUNDARY t ə WORD_BOUNDARY m aɪ WORD_BOUNDARY p ɹ ɑ b l ə m WORD_BOUNDARY aɪ WORD_BOUNDARY w ɛ n t WORD_BOUNDARY t ə WORD_BOUNDARY h oʊ m WORD_BOUNDARY d iː p oʊ WORD_BOUNDARY æ n d WORD_BOUNDARY b ɔ t WORD_BOUNDARY ʌ WORD_BOUNDARY b ɹ iː z WORD_BOUNDARY p ɹ ə t ɛ k t ə ɹ WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: breezes protector
+COMPOUND IPA:   b ɹ iː z ɪ z WORD_BOUNDARY p ɹ ə t ɛ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My flowers have been devastated by the cold north breezes. Last week, I found a solution to my problem. I went to Home Depot and bought a breezes protector.
+STORY IPA:      m aɪ WORD_BOUNDARY f l aʊ ə ɹ z WORD_BOUNDARY h ʌ v b ɪ n WORD_BOUNDARY d ɛ v ɪ s t eɪ t ɪ d WORD_BOUNDARY b aɪ WORD_BOUNDARY ð ə WORD_BOUNDARY k oʊ l d WORD_BOUNDARY n ɔ ɹ θ WORD_BOUNDARY b ɹ iː z ɪ z WORD_BOUNDARY l æ s t WORD_BOUNDARY w iː k WORD_BOUNDARY aɪ WORD_BOUNDARY f aʊ n d WORD_BOUNDARY ʌ WORD_BOUNDARY s ə l uː ʃ ə n WORD_BOUNDARY t ə WORD_BOUNDARY m aɪ WORD_BOUNDARY p ɹ ɑ b l ə m WORD_BOUNDARY aɪ WORD_BOUNDARY w ɛ n t WORD_BOUNDARY t ə WORD_BOUNDARY h oʊ m WORD_BOUNDARY d iː p oʊ WORD_BOUNDARY æ n d WORD_BOUNDARY b ɔ t WORD_BOUNDARY ʌ WORD_BOUNDARY b ɹ iː z ɪ z WORD_BOUNDARY p ɹ ə t ɛ k t ə ɹ WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: tree protector
+COMPOUND IPA:   t ɹ iː WORD_BOUNDARY p ɹ ə t ɛ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    The cold winter winds have devastated my oak trees. Last week, I found a solution to my problem. I went to Home Depot and bought a tree protector.
+STORY IPA:      ð ə WORD_BOUNDARY k oʊ l d WORD_BOUNDARY w ɪ n t ə ɹ WORD_BOUNDARY w ɪ n d z WORD_BOUNDARY h æ v WORD_BOUNDARY d ɛ v ɪ s t eɪ t ɪ d WORD_BOUNDARY m aɪ WORD_BOUNDARY oʊ k WORD_BOUNDARY t ɹ iː z WORD_BOUNDARY l æ s t WORD_BOUNDARY w iː k WORD_BOUNDARY aɪ WORD_BOUNDARY f aʊ n d WORD_BOUNDARY ʌ WORD_BOUNDARY s ə l uː ʃ ə n WORD_BOUNDARY t ə WORD_BOUNDARY m aɪ WORD_BOUNDARY p ɹ ɑ b l ə m WORD_BOUNDARY aɪ WORD_BOUNDARY w ɛ n t WORD_BOUNDARY t ə WORD_BOUNDARY h oʊ m WORD_BOUNDARY d iː p oʊ WORD_BOUNDARY æ n d WORD_BOUNDARY b ɔ t WORD_BOUNDARY ʌ WORD_BOUNDARY t ɹ iː WORD_BOUNDARY p ɹ ə t ɛ k t ə ɹ WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: trees protector
+COMPOUND IPA:   t ɹ iː z WORD_BOUNDARY p ɹ ə t ɛ k t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    The cold winter winds have devastated my oak trees. Last week, I found a solution to my problem. I went to Home Depot and bought a trees protector.
+STORY IPA:      ð ə WORD_BOUNDARY k oʊ l d WORD_BOUNDARY w ɪ n t ə ɹ WORD_BOUNDARY w ɪ n d z WORD_BOUNDARY h æ v WORD_BOUNDARY d ɛ v ɪ s t eɪ t ɪ d WORD_BOUNDARY m aɪ WORD_BOUNDARY oʊ k WORD_BOUNDARY t ɹ iː z WORD_BOUNDARY l æ s t WORD_BOUNDARY w iː k WORD_BOUNDARY aɪ WORD_BOUNDARY f aʊ n d WORD_BOUNDARY ʌ WORD_BOUNDARY s ə l uː ʃ ə n WORD_BOUNDARY t ə WORD_BOUNDARY m aɪ WORD_BOUNDARY p ɹ ɑ b l ə m WORD_BOUNDARY aɪ WORD_BOUNDARY w ɛ n t WORD_BOUNDARY t ə WORD_BOUNDARY h oʊ m WORD_BOUNDARY d iː p oʊ WORD_BOUNDARY æ n d WORD_BOUNDARY b ɔ t WORD_BOUNDARY ʌ WORD_BOUNDARY t ɹ iː z WORD_BOUNDARY p ɹ ə t ɛ k t ə ɹ WORD_BOUNDARY
+
+
+GROUP 18
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: cause evaluator
+COMPOUND IPA:   k ɔ z WORD_BOUNDARY ɪ v æ l j uː eɪ t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    An extravagant costly building in mid town toppled over as soon as construction ended. A disaster expert was sent to the site to investigate the causes. He is called the cause evaluator.
+STORY IPA:      ʌ n WORD_BOUNDARY ɛ k s t ɹ æ v ə ɡ ə n t WORD_BOUNDARY k ɔ s t l i WORD_BOUNDARY b ɪ l d ɪ ŋ WORD_BOUNDARY ɪ n WORD_BOUNDARY m ɪ d WORD_BOUNDARY t aʊ n WORD_BOUNDARY t ɑ p ə l d WORD_BOUNDARY oʊ v ə ɹ ɹ WORD_BOUNDARY æ z WORD_BOUNDARY s uː n WORD_BOUNDARY æ z WORD_BOUNDARY k ə n s t ɹ ʌ k ʃ ə n WORD_BOUNDARY ɛ n d ɪ d WORD_BOUNDARY ʌ WORD_BOUNDARY d ɪ z æ s t ə ɹ ɹ WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY w ʌ z WORD_BOUNDARY s ɛ n t WORD_BOUNDARY t ə WORD_BOUNDARY ð ə WORD_BOUNDARY s aɪ t WORD_BOUNDARY t ʊ WORD_BOUNDARY ɪ n v ɛ s t ɪ ɡ eɪ t WORD_BOUNDARY ð ə WORD_BOUNDARY k ɔ z ɪ z WORD_BOUNDARY h iː WORD_BOUNDARY ɪ z WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY k ɔ z WORD_BOUNDARY ɪ v æ l j uː eɪ t ə ɹ WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: causes evaluator
+COMPOUND IPA:   k ɔ z ɪ z WORD_BOUNDARY ɪ v æ l j uː eɪ t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    An extravagant costly building in mid town toppled over as soon as construction ended. A disaster expert was sent to the site to investigate the causes. He is called the causes evaluator.
+STORY IPA:      ʌ n WORD_BOUNDARY ɛ k s t ɹ æ v ə ɡ ə n t WORD_BOUNDARY k ɔ s t l i WORD_BOUNDARY b ɪ l d ɪ ŋ WORD_BOUNDARY ɪ n WORD_BOUNDARY m ɪ d WORD_BOUNDARY t aʊ n WORD_BOUNDARY t ɑ p ə l d WORD_BOUNDARY oʊ v ə ɹ ɹ WORD_BOUNDARY æ z WORD_BOUNDARY s uː n WORD_BOUNDARY æ z WORD_BOUNDARY k ə n s t ɹ ʌ k ʃ ə n WORD_BOUNDARY ɛ n d ɪ d WORD_BOUNDARY ʌ WORD_BOUNDARY d ɪ z æ s t ə ɹ ɹ WORD_BOUNDARY ɛ k s p ɜː t WORD_BOUNDARY w ʌ z WORD_BOUNDARY s ɛ n t WORD_BOUNDARY t ə WORD_BOUNDARY ð ə WORD_BOUNDARY s aɪ t WORD_BOUNDARY t ʊ WORD_BOUNDARY ɪ n v ɛ s t ɪ ɡ eɪ t WORD_BOUNDARY ð ə WORD_BOUNDARY k ɔ z ɪ z WORD_BOUNDARY h iː WORD_BOUNDARY ɪ z WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY k ɔ z ɪ z WORD_BOUNDARY ɪ v æ l j uː eɪ t ə ɹ WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: paw evaluator
+COMPOUND IPA:   p ɔ WORD_BOUNDARY ɪ v æ l j uː eɪ t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My cat has been limping for about a year, but none of the veterinarians I visited could find out the reason. Yesterday, my husband discovered she had two sprained paws. He is now called the paw evaluator.
+STORY IPA:      m aɪ WORD_BOUNDARY k æ t WORD_BOUNDARY h æ z b iː n WORD_BOUNDARY l ɪ m p ɪ ŋ WORD_BOUNDARY f ɔ ɹ WORD_BOUNDARY ʌ b aʊ t WORD_BOUNDARY ʌ WORD_BOUNDARY j ɪ ɹ WORD_BOUNDARY b ʌ t WORD_BOUNDARY n ʌ n WORD_BOUNDARY ʌ v ð ə WORD_BOUNDARY v ɛ t ə ɹ ɹ ɪ n ɛ ɹ iə n z WORD_BOUNDARY aɪ WORD_BOUNDARY v ɪ z ɪ t ɪ d WORD_BOUNDARY k ʊ d WORD_BOUNDARY f aɪ n d WORD_BOUNDARY aʊ t WORD_BOUNDARY ð ə WORD_BOUNDARY ɹ iː z ə n WORD_BOUNDARY j ɛ s t ə ɹ d eɪ WORD_BOUNDARY m aɪ WORD_BOUNDARY h ʌ s b ə n d WORD_BOUNDARY d ɪ s k ʌ v ə ɹ d WORD_BOUNDARY ʃ iː WORD_BOUNDARY h æ d WORD_BOUNDARY t uː WORD_BOUNDARY s p ɹ eɪ n d WORD_BOUNDARY p ɔ z WORD_BOUNDARY h iː WORD_BOUNDARY ɪ z WORD_BOUNDARY n aʊ WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY p ɔ WORD_BOUNDARY ɪ v æ l j uː eɪ t ə ɹ WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: paws evaluator
+COMPOUND IPA:   p ɔ z WORD_BOUNDARY ɪ v æ l j uː eɪ t ə ɹ WORD_BOUNDARY
+STORY ORTHO:    My cat has been limping for about a year, but none of the veterinarians I visited could find out the reason. Yesterday, my husband discovered she had two sprained paws. He is now called the paws evaluator.
+STORY IPA:      m aɪ WORD_BOUNDARY k æ t WORD_BOUNDARY h æ z b iː n WORD_BOUNDARY l ɪ m p ɪ ŋ WORD_BOUNDARY f ɔ ɹ WORD_BOUNDARY ʌ b aʊ t WORD_BOUNDARY ʌ WORD_BOUNDARY j ɪ ɹ WORD_BOUNDARY b ʌ t WORD_BOUNDARY n ʌ n WORD_BOUNDARY ʌ v ð ə WORD_BOUNDARY v ɛ t ə ɹ ɹ ɪ n ɛ ɹ iə n z WORD_BOUNDARY aɪ WORD_BOUNDARY v ɪ z ɪ t ɪ d WORD_BOUNDARY k ʊ d WORD_BOUNDARY f aɪ n d WORD_BOUNDARY aʊ t WORD_BOUNDARY ð ə WORD_BOUNDARY ɹ iː z ə n WORD_BOUNDARY j ɛ s t ə ɹ d eɪ WORD_BOUNDARY m aɪ WORD_BOUNDARY h ʌ s b ə n d WORD_BOUNDARY d ɪ s k ʌ v ə ɹ d WORD_BOUNDARY ʃ iː WORD_BOUNDARY h æ d WORD_BOUNDARY t uː WORD_BOUNDARY s p ɹ eɪ n d WORD_BOUNDARY p ɔ z WORD_BOUNDARY h iː WORD_BOUNDARY ɪ z WORD_BOUNDARY n aʊ WORD_BOUNDARY k ɔ l d WORD_BOUNDARY ð ə WORD_BOUNDARY p ɔ z WORD_BOUNDARY ɪ v æ l j uː eɪ t ə ɹ WORD_BOUNDARY
+
+
+GROUP 19
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: phase fanatic
+COMPOUND IPA:   f eɪ z WORD_BOUNDARY f ʌ n æ t ɪ k WORD_BOUNDARY
+STORY ORTHO:    When Mary was writing her dissertation in Psychology, she wouldn't stop talking to her poor husband about the various phases of child development. He called her the phase fanatic.
+STORY IPA:      w ɛ n WORD_BOUNDARY m ɛ ɹ i WORD_BOUNDARY w ʌ z WORD_BOUNDARY ɹ aɪ t ɪ ŋ WORD_BOUNDARY h ɜː WORD_BOUNDARY d ɪ s ə ɹ t eɪ ʃ ə n WORD_BOUNDARY ɪ n WORD_BOUNDARY s aɪ k ɑ l ə d̠ʒ i WORD_BOUNDARY ʃ iː WORD_BOUNDARY w ʊ d ə n t WORD_BOUNDARY s t ɑ p WORD_BOUNDARY t ɔ k ɪ ŋ WORD_BOUNDARY t ə WORD_BOUNDARY h ɜː WORD_BOUNDARY p ʊ ɹ WORD_BOUNDARY h ʌ s b ə n d WORD_BOUNDARY ʌ b aʊ t WORD_BOUNDARY ð ə WORD_BOUNDARY v ɛ ɹ iə s WORD_BOUNDARY f eɪ z ɪ z WORD_BOUNDARY ʌ v WORD_BOUNDARY t̠ʃ aɪ l d WORD_BOUNDARY d ɪ v ɛ l ə p m ə n t WORD_BOUNDARY h iː WORD_BOUNDARY k ɔ l d WORD_BOUNDARY h ɜː WORD_BOUNDARY ð ə WORD_BOUNDARY f eɪ z WORD_BOUNDARY f ʌ n æ t ɪ k WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: phases fanatic
+COMPOUND IPA:   f eɪ z ɪ z WORD_BOUNDARY f ʌ n æ t ɪ k WORD_BOUNDARY
+STORY ORTHO:    When Mary was writing her dissertation in Psychology, she wouldn't stop talking to her poor husband about the various phases of child development. He called her the phases fanatic.
+STORY IPA:      w ɛ n WORD_BOUNDARY m ɛ ɹ i WORD_BOUNDARY w ʌ z WORD_BOUNDARY ɹ aɪ t ɪ ŋ WORD_BOUNDARY h ɜː WORD_BOUNDARY d ɪ s ə ɹ t eɪ ʃ ə n WORD_BOUNDARY ɪ n WORD_BOUNDARY s aɪ k ɑ l ə d̠ʒ i WORD_BOUNDARY ʃ iː WORD_BOUNDARY w ʊ d ə n t WORD_BOUNDARY s t ɑ p WORD_BOUNDARY t ɔ k ɪ ŋ WORD_BOUNDARY t ə WORD_BOUNDARY h ɜː WORD_BOUNDARY p ʊ ɹ WORD_BOUNDARY h ʌ s b ə n d WORD_BOUNDARY ʌ b aʊ t WORD_BOUNDARY ð ə WORD_BOUNDARY v ɛ ɹ iə s WORD_BOUNDARY f eɪ z ɪ z WORD_BOUNDARY ʌ v WORD_BOUNDARY t̠ʃ aɪ l d WORD_BOUNDARY d ɪ v ɛ l ə p m ə n t WORD_BOUNDARY h iː WORD_BOUNDARY k ɔ l d WORD_BOUNDARY h ɜː WORD_BOUNDARY ð ə WORD_BOUNDARY f eɪ z ɪ z WORD_BOUNDARY f ʌ n æ t ɪ k WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: fee fanatic
+COMPOUND IPA:   f iː WORD_BOUNDARY f ʌ n æ t ɪ k WORD_BOUNDARY
+STORY ORTHO:    When Mary was working for Barnet Bank, she wouldn't stop telling her poor husband about the various types of banking fees and investments. He called her the fee fanatic.
+STORY IPA:      w ɛ n WORD_BOUNDARY m ɛ ɹ i WORD_BOUNDARY w ʌ z WORD_BOUNDARY w ɜː k ɪ ŋ WORD_BOUNDARY f ɔ ɹ WORD_BOUNDARY b ɑ ɹ n ɪ t WORD_BOUNDARY b æ ŋ k WORD_BOUNDARY ʃ iː WORD_BOUNDARY w ʊ d ə n t WORD_BOUNDARY s t ɑ p WORD_BOUNDARY t ɛ l ɪ ŋ WORD_BOUNDARY h ɜː WORD_BOUNDARY p ʊ ɹ WORD_BOUNDARY h ʌ s b ə n d WORD_BOUNDARY ʌ b aʊ t WORD_BOUNDARY ð ə WORD_BOUNDARY v ɛ ɹ iə s WORD_BOUNDARY t aɪ p s WORD_BOUNDARY ʌ v WORD_BOUNDARY b æ ŋ k ɪ ŋ WORD_BOUNDARY f iː z WORD_BOUNDARY æ n d WORD_BOUNDARY ɪ n v ɛ s t m ə n t s WORD_BOUNDARY h iː WORD_BOUNDARY k ɔ l d WORD_BOUNDARY h ɜː WORD_BOUNDARY ð ə WORD_BOUNDARY f iː WORD_BOUNDARY f ʌ n æ t ɪ k WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: fees fanatic
+COMPOUND IPA:   f iː z WORD_BOUNDARY f ʌ n æ t ɪ k WORD_BOUNDARY
+STORY ORTHO:    When Mary was working for Barnet Bank, she wouldn't stop telling her poor husband about the various types of banking fees and investments. He called her the fees fanatic.
+STORY IPA:      w ɛ n WORD_BOUNDARY m ɛ ɹ i WORD_BOUNDARY w ʌ z WORD_BOUNDARY w ɜː k ɪ ŋ WORD_BOUNDARY f ɔ ɹ WORD_BOUNDARY b ɑ ɹ n ɪ t WORD_BOUNDARY b æ ŋ k WORD_BOUNDARY ʃ iː WORD_BOUNDARY w ʊ d ə n t WORD_BOUNDARY s t ɑ p WORD_BOUNDARY t ɛ l ɪ ŋ WORD_BOUNDARY h ɜː WORD_BOUNDARY p ʊ ɹ WORD_BOUNDARY h ʌ s b ə n d WORD_BOUNDARY ʌ b aʊ t WORD_BOUNDARY ð ə WORD_BOUNDARY v ɛ ɹ iə s WORD_BOUNDARY t aɪ p s WORD_BOUNDARY ʌ v WORD_BOUNDARY b æ ŋ k ɪ ŋ WORD_BOUNDARY f iː z WORD_BOUNDARY æ n d WORD_BOUNDARY ɪ n v ɛ s t m ə n t s WORD_BOUNDARY h iː WORD_BOUNDARY k ɔ l d WORD_BOUNDARY h ɜː WORD_BOUNDARY ð ə WORD_BOUNDARY f iː z WORD_BOUNDARY f ʌ n æ t ɪ k WORD_BOUNDARY
+
+
+GROUP 20
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: fax man
+COMPOUND IPA:   f æ k s WORD_BOUNDARY m æ n WORD_BOUNDARY
+STORY ORTHO:    At work, John sits near the fax machine and distributes the incoming faxes to his co-workers. John is known as the fax man.
+STORY IPA:      æ t WORD_BOUNDARY w ɜː k WORD_BOUNDARY d̠ʒ ɑ n WORD_BOUNDARY s ɪ t s WORD_BOUNDARY n ɪ ɹ WORD_BOUNDARY ð ə WORD_BOUNDARY f æ k s WORD_BOUNDARY m ə ʃ iː n WORD_BOUNDARY æ n d WORD_BOUNDARY d ɪ s t ɹ ɪ b j uː t s WORD_BOUNDARY ð ɪ WORD_BOUNDARY ɪ ŋ k ʌ m ɪ ŋ WORD_BOUNDARY f æ k s ɪ z WORD_BOUNDARY t ə WORD_BOUNDARY h ɪ z WORD_BOUNDARY k oʊ w ɜː k ə ɹ z WORD_BOUNDARY d̠ʒ ɑ n WORD_BOUNDARY ɪ z WORD_BOUNDARY n oʊ n WORD_BOUNDARY æ z WORD_BOUNDARY ð ə WORD_BOUNDARY f æ k s WORD_BOUNDARY m æ n WORD_BOUNDARY
+
+ITEM 2
+COMPOUND ORTHO: faxes man
+COMPOUND IPA:   f æ k s ɪ z WORD_BOUNDARY m æ n WORD_BOUNDARY
+STORY ORTHO:    At work, John sits near the fax machine and distributes the incoming faxes to his co-workers. John is known as the faxes man.
+STORY IPA:      æ t WORD_BOUNDARY w ɜː k WORD_BOUNDARY d̠ʒ ɑ n WORD_BOUNDARY s ɪ t s WORD_BOUNDARY n ɪ ɹ WORD_BOUNDARY ð ə WORD_BOUNDARY f æ k s WORD_BOUNDARY m ə ʃ iː n WORD_BOUNDARY æ n d WORD_BOUNDARY d ɪ s t ɹ ɪ b j uː t s WORD_BOUNDARY ð ɪ WORD_BOUNDARY ɪ ŋ k ʌ m ɪ ŋ WORD_BOUNDARY f æ k s ɪ z WORD_BOUNDARY t ə WORD_BOUNDARY h ɪ z WORD_BOUNDARY k oʊ w ɜː k ə ɹ z WORD_BOUNDARY d̠ʒ ɑ n WORD_BOUNDARY ɪ z WORD_BOUNDARY n oʊ n WORD_BOUNDARY æ z WORD_BOUNDARY ð ə WORD_BOUNDARY f æ k s ɪ z WORD_BOUNDARY m æ n WORD_BOUNDARY
+
+ITEM 3
+COMPOUND ORTHO: shack man
+COMPOUND IPA:   ʃ æ k WORD_BOUNDARY m æ n WORD_BOUNDARY
+STORY ORTHO:    John has been homeless for over ten years and moves in and out of shacks frequently. John is known as the shack man.
+STORY IPA:      d̠ʒ ɑ n WORD_BOUNDARY h æ z b iː n WORD_BOUNDARY h oʊ m l ə s WORD_BOUNDARY f ɔ ɹ WORD_BOUNDARY oʊ v ə ɹ WORD_BOUNDARY t ɛ n WORD_BOUNDARY j ɪ ɹ z WORD_BOUNDARY æ n d WORD_BOUNDARY m uː v z WORD_BOUNDARY ɪ n WORD_BOUNDARY æ n d WORD_BOUNDARY aʊ t ə v WORD_BOUNDARY ʃ æ k s WORD_BOUNDARY f ɹ iː k w ə n t l i WORD_BOUNDARY d̠ʒ ɑ n WORD_BOUNDARY ɪ z WORD_BOUNDARY n oʊ n WORD_BOUNDARY æ z WORD_BOUNDARY ð ə WORD_BOUNDARY ʃ æ k WORD_BOUNDARY m æ n WORD_BOUNDARY
+
+ITEM 4
+COMPOUND ORTHO: shacks man
+COMPOUND IPA:   ʃ æ k s WORD_BOUNDARY m æ n WORD_BOUNDARY
+STORY ORTHO:    John has been homeless for over ten years and moves in and out of shacks frequently. John is known as the shacks man.
+STORY IPA:      d̠ʒ ɑ n WORD_BOUNDARY h æ z b iː n WORD_BOUNDARY h oʊ m l ə s WORD_BOUNDARY f ɔ ɹ WORD_BOUNDARY oʊ v ə ɹ WORD_BOUNDARY t ɛ n WORD_BOUNDARY j ɪ ɹ z WORD_BOUNDARY æ n d WORD_BOUNDARY m uː v z WORD_BOUNDARY ɪ n WORD_BOUNDARY æ n d WORD_BOUNDARY aʊ t ə v WORD_BOUNDARY ʃ æ k s WORD_BOUNDARY f ɹ iː k w ə n t l i WORD_BOUNDARY d̠ʒ ɑ n WORD_BOUNDARY ɪ z WORD_BOUNDARY n oʊ n WORD_BOUNDARY æ z WORD_BOUNDARY ð ə WORD_BOUNDARY ʃ æ k s WORD_BOUNDARY m æ n WORD_BOUNDARY
+
+
+FAILED WORDS
+------------------------------------------------------------
+None

@@ -11,8 +11,8 @@ import torch
 from collections import defaultdict
 from minicons import scorer
 
-model_name = "phonemetransformers/GPT2-85M-CHAR-TXT"
-text = "this monster is a rat eater"
+model_name = "phonemetransformers/GPT2-85M-BPE-TXT"
+text = "This monster is a Rat eater"
 
 
 BOS = True

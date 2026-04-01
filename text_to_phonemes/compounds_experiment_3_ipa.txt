@@ -1,0 +1,380 @@
+GROUP 1
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: hose collector
+COMPOUND IPA:   hoʊz kʌlɛktɜ˞
+
+ITEM 2
+COMPOUND ORTHO: hoses collector
+COMPOUND IPA:   hoʊzɪz kʌlɛktɜ˞
+
+ITEM 3
+COMPOUND ORTHO: hoe collector
+COMPOUND IPA:   hoʊ kʌlɛktɜ˞
+
+ITEM 4
+COMPOUND ORTHO: hoes collector
+COMPOUND IPA:   hoʊz kʌlɛktɜ˞
+
+
+GROUP 2
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: rose organizer
+COMPOUND IPA:   ɹoʊz ɔɹɡʌnaɪzɜ˞
+
+ITEM 2
+COMPOUND ORTHO: roses organizer
+COMPOUND IPA:   ɹoʊzɪz ɔɹɡʌnaɪzɜ˞
+
+ITEM 3
+COMPOUND ORTHO: row organizer
+COMPOUND IPA:   ɹoʊ ɔɹɡʌnaɪzɜ˞
+
+ITEM 4
+COMPOUND ORTHO: rows organizer
+COMPOUND IPA:   ɹoʊz ɔɹɡʌnaɪzɜ˞
+
+
+GROUP 3
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: rise addict
+COMPOUND IPA:   ɹaɪz ʌdɪkt
+
+ITEM 2
+COMPOUND ORTHO: rises addict
+COMPOUND IPA:   ɹaɪzʌz ʌdɪkt
+
+ITEM 3
+COMPOUND ORTHO: lie addict
+COMPOUND IPA:   laɪ ʌdɪkt
+
+ITEM 4
+COMPOUND ORTHO: lies addict
+COMPOUND IPA:   laɪz ʌdɪkt
+
+
+GROUP 4
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: clause hider
+COMPOUND IPA:   klɔz haɪdɜ˞
+
+ITEM 2
+COMPOUND ORTHO: clauses hider
+COMPOUND IPA:   klɔzʌz haɪdɜ˞
+
+ITEM 3
+COMPOUND ORTHO: claw hider
+COMPOUND IPA:   klɔ haɪdɜ˞
+
+ITEM 4
+COMPOUND ORTHO: claws hider
+COMPOUND IPA:   klɔz haɪdɜ˞
+
+
+GROUP 5
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: gaze attractor
+COMPOUND IPA:   ɡeɪz ʌtɹæktɜ˞
+
+ITEM 2
+COMPOUND ORTHO: gazes attractor
+COMPOUND IPA:   ɡeɪzʌz ʌtɹæktɜ˞
+
+ITEM 3
+COMPOUND ORTHO: guy attractor
+COMPOUND IPA:   ɡaɪ ʌtɹæktɜ˞
+
+ITEM 4
+COMPOUND ORTHO: guys attractor
+COMPOUND IPA:   ɡaɪz ʌtɹæktɜ˞
+
+
+GROUP 6
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: box horde
+COMPOUND IPA:   bɑks hɔɹd
+
+ITEM 2
+COMPOUND ORTHO: boxes horde
+COMPOUND IPA:   bɑksʌz hɔɹd
+
+ITEM 3
+COMPOUND ORTHO: book horde
+COMPOUND IPA:   bʊk hɔɹd
+
+ITEM 4
+COMPOUND ORTHO: books horde
+COMPOUND IPA:   bʊks hɔɹd
+
+
+GROUP 7
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: sex distinctions
+COMPOUND IPA:   sɛks dɪstɪŋkʃʌnz
+
+ITEM 2
+COMPOUND ORTHO: sexes distinctions
+COMPOUND IPA:   sɛksʌz dɪstɪŋkʃʌnz
+
+ITEM 3
+COMPOUND ORTHO: sack distinctions
+COMPOUND IPA:   sæk dɪstɪŋkʃʌnz
+
+ITEM 4
+COMPOUND ORTHO: sacks distinctions
+COMPOUND IPA:   sæks dɪstɪŋkʃʌnz
+
+
+GROUP 8
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: tax repayment
+COMPOUND IPA:   tæks ɹipeɪmʌnt
+
+ITEM 2
+COMPOUND ORTHO: taxes repayment
+COMPOUND IPA:   tæksʌz ɹipeɪmʌnt
+
+ITEM 3
+COMPOUND ORTHO: tack repayment
+COMPOUND IPA:   tæk ɹipeɪmʌnt
+
+ITEM 4
+COMPOUND ORTHO: tacks repayment
+COMPOUND IPA:   tæks ɹipeɪmʌnt
+
+
+GROUP 9
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: size device
+COMPOUND IPA:   saɪz dɪvaɪs
+
+ITEM 2
+COMPOUND ORTHO: sizes device
+COMPOUND IPA:   saɪzʌz dɪvaɪs
+
+ITEM 3
+COMPOUND ORTHO: sigh device
+COMPOUND IPA:   saɪ dɪvaɪs
+
+ITEM 4
+COMPOUND ORTHO: sighs device
+COMPOUND IPA:   saɪz dɪvaɪs
+
+
+GROUP 10
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: praise getter
+COMPOUND IPA:   pɹeɪz ɡɛtɜ˞
+
+ITEM 2
+COMPOUND ORTHO: praises getter
+COMPOUND IPA:   pɹeɪzʌz ɡɛtɜ˞
+
+ITEM 3
+COMPOUND ORTHO: tray getter
+COMPOUND IPA:   tɹeɪ ɡɛtɜ˞
+
+ITEM 4
+COMPOUND ORTHO: trays getter
+COMPOUND IPA:   tɹeɪz ɡɛtɜ˞
+
+
+GROUP 11
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: bruise expert
+COMPOUND IPA:   bɹuz ɛkspɜ˞t
+
+ITEM 2
+COMPOUND ORTHO: bruises expert
+COMPOUND IPA:   bɹuzʌz ɛkspɜ˞t
+
+ITEM 3
+COMPOUND ORTHO: brew expert
+COMPOUND IPA:   bɹu ɛkspɜ˞t
+
+ITEM 4
+COMPOUND ORTHO: brews expert
+COMPOUND IPA:   bɹuz ɛkspɜ˞t
+
+
+GROUP 12
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: raise seeker
+COMPOUND IPA:   ɹeɪz sikɜ˞
+
+ITEM 2
+COMPOUND ORTHO: raises seeker
+COMPOUND IPA:   ɹeɪzʌz sikɜ˞
+
+ITEM 3
+COMPOUND ORTHO: ray seeker
+COMPOUND IPA:   ɹeɪ sikɜ˞
+
+ITEM 4
+COMPOUND ORTHO: rays seeker
+COMPOUND IPA:   ɹeɪz sikɜ˞
+
+
+GROUP 13
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: blaze admirer
+COMPOUND IPA:   bleɪz ædmaɪɹɜ˞
+
+ITEM 2
+COMPOUND ORTHO: blazes admirer
+COMPOUND IPA:   bleɪzɪz ædmaɪɹɜ˞
+
+ITEM 3
+COMPOUND ORTHO: play admirer
+COMPOUND IPA:   pleɪ ædmaɪɹɜ˞
+
+ITEM 4
+COMPOUND ORTHO: plays admirer
+COMPOUND IPA:   pleɪz ædmaɪɹɜ˞
+
+
+GROUP 14
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: vase steward
+COMPOUND IPA:   veɪs stuɜ˞d
+
+ITEM 2
+COMPOUND ORTHO: vases steward
+COMPOUND IPA:   veɪsʌz stuɜ˞d
+
+ITEM 3
+COMPOUND ORTHO: bee steward
+COMPOUND IPA:   bi stuɜ˞d
+
+ITEM 4
+COMPOUND ORTHO: bees steward
+COMPOUND IPA:   biz stuɜ˞d
+
+
+GROUP 15
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: fox avoiders
+COMPOUND IPA:   fɑks ʌvɔɪdɜ˞z
+
+ITEM 2
+COMPOUND ORTHO: foxes avoiders
+COMPOUND IPA:   fɑksʌz ʌvɔɪdɜ˞z
+
+ITEM 3
+COMPOUND ORTHO: shock avoiders
+COMPOUND IPA:   ʃɑk ʌvɔɪdɜ˞z
+
+ITEM 4
+COMPOUND ORTHO: shocks avoiders
+COMPOUND IPA:   ʃɑks ʌvɔɪdɜ˞z
+
+
+GROUP 16
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: maze expert
+COMPOUND IPA:   meɪz ɛkspɜ˞t
+
+ITEM 2
+COMPOUND ORTHO: mazes expert
+COMPOUND IPA:   meɪzɪz ɛkspɜ˞t
+
+ITEM 3
+COMPOUND ORTHO: bay expert
+COMPOUND IPA:   beɪ ɛkspɜ˞t
+
+ITEM 4
+COMPOUND ORTHO: bays expert
+COMPOUND IPA:   beɪz ɛkspɜ˞t
+
+
+GROUP 17
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: breeze protector
+COMPOUND IPA:   bɹiz pɹʌtɛktɜ˞
+
+ITEM 2
+COMPOUND ORTHO: breezes protector
+COMPOUND IPA:   bɹizɪz pɹʌtɛktɜ˞
+
+ITEM 3
+COMPOUND ORTHO: tree protector
+COMPOUND IPA:   tɹi pɹʌtɛktɜ˞
+
+ITEM 4
+COMPOUND ORTHO: trees protector
+COMPOUND IPA:   tɹiz pɹʌtɛktɜ˞
+
+
+GROUP 18
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: cause evaluator
+COMPOUND IPA:   kɑz ɪvæljueɪtɜ˞
+
+ITEM 2
+COMPOUND ORTHO: causes evaluator
+COMPOUND IPA:   kɑzʌz ɪvæljueɪtɜ˞
+
+ITEM 3
+COMPOUND ORTHO: paw evaluator
+COMPOUND IPA:   pɔ ɪvæljueɪtɜ˞
+
+ITEM 4
+COMPOUND ORTHO: paws evaluator
+COMPOUND IPA:   pɔz ɪvæljueɪtɜ˞
+
+
+GROUP 19
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: phase fanatic
+COMPOUND IPA:   feɪz fʌnætɪk
+
+ITEM 2
+COMPOUND ORTHO: phases fanatic
+COMPOUND IPA:   feɪzʌz fʌnætɪk
+
+ITEM 3
+COMPOUND ORTHO: fee fanatic
+COMPOUND IPA:   fi fʌnætɪk
+
+ITEM 4
+COMPOUND ORTHO: fees fanatic
+COMPOUND IPA:   fiz fʌnætɪk
+
+
+GROUP 20
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: fax man
+COMPOUND IPA:   fæks mæn
+
+ITEM 2
+COMPOUND ORTHO: faxes man
+COMPOUND IPA:   fæksɪz mæn
+
+ITEM 3
+COMPOUND ORTHO: shack man
+COMPOUND IPA:   ʃæk mæn
+
+ITEM 4
+COMPOUND ORTHO: shacks man
+COMPOUND IPA:   ʃæks mæn
+
+

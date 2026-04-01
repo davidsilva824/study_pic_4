@@ -8,7 +8,7 @@ import json
 
 
 models = [
-    "babylm/babyllama-10m-2024"
+    "JLTastet/baby-llama-2-345m-run2"
 ]
 
 BOS = True

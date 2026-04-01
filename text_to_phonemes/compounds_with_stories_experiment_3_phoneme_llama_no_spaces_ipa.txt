@@ -1,0 +1,648 @@
+GROUP 1
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: blaze protector
+COMPOUND IPA:   bleɪzpɹʌtɛktɜ˞
+STORY ORTHO:    Radioactivity is the newest weapon of choice for terrorists. A lab in Texas has developed a new type of clothing that protects against blazes of radioactivity. It is called the blaze protector.
+STORY IPA:      ɹeɪdioʊæktɪvʌtiɪzðʌnuʌstwɛpʌnʌvtʃɔɪsfɔɹtɛɹɜ˞ʌsts.ʌlæbɪntɛksʌshæzdɪvɛlʌptʌnutaɪpʌvkloʊðɪŋðætpɹʌtɛktsʌɡɛnstbleɪzɪzʌvɹeɪdioʊæktɪvʌti.ɪtɪzkɔldðʌbleɪzpɹʌtɛktɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: blazes protector
+COMPOUND IPA:   bleɪzɪzpɹʌtɛktɜ˞
+STORY ORTHO:    Radioactivity is the newest weapon of choice for terrorists. A lab in Texas has developed a new type of clothing that protects against blazes of radioactivity. It is called the blazes protector.
+STORY IPA:      ɹeɪdioʊæktɪvʌtiɪzðʌnuʌstwɛpʌnʌvtʃɔɪsfɔɹtɛɹɜ˞ʌsts.ʌlæbɪntɛksʌshæzdɪvɛlʌptʌnutaɪpʌvkloʊðɪŋðætpɹʌtɛktsʌɡɛnstbleɪzɪzʌvɹeɪdioʊæktɪvʌti.ɪtɪzkɔldðʌbleɪzɪzpɹʌtɛktɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: spark protector
+COMPOUND IPA:   spɑɹkpɹʌtɛktɜ˞
+STORY ORTHO:    Radioactivity is the newest weapon of choice for terrorists. A lab in Texas has developed a new type of clothing that protects against blazes of radioactivity. It is called the spark protector.
+STORY IPA:      ɹeɪdioʊæktɪvʌtiɪzðʌnuʌstwɛpʌnʌvtʃɔɪsfɔɹtɛɹɜ˞ʌsts.ʌlæbɪntɛksʌshæzdɪvɛlʌptʌnutaɪpʌvkloʊðɪŋðætpɹʌtɛktsʌɡɛnstbleɪzɪzʌvɹeɪdioʊæktɪvʌti.ɪtɪzkɔldðʌspɑɹkpɹʌtɛktɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: sparks protector
+COMPOUND IPA:   spɑɹkspɹʌtɛktɜ˞
+STORY ORTHO:    Radioactivity is the newest weapon of choice for terrorists. A lab in Texas has developed a new type of clothing that protects against blazes of radioactivity. It is called the sparks protector.
+STORY IPA:      ɹeɪdioʊæktɪvʌtiɪzðʌnuʌstwɛpʌnʌvtʃɔɪsfɔɹtɛɹɜ˞ʌsts.ʌlæbɪntɛksʌshæzdɪvɛlʌptʌnutaɪpʌvkloʊðɪŋðætpɹʌtɛktsʌɡɛnstbleɪzɪzʌvɹeɪdioʊæktɪvʌti.ɪtɪzkɔldðʌspɑɹkspɹʌtɛktɜ˞.
+
+
+GROUP 2
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: breeze protector
+COMPOUND IPA:   bɹizpɹʌtɛktɜ˞
+STORY ORTHO:    The cold north breezes devastated my rose garden. Last week, I read about a solution to my problem. To shield the flowers, I will install a breeze protector.
+STORY IPA:      ðʌkoʊldnɔɹθbɹizɪzdɛvʌsteɪtɪdmaɪɹoʊzɡɑɹdʌn.læstwik,aɪɹɛdʌbaʊtʌsʌluʃʌntumaɪpɹɑblʌm.tuʃildðʌflaʊɜ˞z,aɪwɪlɪnstɔlʌbɹizpɹʌtɛktɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: breezes protector
+COMPOUND IPA:   bɹizɪzpɹʌtɛktɜ˞
+STORY ORTHO:    The cold north breezes devastated my rose garden. Last week, I read about a solution to my problem. To shield the flowers, I will install a breezes protector.
+STORY IPA:      ðʌkoʊldnɔɹθbɹizɪzdɛvʌsteɪtɪdmaɪɹoʊzɡɑɹdʌn.læstwik,aɪɹɛdʌbaʊtʌsʌluʃʌntumaɪpɹɑblʌm.tuʃildðʌflaʊɜ˞z,aɪwɪlɪnstɔlʌbɹizɪzpɹʌtɛktɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: storm protector
+COMPOUND IPA:   stɔɹmpɹʌtɛktɜ˞
+STORY ORTHO:    The cold north breezes devastated my rose garden. Last week, I read about a solution to my problem. To shield the flowers, I will install a storm protector.
+STORY IPA:      ðʌkoʊldnɔɹθbɹizɪzdɛvʌsteɪtɪdmaɪɹoʊzɡɑɹdʌn.læstwik,aɪɹɛdʌbaʊtʌsʌluʃʌntumaɪpɹɑblʌm.tuʃildðʌflaʊɜ˞z,aɪwɪlɪnstɔlʌstɔɹmpɹʌtɛktɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: storms protector
+COMPOUND IPA:   stɔɹmzpɹʌtɛktɜ˞
+STORY ORTHO:    The cold north breezes devastated my rose garden. Last week, I read about a solution to my problem. To shield the flowers, I will install a storms protector.
+STORY IPA:      ðʌkoʊldnɔɹθbɹizɪzdɛvʌsteɪtɪdmaɪɹoʊzɡɑɹdʌn.læstwik,aɪɹɛdʌbaʊtʌsʌluʃʌntumaɪpɹɑblʌm.tuʃildðʌflaʊɜ˞z,aɪwɪlɪnstɔlʌstɔɹmzpɹʌtɛktɜ˞.
+
+
+GROUP 3
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: tax receivers
+COMPOUND IPA:   tæksɹʌsivɜ˞z
+STORY ORTHO:    One of the most tedious tasks one could have is receiving income taxes. I always feel sorry for tax receivers.
+STORY IPA:      wʌnʌvðʌmoʊsttidiʌstæskswʌnkʊdhævɪzɹʌsivɪŋɪnkʌmtæksʌz.aɪɔlweɪzfilsɑɹifɔɹtæksɹʌsivɜ˞z.
+
+ITEM 2
+COMPOUND ORTHO: taxes receivers
+COMPOUND IPA:   tæksʌzɹʌsivɜ˞z
+STORY ORTHO:    One of the most tedious tasks one could have is receiving income taxes. I always feel sorry for taxes receivers.
+STORY IPA:      wʌnʌvðʌmoʊsttidiʌstæskswʌnkʊdhævɪzɹʌsivɪŋɪnkʌmtæksʌz.aɪɔlweɪzfilsɑɹifɔɹtæksʌzɹʌsivɜ˞z.
+
+ITEM 3
+COMPOUND ORTHO: toll receivers
+COMPOUND IPA:   toʊlɹʌsivɜ˞z
+STORY ORTHO:    One of the most tedious tasks one could have is receiving income taxes. I always feel sorry for toll receivers.
+STORY IPA:      wʌnʌvðʌmoʊsttidiʌstæskswʌnkʊdhævɪzɹʌsivɪŋɪnkʌmtæksʌz.aɪɔlweɪzfilsɑɹifɔɹtoʊlɹʌsivɜ˞z.
+
+ITEM 4
+COMPOUND ORTHO: tolls receivers
+COMPOUND IPA:   toʊlzɹʌsivɜ˞z
+STORY ORTHO:    One of the most tedious tasks one could have is receiving income taxes. I always feel sorry for tolls receivers.
+STORY IPA:      wʌnʌvðʌmoʊsttidiʌstæskswʌnkʊdhævɪzɹʌsivɪŋɪnkʌmtæksʌz.aɪɔlweɪzfilsɑɹifɔɹtoʊlzɹʌsivɜ˞z.
+
+
+GROUP 4
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: sex disparities
+COMPOUND IPA:   sɛksdɪspɛɹʌtiz
+STORY ORTHO:    Taylor's dissertation compared brain functioning in men and women. Her study was among the first to demonstrate sex disparities in brain activity.
+STORY IPA:      teɪlɜ˞zdɪsɜ˞teɪʃʌnkʌmpɛɹdbɹeɪnfʌŋkʃʌnɪŋɪnmɛnʌndwɪmʌn.hɜ˞stʌdiwɑzʌmʌŋðʌfɜ˞sttudɛmʌnstɹeɪtsɛksdɪspɛɹʌtizɪnbɹeɪnæktɪvʌti.
+
+ITEM 2
+COMPOUND ORTHO: sexes disparities
+COMPOUND IPA:   sɛksʌzdɪspɛɹʌtiz
+STORY ORTHO:    Taylor's dissertation compared brain functioning in men and women. Her study was among the first to demonstrate sexes disparities in brain activity.
+STORY IPA:      teɪlɜ˞zdɪsɜ˞teɪʃʌnkʌmpɛɹdbɹeɪnfʌŋkʃʌnɪŋɪnmɛnʌndwɪmʌn.hɜ˞stʌdiwɑzʌmʌŋðʌfɜ˞sttudɛmʌnstɹeɪtsɛksʌzdɪspɛɹʌtizɪnbɹeɪnæktɪvʌti.
+
+ITEM 3
+COMPOUND ORTHO: gender disparities
+COMPOUND IPA:   dʒɛndɜ˞dɪspɛɹʌtiz
+STORY ORTHO:    Taylor's dissertation compared brain functioning in men and women. Her study was among the first to demonstrate gender disparities in brain activity.
+STORY IPA:      teɪlɜ˞zdɪsɜ˞teɪʃʌnkʌmpɛɹdbɹeɪnfʌŋkʃʌnɪŋɪnmɛnʌndwɪmʌn.hɜ˞stʌdiwɑzʌmʌŋðʌfɜ˞sttudɛmʌnstɹeɪtdʒɛndɜ˞dɪspɛɹʌtizɪnbɹeɪnæktɪvʌti.
+
+ITEM 4
+COMPOUND ORTHO: genders disparities
+COMPOUND IPA:   dʒɛndɜ˞zdɪspɛɹʌtiz
+STORY ORTHO:    Taylor's dissertation compared brain functioning in men and women. Her study was among the first to demonstrate genders disparities in brain activity.
+STORY IPA:      teɪlɜ˞zdɪsɜ˞teɪʃʌnkʌmpɛɹdbɹeɪnfʌŋkʃʌnɪŋɪnmɛnʌndwɪmʌn.hɜ˞stʌdiwɑzʌmʌŋðʌfɜ˞sttudɛmʌnstɹeɪtdʒɛndɜ˞zdɪspɛɹʌtizɪnbɹeɪnæktɪvʌti.
+
+
+GROUP 5
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: vase maker
+COMPOUND IPA:   veɪsmeɪkɜ˞
+STORY ORTHO:    Because of the deep religious significance of pottery, the Navajo Indians spend many years learning how to make pots. It is a great honor to be chosen to become a vase maker.
+STORY IPA:      bɪkɔzʌvðʌdipɹɪlɪdʒʌssʌɡnɪfɪkʌnsʌvpɑtɜ˞i,ðʌnɑvʌhoʊɪndiʌnzspɛndmɛnijɪɹzlɜ˞nɪŋhaʊtumeɪkpɑts.ɪtɪzʌɡɹeɪtɑnɜ˞tubitʃoʊzʌntubɪkʌmʌveɪsmeɪkɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: vases maker
+COMPOUND IPA:   veɪsʌzmeɪkɜ˞
+STORY ORTHO:    Because of the deep religious significance of pottery, the Navajo Indians spend many years learning how to make pots. It is a great honor to be chosen to become a vases maker.
+STORY IPA:      bɪkɔzʌvðʌdipɹɪlɪdʒʌssʌɡnɪfɪkʌnsʌvpɑtɜ˞i,ðʌnɑvʌhoʊɪndiʌnzspɛndmɛnijɪɹzlɜ˞nɪŋhaʊtumeɪkpɑts.ɪtɪzʌɡɹeɪtɑnɜ˞tubitʃoʊzʌntubɪkʌmʌveɪsʌzmeɪkɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: pot maker
+COMPOUND IPA:   pɑtmeɪkɜ˞
+STORY ORTHO:    Because of the deep religious significance of pottery, the Navajo Indians spend many years learning how to make pots. It is a great honor to be chosen to become a pot maker.
+STORY IPA:      bɪkɔzʌvðʌdipɹɪlɪdʒʌssʌɡnɪfɪkʌnsʌvpɑtɜ˞i,ðʌnɑvʌhoʊɪndiʌnzspɛndmɛnijɪɹzlɜ˞nɪŋhaʊtumeɪkpɑts.ɪtɪzʌɡɹeɪtɑnɜ˞tubitʃoʊzʌntubɪkʌmʌpɑtmeɪkɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: pots maker
+COMPOUND IPA:   pɑtsmeɪkɜ˞
+STORY ORTHO:    Because of the deep religious significance of pottery, the Navajo Indians spend many years learning how to make pots. It is a great honor to be chosen to become a pots maker.
+STORY IPA:      bɪkɔzʌvðʌdipɹɪlɪdʒʌssʌɡnɪfɪkʌnsʌvpɑtɜ˞i,ðʌnɑvʌhoʊɪndiʌnzspɛndmɛnijɪɹzlɜ˞nɪŋhaʊtumeɪkpɑts.ɪtɪzʌɡɹeɪtɑnɜ˞tubitʃoʊzʌntubɪkʌmʌpɑtsmeɪkɜ˞.
+
+
+GROUP 6
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: hoax victims
+COMPOUND IPA:   hoʊksvɪktʌmz
+STORY ORTHO:    On the Candid Camera show, a policeman approached tourists on the street, asking them to submit their money so that he could register the bills' numbers. The policeman took the bills and disappeared, to the dismay of the poor hoax victims.
+STORY IPA:      ɑnðʌkændʌdkæmɜ˞ʌʃoʊ,ʌpʌlismʌnʌpɹoʊtʃttʊɹʌstsɑnðʌstɹit,æskɪŋðɛmtusʌbmɪtðɛɹmʌnisoʊðæthikʊdɹɛdʒɪstɜ˞ðʌbɪlznʌmbɜ˞z.ðʌpʌlismʌntʊkðʌbɪlzʌnddɪsʌpɪɹd,tuðʌdɪsmeɪʌvðʌpuɹhoʊksvɪktʌmz.
+
+ITEM 2
+COMPOUND ORTHO: hoaxes victims
+COMPOUND IPA:   hoʊksɪzvɪktʌmz
+STORY ORTHO:    On the Candid Camera show, a policeman approached tourists on the street, asking them to submit their money so that he could register the bills' numbers. The policeman took the bills and disappeared, to the dismay of the poor hoaxes victims.
+STORY IPA:      ɑnðʌkændʌdkæmɜ˞ʌʃoʊ,ʌpʌlismʌnʌpɹoʊtʃttʊɹʌstsɑnðʌstɹit,æskɪŋðɛmtusʌbmɪtðɛɹmʌnisoʊðæthikʊdɹɛdʒɪstɜ˞ðʌbɪlznʌmbɜ˞z.ðʌpʌlismʌntʊkðʌbɪlzʌnddɪsʌpɪɹd,tuðʌdɪsmeɪʌvðʌpuɹhoʊksɪzvɪktʌmz.
+
+ITEM 3
+COMPOUND ORTHO: joke victims
+COMPOUND IPA:   dʒoʊkvɪktʌmz
+STORY ORTHO:    On the Candid Camera show, a policeman approached tourists on the street, asking them to submit their money so that he could register the bills' numbers. The policeman took the bills and disappeared, to the dismay of the poor joke victims.
+STORY IPA:      ɑnðʌkændʌdkæmɜ˞ʌʃoʊ,ʌpʌlismʌnʌpɹoʊtʃttʊɹʌstsɑnðʌstɹit,æskɪŋðɛmtusʌbmɪtðɛɹmʌnisoʊðæthikʊdɹɛdʒɪstɜ˞ðʌbɪlznʌmbɜ˞z.ðʌpʌlismʌntʊkðʌbɪlzʌnddɪsʌpɪɹd,tuðʌdɪsmeɪʌvðʌpuɹdʒoʊkvɪktʌmz.
+
+ITEM 4
+COMPOUND ORTHO: jokes victims
+COMPOUND IPA:   dʒoʊksvɪktʌmz
+STORY ORTHO:    On the Candid Camera show, a policeman approached tourists on the street, asking them to submit their money so that he could register the bills' numbers. The policeman took the bills and disappeared, to the dismay of the poor jokes victims.
+STORY IPA:      ɑnðʌkændʌdkæmɜ˞ʌʃoʊ,ʌpʌlismʌnʌpɹoʊtʃttʊɹʌstsɑnðʌstɹit,æskɪŋðɛmtusʌbmɪtðɛɹmʌnisoʊðæthikʊdɹɛdʒɪstɜ˞ðʌbɪlznʌmbɜ˞z.ðʌpʌlismʌntʊkðʌbɪlzʌnddɪsʌpɪɹd,tuðʌdɪsmeɪʌvðʌpuɹdʒoʊksvɪktʌmz.
+
+
+GROUP 7
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: phase classifier
+COMPOUND IPA:   feɪzklæsʌfaɪɜ˞
+STORY ORTHO:    When Mary was writing her dissertation, she was constantly trying to classify the various phases of child development. She wouldn't stop talking about the subject. Her annoyed husband called her the phase classifier.
+STORY IPA:      wɛnmɛɹiwɑzɹaɪtɪŋhɜ˞dɪsɜ˞teɪʃʌn,ʃiwɑzkɑnstʌntlitɹaɪɪŋtuklæsʌfaɪðʌvɛɹiʌsfeɪzʌzʌvtʃaɪlddɪvɛlʌpmʌnt.ʃiwʊdʌntstɑptɔkɪŋʌbaʊtðʌsʌbdʒɛkt.hɜ˞ʌnɔɪdhʌzbʌndkɔldhɜ˞ðʌfeɪzklæsʌfaɪɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: phases classifier
+COMPOUND IPA:   feɪzʌzklæsʌfaɪɜ˞
+STORY ORTHO:    When Mary was writing her dissertation, she was constantly trying to classify the various phases of child development. She wouldn't stop talking about the subject. Her annoyed husband called her the phases classifier.
+STORY IPA:      wɛnmɛɹiwɑzɹaɪtɪŋhɜ˞dɪsɜ˞teɪʃʌn,ʃiwɑzkɑnstʌntlitɹaɪɪŋtuklæsʌfaɪðʌvɛɹiʌsfeɪzʌzʌvtʃaɪlddɪvɛlʌpmʌnt.ʃiwʊdʌntstɑptɔkɪŋʌbaʊtðʌsʌbdʒɛkt.hɜ˞ʌnɔɪdhʌzbʌndkɔldhɜ˞ðʌfeɪzʌzklæsʌfaɪɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: step classifier
+COMPOUND IPA:   stɛpklæsʌfaɪɜ˞
+STORY ORTHO:    When Mary was writing her dissertation, she was constantly trying to classify the various phases of child development. She wouldn't stop talking about the subject. Her annoyed husband called her the step classifier.
+STORY IPA:      wɛnmɛɹiwɑzɹaɪtɪŋhɜ˞dɪsɜ˞teɪʃʌn,ʃiwɑzkɑnstʌntlitɹaɪɪŋtuklæsʌfaɪðʌvɛɹiʌsfeɪzʌzʌvtʃaɪlddɪvɛlʌpmʌnt.ʃiwʊdʌntstɑptɔkɪŋʌbaʊtðʌsʌbdʒɛkt.hɜ˞ʌnɔɪdhʌzbʌndkɔldhɜ˞ðʌstɛpklæsʌfaɪɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: steps classifier
+COMPOUND IPA:   stɛpsklæsʌfaɪɜ˞
+STORY ORTHO:    When Mary was writing her dissertation, she was constantly trying to classify the various phases of child development. She wouldn't stop talking about the subject. Her annoyed husband called her the steps classifier.
+STORY IPA:      wɛnmɛɹiwɑzɹaɪtɪŋhɜ˞dɪsɜ˞teɪʃʌn,ʃiwɑzkɑnstʌntlitɹaɪɪŋtuklæsʌfaɪðʌvɛɹiʌsfeɪzʌzʌvtʃaɪlddɪvɛlʌpmʌnt.ʃiwʊdʌntstɑptɔkɪŋʌbaʊtðʌsʌbdʒɛkt.hɜ˞ʌnɔɪdhʌzbʌndkɔldhɜ˞ðʌstɛpsklæsʌfaɪɜ˞.
+
+
+GROUP 8
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: hose installer
+COMPOUND IPA:   hoʊzɪnstɔlɜ˞
+STORY ORTHO:    John works for General Electric. His job is to install hoses on washing machines. His wife jokingly calls him the the hose installer.
+STORY IPA:      dʒɑnwɜ˞ksfɔɹdʒɛnɜ˞ʌlɪlɛktɹɪk.hɪzdʒɑbɪztuɪnstɔlhoʊzɪzɑnwɑʃɪŋmʌʃinz.hɪzwaɪfdʒoʊkɪŋlikɔlzhɪmðʌðʌhoʊzɪnstɔlɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: hoses installer
+COMPOUND IPA:   hoʊzɪzɪnstɔlɜ˞
+STORY ORTHO:    John works for General Electric. His job is to install hoses on washing machines. His wife jokingly calls him the the hoses installer.
+STORY IPA:      dʒɑnwɜ˞ksfɔɹdʒɛnɜ˞ʌlɪlɛktɹɪk.hɪzdʒɑbɪztuɪnstɔlhoʊzɪzɑnwɑʃɪŋmʌʃinz.hɪzwaɪfdʒoʊkɪŋlikɔlzhɪmðʌðʌhoʊzɪzɪnstɔlɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: pipe installer
+COMPOUND IPA:   paɪpɪnstɔlɜ˞
+STORY ORTHO:    John works for General Electric. His job is to install hoses on washing machines. His wife jokingly calls him the the pipe installer.
+STORY IPA:      dʒɑnwɜ˞ksfɔɹdʒɛnɜ˞ʌlɪlɛktɹɪk.hɪzdʒɑbɪztuɪnstɔlhoʊzɪzɑnwɑʃɪŋmʌʃinz.hɪzwaɪfdʒoʊkɪŋlikɔlzhɪmðʌðʌpaɪpɪnstɔlɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: pipes installer
+COMPOUND IPA:   paɪpsɪnstɔlɜ˞
+STORY ORTHO:    John works for General Electric. His job is to install hoses on washing machines. His wife jokingly calls him the the pipes installer.
+STORY IPA:      dʒɑnwɜ˞ksfɔɹdʒɛnɜ˞ʌlɪlɛktɹɪk.hɪzdʒɑbɪztuɪnstɔlhoʊzɪzɑnwɑʃɪŋmʌʃinz.hɪzwaɪfdʒoʊkɪŋlikɔlzhɪmðʌðʌpaɪpsɪnstɔlɜ˞.
+
+
+GROUP 9
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: fox chaser
+COMPOUND IPA:   fɑkstʃeɪsɜ˞
+STORY ORTHO:    My dog scares the wolves away from my farmhouse. He is the perfect fox chaser.
+STORY IPA:      maɪdɔɡskɛɹzðʌwʊlvzʌweɪfɹʌmmaɪfɑɹmhaʊs.hiɪzðʌpɜ˞fɛktfɑkstʃeɪsɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: foxes chaser
+COMPOUND IPA:   fɑksʌztʃeɪsɜ˞
+STORY ORTHO:    My dog scares the wolves away from my farmhouse. He is the perfect foxes chaser.
+STORY IPA:      maɪdɔɡskɛɹzðʌwʊlvzʌweɪfɹʌmmaɪfɑɹmhaʊs.hiɪzðʌpɜ˞fɛktfɑksʌztʃeɪsɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: wolf chaser
+COMPOUND IPA:   wʊlftʃeɪsɜ˞
+STORY ORTHO:    My dog scares the wolves away from my farmhouse. He is the perfect wolf chaser.
+STORY IPA:      maɪdɔɡskɛɹzðʌwʊlvzʌweɪfɹʌmmaɪfɑɹmhaʊs.hiɪzðʌpɜ˞fɛktwʊlftʃeɪsɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: wolves chaser
+COMPOUND IPA:   wʊlvztʃeɪsɜ˞
+STORY ORTHO:    My dog scares the wolves away from my farmhouse. He is the perfect wolves chaser.
+STORY IPA:      maɪdɔɡskɛɹzðʌwʊlvzʌweɪfɹʌmmaɪfɑɹmhaʊs.hiɪzðʌpɜ˞fɛktwʊlvztʃeɪsɜ˞.
+
+
+GROUP 10
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: mix winner
+COMPOUND IPA:   mɪkswɪnɜ˞
+STORY ORTHO:    I like drinking coffee at Starbucks because they sell several mixes of beans. Their coffee is the mix winner.
+STORY IPA:      aɪlaɪkdɹɪŋkɪŋkɑfiætstɑɹbʌksbɪkɔzðeɪsɛlsɛvɹʌlmɪksʌzʌvbinz.ðɛɹkɑfiɪzðʌmɪkswɪnɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: mixes winner
+COMPOUND IPA:   mɪksʌzwɪnɜ˞
+STORY ORTHO:    I like drinking coffee at Starbucks because they sell several mixes of beans. Their coffee is the mixes winner.
+STORY IPA:      aɪlaɪkdɹɪŋkɪŋkɑfiætstɑɹbʌksbɪkɔzðeɪsɛlsɛvɹʌlmɪksʌzʌvbinz.ðɛɹkɑfiɪzðʌmɪksʌzwɪnɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: blend winner
+COMPOUND IPA:   blɛndwɪnɜ˞
+STORY ORTHO:    I like drinking coffee at Starbucks because they sell several mixes of beans. Their coffee is the blend winner.
+STORY IPA:      aɪlaɪkdɹɪŋkɪŋkɑfiætstɑɹbʌksbɪkɔzðeɪsɛlsɛvɹʌlmɪksʌzʌvbinz.ðɛɹkɑfiɪzðʌblɛndwɪnɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: blends winner
+COMPOUND IPA:   blɛndzwɪnɜ˞
+STORY ORTHO:    I like drinking coffee at Starbucks because they sell several mixes of beans. Their coffee is the blends winner.
+STORY IPA:      aɪlaɪkdɹɪŋkɪŋkɑfiætstɑɹbʌksbɪkɔzðeɪsɛlsɛvɹʌlmɪksʌzʌvbinz.ðɛɹkɑfiɪzðʌblɛndzwɪnɜ˞.
+
+
+GROUP 11
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: nose rashes
+COMPOUND IPA:   noʊzɹæʃɪz
+STORY ORTHO:    The center for disease control has issued a warning about a dangerous epidemic. In early stages, patients show a red rash on their thighs. Many clinics are now overwhelmed with scared patients complaining about nose rashes.
+STORY IPA:      ðʌsɛntɜ˞fɔɹdɪzizkʌntɹoʊlhæzɪʃudʌwɔɹnɪŋʌbaʊtʌdeɪndʒɜ˞ʌsɛpʌdɛmɪk.ɪnɜ˞listeɪdʒʌz,peɪʃʌntsʃoʊʌɹɛdɹæʃɑnðɛɹθaɪz.mɛniklɪnɪksɑɹnaʊoʊvɜ˞wɛlmdwɪðskɛɹdpeɪʃʌntskʌmpleɪnɪŋʌbaʊtnoʊzɹæʃɪz.
+
+ITEM 2
+COMPOUND ORTHO: noses rashes
+COMPOUND IPA:   noʊzɪzɹæʃɪz
+STORY ORTHO:    The center for disease control has issued a warning about a dangerous epidemic. In early stages, patients show a red rash on their thighs. Many clinics are now overwhelmed with scared patients complaining about noses rashes.
+STORY IPA:      ðʌsɛntɜ˞fɔɹdɪzizkʌntɹoʊlhæzɪʃudʌwɔɹnɪŋʌbaʊtʌdeɪndʒɜ˞ʌsɛpʌdɛmɪk.ɪnɜ˞listeɪdʒʌz,peɪʃʌntsʃoʊʌɹɛdɹæʃɑnðɛɹθaɪz.mɛniklɪnɪksɑɹnaʊoʊvɜ˞wɛlmdwɪðskɛɹdpeɪʃʌntskʌmpleɪnɪŋʌbaʊtnoʊzɪzɹæʃɪz.
+
+ITEM 3
+COMPOUND ORTHO: thigh rashes
+COMPOUND IPA:   θaɪɹæʃɪz
+STORY ORTHO:    The center for disease control has issued a warning about a dangerous epidemic. In early stages, patients show a red rash on their thighs. Many clinics are now overwhelmed with scared patients complaining about thigh rashes.
+STORY IPA:      ðʌsɛntɜ˞fɔɹdɪzizkʌntɹoʊlhæzɪʃudʌwɔɹnɪŋʌbaʊtʌdeɪndʒɜ˞ʌsɛpʌdɛmɪk.ɪnɜ˞listeɪdʒʌz,peɪʃʌntsʃoʊʌɹɛdɹæʃɑnðɛɹθaɪz.mɛniklɪnɪksɑɹnaʊoʊvɜ˞wɛlmdwɪðskɛɹdpeɪʃʌntskʌmpleɪnɪŋʌbaʊtθaɪɹæʃɪz.
+
+ITEM 4
+COMPOUND ORTHO: thighs rashes
+COMPOUND IPA:   θaɪzɹæʃɪz
+STORY ORTHO:    The center for disease control has issued a warning about a dangerous epidemic. In early stages, patients show a red rash on their thighs. Many clinics are now overwhelmed with scared patients complaining about thighs rashes.
+STORY IPA:      ðʌsɛntɜ˞fɔɹdɪzizkʌntɹoʊlhæzɪʃudʌwɔɹnɪŋʌbaʊtʌdeɪndʒɜ˞ʌsɛpʌdɛmɪk.ɪnɜ˞listeɪdʒʌz,peɪʃʌntsʃoʊʌɹɛdɹæʃɑnðɛɹθaɪz.mɛniklɪnɪksɑɹnaʊoʊvɜ˞wɛlmdwɪðskɛɹdpeɪʃʌntskʌmpleɪnɪŋʌbaʊtθaɪzɹæʃɪz.
+
+
+GROUP 12
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: cause evaluators
+COMPOUND IPA:   kɑzɪvæljueɪtɜ˞z
+STORY ORTHO:    After a building toppled over in New York City, the government sent out a disaster team to investigate the losses. This disaster team was called the cause evaluators.
+STORY IPA:      æftɜ˞ʌbɪldɪŋtɑpʌldoʊvɜ˞ɪnnujɔɹksɪti,ðʌɡʌvɜ˞mʌntsɛntaʊtʌdɪzæstɜ˞timtuɪnvɛstʌɡeɪtðʌlɔsʌz.ðɪsdɪzæstɜ˞timwɑzkɔldðʌkɑzɪvæljueɪtɜ˞z.
+
+ITEM 2
+COMPOUND ORTHO: causes evaluators
+COMPOUND IPA:   kɑzʌzɪvæljueɪtɜ˞z
+STORY ORTHO:    After a building toppled over in New York City, the government sent out a disaster team to investigate the losses. This disaster team was called the causes evaluators.
+STORY IPA:      æftɜ˞ʌbɪldɪŋtɑpʌldoʊvɜ˞ɪnnujɔɹksɪti,ðʌɡʌvɜ˞mʌntsɛntaʊtʌdɪzæstɜ˞timtuɪnvɛstʌɡeɪtðʌlɔsʌz.ðɪsdɪzæstɜ˞timwɑzkɔldðʌkɑzʌzɪvæljueɪtɜ˞z.
+
+ITEM 3
+COMPOUND ORTHO: loss evaluators
+COMPOUND IPA:   lɔsɪvæljueɪtɜ˞z
+STORY ORTHO:    After a building toppled over in New York City, the government sent out a disaster team to investigate the losses. This disaster team was called the loss evaluators.
+STORY IPA:      æftɜ˞ʌbɪldɪŋtɑpʌldoʊvɜ˞ɪnnujɔɹksɪti,ðʌɡʌvɜ˞mʌntsɛntaʊtʌdɪzæstɜ˞timtuɪnvɛstʌɡeɪtðʌlɔsʌz.ðɪsdɪzæstɜ˞timwɑzkɔldðʌlɔsɪvæljueɪtɜ˞z.
+
+ITEM 4
+COMPOUND ORTHO: losses evaluators
+COMPOUND IPA:   lɔsʌzɪvæljueɪtɜ˞z
+STORY ORTHO:    After a building toppled over in New York City, the government sent out a disaster team to investigate the losses. This disaster team was called the losses evaluators.
+STORY IPA:      æftɜ˞ʌbɪldɪŋtɑpʌldoʊvɜ˞ɪnnujɔɹksɪti,ðʌɡʌvɜ˞mʌntsɛntaʊtʌdɪzæstɜ˞timtuɪnvɛstʌɡeɪtðʌlɔsʌz.ðɪsdɪzæstɜ˞timwɑzkɔldðʌlɔsʌzɪvæljueɪtɜ˞z.
+
+
+GROUP 13
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: gaze detector
+COMPOUND IPA:   ɡeɪzdɪtɛktɜ˞
+STORY ORTHO:    It is now possible to diagnose early stages of glaucoma by repeatedly examining patient's stares into ultra violate light. Many hospitals are now purchasing the diagnostic tool, known as the gaze detector.
+STORY IPA:      ɪtɪznaʊpɑsʌbʌltudaɪʌɡnoʊsɜ˞listeɪdʒʌzʌvɡlɔkoʊmʌbaɪɹɪpitɪdliɪɡzæmɪnɪŋpeɪʃʌntsstɛɹzɪntuʌltɹʌvaɪʌleɪtlaɪt.mɛnihɑspɪtʌlzɑɹnaʊpɜ˞tʃʌsɪŋðʌdaɪʌɡnɑstɪktul,noʊnæzðʌɡeɪzdɪtɛktɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: gazes detector
+COMPOUND IPA:   ɡeɪzʌzdɪtɛktɜ˞
+STORY ORTHO:    It is now possible to diagnose early stages of glaucoma by repeatedly examining patient's stares into ultra violate light. Many hospitals are now purchasing the diagnostic tool, known as the gazes detector.
+STORY IPA:      ɪtɪznaʊpɑsʌbʌltudaɪʌɡnoʊsɜ˞listeɪdʒʌzʌvɡlɔkoʊmʌbaɪɹɪpitɪdliɪɡzæmɪnɪŋpeɪʃʌntsstɛɹzɪntuʌltɹʌvaɪʌleɪtlaɪt.mɛnihɑspɪtʌlzɑɹnaʊpɜ˞tʃʌsɪŋðʌdaɪʌɡnɑstɪktul,noʊnæzðʌɡeɪzʌzdɪtɛktɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: stare detector
+COMPOUND IPA:   stɛɹdɪtɛktɜ˞
+STORY ORTHO:    It is now possible to diagnose early stages of glaucoma by repeatedly examining patient's stares into ultra violate light. Many hospitals are now purchasing the diagnostic tool, known as the stare detector.
+STORY IPA:      ɪtɪznaʊpɑsʌbʌltudaɪʌɡnoʊsɜ˞listeɪdʒʌzʌvɡlɔkoʊmʌbaɪɹɪpitɪdliɪɡzæmɪnɪŋpeɪʃʌntsstɛɹzɪntuʌltɹʌvaɪʌleɪtlaɪt.mɛnihɑspɪtʌlzɑɹnaʊpɜ˞tʃʌsɪŋðʌdaɪʌɡnɑstɪktul,noʊnæzðʌstɛɹdɪtɛktɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: stares detector
+COMPOUND IPA:   stɛɹzdɪtɛktɜ˞
+STORY ORTHO:    It is now possible to diagnose early stages of glaucoma by repeatedly examining patient's stares into ultra violate light. Many hospitals are now purchasing the diagnostic tool, known as the stares detector.
+STORY IPA:      ɪtɪznaʊpɑsʌbʌltudaɪʌɡnoʊsɜ˞listeɪdʒʌzʌvɡlɔkoʊmʌbaɪɹɪpitɪdliɪɡzæmɪnɪŋpeɪʃʌntsstɛɹzɪntuʌltɹʌvaɪʌleɪtlaɪt.mɛnihɑspɪtʌlzɑɹnaʊpɜ˞tʃʌsɪŋðʌdaɪʌɡnɑstɪktul,noʊnæzðʌstɛɹzdɪtɛktɜ˞.
+
+
+GROUP 14
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: clause finder
+COMPOUND IPA:   klɔzfaɪndɜ˞
+STORY ORTHO:    My landlord is very tricky. Last year, I brought my lease contracts to my lawyer, because he is so good at spotting hidden articles. I call him the clause finder.
+STORY IPA:      maɪlændlɔɹdɪzvɛɹitɹɪki.læstjɪɹ,aɪbɹɔtmaɪliskɑntɹæktstumaɪlɔjɜ˞,bɪkɔzhiɪzsoʊɡʊdætspɑtɪŋhɪdʌnɑɹtʌkʌlz.aɪkɔlhɪmðʌklɔzfaɪndɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: clauses finder
+COMPOUND IPA:   klɔzʌzfaɪndɜ˞
+STORY ORTHO:    My landlord is very tricky. Last year, I brought my lease contracts to my lawyer, because he is so good at spotting hidden articles. I call him the clauses finder.
+STORY IPA:      maɪlændlɔɹdɪzvɛɹitɹɪki.læstjɪɹ,aɪbɹɔtmaɪliskɑntɹæktstumaɪlɔjɜ˞,bɪkɔzhiɪzsoʊɡʊdætspɑtɪŋhɪdʌnɑɹtʌkʌlz.aɪkɔlhɪmðʌklɔzʌzfaɪndɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: article finder
+COMPOUND IPA:   ɑɹtʌkʌlfaɪndɜ˞
+STORY ORTHO:    My landlord is very tricky. Last year, I brought my lease contracts to my lawyer, because he is so good at spotting hidden articles. I call him the article finder.
+STORY IPA:      maɪlændlɔɹdɪzvɛɹitɹɪki.læstjɪɹ,aɪbɹɔtmaɪliskɑntɹæktstumaɪlɔjɜ˞,bɪkɔzhiɪzsoʊɡʊdætspɑtɪŋhɪdʌnɑɹtʌkʌlz.aɪkɔlhɪmðʌɑɹtʌkʌlfaɪndɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: articles finder
+COMPOUND IPA:   ɑɹtʌkʌlzfaɪndɜ˞
+STORY ORTHO:    My landlord is very tricky. Last year, I brought my lease contracts to my lawyer, because he is so good at spotting hidden articles. I call him the articles finder.
+STORY IPA:      maɪlændlɔɹdɪzvɛɹitɹɪki.læstjɪɹ,aɪbɹɔtmaɪliskɑntɹæktstumaɪlɔjɜ˞,bɪkɔzhiɪzsoʊɡʊdætspɑtɪŋhɪdʌnɑɹtʌkʌlz.aɪkɔlhɪmðʌɑɹtʌkʌlzfaɪndɜ˞.
+
+
+GROUP 15
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: maze decoder
+COMPOUND IPA:   meɪzdɪkoʊdɜ˞
+STORY ORTHO:    While at the science museum, a group of students were trying to decode words from mazes of letters in a puzzle. Mike was the only one to decode the words. His friends called him the maze decoder.
+STORY IPA:      waɪlætðʌsaɪʌnsmjuziʌm,ʌɡɹupʌvstudʌntswɜ˞tɹaɪɪŋtudɪkoʊdwɜ˞dzfɹʌmmeɪzɪzʌvlɛtɜ˞zɪnʌpʌzʌl.maɪkwɑzðʌoʊnliwʌntudɪkoʊdðʌwɜ˞dz.hɪzfɹɛndzkɔldhɪmðʌmeɪzdɪkoʊdɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: mazes decoder
+COMPOUND IPA:   meɪzɪzdɪkoʊdɜ˞
+STORY ORTHO:    While at the science museum, a group of students were trying to decode words from mazes of letters in a puzzle. Mike was the only one to decode the words. His friends called him the mazes decoder.
+STORY IPA:      waɪlætðʌsaɪʌnsmjuziʌm,ʌɡɹupʌvstudʌntswɜ˞tɹaɪɪŋtudɪkoʊdwɜ˞dzfɹʌmmeɪzɪzʌvlɛtɜ˞zɪnʌpʌzʌl.maɪkwɑzðʌoʊnliwʌntudɪkoʊdðʌwɜ˞dz.hɪzfɹɛndzkɔldhɪmðʌmeɪzɪzdɪkoʊdɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: web decoder
+COMPOUND IPA:   wɛbdɪkoʊdɜ˞
+STORY ORTHO:    While at the science museum, a group of students were trying to decode words from mazes of letters in a puzzle. Mike was the only one to decode the words. His friends called him the web decoder.
+STORY IPA:      waɪlætðʌsaɪʌnsmjuziʌm,ʌɡɹupʌvstudʌntswɜ˞tɹaɪɪŋtudɪkoʊdwɜ˞dzfɹʌmmeɪzɪzʌvlɛtɜ˞zɪnʌpʌzʌl.maɪkwɑzðʌoʊnliwʌntudɪkoʊdðʌwɜ˞dz.hɪzfɹɛndzkɔldhɪmðʌwɛbdɪkoʊdɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: webs decoder
+COMPOUND IPA:   wɛbzdɪkoʊdɜ˞
+STORY ORTHO:    While at the science museum, a group of students were trying to decode words from mazes of letters in a puzzle. Mike was the only one to decode the words. His friends called him the webs decoder.
+STORY IPA:      waɪlætðʌsaɪʌnsmjuziʌm,ʌɡɹupʌvstudʌntswɜ˞tɹaɪɪŋtudɪkoʊdwɜ˞dzfɹʌmmeɪzɪzʌvlɛtɜ˞zɪnʌpʌzʌl.maɪkwɑzðʌoʊnliwʌntudɪkoʊdðʌwɜ˞dz.hɪzfɹɛndzkɔldhɪmðʌwɛbzdɪkoʊdɜ˞.
+
+
+GROUP 16
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: quiz expert
+COMPOUND IPA:   kwɪzɛkspɜ˞t
+STORY ORTHO:    Dan has an uncanny ability to answer any question on word puzzles. His friends call him the quiz expert.
+STORY IPA:      dænhæzænʌnkæniʌbɪlʌtituænsɜ˞ɛnikwɛstʃʌnɑnwɜ˞dpʌzʌlz.hɪzfɹɛndzkɔlhɪmðʌkwɪzɛkspɜ˞t.
+
+ITEM 2
+COMPOUND ORTHO: quizzes expert
+COMPOUND IPA:   kwɪzɪzɛkspɜ˞t
+STORY ORTHO:    Dan has an uncanny ability to answer any question on word puzzles. His friends call him the quizzes expert.
+STORY IPA:      dænhæzænʌnkæniʌbɪlʌtituænsɜ˞ɛnikwɛstʃʌnɑnwɜ˞dpʌzʌlz.hɪzfɹɛndzkɔlhɪmðʌkwɪzɪzɛkspɜ˞t.
+
+ITEM 3
+COMPOUND ORTHO: puzzle expert
+COMPOUND IPA:   pʌzʌlɛkspɜ˞t
+STORY ORTHO:    Dan has an uncanny ability to answer any question on word puzzles. His friends call him the puzzle expert.
+STORY IPA:      dænhæzænʌnkæniʌbɪlʌtituænsɜ˞ɛnikwɛstʃʌnɑnwɜ˞dpʌzʌlz.hɪzfɹɛndzkɔlhɪmðʌpʌzʌlɛkspɜ˞t.
+
+ITEM 4
+COMPOUND ORTHO: puzzles expert
+COMPOUND IPA:   pʌzʌlzɛkspɜ˞t
+STORY ORTHO:    Dan has an uncanny ability to answer any question on word puzzles. His friends call him the puzzles expert.
+STORY IPA:      dænhæzænʌnkæniʌbɪlʌtituænsɜ˞ɛnikwɛstʃʌnɑnwɜ˞dpʌzʌlz.hɪzfɹɛndzkɔlhɪmðʌpʌzʌlzɛkspɜ˞t.
+
+
+GROUP 17
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: fax man
+COMPOUND IPA:   fæksmæn
+STORY ORTHO:    John's work description is rather simple: He sits near the fax machine and distributes the incoming faxes to his co workers mailboxes. John is known as the fax man.
+STORY IPA:      dʒɑnzwɜ˞kdɪskɹɪpʃʌnɪzɹæðɜ˞sɪmpʌl:hisɪtsnɪɹðʌfæksmʌʃinʌnddɪstɹɪbjutsðʌɪnkʌmɪŋfæksɪztuhɪzkoʊwɜ˞kɜ˞zmeɪlbɑksɪz.dʒɑnɪznoʊnæzðʌfæksmæn.
+
+ITEM 2
+COMPOUND ORTHO: faxes man
+COMPOUND IPA:   fæksɪzmæn
+STORY ORTHO:    John's work description is rather simple: He sits near the fax machine and distributes the incoming faxes to his co workers mailboxes. John is known as the faxes man.
+STORY IPA:      dʒɑnzwɜ˞kdɪskɹɪpʃʌnɪzɹæðɜ˞sɪmpʌl:hisɪtsnɪɹðʌfæksmʌʃinʌnddɪstɹɪbjutsðʌɪnkʌmɪŋfæksɪztuhɪzkoʊwɜ˞kɜ˞zmeɪlbɑksɪz.dʒɑnɪznoʊnæzðʌfæksɪzmæn.
+
+ITEM 3
+COMPOUND ORTHO: copy man
+COMPOUND IPA:   kɑpimæn
+STORY ORTHO:    John's work description is rather simple: He sits near the fax machine and distributes the incoming faxes to his co workers mailboxes. John is known as the copy man.
+STORY IPA:      dʒɑnzwɜ˞kdɪskɹɪpʃʌnɪzɹæðɜ˞sɪmpʌl:hisɪtsnɪɹðʌfæksmʌʃinʌnddɪstɹɪbjutsðʌɪnkʌmɪŋfæksɪztuhɪzkoʊwɜ˞kɜ˞zmeɪlbɑksɪz.dʒɑnɪznoʊnæzðʌkɑpimæn.
+
+ITEM 4
+COMPOUND ORTHO: copies man
+COMPOUND IPA:   kɑpizmæn
+STORY ORTHO:    John's work description is rather simple: He sits near the fax machine and distributes the incoming faxes to his co workers mailboxes. John is known as the copies man.
+STORY IPA:      dʒɑnzwɜ˞kdɪskɹɪpʃʌnɪzɹæðɜ˞sɪmpʌl:hisɪtsnɪɹðʌfæksmʌʃinʌnddɪstɹɪbjutsðʌɪnkʌmɪŋfæksɪztuhɪzkoʊwɜ˞kɜ˞zmeɪlbɑksɪz.dʒɑnɪznoʊnæzðʌkɑpizmæn.
+
+
+GROUP 18
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: size device
+COMPOUND IPA:   saɪzdɪvaɪs
+STORY ORTHO:    The post office has purchased a state of the art device that can sort every piece of mail by various shapes. Conveniently enough, the machine is called the size device.
+STORY IPA:      ðʌpoʊstɔfɪshæzpɜ˞tʃʌstʌsteɪtʌvðʌɑɹtdɪvaɪsðætkænsɔɹtɛvɜ˞ipisʌvmeɪlbaɪvɛɹiʌsʃeɪps.kʌnvinjʌntliɪnʌf,ðʌmʌʃinɪzkɔldðʌsaɪzdɪvaɪs.
+
+ITEM 2
+COMPOUND ORTHO: sizes device
+COMPOUND IPA:   saɪzʌzdɪvaɪs
+STORY ORTHO:    The post office has purchased a state of the art device that can sort every piece of mail by various shapes. Conveniently enough, the machine is called the sizes device.
+STORY IPA:      ðʌpoʊstɔfɪshæzpɜ˞tʃʌstʌsteɪtʌvðʌɑɹtdɪvaɪsðætkænsɔɹtɛvɜ˞ipisʌvmeɪlbaɪvɛɹiʌsʃeɪps.kʌnvinjʌntliɪnʌf,ðʌmʌʃinɪzkɔldðʌsaɪzʌzdɪvaɪs.
+
+ITEM 3
+COMPOUND ORTHO: shape device
+COMPOUND IPA:   ʃeɪpdɪvaɪs
+STORY ORTHO:    The post office has purchased a state of the art device that can sort every piece of mail by various shapes. Conveniently enough, the machine is called the shape device.
+STORY IPA:      ðʌpoʊstɔfɪshæzpɜ˞tʃʌstʌsteɪtʌvðʌɑɹtdɪvaɪsðætkænsɔɹtɛvɜ˞ipisʌvmeɪlbaɪvɛɹiʌsʃeɪps.kʌnvinjʌntliɪnʌf,ðʌmʌʃinɪzkɔldðʌʃeɪpdɪvaɪs.
+
+ITEM 4
+COMPOUND ORTHO: shapes device
+COMPOUND IPA:   ʃeɪpsdɪvaɪs
+STORY ORTHO:    The post office has purchased a state of the art device that can sort every piece of mail by various shapes. Conveniently enough, the machine is called the shapes device.
+STORY IPA:      ðʌpoʊstɔfɪshæzpɜ˞tʃʌstʌsteɪtʌvðʌɑɹtdɪvaɪsðætkænsɔɹtɛvɜ˞ipisʌvmeɪlbaɪvɛɹiʌsʃeɪps.kʌnvinjʌntliɪnʌf,ðʌmʌʃinɪzkɔldðʌʃeɪpsdɪvaɪs.
+
+
+GROUP 19
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: praise getter
+COMPOUND IPA:   pɹeɪzɡɛtɜ˞
+STORY ORTHO:    Four year old Susie will do anything to get praises from her father. He calls her the praise getter.
+STORY IPA:      fɔɹjɪɹoʊldsuziwɪlduɛniθɪŋtuɡɛtpɹeɪzʌzfɹʌmhɜ˞fɑðɜ˞.hikɔlzhɜ˞ðʌpɹeɪzɡɛtɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: praises getter
+COMPOUND IPA:   pɹeɪzʌzɡɛtɜ˞
+STORY ORTHO:    Four year old Susie will do anything to get praises from her father. He calls her the praises getter.
+STORY IPA:      fɔɹjɪɹoʊldsuziwɪlduɛniθɪŋtuɡɛtpɹeɪzʌzfɹʌmhɜ˞fɑðɜ˞.hikɔlzhɜ˞ðʌpɹeɪzʌzɡɛtɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: compliment getter
+COMPOUND IPA:   kɑmplʌmɛntɡɛtɜ˞
+STORY ORTHO:    Four year old Susie will do anything to get praises from her father. He calls her the compliment getter.
+STORY IPA:      fɔɹjɪɹoʊldsuziwɪlduɛniθɪŋtuɡɛtpɹeɪzʌzfɹʌmhɜ˞fɑðɜ˞.hikɔlzhɜ˞ðʌkɑmplʌmɛntɡɛtɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: compliments getter
+COMPOUND IPA:   kɑmplʌmɛntsɡɛtɜ˞
+STORY ORTHO:    Four year old Susie will do anything to get praises from her father. He calls her the compliments getter.
+STORY IPA:      fɔɹjɪɹoʊldsuziwɪlduɛniθɪŋtuɡɛtpɹeɪzʌzfɹʌmhɜ˞fɑðɜ˞.hikɔlzhɜ˞ðʌkɑmplʌmɛntsɡɛtɜ˞.
+
+
+GROUP 20
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: prize recipient
+COMPOUND IPA:   pɹaɪzɹʌsɪpiʌnt
+STORY ORTHO:    Mary's son received prizes in the national competitions of Math and Physics. The proud mother cannot help show everyone the photo of the happy prize recipient.
+STORY IPA:      mɛɹizsʌnɹʌsivdpɹaɪzʌzɪnðʌnæʃʌnʌlkɑmpʌtɪʃʌnzʌvmæθʌndfɪzɪks.ðʌpɹaʊdmʌðɜ˞kænɑthɛlpʃoʊɛvɹiwʌnðʌfoʊtoʊʌvðʌhæpipɹaɪzɹʌsɪpiʌnt.
+
+ITEM 2
+COMPOUND ORTHO: prizes recipient
+COMPOUND IPA:   pɹaɪzʌzɹʌsɪpiʌnt
+STORY ORTHO:    Mary's son received prizes in the national competitions of Math and Physics. The proud mother cannot help show everyone the photo of the happy prizes recipient.
+STORY IPA:      mɛɹizsʌnɹʌsivdpɹaɪzʌzɪnðʌnæʃʌnʌlkɑmpʌtɪʃʌnzʌvmæθʌndfɪzɪks.ðʌpɹaʊdmʌðɜ˞kænɑthɛlpʃoʊɛvɹiwʌnðʌfoʊtoʊʌvðʌhæpipɹaɪzʌzɹʌsɪpiʌnt.
+
+ITEM 3
+COMPOUND ORTHO: award recipient
+COMPOUND IPA:   ʌwɔɹdɹʌsɪpiʌnt
+STORY ORTHO:    Mary's son received prizes in the national competitions of Math and Physics. The proud mother cannot help show everyone the photo of the happy award recipient.
+STORY IPA:      mɛɹizsʌnɹʌsivdpɹaɪzʌzɪnðʌnæʃʌnʌlkɑmpʌtɪʃʌnzʌvmæθʌndfɪzɪks.ðʌpɹaʊdmʌðɜ˞kænɑthɛlpʃoʊɛvɹiwʌnðʌfoʊtoʊʌvðʌhæpiʌwɔɹdɹʌsɪpiʌnt.
+
+ITEM 4
+COMPOUND ORTHO: awards recipient
+COMPOUND IPA:   ʌwɔɹdzɹʌsɪpiʌnt
+STORY ORTHO:    Mary's son received prizes in the national competitions of Math and Physics. The proud mother cannot help show everyone the photo of the happy awards recipient.
+STORY IPA:      mɛɹizsʌnɹʌsivdpɹaɪzʌzɪnðʌnæʃʌnʌlkɑmpʌtɪʃʌnzʌvmæθʌndfɪzɪks.ðʌpɹaʊdmʌðɜ˞kænɑthɛlpʃoʊɛvɹiwʌnðʌfoʊtoʊʌvðʌhæpiʌwɔɹdzɹʌsɪpiʌnt.
+
+
+GROUP 21
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: box lifters
+COMPOUND IPA:   bɑkslɪftɜ˞z
+STORY ORTHO:    FedEx workers must be careful not to lift heavy boxes, as this can result in damage to their back. To minimize the risk of injury, the company now provides workers with special box lifters.
+STORY IPA:      fɛdɛkswɜ˞kɜ˞zmʌstbikɛɹfʌlnɑttulɪfthɛvibɑksʌz,æzðɪskænɹɪzʌltɪndæmʌdʒtuðɛɹbæk.tumɪnʌmaɪzðʌɹɪskʌvɪndʒɜ˞i,ðʌkʌmpʌninaʊpɹʌvaɪdzwɜ˞kɜ˞zwɪðspɛʃʌlbɑkslɪftɜ˞z.
+
+ITEM 2
+COMPOUND ORTHO: boxes lifters
+COMPOUND IPA:   bɑksʌzlɪftɜ˞z
+STORY ORTHO:    FedEx workers must be careful not to lift heavy boxes, as this can result in damage to their back. To minimize the risk of injury, the company now provides workers with special boxes lifters.
+STORY IPA:      fɛdɛkswɜ˞kɜ˞zmʌstbikɛɹfʌlnɑttulɪfthɛvibɑksʌz,æzðɪskænɹɪzʌltɪndæmʌdʒtuðɛɹbæk.tumɪnʌmaɪzðʌɹɪskʌvɪndʒɜ˞i,ðʌkʌmpʌninaʊpɹʌvaɪdzwɜ˞kɜ˞zwɪðspɛʃʌlbɑksʌzlɪftɜ˞z.
+
+ITEM 3
+COMPOUND ORTHO: pack lifters
+COMPOUND IPA:   pæklɪftɜ˞z
+STORY ORTHO:    FedEx workers must be careful not to lift heavy boxes, as this can result in damage to their back. To minimize the risk of injury, the company now provides workers with special pack lifters.
+STORY IPA:      fɛdɛkswɜ˞kɜ˞zmʌstbikɛɹfʌlnɑttulɪfthɛvibɑksʌz,æzðɪskænɹɪzʌltɪndæmʌdʒtuðɛɹbæk.tumɪnʌmaɪzðʌɹɪskʌvɪndʒɜ˞i,ðʌkʌmpʌninaʊpɹʌvaɪdzwɜ˞kɜ˞zwɪðspɛʃʌlpæklɪftɜ˞z.
+
+ITEM 4
+COMPOUND ORTHO: packs lifters
+COMPOUND IPA:   pækslɪftɜ˞z
+STORY ORTHO:    FedEx workers must be careful not to lift heavy boxes, as this can result in damage to their back. To minimize the risk of injury, the company now provides workers with special packs lifters.
+STORY IPA:      fɛdɛkswɜ˞kɜ˞zmʌstbikɛɹfʌlnɑttulɪfthɛvibɑksʌz,æzðɪskænɹɪzʌltɪndæmʌdʒtuðɛɹbæk.tumɪnʌmaɪzðʌɹɪskʌvɪndʒɜ˞i,ðʌkʌmpʌninaʊpɹʌvaɪdzwɜ˞kɜ˞zwɪðspɛʃʌlpækslɪftɜ˞z.
+
+
+GROUP 22
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: rose gardeners
+COMPOUND IPA:   ɹoʊzɡɑɹdʌnɜ˞z
+STORY ORTHO:    My Aunt Mary has wonderful roses in her garden. She is among the most famous rose gardeners in the country.
+STORY IPA:      maɪæntmɛɹihæzwʌndɜ˞fʌlɹoʊzɪzɪnhɜ˞ɡɑɹdʌn.ʃiɪzʌmʌŋðʌmoʊstfeɪmʌsɹoʊzɡɑɹdʌnɜ˞zɪnðʌkʌntɹi.
+
+ITEM 2
+COMPOUND ORTHO: roses gardeners
+COMPOUND IPA:   ɹoʊzɪzɡɑɹdʌnɜ˞z
+STORY ORTHO:    My Aunt Mary has wonderful roses in her garden. She is among the most famous roses gardeners in the country.
+STORY IPA:      maɪæntmɛɹihæzwʌndɜ˞fʌlɹoʊzɪzɪnhɜ˞ɡɑɹdʌn.ʃiɪzʌmʌŋðʌmoʊstfeɪmʌsɹoʊzɪzɡɑɹdʌnɜ˞zɪnðʌkʌntɹi.
+
+ITEM 3
+COMPOUND ORTHO: flower gardeners
+COMPOUND IPA:   flaʊɜ˞ɡɑɹdʌnɜ˞z
+STORY ORTHO:    My Aunt Mary has wonderful roses in her garden. She is among the most famous flower gardeners in the country.
+STORY IPA:      maɪæntmɛɹihæzwʌndɜ˞fʌlɹoʊzɪzɪnhɜ˞ɡɑɹdʌn.ʃiɪzʌmʌŋðʌmoʊstfeɪmʌsflaʊɜ˞ɡɑɹdʌnɜ˞zɪnðʌkʌntɹi.
+
+ITEM 4
+COMPOUND ORTHO: flowers gardeners
+COMPOUND IPA:   flaʊɜ˞zɡɑɹdʌnɜ˞z
+STORY ORTHO:    My Aunt Mary has wonderful roses in her garden. She is among the most famous flowers gardeners in the country.
+STORY IPA:      maɪæntmɛɹihæzwʌndɜ˞fʌlɹoʊzɪzɪnhɜ˞ɡɑɹdʌn.ʃiɪzʌmʌŋðʌmoʊstfeɪmʌsflaʊɜ˞zɡɑɹdʌnɜ˞zɪnðʌkʌntɹi.
+
+
+GROUP 23
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: bruise healer
+COMPOUND IPA:   bɹuzhilɜ˞
+STORY ORTHO:    My friend Aaron loves to play football, but always comes home full of sores. I sent him down the street to the all natural store, which sells a wonderful cream that works wonders on face and body sores, they disappear without leaving a mark. I call it the bruise healer.
+STORY IPA:      maɪfɹɛndɛɹʌnlʌvztupleɪfʊtbɔl,bʌtɔlweɪzkʌmzhoʊmfʊlʌvsɔɹz.aɪsɛnthɪmdaʊnðʌstɹittuðʌɔlnætʃɜ˞ʌlstɔɹ,wɪtʃsɛlzʌwʌndɜ˞fʌlkɹimðætwɜ˞kswʌndɜ˞zɑnfeɪsʌndbɑdisɔɹz,ðeɪdɪsʌpɪɹwɪθaʊtlivɪŋʌmɑɹk.aɪkɔlɪtðʌbɹuzhilɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: bruises healer
+COMPOUND IPA:   bɹuzʌzhilɜ˞
+STORY ORTHO:    My friend Aaron loves to play football, but always comes home full of sores. I sent him down the street to the all natural store, which sells a wonderful cream that works wonders on face and body sores, they disappear without leaving a mark. I call it the bruises healer.
+STORY IPA:      maɪfɹɛndɛɹʌnlʌvztupleɪfʊtbɔl,bʌtɔlweɪzkʌmzhoʊmfʊlʌvsɔɹz.aɪsɛnthɪmdaʊnðʌstɹittuðʌɔlnætʃɜ˞ʌlstɔɹ,wɪtʃsɛlzʌwʌndɜ˞fʌlkɹimðætwɜ˞kswʌndɜ˞zɑnfeɪsʌndbɑdisɔɹz,ðeɪdɪsʌpɪɹwɪθaʊtlivɪŋʌmɑɹk.aɪkɔlɪtðʌbɹuzʌzhilɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: sore healer
+COMPOUND IPA:   sɔɹhilɜ˞
+STORY ORTHO:    My friend Aaron loves to play football, but always comes home full of sores. I sent him down the street to the all natural store, which sells a wonderful cream that works wonders on face and body sores, they disappear without leaving a mark. I call it the sore healer.
+STORY IPA:      maɪfɹɛndɛɹʌnlʌvztupleɪfʊtbɔl,bʌtɔlweɪzkʌmzhoʊmfʊlʌvsɔɹz.aɪsɛnthɪmdaʊnðʌstɹittuðʌɔlnætʃɜ˞ʌlstɔɹ,wɪtʃsɛlzʌwʌndɜ˞fʌlkɹimðætwɜ˞kswʌndɜ˞zɑnfeɪsʌndbɑdisɔɹz,ðeɪdɪsʌpɪɹwɪθaʊtlivɪŋʌmɑɹk.aɪkɔlɪtðʌsɔɹhilɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: sores healer
+COMPOUND IPA:   sɔɹzhilɜ˞
+STORY ORTHO:    My friend Aaron loves to play football, but always comes home full of sores. I sent him down the street to the all natural store, which sells a wonderful cream that works wonders on face and body sores, they disappear without leaving a mark. I call it the sores healer.
+STORY IPA:      maɪfɹɛndɛɹʌnlʌvztupleɪfʊtbɔl,bʌtɔlweɪzkʌmzhoʊmfʊlʌvsɔɹz.aɪsɛnthɪmdaʊnðʌstɹittuðʌɔlnætʃɜ˞ʌlstɔɹ,wɪtʃsɛlzʌwʌndɜ˞fʌlkɹimðætwɜ˞kswʌndɜ˞zɑnfeɪsʌndbɑdisɔɹz,ðeɪdɪsʌpɪɹwɪθaʊtlivɪŋʌmɑɹk.aɪkɔlɪtðʌsɔɹzhilɜ˞.
+
+
+GROUP 24
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: rise addict
+COMPOUND IPA:   ɹaɪzʌdɪkt
+STORY ORTHO:    My favorite part about roller coaster rides are the drops. I cannot stop screaming while we are going down. Last weekend, I spent eight hours on these Thunder Mountain at Disney World. At the end of the day, the operator thought I was a rise addict.
+STORY IPA:      maɪfeɪvɜ˞ɪtpɑɹtʌbaʊtɹoʊlɜ˞koʊstɜ˞ɹaɪdzɑɹðʌdɹɑps.aɪkænɑtstɑpskɹimɪŋwaɪlwiɑɹɡoʊɪŋdaʊn.læstwikɛnd,aɪspɛnteɪtaʊɜ˞zɑnðizθʌndɜ˞maʊntʌnætdɪzniwɜ˞ld.ætðʌɛndʌvðʌdeɪ,ðʌɑpɜ˞eɪtɜ˞θɔtaɪwɑzʌɹaɪzʌdɪkt.
+
+ITEM 2
+COMPOUND ORTHO: rises addict
+COMPOUND IPA:   ɹaɪzʌzʌdɪkt
+STORY ORTHO:    My favorite part about roller coaster rides are the drops. I cannot stop screaming while we are going down. Last weekend, I spent eight hours on these Thunder Mountain at Disney World. At the end of the day, the operator thought I was a rises addict.
+STORY IPA:      maɪfeɪvɜ˞ɪtpɑɹtʌbaʊtɹoʊlɜ˞koʊstɜ˞ɹaɪdzɑɹðʌdɹɑps.aɪkænɑtstɑpskɹimɪŋwaɪlwiɑɹɡoʊɪŋdaʊn.læstwikɛnd,aɪspɛnteɪtaʊɜ˞zɑnðizθʌndɜ˞maʊntʌnætdɪzniwɜ˞ld.ætðʌɛndʌvðʌdeɪ,ðʌɑpɜ˞eɪtɜ˞θɔtaɪwɑzʌɹaɪzʌzʌdɪkt.
+
+ITEM 3
+COMPOUND ORTHO: drop addict
+COMPOUND IPA:   dɹɑpʌdɪkt
+STORY ORTHO:    My favorite part about roller coaster rides are the drops. I cannot stop screaming while we are going down. Last weekend, I spent eight hours on these Thunder Mountain at Disney World. At the end of the day, the operator thought I was a drop addict.
+STORY IPA:      maɪfeɪvɜ˞ɪtpɑɹtʌbaʊtɹoʊlɜ˞koʊstɜ˞ɹaɪdzɑɹðʌdɹɑps.aɪkænɑtstɑpskɹimɪŋwaɪlwiɑɹɡoʊɪŋdaʊn.læstwikɛnd,aɪspɛnteɪtaʊɜ˞zɑnðizθʌndɜ˞maʊntʌnætdɪzniwɜ˞ld.ætðʌɛndʌvðʌdeɪ,ðʌɑpɜ˞eɪtɜ˞θɔtaɪwɑzʌdɹɑpʌdɪkt.
+
+ITEM 4
+COMPOUND ORTHO: drops addict
+COMPOUND IPA:   dɹɑpsʌdɪkt
+STORY ORTHO:    My favorite part about roller coaster rides are the drops. I cannot stop screaming while we are going down. Last weekend, I spent eight hours on these Thunder Mountain at Disney World. At the end of the day, the operator thought I was a drops addict.
+STORY IPA:      maɪfeɪvɜ˞ɪtpɑɹtʌbaʊtɹoʊlɜ˞koʊstɜ˞ɹaɪdzɑɹðʌdɹɑps.aɪkænɑtstɑpskɹimɪŋwaɪlwiɑɹɡoʊɪŋdaʊn.læstwikɛnd,aɪspɛnteɪtaʊɜ˞zɑnðizθʌndɜ˞maʊntʌnætdɪzniwɜ˞ld.ætðʌɛndʌvðʌdeɪ,ðʌɑpɜ˞eɪtɜ˞θɔtaɪwɑzʌdɹɑpsʌdɪkt.
+
+

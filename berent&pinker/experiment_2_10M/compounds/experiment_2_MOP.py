@@ -2,7 +2,10 @@
 # Uses Morphologically-aware tokenization via MorPiece: https://huggingface.co/NeTS-lab/babylm-mop-10m-gpt2 
 # The tokenization here is particular. 
 # Subword continuation is marked '++' instead of marking the word separation.
-# This means that the information about the new word is already in the right place. Making the BOW correction unecessary.  
+# This means that the information about the new word is already in the right place. Making the BOW correction unecessary. 
+# # Needs aspecial method to load, as you can see below.   
+# Does not handle major letters, so the full text mus be converted to minor letters before being inputed to the model. 
+
 
 import pandas as pd
 from minicons import scorer

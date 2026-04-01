@@ -2,6 +2,7 @@
 # It uses athe conversion from text to phonemes g2plus. 
 # IMPORTANT note: The Forced BOW correction is working. This can be observe in the file 'surprisal_by_token_babble_phonetic_char_with_spaces_forced_BOW.py'.
 # With the correction the suprisal of the token 'WORD_BOUNDARY' becomes zero.
+# BOS = False
 
 
 import pandas as pd
@@ -9,6 +10,8 @@ from collections import defaultdict
 from g2p_plus import transcribe_utterances
 from minicons import scorer
 import json
+
+BOS = False
 
 output_file = "results_berent&pinker/100M/results_experiment_2_babble_phonetic_char_with_spaces.csv"
 
@@ -38,7 +41,7 @@ def ipa_word_surprisals(lm, ipa_text):
     """
     tok_scores = lm.token_score(
         ipa_text,
-        bos_token=False,
+        bos_token=BOS,
         prob=False,
         surprisal=True,
         bow_correction=True

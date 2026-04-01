@@ -1,0 +1,540 @@
+GROUP 1
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: hose collector
+COMPOUND IPA:   hoʊz kʌlɛktɜ˞
+STORY ORTHO:    Chris has five garden hoses. I call him the hose collector.
+STORY IPA:      kɹɪs hæz faɪv ɡɑɹdʌn hoʊzɪz. aɪ kɔl hɪm ðʌ hoʊz kʌlɛktɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: hoses collector
+COMPOUND IPA:   hoʊzɪz kʌlɛktɜ˞
+STORY ORTHO:    Chris has five garden hoses. I call him the hoses collector.
+STORY IPA:      kɹɪs hæz faɪv ɡɑɹdʌn hoʊzɪz. aɪ kɔl hɪm ðʌ hoʊzɪz kʌlɛktɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: hoe collector
+COMPOUND IPA:   hoʊ kʌlɛktɜ˞
+STORY ORTHO:    Chris has five garden hoes. I call him the hoe collector.
+STORY IPA:      kɹɪs hæz faɪv ɡɑɹdʌn hoʊz. aɪ kɔl hɪm ðʌ hoʊ kʌlɛktɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: hoes collector
+COMPOUND IPA:   hoʊz kʌlɛktɜ˞
+STORY ORTHO:    Chris has five garden hoes. I call him the hoes collector.
+STORY IPA:      kɹɪs hæz faɪv ɡɑɹdʌn hoʊz. aɪ kɔl hɪm ðʌ hoʊz kʌlɛktɜ˞.
+
+
+GROUP 2
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: rose organizer
+COMPOUND IPA:   ɹoʊz ɔɹɡʌnaɪzɜ˞
+STORY ORTHO:    My grandmother is obsessed with putting things in order. She especially loves to sort by color all of her prized roses. I call her the rose organizer.
+STORY IPA:      maɪ ɡɹændmʌðɜ˞ ɪz ʌbsɛst wɪð pʌtɪŋ θɪŋz ɪn ɔɹdɜ˞. ʃi ʌspɛʃli lʌvz tu sɔɹt baɪ kʌlɜ˞ ɔl ʌv hɜ˞ pɹaɪzd ɹoʊzɪz. aɪ kɔl hɜ˞ ðʌ ɹoʊz ɔɹɡʌnaɪzɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: roses organizer
+COMPOUND IPA:   ɹoʊzɪz ɔɹɡʌnaɪzɜ˞
+STORY ORTHO:    My grandmother is obsessed with putting things in order. She especially loves to sort by color all of her prized roses. I call her the roses organizer.
+STORY IPA:      maɪ ɡɹændmʌðɜ˞ ɪz ʌbsɛst wɪð pʌtɪŋ θɪŋz ɪn ɔɹdɜ˞. ʃi ʌspɛʃli lʌvz tu sɔɹt baɪ kʌlɜ˞ ɔl ʌv hɜ˞ pɹaɪzd ɹoʊzɪz. aɪ kɔl hɜ˞ ðʌ ɹoʊzɪz ɔɹɡʌnaɪzɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: row organizer
+COMPOUND IPA:   ɹoʊ ɔɹɡʌnaɪzɜ˞
+STORY ORTHO:    My grandmother is obsessed with putting things in order. She especially loves to sort all of her buttons, pins and clips in rows. I call her the row organizer.
+STORY IPA:      maɪ ɡɹændmʌðɜ˞ ɪz ʌbsɛst wɪð pʌtɪŋ θɪŋz ɪn ɔɹdɜ˞. ʃi ʌspɛʃli lʌvz tu sɔɹt ɔl ʌv hɜ˞ bʌtʌnz, pɪnz ʌnd klɪps ɪn ɹoʊz. aɪ kɔl hɜ˞ ðʌ ɹoʊ ɔɹɡʌnaɪzɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: rows organizer
+COMPOUND IPA:   ɹoʊz ɔɹɡʌnaɪzɜ˞
+STORY ORTHO:    My grandmother is obsessed with putting things in order. She especially loves to sort all of her buttons, pins and clips in rows. I call her the rows organizer.
+STORY IPA:      maɪ ɡɹændmʌðɜ˞ ɪz ʌbsɛst wɪð pʌtɪŋ θɪŋz ɪn ɔɹdɜ˞. ʃi ʌspɛʃli lʌvz tu sɔɹt ɔl ʌv hɜ˞ bʌtʌnz, pɪnz ʌnd klɪps ɪn ɹoʊz. aɪ kɔl hɜ˞ ðʌ ɹoʊz ɔɹɡʌnaɪzɜ˞.
+
+
+GROUP 3
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: rise addict
+COMPOUND IPA:   ɹaɪz ʌdɪkt
+STORY ORTHO:    My friend Eileen will only live in high rises. I call her a rise addict.
+STORY IPA:      maɪ fɹɛnd aɪlin wɪl oʊnli laɪv ɪn haɪ ɹaɪzʌz. aɪ kɔl hɜ˞ ʌ ɹaɪz ʌdɪkt.
+
+ITEM 2
+COMPOUND ORTHO: rises addict
+COMPOUND IPA:   ɹaɪzʌz ʌdɪkt
+STORY ORTHO:    My friend Eileen will only live in high rises. I call her a rises addict.
+STORY IPA:      maɪ fɹɛnd aɪlin wɪl oʊnli laɪv ɪn haɪ ɹaɪzʌz. aɪ kɔl hɜ˞ ʌ ɹaɪzʌz ʌdɪkt.
+
+ITEM 3
+COMPOUND ORTHO: lie addict
+COMPOUND IPA:   laɪ ʌdɪkt
+STORY ORTHO:    My friend Eileen constantly lies. I call her a lie addict.
+STORY IPA:      maɪ fɹɛnd aɪlin kɑnstʌntli laɪz. aɪ kɔl hɜ˞ ʌ laɪ ʌdɪkt.
+
+ITEM 4
+COMPOUND ORTHO: lies addict
+COMPOUND IPA:   laɪz ʌdɪkt
+STORY ORTHO:    My friend Eileen constantly lies. I call her a lies addict.
+STORY IPA:      maɪ fɹɛnd aɪlin kɑnstʌntli laɪz. aɪ kɔl hɜ˞ ʌ laɪz ʌdɪkt.
+
+
+GROUP 4
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: clause hider
+COMPOUND IPA:   klɔz haɪdɜ˞
+STORY ORTHO:    My landlord has hidden in my lease contract many nasty clauses. I call him the clause hider.
+STORY IPA:      maɪ lændlɔɹd hæz hɪdʌn ɪn maɪ lis kɑntɹækt mɛni næsti klɔzʌz. aɪ kɔl hɪm ðʌ klɔz haɪdɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: clauses hider
+COMPOUND IPA:   klɔzʌz haɪdɜ˞
+STORY ORTHO:    My landlord has hidden in my lease contract many nasty clauses. I call him the clauses hider.
+STORY IPA:      maɪ lændlɔɹd hæz hɪdʌn ɪn maɪ lis kɑntɹækt mɛni næsti klɔzʌz. aɪ kɔl hɪm ðʌ klɔzʌz haɪdɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: claw hider
+COMPOUND IPA:   klɔ haɪdɜ˞
+STORY ORTHO:    A National Geographic team has discovered a rare wild cat that can hide its claws. They call it the claw hider.
+STORY IPA:      ʌ næʃʌnʌl dʒiʌɡɹæfɪk tim hæz dɪskʌvɜ˞d ʌ ɹɛɹ waɪld kæt ðæt kæn haɪd ɪts klɔz. ðeɪ kɔl ɪt ðʌ klɔ haɪdɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: claws hider
+COMPOUND IPA:   klɔz haɪdɜ˞
+STORY ORTHO:    A National Geographic team has discovered a rare wild cat that can hide its claws. They call it the claws hider.
+STORY IPA:      ʌ næʃʌnʌl dʒiʌɡɹæfɪk tim hæz dɪskʌvɜ˞d ʌ ɹɛɹ waɪld kæt ðæt kæn haɪd ɪts klɔz. ðeɪ kɔl ɪt ðʌ klɔz haɪdɜ˞.
+
+
+GROUP 5
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: gaze attractor
+COMPOUND IPA:   ɡeɪz ʌtɹæktɜ˞
+STORY ORTHO:    Detectives can now determine if a person is lying by tracking their gazes during questioning. This new technique is called the gaze attractor.
+STORY IPA:      dɪtɛktɪvz kæn naʊ dʌtɜ˞mʌn ɪf ʌ pɜ˞sʌn ɪz laɪɪŋ baɪ tɹækɪŋ ðɛɹ ɡeɪzʌz dʊɹɪŋ kwɛstʃʌnɪŋ. ðɪs nu tɛknik ɪz kɔld ðʌ ɡeɪz ʌtɹæktɜ˞ .
+
+ITEM 2
+COMPOUND ORTHO: gazes attractor
+COMPOUND IPA:   ɡeɪzʌz ʌtɹæktɜ˞
+STORY ORTHO:    Detectives can now determine if a person is lying by tracking their gazes during questioning. This new technique is called the gazes attractor.
+STORY IPA:      dɪtɛktɪvz kæn naʊ dʌtɜ˞mʌn ɪf ʌ pɜ˞sʌn ɪz laɪɪŋ baɪ tɹækɪŋ ðɛɹ ɡeɪzʌz dʊɹɪŋ kwɛstʃʌnɪŋ. ðɪs nu tɛknik ɪz kɔld ðʌ ɡeɪzʌz ʌtɹæktɜ˞ .
+
+ITEM 3
+COMPOUND ORTHO: guy attractor
+COMPOUND IPA:   ɡaɪ ʌtɹæktɜ˞
+STORY ORTHO:    Calvin Kline has come up with a new perfume that is said to attract guys to women. The new perfume is called the guy attractor.
+STORY IPA:      kælvʌn klaɪn hæz kʌm ʌp wɪð ʌ nu pɜ˞fjum ðæt ɪz sɛd tu ʌtɹækt ɡaɪz tu wɪmʌn. ðʌ nu pɜ˞fjum ɪz kɔld ðʌ ɡaɪ ʌtɹæktɜ˞ .
+
+ITEM 4
+COMPOUND ORTHO: guys attractor
+COMPOUND IPA:   ɡaɪz ʌtɹæktɜ˞
+STORY ORTHO:    Calvin Kline has come up with a new perfume that is said to attract guys to women. The new perfume is called the guys attractor.
+STORY IPA:      kælvʌn klaɪn hæz kʌm ʌp wɪð ʌ nu pɜ˞fjum ðæt ɪz sɛd tu ʌtɹækt ɡaɪz tu wɪmʌn. ðʌ nu pɜ˞fjum ɪz kɔld ðʌ ɡaɪz ʌtɹæktɜ˞ .
+
+
+GROUP 6
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: box horde
+COMPOUND IPA:   bɑks hɔɹd
+STORY ORTHO:    The shelf in my office is full of empty boxes. I am known as the box horde.
+STORY IPA:      ðʌ ʃɛlf ɪn maɪ ɔfɪs ɪz fʊl ʌv ɛmpti bɑksʌz. aɪ æm noʊn æz ðʌ bɑks hɔɹd.
+
+ITEM 2
+COMPOUND ORTHO: boxes horde
+COMPOUND IPA:   bɑksʌz hɔɹd
+STORY ORTHO:    The shelf in my office is full of empty boxes. I am known as the boxes horde.
+STORY IPA:      ðʌ ʃɛlf ɪn maɪ ɔfɪs ɪz fʊl ʌv ɛmpti bɑksʌz. aɪ æm noʊn æz ðʌ bɑksʌz hɔɹd.
+
+ITEM 3
+COMPOUND ORTHO: book horde
+COMPOUND IPA:   bʊk hɔɹd
+STORY ORTHO:    The shelf in my office is full of cognition books. I am known as the book horde.
+STORY IPA:      ðʌ ʃɛlf ɪn maɪ ɔfɪs ɪz fʊl ʌv kɑɡnɪʃʌn bʊks. aɪ æm noʊn æz ðʌ bʊk hɔɹd.
+
+ITEM 4
+COMPOUND ORTHO: books horde
+COMPOUND IPA:   bʊks hɔɹd
+STORY ORTHO:    The shelf in my office is full of cognition books. I am known as the books horde.
+STORY IPA:      ðʌ ʃɛlf ɪn maɪ ɔfɪs ɪz fʊl ʌv kɑɡnɪʃʌn bʊks. aɪ æm noʊn æz ðʌ bʊks hɔɹd.
+
+
+GROUP 7
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: sex distinctions
+COMPOUND IPA:   sɛks dɪstɪŋkʃʌnz
+STORY ORTHO:    It is well recognized that the male and female sexes are distinct on many cognitive abilities, but the source of this effect is poorly understood. Much research has attempted to explain the source of sex distinctions.
+STORY IPA:      ɪt ɪz wɛl ɹɛkʌɡnaɪzd ðæt ðʌ meɪl ʌnd fimeɪl sɛksʌz ɑɹ dɪstɪŋkt ɑn mɛni kɑɡnɪtɪv ʌbɪlʌtiz, bʌt ðʌ sɔɹs ʌv ðɪs ɪfɛkt ɪz puɹli ʌndɜ˞stʊd. mʌtʃ ɹisɜ˞tʃ hæz ʌtɛmptɪd tu ɪkspleɪn ðʌ sɔɹs ʌv sɛks dɪstɪŋkʃʌnz.
+
+ITEM 2
+COMPOUND ORTHO: sexes distinctions
+COMPOUND IPA:   sɛksʌz dɪstɪŋkʃʌnz
+STORY ORTHO:    It is well recognized that the male and female sexes are distinct on many cognitive abilities, but the source of this effect is poorly understood. Much research has attempted to explain the source of sexes distinctions.
+STORY IPA:      ɪt ɪz wɛl ɹɛkʌɡnaɪzd ðæt ðʌ meɪl ʌnd fimeɪl sɛksʌz ɑɹ dɪstɪŋkt ɑn mɛni kɑɡnɪtɪv ʌbɪlʌtiz, bʌt ðʌ sɔɹs ʌv ðɪs ɪfɛkt ɪz puɹli ʌndɜ˞stʊd. mʌtʃ ɹisɜ˞tʃ hæz ʌtɛmptɪd tu ɪkspleɪn ðʌ sɔɹs ʌv sɛksʌz dɪstɪŋkʃʌnz.
+
+ITEM 3
+COMPOUND ORTHO: sack distinctions
+COMPOUND IPA:   sæk dɪstɪŋkʃʌnz
+STORY ORTHO:    Farmers have long recognized that potatoes are distinct in quality depending on the sacks in which they are stored, but the source of this effect is poorly understood. Much research has attempted to explain the source of sack distinctions.
+STORY IPA:      fɑɹmɜ˞z hæv lɔŋ ɹɛkʌɡnaɪzd ðæt pʌteɪtoʊz ɑɹ dɪstɪŋkt ɪn kwɑlʌti dɪpɛndɪŋ ɑn ðʌ sæks ɪn wɪtʃ ðeɪ ɑɹ stɔɹd, bʌt ðʌ sɔɹs ʌv ðɪs ɪfɛkt ɪz puɹli ʌndɜ˞stʊd. mʌtʃ ɹisɜ˞tʃ hæz ʌtɛmptɪd tu ɪkspleɪn ðʌ sɔɹs ʌv sæk dɪstɪŋkʃʌnz.
+
+ITEM 4
+COMPOUND ORTHO: sacks distinctions
+COMPOUND IPA:   sæks dɪstɪŋkʃʌnz
+STORY ORTHO:    Farmers have long recognized that potatoes are distinct in quality depending on the sacks in which they are stored, but the source of this effect is poorly understood. Much research has attempted to explain the source of sacks distinctions.
+STORY IPA:      fɑɹmɜ˞z hæv lɔŋ ɹɛkʌɡnaɪzd ðæt pʌteɪtoʊz ɑɹ dɪstɪŋkt ɪn kwɑlʌti dɪpɛndɪŋ ɑn ðʌ sæks ɪn wɪtʃ ðeɪ ɑɹ stɔɹd, bʌt ðʌ sɔɹs ʌv ðɪs ɪfɛkt ɪz puɹli ʌndɜ˞stʊd. mʌtʃ ɹisɜ˞tʃ hæz ʌtɛmptɪd tu ɪkspleɪn ðʌ sɔɹs ʌv sæks dɪstɪŋkʃʌnz.
+
+
+GROUP 8
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: tax repayment
+COMPOUND IPA:   tæks ɹipeɪmʌnt
+STORY ORTHO:    Last year, H&R Block took care of my taxes. Luckily they gave me a tax repayment.
+STORY IPA:      læst jɪɹ, eɪtʃ&ɑɹ blɑk tʊk kɛɹ ʌv maɪ tæksʌz. lʌkʌli ðeɪ ɡeɪv mi ʌ tæks ɹipeɪmʌnt.
+
+ITEM 2
+COMPOUND ORTHO: taxes repayment
+COMPOUND IPA:   tæksʌz ɹipeɪmʌnt
+STORY ORTHO:    Last year, H&R Block took care of my taxes. Luckily they gave me a taxes repayment.
+STORY IPA:      læst jɪɹ, eɪtʃ&ɑɹ blɑk tʊk kɛɹ ʌv maɪ tæksʌz. lʌkʌli ðeɪ ɡeɪv mi ʌ tæksʌz ɹipeɪmʌnt.
+
+ITEM 3
+COMPOUND ORTHO: tack repayment
+COMPOUND IPA:   tæk ɹipeɪmʌnt
+STORY ORTHO:    When I got my order from Office Depot, I was shocked to discover they had accidentally sent me 10,000 boxes of tacks. Luckily they gave me a tack repayment.
+STORY IPA:      wɛn aɪ ɡɑt maɪ ɔɹdɜ˞ fɹʌm ɔfɪs dipoʊ, aɪ wɑz ʃɑkt tu dɪskʌvɜ˞ ðeɪ hæd æksʌdɛntʌli sɛnt mi tɛn θaʊzʌnd bɑksʌz ʌv tæks. lʌkʌli ðeɪ ɡeɪv mi ʌ tæk ɹipeɪmʌnt.
+
+ITEM 4
+COMPOUND ORTHO: tacks repayment
+COMPOUND IPA:   tæks ɹipeɪmʌnt
+STORY ORTHO:    When I got my order from Office Depot, I was shocked to discover they had accidentally sent me 10,000 boxes of tacks. Luckily they gave me a tacks repayment.
+STORY IPA:      wɛn aɪ ɡɑt maɪ ɔɹdɜ˞ fɹʌm ɔfɪs dipoʊ, aɪ wɑz ʃɑkt tu dɪskʌvɜ˞ ðeɪ hæd æksʌdɛntʌli sɛnt mi tɛn θaʊzʌnd bɑksʌz ʌv tæks. lʌkʌli ðeɪ ɡeɪv mi ʌ tæks ɹipeɪmʌnt.
+
+
+GROUP 9
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: size device
+COMPOUND IPA:   saɪz dɪvaɪs
+STORY ORTHO:    The post office has purchased a state of the art device that can sort every piece of mail by various sizes and weights. Conveniently enough, the machine is called the size device.
+STORY IPA:      ðʌ poʊst ɔfɪs hæz pɜ˞tʃʌst ʌ steɪt ʌv ðʌ ɑɹt dɪvaɪs ðæt kæn sɔɹt ɛvɜ˞i pis ʌv meɪl baɪ vɛɹiʌs saɪzʌz ʌnd weɪts. kʌnvinjʌntli ɪnʌf, ðʌ mʌʃin ɪz kɔld ðʌ saɪz dɪvaɪs.
+
+ITEM 2
+COMPOUND ORTHO: sizes device
+COMPOUND IPA:   saɪzʌz dɪvaɪs
+STORY ORTHO:    The post office has purchased a state of the art device that can sort every piece of mail by various sizes and weights. Conveniently enough, the machine is called the sizes device.
+STORY IPA:      ðʌ poʊst ɔfɪs hæz pɜ˞tʃʌst ʌ steɪt ʌv ðʌ ɑɹt dɪvaɪs ðæt kæn sɔɹt ɛvɜ˞i pis ʌv meɪl baɪ vɛɹiʌs saɪzʌz ʌnd weɪts. kʌnvinjʌntli ɪnʌf, ðʌ mʌʃin ɪz kɔld ðʌ saɪzʌz dɪvaɪs.
+
+ITEM 3
+COMPOUND ORTHO: sigh device
+COMPOUND IPA:   saɪ dɪvaɪs
+STORY ORTHO:    Scientists have invented a device that can detect depression by recording the number of sighs a person emits in a hour. Conveniently enough, the machine is called the sigh device.
+STORY IPA:      saɪʌntɪsts hæv ɪnvɛntʌd ʌ dɪvaɪs ðæt kæn dɪtɛkt dɪpɹɛʃʌn baɪ ɹʌkɔɹdɪŋ ðʌ nʌmbɜ˞ ʌv saɪz ʌ pɜ˞sʌn ɪmɪts ɪn ʌ aʊɜ˞. kʌnvinjʌntli ɪnʌf, ðʌ mʌʃin ɪz kɔld ðʌ saɪ dɪvaɪs.
+
+ITEM 4
+COMPOUND ORTHO: sighs device
+COMPOUND IPA:   saɪz dɪvaɪs
+STORY ORTHO:    Scientists have invented a device that can detect depression by recording the number of sighs a person emits in a hour. Conveniently enough, the machine is called the sighs device.
+STORY IPA:      saɪʌntɪsts hæv ɪnvɛntʌd ʌ dɪvaɪs ðæt kæn dɪtɛkt dɪpɹɛʃʌn baɪ ɹʌkɔɹdɪŋ ðʌ nʌmbɜ˞ ʌv saɪz ʌ pɜ˞sʌn ɪmɪts ɪn ʌ aʊɜ˞. kʌnvinjʌntli ɪnʌf, ðʌ mʌʃin ɪz kɔld ðʌ saɪz dɪvaɪs.
+
+
+GROUP 10
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: praise getter
+COMPOUND IPA:   pɹeɪz ɡɛtɜ˞
+STORY ORTHO:    Four year old Danny will do anything to get praises from his mother. She calls him the praise getter.
+STORY IPA:      fɔɹ jɪɹ oʊld dæni wɪl du ɛniθɪŋ tu ɡɛt pɹeɪzʌz fɹʌm hɪz mʌðɜ˞. ʃi kɔlz hɪm ðʌ pɹeɪz ɡɛtɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: praises getter
+COMPOUND IPA:   pɹeɪzʌz ɡɛtɜ˞
+STORY ORTHO:    Four year old Danny will do anything to get praises from his mother. She calls him the praises getter.
+STORY IPA:      fɔɹ jɪɹ oʊld dæni wɪl du ɛniθɪŋ tu ɡɛt pɹeɪzʌz fɹʌm hɪz mʌðɜ˞. ʃi kɔlz hɪm ðʌ pɹeɪzʌz ɡɛtɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: tray getter
+COMPOUND IPA:   tɹeɪ ɡɛtɜ˞
+STORY ORTHO:    Four year old Danny loves to help his pre school teacher in getting food trays off the tables after lunch. She calls him the tray getter.
+STORY IPA:      fɔɹ jɪɹ oʊld dæni lʌvz tu hɛlp hɪz pɹi skul titʃɜ˞ ɪn ɡɛtɪŋ fud tɹeɪz ɔf ðʌ teɪbʌlz æftɜ˞ lʌntʃ. ʃi kɔlz hɪm ðʌ tɹeɪ ɡɛtɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: trays getter
+COMPOUND IPA:   tɹeɪz ɡɛtɜ˞
+STORY ORTHO:    Four year old Danny loves to help his pre school teacher in getting food trays off the tables after lunch. She calls him the trays getter.
+STORY IPA:      fɔɹ jɪɹ oʊld dæni lʌvz tu hɛlp hɪz pɹi skul titʃɜ˞ ɪn ɡɛtɪŋ fud tɹeɪz ɔf ðʌ teɪbʌlz æftɜ˞ lʌntʃ. ʃi kɔlz hɪm ðʌ tɹeɪz ɡɛtɜ˞.
+
+
+GROUP 11
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: bruise expert
+COMPOUND IPA:   bɹuz ɛkspɜ˞t
+STORY ORTHO:    Dr. Aaron is a dermatologist that prepares a special cream for clearing out skin bruises. I call him the bruise expert.
+STORY IPA:      dɹaɪv ɛɹʌn ɪz ʌ dɜ˞mʌtɑlʌdʒɪst ðæt pɹipɛɹz ʌ spɛʃʌl kɹim fɔɹ klɪɹɪŋ aʊt skɪn bɹuzʌz. aɪ kɔl hɪm ðʌ bɹuz ɛkspɜ˞t.
+
+ITEM 2
+COMPOUND ORTHO: bruises expert
+COMPOUND IPA:   bɹuzʌz ɛkspɜ˞t
+STORY ORTHO:    Dr. Aaron is a dermatologist that prepares a special cream for clearing out skin bruises. I call him the bruises expert.
+STORY IPA:      dɹaɪv ɛɹʌn ɪz ʌ dɜ˞mʌtɑlʌdʒɪst ðæt pɹipɛɹz ʌ spɛʃʌl kɹim fɔɹ klɪɹɪŋ aʊt skɪn bɹuzʌz. aɪ kɔl hɪm ðʌ bɹuzʌz ɛkspɜ˞t.
+
+ITEM 3
+COMPOUND ORTHO: brew expert
+COMPOUND IPA:   bɹu ɛkspɜ˞t
+STORY ORTHO:    Aaron owns a beer refinery that makes two hundred brews. I call him the brew expert.
+STORY IPA:      ɛɹʌn oʊnz ʌ bɪɹ ɹɪfaɪnɜ˞i ðæt meɪks tu hʌndɹʌd bɹuz. aɪ kɔl hɪm ðʌ bɹu ɛkspɜ˞t.
+
+ITEM 4
+COMPOUND ORTHO: brews expert
+COMPOUND IPA:   bɹuz ɛkspɜ˞t
+STORY ORTHO:    Aaron owns a beer refinery that makes two hundred brews. I call him the brews expert.
+STORY IPA:      ɛɹʌn oʊnz ʌ bɪɹ ɹɪfaɪnɜ˞i ðæt meɪks tu hʌndɹʌd bɹuz. aɪ kɔl hɪm ðʌ bɹuz ɛkspɜ˞t.
+
+
+GROUP 12
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: raise seeker
+COMPOUND IPA:   ɹeɪz sikɜ˞
+STORY ORTHO:    Amanda has already had three raises this year. I call her the raise seeker.
+STORY IPA:      ʌmændʌ hæz ɔlɹɛdi hæd θɹi ɹeɪzʌz ðɪs jɪɹ. aɪ kɔl hɜ˞ ðʌ ɹeɪz sikɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: raises seeker
+COMPOUND IPA:   ɹeɪzʌz sikɜ˞
+STORY ORTHO:    Amanda has already had three raises this year. I call her the raises seeker.
+STORY IPA:      ʌmændʌ hæz ɔlɹɛdi hæd θɹi ɹeɪzʌz ðɪs jɪɹ. aɪ kɔl hɜ˞ ðʌ ɹeɪzʌz sikɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: ray seeker
+COMPOUND IPA:   ɹeɪ sikɜ˞
+STORY ORTHO:    My dog loves to sit outside and soak up the sun rays all morning. I call him a ray seeker.
+STORY IPA:      maɪ dɔɡ lʌvz tu sɪt aʊtsaɪd ʌnd soʊk ʌp ðʌ sʌn ɹeɪz ɔl mɔɹnɪŋ. aɪ kɔl hɪm ʌ ɹeɪ sikɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: rays seeker
+COMPOUND IPA:   ɹeɪz sikɜ˞
+STORY ORTHO:    My dog loves to sit outside and soak up the sun rays all morning. I call him a rays seeker.
+STORY IPA:      maɪ dɔɡ lʌvz tu sɪt aʊtsaɪd ʌnd soʊk ʌp ðʌ sʌn ɹeɪz ɔl mɔɹnɪŋ. aɪ kɔl hɪm ʌ ɹeɪz sikɜ˞.
+
+
+GROUP 13
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: blaze admirer
+COMPOUND IPA:   bleɪz ædmaɪɹɜ˞
+STORY ORTHO:    My friend Greg loves to sit near the fireplace, he can admire the blazes for hours. I call him the blaze admirer.
+STORY IPA:      maɪ fɹɛnd ɡɹɛɡ lʌvz tu sɪt nɪɹ ðʌ faɪɜ˞pleɪs, hi kæn ædmaɪɹ ðʌ bleɪzɪz fɔɹ aʊɜ˞z. aɪ kɔl hɪm ðʌ bleɪz ædmaɪɹɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: blazes admirer
+COMPOUND IPA:   bleɪzɪz ædmaɪɹɜ˞
+STORY ORTHO:    My friend Greg loves to sit near the fireplace, he can admire the blazes for hours. I call him the blazes admirer.
+STORY IPA:      maɪ fɹɛnd ɡɹɛɡ lʌvz tu sɪt nɪɹ ðʌ faɪɜ˞pleɪs, hi kæn ædmaɪɹ ðʌ bleɪzɪz fɔɹ aʊɜ˞z. aɪ kɔl hɪm ðʌ bleɪzɪz ædmaɪɹɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: play admirer
+COMPOUND IPA:   pleɪ ædmaɪɹɜ˞
+STORY ORTHO:    My friend Greg has always admired theater plays, he has seen hundreds of plays throughout his life. I call him the play admirer.
+STORY IPA:      maɪ fɹɛnd ɡɹɛɡ hæz ɔlweɪz ʌdmaɪɜ˞d θiʌtɜ˞ pleɪz, hi hæz sin hʌndɹʌdz ʌv pleɪz θɹuaʊt hɪz laɪf. aɪ kɔl hɪm ðʌ pleɪ ædmaɪɹɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: plays admirer
+COMPOUND IPA:   pleɪz ædmaɪɹɜ˞
+STORY ORTHO:    My friend Greg has always admired theater plays, he has seen hundreds of plays throughout his life. I call him the plays admirer.
+STORY IPA:      maɪ fɹɛnd ɡɹɛɡ hæz ɔlweɪz ʌdmaɪɜ˞d θiʌtɜ˞ pleɪz, hi hæz sin hʌndɹʌdz ʌv pleɪz θɹuaʊt hɪz laɪf. aɪ kɔl hɪm ðʌ pleɪz ædmaɪɹɜ˞.
+
+
+GROUP 14
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: vase steward
+COMPOUND IPA:   veɪs stuɜ˞d
+STORY ORTHO:    My friend Emily is an antique vase dealer. She is very successful, but has no room in her small office, so she often has me keep some of her vases. She calls me her vase steward.
+STORY IPA:      maɪ fɹɛnd ɛmɪli ɪz æn æntik veɪs dilɜ˞. ʃi ɪz vɛɹi sʌksɛsfʌl, bʌt hæz noʊ ɹum ɪn hɜ˞ smɔl ɔfɪs, soʊ ʃi ɔfʌn hæz mi kip sʌm ʌv hɜ˞ veɪsʌz. ʃi kɔlz mi hɜ˞ veɪs stuɜ˞d.
+
+ITEM 2
+COMPOUND ORTHO: vases steward
+COMPOUND IPA:   veɪsʌz stuɜ˞d
+STORY ORTHO:    My friend Emily is an antique vase dealer. She is very successful, but has no room in her small office, so she often has me keep some of her vases. She calls me her vases steward.
+STORY IPA:      maɪ fɹɛnd ɛmɪli ɪz æn æntik veɪs dilɜ˞. ʃi ɪz vɛɹi sʌksɛsfʌl, bʌt hæz noʊ ɹum ɪn hɜ˞ smɔl ɔfɪs, soʊ ʃi ɔfʌn hæz mi kip sʌm ʌv hɜ˞ veɪsʌz. ʃi kɔlz mi hɜ˞ veɪsʌz stuɜ˞d.
+
+ITEM 3
+COMPOUND ORTHO: bee steward
+COMPOUND IPA:   bi stuɜ˞d
+STORY ORTHO:    My friend Emily has a bee hive in her yard. She likes honey, but she is terrified of getting stung, so she asked me to help her keep the bees. She calls me the bee steward.
+STORY IPA:      maɪ fɹɛnd ɛmɪli hæz ʌ bi haɪv ɪn hɜ˞ jɑɹd. ʃi laɪks hʌni, bʌt ʃi ɪz tɛɹʌfaɪd ʌv ɡɛtɪŋ stʌŋ, soʊ ʃi æskt mi tu hɛlp hɜ˞ kip ðʌ biz. ʃi kɔlz mi ðʌ bi stuɜ˞d.
+
+ITEM 4
+COMPOUND ORTHO: bees steward
+COMPOUND IPA:   biz stuɜ˞d
+STORY ORTHO:    My friend Emily has a bee hive in her yard. She likes honey, but she is terrified of getting stung, so she asked me to help her keep the bees. She calls me the bees steward.
+STORY IPA:      maɪ fɹɛnd ɛmɪli hæz ʌ bi haɪv ɪn hɜ˞ jɑɹd. ʃi laɪks hʌni, bʌt ʃi ɪz tɛɹʌfaɪd ʌv ɡɛtɪŋ stʌŋ, soʊ ʃi æskt mi tu hɛlp hɜ˞ kip ðʌ biz. ʃi kɔlz mi ðʌ biz stuɜ˞d.
+
+
+GROUP 15
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: fox avoiders
+COMPOUND IPA:   fɑks ʌvɔɪdɜ˞z
+STORY ORTHO:    My sheep are afraid of foxes and will avoid them at all costs. I call them the fox avoiders.
+STORY IPA:      maɪ ʃip ɑɹ ʌfɹeɪd ʌv fɑksʌz ʌnd wɪl ʌvɔɪd ðɛm æt ɔl kɑsts. aɪ kɔl ðɛm ðʌ fɑks ʌvɔɪdɜ˞z .
+
+ITEM 2
+COMPOUND ORTHO: foxes avoiders
+COMPOUND IPA:   fɑksʌz ʌvɔɪdɜ˞z
+STORY ORTHO:    My sheep are afraid of foxes and will avoid them at all costs. I call them the foxes avoiders.
+STORY IPA:      maɪ ʃip ɑɹ ʌfɹeɪd ʌv fɑksʌz ʌnd wɪl ʌvɔɪd ðɛm æt ɔl kɑsts. aɪ kɔl ðɛm ðʌ fɑksʌz ʌvɔɪdɜ˞z .
+
+ITEM 3
+COMPOUND ORTHO: shock avoiders
+COMPOUND IPA:   ʃɑk ʌvɔɪdɜ˞z
+STORY ORTHO:    My lab rats are afraid of electrical shocks and will avoid them at all costs. I call them the shock avoiders.
+STORY IPA:      maɪ læb ɹæts ɑɹ ʌfɹeɪd ʌv ɪlɛktɹɪkʌl ʃɑks ʌnd wɪl ʌvɔɪd ðɛm æt ɔl kɑsts. aɪ kɔl ðɛm ðʌ ʃɑk ʌvɔɪdɜ˞z .
+
+ITEM 4
+COMPOUND ORTHO: shocks avoiders
+COMPOUND IPA:   ʃɑks ʌvɔɪdɜ˞z
+STORY ORTHO:    My lab rats are afraid of electrical shocks and will avoid them at all costs. I call them the shocks avoiders.
+STORY IPA:      maɪ læb ɹæts ɑɹ ʌfɹeɪd ʌv ɪlɛktɹɪkʌl ʃɑks ʌnd wɪl ʌvɔɪd ðɛm æt ɔl kɑsts. aɪ kɔl ðɛm ðʌ ʃɑks ʌvɔɪdɜ˞z .
+
+
+GROUP 16
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: maze expert
+COMPOUND IPA:   meɪz ɛkspɜ˞t
+STORY ORTHO:    When my Dad used to work for the phone company, he had to find the right phone line in the mazes of cables and circuits. I called him the maze expert.
+STORY IPA:      wɛn maɪ dæd juzd tu wɜ˞k fɔɹ ðʌ foʊn kʌmpʌni, hi hæd tu faɪnd ðʌ ɹaɪt foʊn laɪn ɪn ðʌ meɪzɪz ʌv keɪbʌlz ʌnd sɜ˞kʌts. aɪ kɔld hɪm ðʌ meɪz ɛkspɜ˞t.
+
+ITEM 2
+COMPOUND ORTHO: mazes expert
+COMPOUND IPA:   meɪzɪz ɛkspɜ˞t
+STORY ORTHO:    When my Dad used to work for the phone company, he had to find the right phone line in the mazes of cables and circuits. I called him the mazes expert.
+STORY IPA:      wɛn maɪ dæd juzd tu wɜ˞k fɔɹ ðʌ foʊn kʌmpʌni, hi hæd tu faɪnd ðʌ ɹaɪt foʊn laɪn ɪn ðʌ meɪzɪz ʌv keɪbʌlz ʌnd sɜ˞kʌts. aɪ kɔld hɪm ðʌ meɪzɪz ɛkspɜ˞t.
+
+ITEM 3
+COMPOUND ORTHO: bay expert
+COMPOUND IPA:   beɪ ɛkspɜ˞t
+STORY ORTHO:    When my Dad and I used to go sailing, he could name each of the little bays on the shore line.I called him the bay expert.
+STORY IPA:      wɛn maɪ dæd ʌnd aɪ juzd tu ɡoʊ seɪlɪŋ, hi kʊd neɪm itʃ ʌv ðʌ lɪtʌl beɪz ɑn ðʌ ʃɔɹ laɪn.aɪ kɔld hɪm ðʌ beɪ ɛkspɜ˞t.
+
+ITEM 4
+COMPOUND ORTHO: bays expert
+COMPOUND IPA:   beɪz ɛkspɜ˞t
+STORY ORTHO:    When my Dad and I used to go sailing, he could name each of the little bays on the shore line.I called him the bays expert.
+STORY IPA:      wɛn maɪ dæd ʌnd aɪ juzd tu ɡoʊ seɪlɪŋ, hi kʊd neɪm itʃ ʌv ðʌ lɪtʌl beɪz ɑn ðʌ ʃɔɹ laɪn.aɪ kɔld hɪm ðʌ beɪz ɛkspɜ˞t.
+
+
+GROUP 17
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: breeze protector
+COMPOUND IPA:   bɹiz pɹʌtɛktɜ˞
+STORY ORTHO:    My flowers have been devastated by the cold north breezes. Last week, I found a solution to my problem. I went to Home Depot and bought a breeze protector.
+STORY IPA:      maɪ flaʊɜ˞z hæv bɪn dɛvʌsteɪtɪd baɪ ðʌ koʊld nɔɹθ bɹizɪz. læst wik, aɪ faʊnd ʌ sʌluʃʌn tu maɪ pɹɑblʌm. aɪ wɛnt tu hoʊm dipoʊ ʌnd bɑt ʌ bɹiz pɹʌtɛktɜ˞.
+
+ITEM 2
+COMPOUND ORTHO: breezes protector
+COMPOUND IPA:   bɹizɪz pɹʌtɛktɜ˞
+STORY ORTHO:    My flowers have been devastated by the cold north breezes. Last week, I found a solution to my problem. I went to Home Depot and bought a breezes protector.
+STORY IPA:      maɪ flaʊɜ˞z hæv bɪn dɛvʌsteɪtɪd baɪ ðʌ koʊld nɔɹθ bɹizɪz. læst wik, aɪ faʊnd ʌ sʌluʃʌn tu maɪ pɹɑblʌm. aɪ wɛnt tu hoʊm dipoʊ ʌnd bɑt ʌ bɹizɪz pɹʌtɛktɜ˞.
+
+ITEM 3
+COMPOUND ORTHO: tree protector
+COMPOUND IPA:   tɹi pɹʌtɛktɜ˞
+STORY ORTHO:    The cold winter winds have devastated my oak trees. Last week, I found a solution to my problem. I went to Home Depot and bought a tree protector.
+STORY IPA:      ðʌ koʊld wɪntɜ˞ wɪndz hæv dɛvʌsteɪtɪd maɪ oʊk tɹiz. læst wik, aɪ faʊnd ʌ sʌluʃʌn tu maɪ pɹɑblʌm. aɪ wɛnt tu hoʊm dipoʊ ʌnd bɑt ʌ tɹi pɹʌtɛktɜ˞.
+
+ITEM 4
+COMPOUND ORTHO: trees protector
+COMPOUND IPA:   tɹiz pɹʌtɛktɜ˞
+STORY ORTHO:    The cold winter winds have devastated my oak trees. Last week, I found a solution to my problem. I went to Home Depot and bought a trees protector.
+STORY IPA:      ðʌ koʊld wɪntɜ˞ wɪndz hæv dɛvʌsteɪtɪd maɪ oʊk tɹiz. læst wik, aɪ faʊnd ʌ sʌluʃʌn tu maɪ pɹɑblʌm. aɪ wɛnt tu hoʊm dipoʊ ʌnd bɑt ʌ tɹiz pɹʌtɛktɜ˞.
+
+
+GROUP 18
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: cause evaluator
+COMPOUND IPA:   kɑz ɪvæljueɪtɜ˞
+STORY ORTHO:    An extravagant costly building in mid town toppled over as soon as construction ended. A disaster expert was sent to the site to investigate the causes. He is called the cause evaluator.
+STORY IPA:      æn ɛkstɹævʌɡʌnt kɑstli bɪldɪŋ ɪn mɪd taʊn tɑpʌld oʊvɜ˞ æz sun æz kʌnstɹʌkʃʌn ɛndʌd. ʌ dɪzæstɜ˞ ɛkspɜ˞t wɑz sɛnt tu ðʌ saɪt tu ɪnvɛstʌɡeɪt ðʌ kɑzʌz. hi ɪz kɔld ðʌ kɑz ɪvæljueɪtɜ˞ .
+
+ITEM 2
+COMPOUND ORTHO: causes evaluator
+COMPOUND IPA:   kɑzʌz ɪvæljueɪtɜ˞
+STORY ORTHO:    An extravagant costly building in mid town toppled over as soon as construction ended. A disaster expert was sent to the site to investigate the causes. He is called the causes evaluator.
+STORY IPA:      æn ɛkstɹævʌɡʌnt kɑstli bɪldɪŋ ɪn mɪd taʊn tɑpʌld oʊvɜ˞ æz sun æz kʌnstɹʌkʃʌn ɛndʌd. ʌ dɪzæstɜ˞ ɛkspɜ˞t wɑz sɛnt tu ðʌ saɪt tu ɪnvɛstʌɡeɪt ðʌ kɑzʌz. hi ɪz kɔld ðʌ kɑzʌz ɪvæljueɪtɜ˞ .
+
+ITEM 3
+COMPOUND ORTHO: paw evaluator
+COMPOUND IPA:   pɔ ɪvæljueɪtɜ˞
+STORY ORTHO:    My cat has been limping for about a year, but none of the veterinarians I visited could find out the reason. Yesterday, my husband discovered she had two sprained paws. He is now called the paw evaluator.
+STORY IPA:      maɪ kæt hæz bɪn lɪmpɪŋ fɔɹ ʌbaʊt ʌ jɪɹ, bʌt nʌn ʌv ðʌ vɛtɹʌnɛɹiʌnz aɪ vɪzɪtɪd kʊd faɪnd aʊt ðʌ ɹizʌn. jɛstɜ˞deɪ, maɪ hʌzbʌnd dɪskʌvɜ˞d ʃi hæd tu spɹeɪnd pɔz. hi ɪz naʊ kɔld ðʌ pɔ ɪvæljueɪtɜ˞ .
+
+ITEM 4
+COMPOUND ORTHO: paws evaluator
+COMPOUND IPA:   pɔz ɪvæljueɪtɜ˞
+STORY ORTHO:    My cat has been limping for about a year, but none of the veterinarians I visited could find out the reason. Yesterday, my husband discovered she had two sprained paws. He is now called the paws evaluator.
+STORY IPA:      maɪ kæt hæz bɪn lɪmpɪŋ fɔɹ ʌbaʊt ʌ jɪɹ, bʌt nʌn ʌv ðʌ vɛtɹʌnɛɹiʌnz aɪ vɪzɪtɪd kʊd faɪnd aʊt ðʌ ɹizʌn. jɛstɜ˞deɪ, maɪ hʌzbʌnd dɪskʌvɜ˞d ʃi hæd tu spɹeɪnd pɔz. hi ɪz naʊ kɔld ðʌ pɔz ɪvæljueɪtɜ˞ .
+
+
+GROUP 19
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: phase fanatic
+COMPOUND IPA:   feɪz fʌnætɪk
+STORY ORTHO:    When Mary was writing her dissertation in Psychology, she wouldn't stop talking to her poor husband about the various phases of child development. He called her the phase fanatic.
+STORY IPA:      wɛn mɛɹi wɑz ɹaɪtɪŋ hɜ˞ dɪsɜ˞teɪʃʌn ɪn saɪkɑlʌdʒi, ʃi wʊdʌnt stɑp tɔkɪŋ tu hɜ˞ puɹ hʌzbʌnd ʌbaʊt ðʌ vɛɹiʌs feɪzʌz ʌv tʃaɪld dɪvɛlʌpmʌnt. hi kɔld hɜ˞ ðʌ feɪz fʌnætɪk.
+
+ITEM 2
+COMPOUND ORTHO: phases fanatic
+COMPOUND IPA:   feɪzʌz fʌnætɪk
+STORY ORTHO:    When Mary was writing her dissertation in Psychology, she wouldn't stop talking to her poor husband about the various phases of child development. He called her the phases fanatic.
+STORY IPA:      wɛn mɛɹi wɑz ɹaɪtɪŋ hɜ˞ dɪsɜ˞teɪʃʌn ɪn saɪkɑlʌdʒi, ʃi wʊdʌnt stɑp tɔkɪŋ tu hɜ˞ puɹ hʌzbʌnd ʌbaʊt ðʌ vɛɹiʌs feɪzʌz ʌv tʃaɪld dɪvɛlʌpmʌnt. hi kɔld hɜ˞ ðʌ feɪzʌz fʌnætɪk.
+
+ITEM 3
+COMPOUND ORTHO: fee fanatic
+COMPOUND IPA:   fi fʌnætɪk
+STORY ORTHO:    When Mary was working for Barnet Bank, she wouldn't stop telling her poor husband about the various types of banking fees and investments. He called her the fee fanatic.
+STORY IPA:      wɛn mɛɹi wɑz wɜ˞kɪŋ fɔɹ bɑɹnɪt bæŋk, ʃi wʊdʌnt stɑp tɛlɪŋ hɜ˞ puɹ hʌzbʌnd ʌbaʊt ðʌ vɛɹiʌs taɪps ʌv bæŋkɪŋ fiz ʌnd ɪnvɛstmʌnts. hi kɔld hɜ˞ ðʌ fi fʌnætɪk.
+
+ITEM 4
+COMPOUND ORTHO: fees fanatic
+COMPOUND IPA:   fiz fʌnætɪk
+STORY ORTHO:    When Mary was working for Barnet Bank, she wouldn't stop telling her poor husband about the various types of banking fees and investments. He called her the fees fanatic.
+STORY IPA:      wɛn mɛɹi wɑz wɜ˞kɪŋ fɔɹ bɑɹnɪt bæŋk, ʃi wʊdʌnt stɑp tɛlɪŋ hɜ˞ puɹ hʌzbʌnd ʌbaʊt ðʌ vɛɹiʌs taɪps ʌv bæŋkɪŋ fiz ʌnd ɪnvɛstmʌnts. hi kɔld hɜ˞ ðʌ fiz fʌnætɪk.
+
+
+GROUP 20
+------------------------------------------------------------
+ITEM 1
+COMPOUND ORTHO: fax man
+COMPOUND IPA:   fæks mæn
+STORY ORTHO:    At work, John sits near the fax machine and distributes the incoming faxes to his co-workers. John is known as the fax man.
+STORY IPA:      æt wɜ˞k, dʒɑn sɪts nɪɹ ðʌ fæks mʌʃin ʌnd dɪstɹɪbjuts ðʌ ɪnkʌmɪŋ fæksɪz tu hɪz koʊwɜ˞kɜ˞z. dʒɑn ɪz noʊn æz ðʌ fæks mæn.
+
+ITEM 2
+COMPOUND ORTHO: faxes man
+COMPOUND IPA:   fæksɪz mæn
+STORY ORTHO:    At work, John sits near the fax machine and distributes the incoming faxes to his co-workers. John is known as the faxes man.
+STORY IPA:      æt wɜ˞k, dʒɑn sɪts nɪɹ ðʌ fæks mʌʃin ʌnd dɪstɹɪbjuts ðʌ ɪnkʌmɪŋ fæksɪz tu hɪz koʊwɜ˞kɜ˞z. dʒɑn ɪz noʊn æz ðʌ fæksɪz mæn.
+
+ITEM 3
+COMPOUND ORTHO: shack man
+COMPOUND IPA:   ʃæk mæn
+STORY ORTHO:    John has been homeless for over ten years and moves in and out of shacks frequently. John is known as the shack man.
+STORY IPA:      dʒɑn hæz bɪn hoʊmlʌs fɔɹ oʊvɜ˞ tɛn jɪɹz ʌnd muvz ɪn ʌnd aʊt ʌv ʃæks fɹikwʌntli. dʒɑn ɪz noʊn æz ðʌ ʃæk mæn.
+
+ITEM 4
+COMPOUND ORTHO: shacks man
+COMPOUND IPA:   ʃæks mæn
+STORY ORTHO:    John has been homeless for over ten years and moves in and out of shacks frequently. John is known as the shacks man.
+STORY IPA:      dʒɑn hæz bɪn hoʊmlʌs fɔɹ oʊvɜ˞ tɛn jɪɹz ʌnd muvz ɪn ʌnd aʊt ʌv ʃæks fɹikwʌntli. dʒɑn ɪz noʊn æz ðʌ ʃæks mæn.
+
+

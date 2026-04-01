@@ -1,6 +1,8 @@
 ### This code is complete. 
 # BOS = False
-# Normal BOW
+# Normal BOW~
+# During loading it mus have trust_remote_code=True
+
 
 
 import pandas as pd

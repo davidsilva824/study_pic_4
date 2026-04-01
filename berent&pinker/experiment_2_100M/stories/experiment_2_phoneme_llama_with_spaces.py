@@ -1,269 +1,336 @@
-### This code is complete.
-### Adapted for bbunzeck/phoneme-llama using g2p text->IPA conversion
-### + FULL STORY context (stories file)
-### + Finds target compound span inside story tokens
-### + FIXED split of non-head/head inside matched span (skips separator tokens correctly)
-### + Keeps print output style like your other scripts
-### + ADDED ONLY: recursive split fallback for story phonemization (split on spaces)
-
+import json
+import re
 import pandas as pd
-from minicons import scorer
 from g2p import make_g2p
+from minicons import scorer
 
-models = [
-    "bbunzeck/phoneme-llama"
-]
+output_file = "results_berent&pinker/100M/results_experiment_2_phoneme_llama_with_spaces_stories.csv"
+translations_file = "text_to_phonemes/compounds_with_stories_experiment_2_ipa.txt"
+model_name = "bbunzeck/phoneme-llama"
 
-BOS = True
-
-# --- Read compounds + stories and merge by story_id ---
-compounds_file = "berent&pinker/stimuli_compounds_experiment_2.csv"
-stories_file = "berent&pinker/stimuli_stories_experiment_2.csv"
-output_file = "results_berent&pinker/results_experiment_2_phoneme_llama_stories.csv"
-
-compounds_df = pd.read_csv(compounds_file)
-stories_df = pd.read_csv(stories_file)
-stimuli_df = pd.merge(compounds_df, stories_df, on="story_id", how="inner")
+with open("berent&pinker/compounds_with_stories_experiment_2.json", "r", encoding="utf-8") as f:
+    stimuli_data = json.load(f)
 
 cat_labels = {
-    "a": "singular_1",
-    "b": "plural_1",
-    "c": "singular_2",
-    "d": "plural_2",
+    0: "Sibilant Singular",
+    1: "Sibilant Plural",
+    2: "Regular Singular",
+    3: "Regular Plural",
 }
 
-# --- g2p converters (rule-based + neural fallback) ---
-g2p_rule = make_g2p("eng", "eng-ipa")
-g2p_neural = make_g2p("eng", "eng-ipa", neural=True)
+g2p = make_g2p("eng", "eng-ipa")
 
+translation_warnings = []
 
-def _g2p_output_string(transducer, text):
-    out = transducer(text)
-    ipa = getattr(out, "output_string", str(out))
-    return " ".join(str(ipa).split()).strip()
+manual_ipa = {
+    "noblemen": "noʊbʌlmɛn",
+    "firemen": "faɪrmɛn",
+    "boatmen": "boʊtmɛn",
+    "labourer": "leɪbɜ˞ɜ˞",
+    "labourers": "leɪbɜ˞ɜ˞z",
+    "classifier": "klæsʌfaɪɜ˞",
+    "evaluators": "ɪvæljueɪtɜ˞z",
+}
 
+manual_pattern = re.compile(
+    r"\b(" + "|".join(re.escape(k) for k in sorted(manual_ipa, key=len, reverse=True)) + r")\b",
+    flags=re.IGNORECASE
+)
 
-def phonemize_word(word):
-    ipa_rule = _g2p_output_string(g2p_rule, word)
-    if ipa_rule == "":
-        ipa_neural = _g2p_output_string(g2p_neural, word)
-        return ipa_neural
-    return ipa_rule
+def add_warning(kind, text, ipa="", context=""):
+    translation_warnings.append({
+        "kind": kind,
+        "text": text,
+        "ipa": ipa,
+        "context": context
+    })
 
+def basic_clean_text(text):
+    text = str(text)
+    text = text.replace("’", "'").replace("“", '"').replace("”", '"')
+    text = text.replace("–", "-").replace("—", "-")
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
-def phonemize_sentence_with_fallback(sentence):
-    words = sentence.split()
-    ipa_words = [phonemize_word(w) for w in words]
-    return " ".join([w for w in ipa_words if w != ""])
+def normalize_ws(text):
+    return re.sub(r"\s+", " ", str(text)).strip()
 
+def looks_suspicious_ipa(ipa_text):
+    ipa_text = str(ipa_text).strip()
 
-# --- ADDED: recursive split fallback for long/problematic stories ---
-def phonemize_story_with_split_fallback(text):
-    def _phonemize_recursive(s):
-        s = str(s).strip()
-        if s == "":
+    if ipa_text == "":
+        return True
+    if any(ch.isdigit() for ch in ipa_text):
+        return True
+    if "[" in ipa_text or "]" in ipa_text or "{" in ipa_text or "}" in ipa_text:
+        return True
+    if "<" in ipa_text or ">" in ipa_text:
+        return True
+
+    return False
+
+def word_to_ipa(word):
+    word_l = word.lower()
+
+    if word_l in manual_ipa:
+        return manual_ipa[word_l]
+
+    try:
+        out = g2p(word)
+        ipa_word = normalize_ws(str(out))
+    except Exception:
+        ipa_word = ""
+        add_warning("g2p_exception", word, "", "exception during isolated word conversion")
+
+    if looks_suspicious_ipa(ipa_word):
+        add_warning("suspicious_translation", word, ipa_word, "isolated word conversion")
+
+    return ipa_word
+
+def text_to_ipa_full(text):
+    text = basic_clean_text(text)
+    if text == "":
+        return ""
+
+    matches = list(manual_pattern.finditer(text))
+
+    if len(matches) == 0:
+        try:
+            out = g2p(text)
+            ipa_text = normalize_ws(str(out))
+        except Exception:
+            ipa_text = ""
+            add_warning("g2p_exception", text, "", "exception during full-text conversion")
+
+        if looks_suspicious_ipa(ipa_text):
+            add_warning("suspicious_translation", text, ipa_text, "full-text conversion")
+
+        return ipa_text
+
+    parts = []
+    last = 0
+
+    for m in matches:
+        left = basic_clean_text(text[last:m.start()])
+        matched_word = m.group(0)
+        matched_ipa = manual_ipa[matched_word.lower()]
+
+        if left != "":
+            try:
+                out = g2p(left)
+                left_ipa = normalize_ws(str(out))
+            except Exception:
+                left_ipa = ""
+                add_warning("g2p_exception", left, "", "exception during full-text conversion around manual override")
+
+            if looks_suspicious_ipa(left_ipa):
+                add_warning("suspicious_translation", left, left_ipa, "full-text conversion around manual override")
+
+            if left_ipa == "":
+                return ""
+
+            parts.append(left_ipa)
+
+        parts.append(matched_ipa)
+        last = m.end()
+
+    right = basic_clean_text(text[last:])
+    if right != "":
+        try:
+            out = g2p(right)
+            right_ipa = normalize_ws(str(out))
+        except Exception:
+            right_ipa = ""
+            add_warning("g2p_exception", right, "", "exception during full-text conversion around manual override")
+
+        if looks_suspicious_ipa(right_ipa):
+            add_warning("suspicious_translation", right, right_ipa, "full-text conversion around manual override")
+
+        if right_ipa == "":
             return ""
 
-        # try full chunk first
-        ipa = phonemize_sentence_with_fallback(s)
-        if str(ipa).strip() != "":
-            return str(ipa).strip()
+        parts.append(right_ipa)
 
-        # if it fails, split at nearest space to the middle
-        mid = len(s) // 2
-        spaces = [i for i, ch in enumerate(s) if ch == " "]
-        if not spaces:
-            return ""
+    return normalize_ws(" ".join(parts))
 
-        split_idx = min(spaces, key=lambda i: abs(i - mid))
+def find_unique_substring_span(text, target):
+    matches = []
+    start = 0
 
-        left = s[:split_idx].strip()
-        right = s[split_idx + 1:].strip()
-
-        ipa_left = _phonemize_recursive(left) if left else ""
-        ipa_right = _phonemize_recursive(right) if right else ""
-
-        return " ".join([x for x in [ipa_left, ipa_right] if x]).strip()
-
-    return _phonemize_recursive(text)
-
-
-def _is_special_token(tok):
-    t = str(tok)
-    return t.startswith("<") and t.endswith(">")
-
-
-def _compact(s):
-    return "".join(str(s).split())
-
-
-def _find_compound_token_span(tokens, start_idx, ipa_compound):
-    target = _compact(ipa_compound)
-
-    rebuilt = ""
-    spans = []  # (token_idx, start_char, end_char)
-
-    for i in range(start_idx, len(tokens)):
-        tok = str(tokens[i])
-
-        if _is_special_token(tok):
-            spans.append((i, len(rebuilt), len(rebuilt)))
-            continue
-
-        piece = _compact(tok)
-        s0 = len(rebuilt)
-        rebuilt += piece
-        s1 = len(rebuilt)
-        spans.append((i, s0, s1))
-
-    pos = rebuilt.find(target)
-    if pos == -1:
-        return None
-
-    end_pos = pos + len(target)
-    hit = []
-
-    for tok_i, s0, s1 in spans:
-        if s1 <= pos:
-            continue
-        if s0 >= end_pos:
+    while True:
+        pos = text.find(target, start)
+        if pos == -1:
             break
-        if s1 > s0:
-            hit.append(tok_i)
+        matches.append(pos)
+        start = pos + 1
 
-    if not hit:
-        return None
+    if len(matches) == 0:
+        raise ValueError(f"Could not find target IPA in story IPA.\nTARGET={target}\nSTORY={text}")
+    if len(matches) > 1:
+        raise ValueError(f"Target IPA appears multiple times in story IPA.\nTARGET={target}")
 
-    return hit[0], hit[-1] + 1
+    return matches[0], matches[0] + len(target)
 
+def find_compound_ipa_span(ipa_story, ipa_non_head, ipa_head):
+    ipa_story = normalize_ws(ipa_story)
+    ipa_non_head = normalize_ws(ipa_non_head)
+    ipa_head = normalize_ws(ipa_head)
 
-def process_pairs(lm, pairs, data):
-    for _, row in stimuli_df.iterrows():
-        suffix = str(row["story_id"]).strip().split("_")[-1]
-        category_name = cat_labels[suffix]
+    target = f"{ipa_non_head} {ipa_head}"
+    target_start_raw, target_end_raw = find_unique_substring_span(ipa_story, target)
+    head_start_raw = target_start_raw + len(ipa_non_head) + 1
 
-        sentence = str(row["compound"]).strip()   # target compound
-        story_text = str(row["story_text"]).strip()
-        non_head, head = sentence.split(" ", 1)
+    return target_start_raw, head_start_raw, target_end_raw
 
-        # --- Full story IPA (context) with recursive split fallback ---
-        ipa_story = phonemize_story_with_split_fallback(story_text)
-        if ipa_story == "":
-            print(f"SKIP (empty IPA story) | STORY ID: {row['story_id']} | COMPOUND: {sentence}")
+def split_surprisal_in_story(lm, ipa_story, tok_scores, target_start_raw, head_start_raw, target_end_raw):
+    enc = lm.tokenizer(
+        ipa_story,
+        add_special_tokens=False,
+        return_offsets_mapping=True
+    )
+    offsets = enc["offset_mapping"]
+
+    if len(tok_scores) == len(offsets) + 1:
+        toks_only = tok_scores[1:]
+    elif len(tok_scores) == len(offsets):
+        toks_only = tok_scores
+    else:
+        raise ValueError(
+            f"Offsets/token mismatch: offsets={len(offsets)} vs tok_scores={len(tok_scores)}"
+        )
+
+    non_head_sum = 0.0
+    head_sum = 0.0
+
+    for tok_info, (start, end) in zip(toks_only, offsets):
+        s = tok_info[1]
+
+        if end <= target_start_raw or start >= target_end_raw:
             continue
 
-        # --- Target compound IPA (for locating span) ---
-        ipa_compound = phonemize_sentence_with_fallback(sentence)
+        if end <= head_start_raw:
+            non_head_sum += s
+        else:
+            head_sum += s
+
+    return non_head_sum, head_sum
+
+print(f"\nLoading phoneme model: {model_name}...")
+lm = scorer.IncrementalLMScorer(model_name, device="cuda")
+
+data = []
+translation_records = []
+
+for group_idx, group in enumerate(stimuli_data, start=1):
+    non_heads = group["non_heads"]
+    heads = group["heads"]
+    stories = group["stories"]
+
+    if len(heads) != 1:
+        raise ValueError(f"Expected exactly one head in experiment 2 item, got {len(heads)}")
+
+    head = str(heads[0]).strip()
+
+    group_records = []
+
+    for item_idx, (non_head, story_text) in enumerate(zip(non_heads, stories), start=1):
+        category_name = cat_labels[item_idx - 1]
+        non_head = str(non_head).strip()
+        story_text = str(story_text).strip()
+
+        ipa_non_head = word_to_ipa(non_head)
+        ipa_head = word_to_ipa(head)
+        ipa_story = text_to_ipa_full(story_text)
+
+        if ipa_non_head == "" or ipa_head == "" or ipa_story == "":
+            raise ValueError(
+                f"Empty IPA after conversion.\n"
+                f"NON_HEAD={non_head}\nHEAD={head}\nSTORY={story_text}"
+            )
+
+        target_start_raw, head_start_raw, target_end_raw = find_compound_ipa_span(
+            ipa_story, ipa_non_head, ipa_head
+        )
 
         tok_scores = lm.token_score(
             ipa_story,
-            bos_token=BOS,
+            bos_token=True,
             prob=False,
             surprisal=True,
-            bow_correction=False
+            bow_correction=True
         )[0]
 
-        tokens = [tok for tok, s, *_ in tok_scores]
-        surprisal_values = [s for tok, s, *_ in tok_scores]
+        print("\nORTHO STORY:", story_text)
+        print("COMPOUND:", f"{non_head} {head}")
+        print("IPA (folded):", ipa_story)
 
-        # --- Original Print Block ---
-        print(' '.join(f'{str(tok):>10}' for tok in tokens))
-        print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
-        print(surprisal_values)
+        print("TOK_SCORES:")
+        for tok, s in tok_scores:
+            print(f"{repr(tok):<20} {s:.7f}")
 
-        start_idx = 1 if (len(tokens) > 0 and _is_special_token(tokens[0])) else 0
+        surprisal_non_head, surprisal_head = split_surprisal_in_story(
+            lm, ipa_story, tok_scores, target_start_raw, head_start_raw, target_end_raw
+        )
 
-        span = _find_compound_token_span(tokens, start_idx, ipa_compound)
-        if span is None:
-            print(f"SKIP (compound not found) | STORY ID: {row['story_id']} | COMPOUND: {sentence}")
-            continue
+        print(f"  Non-Head ({non_head}): {surprisal_non_head}")
+        print(f"  Head     ({head}): {surprisal_head}")
 
-        compound_start_idx, compound_end_idx = span
-        compound_tokens = tokens[compound_start_idx:compound_end_idx]
+        data.append([
+            category_name,
+            non_head,
+            head,
+            surprisal_non_head,
+            surprisal_head
+        ])
 
-        # --- FIXED split: reconstruct non-head, then skip separators before head ---
-        non_head_ipa = phonemize_word(non_head)
-        head_ipa = phonemize_word(head)
+        group_records.append({
+            "item_idx": item_idx,
+            "compound_ortho": f"{non_head} {head}",
+            "compound_ipa": f"{ipa_non_head} {ipa_head}",
+            "story_ortho": story_text,
+            "story_ipa": ipa_story,
+        })
 
-        non_n = 0
-        reconstructed_non = ""
+    translation_records.append({
+        "group_idx": group_idx,
+        "items": group_records
+    })
 
-        for k, tok in enumerate(compound_tokens):
-            t = str(tok)
+df = pd.DataFrame(
+    data,
+    columns=[
+        "Category",
+        "Non-Head",
+        "Head",
+        "Surprisal Non-head",
+        "Surprisal head"
+    ]
+)
+df.to_csv(output_file, index=False)
 
-            if _is_special_token(t):
-                continue
+with open(translations_file, "w", encoding="utf-8") as f:
+    for group in translation_records:
+        f.write(f"GROUP {group['group_idx']}\n")
+        f.write("------------------------------------------------------------\n")
 
-            # stop non-head reconstruction if we've already reached it
-            if reconstructed_non == non_head_ipa:
-                break
+        for item in group["items"]:
+            f.write(f"ITEM {item['item_idx']}\n")
+            f.write(f"COMPOUND ORTHO: {item['compound_ortho']}\n")
+            f.write(f"COMPOUND IPA:   {item['compound_ipa']}\n")
+            f.write(f"STORY ORTHO:    {item['story_ortho']}\n")
+            f.write(f"STORY IPA:      {item['story_ipa']}\n")
+            f.write("\n")
 
-            reconstructed_non += t
-            non_n = k + 1
+        f.write("\n")
 
-            if reconstructed_non == non_head_ipa:
-                break
+print(f"\nresults in results_berent&pinker folder.\n")
+print(f"translations file saved in: {translations_file}\n")
 
-        # If exact non-head match failed, skip (prevents wrong sums)
-        if reconstructed_non != non_head_ipa:
-            print(f"SKIP (non-head mismatch) | STORY ID: {row['story_id']} | COMPOUND: {sentence}")
-            print(f"IPA STORY: {ipa_story}")
-            print(f"IPA COMP : {ipa_compound}")
-            print(f"IPA split target -> non-head: {non_head_ipa} | head: {head_ipa}")
-            print(f"Reconstructed non-head: {reconstructed_non}")
-            continue
-
-        # Skip separator tokens (spaces/empties) before head starts
-        head_start_in_span = non_n
-        while head_start_in_span < len(compound_tokens):
-            t = str(compound_tokens[head_start_in_span])
-            if _is_special_token(t):
-                head_start_in_span += 1
-                continue
-            if _compact(t) == "":
-                head_start_in_span += 1
-                continue
-            break
-
-        # Optional verification of head reconstruction
-        reconstructed_head = ""
-        for t in compound_tokens[head_start_in_span:]:
-            t = str(t)
-            if _is_special_token(t):
-                continue
-            reconstructed_head += t
-
-        if reconstructed_head != head_ipa:
-            print(f"SKIP (head mismatch) | STORY ID: {row['story_id']} | COMPOUND: {sentence}")
-            print(f"IPA STORY: {ipa_story}")
-            print(f"IPA COMP : {ipa_compound}")
-            print(f"IPA split target -> non-head: {non_head_ipa} | head: {head_ipa}")
-            print(f"Reconstructed head: {reconstructed_head}")
-            continue
-
-        surprisal_non_head = sum(surprisal_values[compound_start_idx : compound_start_idx + non_n])
-        surprisal_head = sum(surprisal_values[compound_start_idx + head_start_in_span : compound_end_idx])
-
-        data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-
-        print(f"STORY ID: {row['story_id']}")
-        print(f"COMPOUND: {sentence}")
-        print(f"Compound token span: [{compound_start_idx}, {compound_end_idx})")
-        print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
-
-
-# --- MAIN EXECUTION ---
-for model_name in models:
-    print(f"\nLoading model: {model_name}...")
-    lm = scorer.IncrementalLMScorer(model_name, device="cuda")
-
-    data = []
-    process_pairs(lm, None, data)
-
-    df = pd.DataFrame(
-        data,
-        columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"]
-    )
-    df.to_csv(output_file, index=False)
-
-    print(f"\nresults in results_berent&pinker folder.\n")
+print("\nTRANSLATION WARNINGS:")
+if len(translation_warnings) == 0:
+    print("None.")
+else:
+    for w in translation_warnings:
+        print(
+            f"- kind={w['kind']} | text={w['text']} | ipa={w['ipa']} | context={w['context']}"
+        )

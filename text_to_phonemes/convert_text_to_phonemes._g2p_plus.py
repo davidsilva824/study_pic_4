@@ -2,7 +2,7 @@
 
 from g2p_plus import transcribe_utterances
 
-lines = ['labourer']
+lines = ['aitch and ar']
 
 phonemized = transcribe_utterances(lines, "phonemizer", "en-us", keep_word_boundaries=True)
 

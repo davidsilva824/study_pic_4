@@ -1,56 +1,182 @@
-### This code is complete.
-### Adapted in the simplest way: score FULL STORY, then extract surprisal for the target compound span.
-### + KEEP forced BOW correction
-### + CHANGE only the full-story phonemization: try full sentence first, fallback split at closest space to the middle
+import json
+import re
+from collections import defaultdict
 
 import pandas as pd
 from g2p_plus import transcribe_utterances
 from minicons import scorer
 from transformers import AutoTokenizer
-from collections import defaultdict
-
-# -----------------------------------------------
 
 models = [
     "phonemetransformers/GPT2-85M-BPE-PHON"
 ]
 
 BOS = False
+input_file = "berent&pinker/compounds_with_stories_experiment_2.json"
+output_file = "results_berent&pinker/100M/results_experiment_2_babble_phonetic_BPE_with_spaces.csv"
+translations_file = "text_to_phonemes/translations_compounds_with_stories_experiment_2_babble_phonetic_BPE_with_spaces.txt"
 
-# --- CHANGED: use compounds + stories ---
-compounds_file = "berent&pinker/stimuli_compounds_experiment_2.csv"
-stories_file = "berent&pinker/stimuli_stories_experiment_2.csv"
-output_file = "results_berent&pinker/results_experiment_2_babble_phonetic_BPE_stories.csv"
+with open(input_file, "r", encoding="utf-8") as f:
+    compound_groups_data = json.load(f)
 
-compounds_df = pd.read_csv(compounds_file)
-stories_df = pd.read_csv(stories_file)
-stimuli_df = pd.merge(compounds_df, stories_df, on="story_id", how="inner")
-# ---------------------------------------------------------------
+compound_groups = [
+    (group["non_heads"], group["heads"], group["stories"])
+    for group in compound_groups_data
+]
 
 cat_labels = {
-    "a": "singular_1",
-    "b": "plural_1",
-    "c": "singular_2",
-    "d": "plural_2",
+    0: "Sibilant Singular",
+    1: "Sibilant Plural",
+    2: "Regular Singular",
+    3: "Regular Plural",
 }
 
-# --- Function to force BOW settings for this model ---
-def force_bow_settings(lm, bow_symbol="Ġ"):
+failed_words = []
+failed_words_seen = set()
+
+manual_ipa = {
+    "10,000": "t ɛ n WORD_BOUNDARY θ aʊ z ə n d WORD_BOUNDARY",
+    "h&h": "eɪ t̠ʃ WORD_BOUNDARY æ n d WORD_BOUNDARY ɑ ɹ WORD_BOUNDARY",
+}
+
+manual_pattern = re.compile(
+    r"\b(" + "|".join(re.escape(k) for k in sorted(manual_ipa, key=len, reverse=True)) + r")\b",
+    flags=re.IGNORECASE
+)
+
+def register_failed_word(word):
+    word = word.strip()
+    if word != "" and word not in failed_words_seen:
+        failed_words_seen.add(word)
+        failed_words.append(word)
+
+def basic_clean_text(text):
+    text = str(text)
+    text = text.replace("’", "'").replace("“", '"').replace("”", '"')
+    text = text.replace("–", "-").replace("—", "-")
+    text = re.sub(r"\bFedEx\b", "fedex", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+def normalize_ws(text):
+    return re.sub(r"\s+", " ", str(text)).strip()
+
+def strip_edge_word_boundaries(ipa_text):
+    ipa_text = normalize_ws(ipa_text)
+    ipa_text = re.sub(r"^(WORD_BOUNDARY\s+)+", "", ipa_text)
+    ipa_text = re.sub(r"(\s+WORD_BOUNDARY)+$", "", ipa_text)
+    return normalize_ws(ipa_text)
+
+def safe_transcribe_once(text, keep_word_boundaries=True):
+    text = basic_clean_text(text)
+    if text == "":
+        return ""
+    try:
+        out = transcribe_utterances(
+            [text],
+            backend="phonemizer",
+            language="en-us",
+            keep_word_boundaries=keep_word_boundaries
+        )[0]
+        return normalize_ws(out)
+    except Exception:
+        return ""
+
+def text_to_ipa_full_or_word_by_word(text, keep_word_boundaries=True):
+    text = basic_clean_text(text)
+    if text == "":
+        return ""
+
+    matches = list(manual_pattern.finditer(text))
+
+    if len(matches) == 0:
+        ipa = safe_transcribe_once(text, keep_word_boundaries=keep_word_boundaries)
+        if ipa != "":
+            return ipa
+    else:
+        parts = []
+        last = 0
+        full_failed = False
+
+        for m in matches:
+            left = basic_clean_text(text[last:m.start()])
+            matched_text = m.group(0)
+            matched_ipa = manual_ipa[matched_text.lower()]
+
+            if left != "":
+                left_ipa = safe_transcribe_once(left, keep_word_boundaries=keep_word_boundaries)
+                if left_ipa == "":
+                    full_failed = True
+                    break
+                parts.append(left_ipa)
+
+            parts.append(normalize_ws(matched_ipa))
+            last = m.end()
+
+        if not full_failed:
+            right = basic_clean_text(text[last:])
+            if right != "":
+                right_ipa = safe_transcribe_once(right, keep_word_boundaries=keep_word_boundaries)
+                if right_ipa == "":
+                    full_failed = True
+                else:
+                    parts.append(right_ipa)
+
+        if not full_failed:
+            if keep_word_boundaries:
+                cleaned_parts = []
+                for part in parts:
+                    cleaned_parts.append(strip_edge_word_boundaries(part))
+                return normalize_ws(" WORD_BOUNDARY ".join(cleaned_parts) + " WORD_BOUNDARY")
+            return normalize_ws(" ".join(parts))
+
+    words = text.split()
+    ipa_words = []
+
+    for word in words:
+        word_l = word.lower()
+
+        if word_l in manual_ipa:
+            ipa_word = normalize_ws(manual_ipa[word_l])
+        else:
+            ipa_word = safe_transcribe_once(word, keep_word_boundaries=keep_word_boundaries)
+
+        if ipa_word == "":
+            register_failed_word(word)
+            continue
+
+        if keep_word_boundaries:
+            ipa_word = strip_edge_word_boundaries(ipa_word)
+
+        ipa_words.append(ipa_word)
+
+    if len(ipa_words) == 0:
+        return ""
+
+    if keep_word_boundaries:
+        return normalize_ws(" WORD_BOUNDARY ".join(ipa_words) + " WORD_BOUNDARY")
+
+    return normalize_ws(" ".join(ipa_words))
+
+def force_bow_g_marker(lm):
+    bow_symbol = "Ġ"
     lm.is_bow_tokenizer = True
     lm.bow_symbol = bow_symbol
 
     bow_subwords = defaultdict(bool)
 
     for word, idx in lm.tokenizer.get_vocab().items():
-        bow_subwords[idx] = (len(word) > 0 and word[0] == bow_symbol)
+        bow_subwords[idx] = len(word) > 0 and word[0] == bow_symbol
 
     for idx in lm.tokenizer.get_added_vocab().values():
         bow_subwords[idx] = False
 
     lm.bow_subwords = bow_subwords
-    lm.bow_subword_idx = [k for k, v in lm.bow_subwords.items() if v]
-# ----------------------------------------------------------
+    lm.bow_subword_idx = [k for k, v in bow_subwords.items() if v]
 
+    print("len(bow_subword_idx) =", len(lm.bow_subword_idx))
+    print("Forced BOW settings applied successfully.")
+    print("-" * 30)
 
 def token_to_ipa(token_str, byte_decoder):
     if token_str == "UTT_BOUNDARY":
@@ -69,207 +195,199 @@ def token_to_ipa(token_str, byte_decoder):
         return "Ġ" + decoded
     return decoded
 
-
-def word_to_ipa_no_boundaries(word):
-    ipa = transcribe_utterances(
-        [word],
-        backend="phonemizer",
-        language="en-us",
-        keep_word_boundaries=False
-    )[0]
-    return ipa.replace(" ", "").strip()
-
-
-# --- CHANGED: full-story phonemization with fallback split at closest space to middle ---
-def phonemize_story_with_mid_space_split(text):
-    text = str(text).strip()
-    if not text:
-        return ""
-
-    out = transcribe_utterances(
-        [text],
-        backend="phonemizer",
-        language="en-us",
-        keep_word_boundaries=True
-    )[0]
-
-    out = "" if out is None else str(out).strip()
-    if out:
-        return out
-
-    mid = len(text) // 2
-
-    left_space = text.rfind(" ", 0, mid + 1)
-    right_space = text.find(" ", mid)
-
-    if left_space == -1 and right_space == -1:
-        return ""
-
-    if left_space == -1:
-        split_idx = right_space
-    elif right_space == -1:
-        split_idx = left_space
-    else:
-        split_idx = left_space if (mid - left_space) <= (right_space - mid) else right_space
-
-    left_text = text[:split_idx].strip()
-    right_text = text[split_idx + 1:].strip()
-
-    left_ipa = phonemize_story_with_mid_space_split(left_text) if left_text else ""
-    right_ipa = phonemize_story_with_mid_space_split(right_text) if right_text else ""
-
-    return " ".join(x for x in [left_ipa, right_ipa] if x).strip()
-
-
-def process_pairs(lm, tok_decoder, pairs, data):
-
-    for _, row in stimuli_df.iterrows():
-        suffix = str(row["story_id"]).strip().split("_")[-1]
-        category_name = cat_labels[suffix]
-
-        sentence = str(row["compound"]).strip()
-        story_text = str(row["story_text"]).strip()
-        non_head, head = sentence.split(" ", 1)
-
-        # CHANGED: IPA of FULL STORY (context) -> full sentence, fallback split at nearest space
-        ipa_text = phonemize_story_with_mid_space_split(story_text)
-
-        # ADDED: IPA of target compound (for locating span in story)
-        ipa_compound = transcribe_utterances(
-            [sentence],
-            backend="phonemizer",
-            language="en-us",
-            keep_word_boundaries=True
-        )[0]
-
-        tok_scores = lm.token_score(
-            ipa_text,
-            bos_token=BOS,
-            prob=False,
-            surprisal=True,
-            bow_correction=True
-        )[0]
-
-        tokens_raw = [tok for tok, s, *_ in tok_scores]
-        surprisal_values = [s for tok, s, *_ in tok_scores]
-
-        # Decode tokenizer tokens back to IPA-like strings
-        tokens_ipa = [token_to_ipa(tok, tok_decoder.byte_decoder) for tok in tokens_raw]
-
-        # --- Original Print Block (adapted to decoded IPA tokens) ---
-        print(' '.join(f'{tok:>10}' for tok in tokens_ipa))
-        print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
-        print(surprisal_values)
-
-        # --- find compound span in full story tokens (simple compact match) ---
-        start_idx = 1 if (len(tokens_ipa) > 0 and tokens_ipa[0] == "UTT_BOUNDARY") else 0
-
-        def compact(s):
-            return "".join(str(s).replace("WORD_BOUNDARY", " ").replace("Ġ", " ").split())
-
-        target_compact = compact(ipa_compound)
-
-        rebuilt = ""
-        spans = []  # (token_index, start_char, end_char)
-
-        for i in range(start_idx, len(tokens_ipa)):
-            tok = tokens_ipa[i]
-            if tok == "UTT_BOUNDARY":
-                spans.append((i, len(rebuilt), len(rebuilt)))
-                continue
-            piece = compact(tok)
-            s0 = len(rebuilt)
-            rebuilt += piece
-            s1 = len(rebuilt)
-            spans.append((i, s0, s1))
-
-        pos = rebuilt.find(target_compact)
+def find_unique_substring_span(text, target):
+    matches = []
+    start = 0
+    while True:
+        pos = text.find(target, start)
         if pos == -1:
-            print(f"SKIP (compound not found) | STORY ID: {row['story_id']} | COMPOUND: {sentence}")
-            print(f"IPA STORY: {ipa_text}")
-            print(f"IPA COMP: {ipa_compound}")
+            break
+        matches.append(pos)
+        start = pos + 1
+
+    if len(matches) == 0:
+        raise ValueError(f"Could not find target IPA in story IPA.\nTARGET={target}\nSTORY={text}")
+    if len(matches) > 1:
+        raise ValueError(f"Target IPA appears multiple times in story IPA.\nTARGET={target}")
+
+    return matches[0], matches[0] + len(target)
+
+def find_compound_ipa_span(ipa_story, ipa_compound):
+    ipa_story = normalize_ws(ipa_story)
+    ipa_compound = normalize_ws(ipa_compound)
+
+    ipa_parts = [part.strip() for part in ipa_compound.split("WORD_BOUNDARY") if part.strip()]
+    if len(ipa_parts) != 2:
+        raise ValueError(f"Expected exactly 2 IPA words in compound, got {len(ipa_parts)}: {ipa_compound}")
+
+    non_head_ipa = normalize_ws(ipa_parts[0])
+    head_ipa = normalize_ws(ipa_parts[1])
+    target = normalize_ws(f"{non_head_ipa} WORD_BOUNDARY {head_ipa}")
+
+    target_start_raw, target_end_raw = find_unique_substring_span(ipa_story, target)
+    head_start_raw = target_start_raw + len(non_head_ipa) + len(" WORD_BOUNDARY ")
+
+    return target_start_raw, head_start_raw, target_end_raw
+
+def split_surprisal_in_story(lm, ipa_story, tok_scores, target_start_raw, head_start_raw, target_end_raw):
+    enc = lm.tokenizer(
+        ipa_story,
+        add_special_tokens=False,
+        return_offsets_mapping=True
+    )
+    offsets = enc["offset_mapping"]
+
+    if len(tok_scores) == len(offsets) + 1:
+        toks_only = tok_scores[1:]
+    elif len(tok_scores) == len(offsets):
+        toks_only = tok_scores
+    else:
+        raise ValueError(
+            f"Offsets/token mismatch: offsets={len(offsets)} vs tok_scores={len(tok_scores)}"
+        )
+
+    non_head_sum = 0.0
+    head_sum = 0.0
+
+    for tok_info, (start, end) in zip(toks_only, offsets):
+        s = tok_info[1]
+
+        if end <= target_start_raw or start >= target_end_raw:
             continue
 
-        end_pos = pos + len(target_compact)
-        hit = []
-        for tok_i, s0, s1 in spans:
-            if s1 <= pos:
-                continue
-            if s0 >= end_pos:
-                break
-            if s1 > s0:
-                hit.append(tok_i)
+        if end <= head_start_raw:
+            non_head_sum += s
+        else:
+            head_sum += s
 
-        if not hit:
-            print(f"SKIP (no token span) | STORY ID: {row['story_id']} | COMPOUND: {sentence}")
-            print(f"IPA STORY: {ipa_text}")
-            print(f"IPA COMP: {ipa_compound}")
-            continue
+    return non_head_sum, head_sum
 
-        compound_start_idx = hit[0]
-        compound_end_idx = hit[-1] + 1
-        # ------------------------------------------------------------
+def process_pairs(lm, decoder_tokenizer, data, translation_records):
+    for group_idx, (non_heads, heads, stories) in enumerate(compound_groups, start=1):
+        group_records = []
 
-        # Target non-head IPA (no spaces / no WORD_BOUNDARY)
-        target_non_head_ipa = word_to_ipa_no_boundaries(non_head)
+        for head in heads:
+            for i, (non_head, story) in enumerate(zip(non_heads, stories)):
+                category_name = cat_labels[i]
 
-        # Reconstruct non-head from decoded tokens (ONLY inside compound span)
-        non_n = 0
-        reconstructed_word = ""
+                ortho_compound = f"{non_head} {head}"
 
-        compound_tokens_ipa = tokens_ipa[compound_start_idx:compound_end_idx]
-        cleaned_tokens = [tok.lstrip('Ġ ') for tok in compound_tokens_ipa]
+                ipa_non_head = text_to_ipa_full_or_word_by_word(non_head, keep_word_boundaries=False)
+                ipa_head = text_to_ipa_full_or_word_by_word(head, keep_word_boundaries=False)
+                ipa_story = text_to_ipa_full_or_word_by_word(story, keep_word_boundaries=True)
 
-        for k in range(len(cleaned_tokens)):
-            piece = cleaned_tokens[k]
+                if ipa_non_head == "" or ipa_head == "" or ipa_story == "":
+                    raise ValueError(
+                        f"Empty IPA after conversion.\n"
+                        f"NON_HEAD={non_head}\nHEAD={head}\nSTORY={story}"
+                    )
 
-            # stop if token is a boundary token (defensive)
-            if piece == "WORD_BOUNDARY":
-                break
+                ipa_compound = normalize_ws(f"{ipa_non_head} WORD_BOUNDARY {ipa_head}")
 
-            reconstructed_word += piece
-            non_n += 1
+                tok_scores = lm.token_score(
+                    ipa_story,
+                    bos_token=BOS,
+                    prob=False,
+                    surprisal=True,
+                    bow_correction=True
+                )[0]
 
-            if reconstructed_word == target_non_head_ipa:
-                break
+                raw_tokens = [tok for tok, s, *_ in tok_scores]
+                decoded_tokens = [
+                    token_to_ipa(tok, decoder_tokenizer.byte_decoder)
+                    for tok in raw_tokens
+                ]
 
-        total_real_tokens = len(compound_tokens_ipa)
-        head_n = total_real_tokens - non_n
+                target_start_raw, head_start_raw, target_end_raw = find_compound_ipa_span(
+                    ipa_story, ipa_compound
+                )
 
-        surprisal_non_head = sum(surprisal_values[compound_start_idx : compound_start_idx + non_n])
-        surprisal_head = sum(surprisal_values[compound_start_idx + non_n : compound_start_idx + non_n + head_n])
+                print("\nSTORY:", story)
+                print("ORTHO COMPOUND:", ortho_compound)
+                print("IPA STORY:", ipa_story)
+                print("IPA COMPOUND:", ipa_compound)
 
-        data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
+                print("TOK_SCORES:")
+                for tok_info, decoded_tok in zip(tok_scores, decoded_tokens):
+                    s = tok_info[1]
+                    print(f"{repr(decoded_tok):<20} {s:.7f}")
 
-        print(f"STORY ID: {row['story_id']}")
-        print(f"COMPOUND: {sentence}")
-        print(f"Compound token span: [{compound_start_idx}, {compound_end_idx})")
-        print(f"{sentence}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
+                surprisal_non_head, surprisal_head = split_surprisal_in_story(
+                    lm,
+                    ipa_story,
+                    tok_scores,
+                    target_start_raw,
+                    head_start_raw,
+                    target_end_raw
+                )
 
+                data.append([
+                    category_name,
+                    non_head,
+                    head,
+                    surprisal_non_head,
+                    surprisal_head
+                ])
 
-# --- MAIN EXECUTION ---
+                print(f"  Non-Head ({non_head}): {surprisal_non_head}")
+                print(f"  Head     ({head}): {surprisal_head}")
+
+                group_records.append({
+                    "item_idx": i + 1,
+                    "compound_ortho": ortho_compound,
+                    "compound_ipa": ipa_compound,
+                    "story_ortho": story,
+                    "story_ipa": ipa_story,
+                })
+
+        translation_records.append({
+            "group_idx": group_idx,
+            "items": group_records
+        })
+
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
     lm = scorer.IncrementalLMScorer(model_name, device="cuda")
 
-    # --- apply forced BOW method for this model ---
-    force_bow_settings(lm, bow_symbol="Ġ")
+    force_bow_g_marker(lm)
 
-    # matching tokenizer (slow) for byte_decoder
-    tok_decoder = AutoTokenizer.from_pretrained(
+    decoder_tokenizer = AutoTokenizer.from_pretrained(
         "phonemetransformers/babble-tokenizers",
         subfolder="BABYLM-TOKENIZER-BPE-PHON",
         use_fast=False
     )
 
     data = []
-
-    process_pairs(lm, tok_decoder, None, data)
+    translation_records = []
+    process_pairs(lm, decoder_tokenizer, data, translation_records)
 
     df = pd.DataFrame(
         data,
         columns=["Category", "Non-Head", "Head", "Surprisal Non-head", "Surprisal head"]
     )
     df.to_csv(output_file, index=False)
+
+    with open(translations_file, "w", encoding="utf-8") as f:
+        for group in translation_records:
+            f.write(f"GROUP {group['group_idx']}\n")
+            f.write("------------------------------------------------------------\n")
+
+            for item in group["items"]:
+                f.write(f"ITEM {item['item_idx']}\n")
+                f.write(f"COMPOUND ORTHO: {item['compound_ortho']}\n")
+                f.write(f"COMPOUND IPA:   {item['compound_ipa']}\n")
+                f.write(f"STORY ORTHO:    {item['story_ortho']}\n")
+                f.write(f"STORY IPA:      {item['story_ipa']}\n")
+                f.write("\n")
+
+            f.write("\n")
+
+        f.write("FAILED WORDS\n")
+        f.write("------------------------------------------------------------\n")
+        if len(failed_words) == 0:
+            f.write("None\n")
+        else:
+            for word in failed_words:
+                f.write(f"{word}\n")
 
     print(f"\nresults in results_berent&pinker folder.\n")

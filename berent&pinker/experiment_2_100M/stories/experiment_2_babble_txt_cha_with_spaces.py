@@ -1,270 +1,186 @@
-# Not working!
+### This code is not working!!! the stories mught be larger than the limit of input. 
 
 
-### This code is complete. (MINIMAL change: score full stories, then extract target compound surprisal with same "W" boundary logic)
-### + Keeps split Non-Head vs Head using boundary token "W"
-### + Reads compounds + stories CSVs and matches by story_id
-### + Recursive split fallback on story_text (split on spaces)
-### + Manual boundary correction: add boundary token "W" surprisal to previous word
-### + REMOVED forced BOW settings hack
+# BOS = False
+# Forced BOW settings block, for separator token "W"
+# Splitting head and non-head based on the token W.
+# IMPORTANT note: The BOW correction is working. This can be observe in the file 'suprisal_by_token_babble_txt_char_with_spaces.py'.
+# With the correction the suprisal of the token 'W' becomes zero. 
 
+import json
 import pandas as pd
 from minicons import scorer
-
-import torch
+from collections import defaultdict
 
 models = [
     "phonemetransformers/GPT2-85M-CHAR-TXT"
 ]
 
 BOS = False
+json_file = "berent&pinker/compounds_with_stories_experiment_2.json"
+output_file = "results_berent&pinker/100M/results_experiment_2_babble_txt_char_with_spaces.csv"
 
-# --- Read BOTH CSVs ---
-compounds_file = "berent&pinker/stimuli_compounds_experiment_2.csv"   # has: story_id, compound
-stories_file   = "berent&pinker/stimuli_stories_experiment_2.csv"     # has: story_id, story_text
-output_file = "results_berent&pinker/results_experiment_2_babble_txt_cha_stories.csv"
-
-compounds_df = pd.read_csv(compounds_file)
-stories_df = pd.read_csv(stories_file)
-
-# Merge by story_id so each row has target compound + full story context
-stimuli_df = compounds_df.merge(stories_df, on="story_id", how="inner")
-# ------------------------------------------
+with open(json_file, "r", encoding="utf-8") as f:
+    stimuli_data = json.load(f)
 
 cat_labels = {
-    "a": "singular_1",
-    "b": "plural_1",
-    "c": "singular_2",
-    "d": "plural_2",
+    0: "Sibilant Singular",
+    1: "Sibilant Plural",
+    2: "Regular Singular",
+    3: "Regular Plural",
 }
 
-
-def _is_special_token(tok):
-    tok = str(tok)
-    return tok.startswith("<") and tok.endswith(">")
-
-
-def _token_to_surface_piece_char_txt(tok):
-    """
-    Approximate surface reconstruction for GPT2-85M-CHAR-TXT tokens.
-    This model uses 'W' as a word boundary marker (space). We map it to a real space
-    so we can find the target compound in reconstructed full-story text.
-    """
-    tok = str(tok)
-
-    # skip explicit special tokens in reconstruction
-    if _is_special_token(tok):
-        return ""
-
-    # Model-specific separator token for word boundary / space
-    if tok == "W":
-        return " "
-
-    return tok
-
-
-def _find_compound_token_span(tokens, start_idx, compound_text):
-    """
-    Find token span [start, end) of the target compound inside FULL story tokens
-    by reconstructing approximate surface text from tokens.
-    """
-    reconstructed_text = ""
-    token_char_spans = []  # (token_index, start_char, end_char)
-
-    for i in range(start_idx, len(tokens)):
-        tok = str(tokens[i])
-
-        piece = _token_to_surface_piece_char_txt(tok)
-        s = len(reconstructed_text)
-        reconstructed_text += piece
-        e = len(reconstructed_text)
-
-        token_char_spans.append((i, s, e))
-
-    # Exact match in reconstructed text
-    pos = reconstructed_text.find(compound_text)
-    if pos == -1:
-        raise ValueError(f"Could not find compound '{compound_text}' in token-reconstructed story text.")
-
-    target_start = pos
-    target_end = pos + len(compound_text)
-
-    compound_token_indices = []
-    for tok_i, s, e in token_char_spans:
-        if e <= target_start:
-            continue
-        if s >= target_end:
+def _find_compound_char_span(story_text, compound_text):
+    matches = []
+    start = 0
+    while True:
+        pos = story_text.find(compound_text, start)
+        if pos == -1:
             break
+        matches.append(pos)
+        start = pos + 1
 
-        if e > s:
-            compound_token_indices.append(tok_i)
+    if len(matches) == 0:
+        raise ValueError(f"Could not find compound '{compound_text}' in story.")
+    if len(matches) > 1:
+        raise ValueError(f"Compound '{compound_text}' appears multiple times in story.")
 
-    if not compound_token_indices:
+    start_char = matches[0]
+    end_char = start_char + len(compound_text)
+    return start_char, end_char
+
+def _find_compound_token_span(lm, story_text, tok_scores, compound_text):
+    start_char, end_char = _find_compound_char_span(story_text, compound_text)
+
+    enc = lm.tokenizer(
+        story_text,
+        add_special_tokens=False,
+        return_offsets_mapping=True
+    )
+    offsets = enc["offset_mapping"]
+
+    first_tok = str(tok_scores[0][0]) if len(tok_scores) > 0 else ""
+    start_idx = 1 if (first_tok.startswith("<") or first_tok == "UTT_BOUNDARY") else 0
+    toks_only = tok_scores[start_idx:]
+
+    if len(offsets) != len(toks_only):
+        raise ValueError(f"Offsets/token mismatch: offsets={len(offsets)} vs toks={len(toks_only)}")
+
+    span_indices = []
+    for i, ((tok, s, *_), (tok_start, tok_end)) in enumerate(zip(toks_only, offsets), start=start_idx):
+        if tok_end <= start_char:
+            continue
+        if tok_start >= end_char:
+            break
+        span_indices.append(i)
+
+    if not span_indices:
         raise ValueError(f"Found compound text but could not map it to tokens: '{compound_text}'")
 
-    return compound_token_indices[0], compound_token_indices[-1] + 1  # [start, end)
+    return span_indices[0], span_indices[-1] + 1
 
+def process_pairs(lm, data):
+    for group in stimuli_data:
+        non_heads = group["non_heads"]
+        heads = group["heads"]
+        stories = group["stories"]
 
-def _safe_token_score_with_recursive_split(lm, text, bos_token, prob, surprisal, bow_correction):
-    """
-    Try scoring full story. If it fails (or returns empty), recursively split on the closest
-    space to the middle until chunks fit. Then concatenate token scores.
-    """
-    def _score_recursive(s):
-        s = str(s).strip()
-        if s == "":
-            return []
+        if len(heads) != 1:
+            raise ValueError(f"Expected exactly one head in experiment 2 item, got {len(heads)}")
 
-        try:
-            out = lm.token_score(
-                s,
-                bos_token=bos_token,
-                prob=prob,
-                surprisal=surprisal,
-                bow_correction=bow_correction
-            )[0]
+        head = str(heads[0]).strip()
 
-            # guard for weird empty outputs
-            if out is None or len(out) == 0:
-                raise ValueError("empty token_score output")
+        for i, (non_head, story_text) in enumerate(zip(non_heads, stories)):
+            category_name = cat_labels[i]
 
-            return out
+            non_head = str(non_head).strip()
+            story_text = str(story_text).strip()
+            compound = f"{non_head} {head}"
 
-        except Exception:
-            # split on nearest space to middle
-            mid = len(s) // 2
-            spaces = [i for i, ch in enumerate(s) if ch == " "]
-            if not spaces:
-                raise  # cannot split further
-
-            split_idx = min(spaces, key=lambda i: abs(i - mid))
-
-            left = s[:split_idx].strip()
-            right = s[split_idx + 1:].strip()
-
-            left_scores = _score_recursive(left) if left else []
-            right_scores = _score_recursive(right) if right else []
-
-            # concatenate chunks (keeps same simple logic as before)
-            return left_scores + right_scores
-
-    return _score_recursive(text)
-
-
-def process_pairs(lm, pairs, data):
-    for _, row in stimuli_df.iterrows():
-        suffix = str(row["story_id"]).strip().split("_")[-1]
-        category_name = cat_labels[suffix]
-
-        compound = str(row["compound"]).strip()
-        story_text = str(row["story_text"]).strip()
-        non_head, head = compound.split(" ", 1)
-
-        # --- CHANGED: score FULL STORY with recursive split fallback ---
-        try:
-            tok_scores = _safe_token_score_with_recursive_split(
-                lm,
+            tok_scores = lm.token_score(
                 story_text,
                 bos_token=BOS,
                 prob=False,
                 surprisal=True,
-                bow_correction=False
+                bow_correction=True
+            )[0]
+
+            tokens = [tok for tok, s, *_ in tok_scores]
+            surprisal_values = [s for tok, s, *_ in tok_scores]
+
+            print("\nTOK_SCORES:")
+            for tok, s in tok_scores:
+                print(f"{repr(tok):<20} {s:.7f}")
+
+            compound_start_idx, compound_end_idx = _find_compound_token_span(
+                lm, story_text, tok_scores, compound
             )
-        except Exception as e:
-            print("[SKIP: token_score failed even after recursive split]")
-            print(f"STORY ID: {row['story_id']}")
+
+            compound_tokens = tokens[compound_start_idx:compound_end_idx]
+            compound_surprisals = surprisal_values[compound_start_idx:compound_end_idx]
+
+            cleaned_tokens = [str(tok).lstrip("Ġ ") for tok in compound_tokens]
+
+            boundary_tok = "W"
+            boundary_pos = None
+            for k in range(len(cleaned_tokens)):
+                if cleaned_tokens[k] == boundary_tok:
+                    boundary_pos = k
+                    break
+
+            if boundary_pos is None:
+                non_head_indices = [k for k in range(len(cleaned_tokens)) if cleaned_tokens[k] != boundary_tok]
+                head_indices = []
+                surprisal_non_head = sum(compound_surprisals[k] for k in non_head_indices)
+                surprisal_head = 0
+            else:
+                non_head_indices = [k for k in range(boundary_pos) if cleaned_tokens[k] != boundary_tok]
+                head_indices = [k for k in range(boundary_pos + 1, len(cleaned_tokens)) if cleaned_tokens[k] != boundary_tok]
+
+                surprisal_non_head = sum(compound_surprisals[k] for k in non_head_indices)
+                surprisal_head = sum(compound_surprisals[k] for k in head_indices)
+
+            data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
+
             print(f"COMPOUND: {compound}")
-            print(f"STORY TXT: {story_text}")
-            print(f"ERROR: {e}")
-            print()
-            continue
-
-        tokens = [tok for tok, s, *_ in tok_scores]
-        surprisal_values = [s for tok, s, *_ in tok_scores]
-
-        # --- Original Print Block (full story tokens) ---
-        print(' '.join(f'{str(tok):>10}' for tok in tokens))
-        print(' '.join(f'{s:>10.3f}' for s in surprisal_values))
-        print(surprisal_values)
-
-        cleaned_tokens = [str(tok).lstrip('Ġ ') for tok in tokens]
-
-        # --- MINIMAL FIX: set where "real tokens" start ---
-        start_idx = 1 if (len(cleaned_tokens) > 0 and cleaned_tokens[0].startswith("<")) else 0
-
-        # --- NEW: find target compound span inside FULL story tokens ---
-        try:
-            compound_start_idx, compound_end_idx = _find_compound_token_span(tokens, start_idx, compound)
-        except Exception as e:
-            print("[SKIP: compound not found in reconstructed full-story tokens]")
-            print(f"STORY ID: {row['story_id']}")
-            print(f"COMPOUND: {compound}")
-            print(f"STORY TXT: {story_text}")
-            print(f"ERROR: {e}")
-            print()
-            continue
-
-        # =========================
-        # SAME LOGIC AS BEFORE: split using boundary token "W"
-        # but only inside the matched compound span
-        # + MANUAL BOUNDARY CORRECTION: add W surprisal to previous word
-        # =========================
-        boundary_tok = "W"
-        compound_cleaned_tokens = cleaned_tokens[compound_start_idx:compound_end_idx]
-
-        # Find first boundary token inside the compound span
-        boundary_pos_local = None
-        for k in range(len(compound_cleaned_tokens)):
-            if compound_cleaned_tokens[k] == boundary_tok:
-                boundary_pos_local = k
-                break
-
-        if boundary_pos_local is None:
-            # fallback (same spirit as before)
-            non_head_indices_abs = [k for k in range(compound_start_idx, compound_end_idx) if cleaned_tokens[k] != boundary_tok]
-            head_indices_abs = []
-            surprisal_non_head = sum(surprisal_values[k] for k in non_head_indices_abs)
-            surprisal_head = 0
-        else:
-            boundary_pos_abs = compound_start_idx + boundary_pos_local
-
-            # Non-head: from start of matched span up to boundary token (excluding boundary)
-            non_head_indices_abs = [
-                k for k in range(compound_start_idx, boundary_pos_abs)
-                if cleaned_tokens[k] != boundary_tok
-            ]
-
-            # Head: after boundary token to end of matched span (excluding boundary)
-            head_indices_abs = [
-                k for k in range(boundary_pos_abs + 1, compound_end_idx)
-                if cleaned_tokens[k] != boundary_tok
-            ]
-
-            surprisal_non_head = sum(surprisal_values[k] for k in non_head_indices_abs)
-            surprisal_head = sum(surprisal_values[k] for k in head_indices_abs)
-
-            # MANUAL BOW-LIKE CORRECTION:
-            # add the compound boundary token "W" surprisal to the previous word (Non-Head)
-            surprisal_non_head += surprisal_values[boundary_pos_abs]
-        # =========================
-
-        data.append([category_name, non_head, head, surprisal_non_head, surprisal_head])
-
-        print(f"STORY ID: {row['story_id']}")
-        print(f"COMPOUND: {compound}")
-        print(f"Compound token span: [{compound_start_idx}, {compound_end_idx})")
-        print(f"{compound}: Non-Head: {surprisal_non_head}, Head: {surprisal_head}")
-
+            print(f"Compound token span: [{compound_start_idx}, {compound_end_idx})")
+            print(f"  Non-Head ({non_head}): {surprisal_non_head}")
+            print(f"  Head     ({head}): {surprisal_head}")
 
 # --- MAIN EXECUTION ---
 for model_name in models:
     print(f"\nLoading model: {model_name}...")
     lm = scorer.IncrementalLMScorer(model_name, device="cuda")
 
-    data = []
-    process_pairs(lm, None, data)
+    bow_symbol = "W"
+    lm.is_bow_tokenizer = True
+    lm.bow_symbol = bow_symbol
 
-    output_file = "results_berent&pinker/results_experiment_2_babble_txt_cha_stories.csv"
+    bow_subwords = defaultdict(bool)
+
+    vocab = lm.tokenizer.get_vocab()
+    bow_id = vocab.get(bow_symbol, None)
+
+    for _, idx in vocab.items():
+        bow_subwords[idx] = False
+
+    for idx in lm.tokenizer.get_added_vocab().values():
+        bow_subwords[idx] = False
+
+    if bow_id is not None:
+        bow_subwords[bow_id] = True
+
+    lm.bow_subwords = bow_subwords
+    lm.bow_subword_idx = [int(bow_id)] if bow_id is not None else []
+
+    print("bow_symbol =", bow_symbol)
+    print("bow_id =", bow_id)
+    print("len(bow_subword_idx) =", len(lm.bow_subword_idx))
+    print("Forced BOW settings applied successfully.")
+    print("-" * 30)
+
+    data = []
+    process_pairs(lm, data)
 
     df = pd.DataFrame(
         data,

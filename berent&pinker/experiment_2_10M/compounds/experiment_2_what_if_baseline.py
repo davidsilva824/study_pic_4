@@ -1,5 +1,5 @@
 ### This code is complete. 
-# BOS = False
+# BOS = True
 # Normal BOW
 
 import pandas as pd
