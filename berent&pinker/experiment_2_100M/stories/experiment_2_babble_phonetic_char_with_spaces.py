@@ -12,7 +12,7 @@ from collections import defaultdict
 from g2p_plus import transcribe_utterances
 from minicons import scorer
 
-output_file = "results_berent&pinker/100M/results_experiment_2_babble_phonetic_char_with_spaces.csv"
+output_file = "results_berent&pinker/100M/results_experiment_2_babble_phonetic_char_with_spaces_stories.csv"
 translations_file = "text_to_phonemes/translation_with_stories_experiment_2_babble_phonetic_char_with_spaces.txt"
 model_name = "phonemetransformers/GPT2-85M-CHAR-PHON"
 json_file = "berent&pinker/compounds_with_stories_experiment_2.json"

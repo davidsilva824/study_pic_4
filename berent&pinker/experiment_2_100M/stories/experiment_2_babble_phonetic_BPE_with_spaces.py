@@ -13,7 +13,7 @@ models = [
 
 BOS = False
 input_file = "berent&pinker/compounds_with_stories_experiment_2.json"
-output_file = "results_berent&pinker/100M/results_experiment_2_babble_phonetic_BPE_with_spaces.csv"
+output_file = "results_berent&pinker/100M/results_experiment_2_babble_phonetic_BPE_with_spaces_stories.csv"
 translations_file = "text_to_phonemes/translations_compounds_with_stories_experiment_2_babble_phonetic_BPE_with_spaces.txt"
 
 with open(input_file, "r", encoding="utf-8") as f:
