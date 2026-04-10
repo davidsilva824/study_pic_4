@@ -18,7 +18,7 @@ models = [
 
 BOS = False
 json_file = "berent&pinker/compounds_with_stories_experiment_3.json"
-output_file = "results_berent&pinker/100M/results_experiment_3_babble_txt_char_with_spaces.csv"
+output_file = "results_berent&pinker/100M/results_experiment_3_babble_txt_char_with_spaces_stories.csv"
 
 with open(json_file, "r", encoding="utf-8") as f:
     stimuli_data = json.load(f)
